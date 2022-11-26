@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="book.css"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>shuguang&#39;s blog</title>
+  <icon>https://shuguang2000.xyz/icon.png</icon>
+  <subtitle>环境决定基础，选择决定价值，努力决定方向。</subtitle>
+  <link href="https://shuguang2000.xyz/atom.xml" rel="self"/>
+  
+  <link href="https://shuguang2000.xyz/"/>
+  <updated>2022-11-25T15:18:45.106Z</updated>
+  <id>https://shuguang2000.xyz/</id>
+  
+  <author>
+    <name>shuguang2000</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网络协议 - 相关补充</title>
+    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%9B%B8%E5%85%B3%E8%A1%A5%E5%85%85/"/>
+    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%9B%B8%E5%85%B3%E8%A1%A5%E5%85%85/</id>
+    <published>2022-11-25T10:11:15.000Z</published>
+    <updated>2022-11-25T15:18:45.106Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文网络协议其他知识，包括常用的VPN、网络爬虫、HTTP缓存、IPv6、即时通信和流媒体。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    
+    
+    <category term="VPN" scheme="https://shuguang2000.xyz/tags/VPN/"/>
+    
+    <category term="IPv6" scheme="https://shuguang2000.xyz/tags/IPv6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网络协议 - 其他协议</title>
+    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%85%B6%E4%BB%96%E5%8D%8F%E8%AE%AE/"/>
+    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%85%B6%E4%BB%96%E5%8D%8F%E8%AE%AE/</id>
+    <published>2022-11-25T08:21:12.000Z</published>
+    <updated>2022-11-25T15:16:08.424Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍应用层除HTTPS之外的其他协议，包括支持全双工的WebSocket协议、HTTPDNS、文件传输协议FTP、邮件协议收发协议POP、IMAP(收)和SMTP(发)。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    
+    
+    <category term="WebSocket" scheme="https://shuguang2000.xyz/tags/WebSocket/"/>
+    
+    <category term="RESTful" scheme="https://shuguang2000.xyz/tags/RESTful/"/>
+    
+    <category term="HTTPDNS" scheme="https://shuguang2000.xyz/tags/HTTPDNS/"/>
+    
+    <category term="FTP" scheme="https://shuguang2000.xyz/tags/FTP/"/>
+    
+    <category term="SMTP" scheme="https://shuguang2000.xyz/tags/SMTP/"/>
+    
+    <category term="POP" scheme="https://shuguang2000.xyz/tags/POP/"/>
+    
+    <category term="IMAP" scheme="https://shuguang2000.xyz/tags/IMAP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网络协议 - HTTP1.1的升级改进</title>
+    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20HTTP1.1%E7%9A%84%E5%8D%87%E7%BA%A7%E6%94%B9%E8%BF%9B/"/>
+    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20HTTP1.1%E7%9A%84%E5%8D%87%E7%BA%A7%E6%94%B9%E8%BF%9B/</id>
+    <published>2022-11-25T06:21:12.000Z</published>
+    <updated>2022-11-25T16:22:18.448Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文先是介绍了HTTP1.1的相关问题，并由此介绍了HTTP1.1的升级版本HTTP2和HTTP3的新特性。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    
+    
+    <category term="SPDY" scheme="https://shuguang2000.xyz/tags/SPDY/"/>
+    
+    <category term="HTTP2" scheme="https://shuguang2000.xyz/tags/HTTP2/"/>
+    
+    <category term="HTTP3" scheme="https://shuguang2000.xyz/tags/HTTP3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网络协议 - HTTPS</title>
+    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20HTTPS/"/>
+    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20HTTPS/</id>
+    <published>2022-11-25T02:21:12.000Z</published>
+    <updated>2022-11-25T12:13:40.734Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍HTTPS相关概念，介绍了HTTPS就是HTTP在应用层和传输层间建立一个了TSL | SSL 连接，并使用Wireshark抓包TLS 1.2的连接（以ECDHE密钥交换算法为例）过程。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    
+    
+    <category term="HTTPS" scheme="https://shuguang2000.xyz/tags/HTTPS/"/>
+    
+    <category term="TLS" scheme="https://shuguang2000.xyz/tags/TLS/"/>
+    
+    <category term="SSL" scheme="https://shuguang2000.xyz/tags/SSL/"/>
+    
+    <category term="OpenSSL" scheme="https://shuguang2000.xyz/tags/OpenSSL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网络协议 - 网络安全</title>
+    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</id>
+    <published>2022-11-24T02:21:12.000Z</published>
+    <updated>2022-11-25T10:44:12.552Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍Web网络传输过程中的安全问题和相关技术。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    
+    
+    <category term="DoS" scheme="https://shuguang2000.xyz/tags/DoS/"/>
+    
+    <category term="RSA" scheme="https://shuguang2000.xyz/tags/RSA/"/>
+    
+    <category term="AES" scheme="https://shuguang2000.xyz/tags/AES/"/>
+    
+    <category term="CA" scheme="https://shuguang2000.xyz/tags/CA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Anaconda 使用教程</title>
+    <link href="https://shuguang2000.xyz/Software-Testing/Anaconda%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <id>https://shuguang2000.xyz/Software-Testing/Anaconda%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
+    <published>2022-11-23T05:31:58.000Z</published>
+    <updated>2022-11-23T13:03:22.658Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍Anaconda相关概念和作用，着重介绍了Anaconda常用命令。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Software Testing" scheme="https://shuguang2000.xyz/categories/Software-Testing/"/>
+    
+    
+    <category term="Anaconda" scheme="https://shuguang2000.xyz/tags/Anaconda/"/>
+    
+    <category term="conda" scheme="https://shuguang2000.xyz/tags/conda/"/>
+    
+    <category term="pip" scheme="https://shuguang2000.xyz/tags/pip/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网络协议 - 应用层</title>
+    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%BA%94%E7%94%A8%E5%B1%82/"/>
+    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%BA%94%E7%94%A8%E5%B1%82/</id>
+    <published>2022-11-22T10:21:12.000Z</published>
+    <updated>2022-11-22T14:03:25.861Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;本文主要介绍网站请求流程中所用到的协议DNS，HTTP和DHCP相关概念和作用。&lt;br&gt;
+&lt;/br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;本文也着重介绍了HTTP请求和应答过程中的相关规则，包括报文格式、状态码、跨代理和CDN相关知识。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    
+    
+    <category term="DNS" scheme="https://shuguang2000.xyz/tags/DNS/"/>
+    
+    <category term="DHCP" scheme="https://shuguang2000.xyz/tags/DHCP/"/>
+    
+    <category term="HTTP" scheme="https://shuguang2000.xyz/tags/HTTP/"/>
+    
+    <category term="CDN" scheme="https://shuguang2000.xyz/tags/CDN/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网络协议 - 传输层</title>
+    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E4%BC%A0%E8%BE%93%E5%B1%82/"/>
+    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E4%BC%A0%E8%BE%93%E5%B1%82/</id>
+    <published>2022-11-22T07:21:12.000Z</published>
+    <updated>2022-11-22T12:23:27.269Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;本文主要介绍传输层的两个协议&lt;strong&gt;TCP&lt;/strong&gt;和&lt;strong&gt;UDP&lt;/strong&gt;数据格式，并将两者进行了比较。&lt;br&gt;
+&lt;/br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;本文也重点介绍了TCP的&lt;strong&gt;可靠传输&lt;/strong&gt;（超时重传）、&lt;strong&gt;流量控制&lt;/strong&gt;（点到点）、&lt;strong&gt;拥塞控制&lt;/strong&gt; (共同维护)、&lt;strong&gt;连接管理&lt;/strong&gt;（建立连接、释放连接）四个方面技术。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    
+    
+    <category term="TCP" scheme="https://shuguang2000.xyz/tags/TCP/"/>
+    
+    <category term="UDP" scheme="https://shuguang2000.xyz/tags/UDP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网络协议 - 物理层和数据链路层</title>
+    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%89%A9%E7%90%86%E5%B1%82%E5%92%8C%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/"/>
+    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%89%A9%E7%90%86%E5%B1%82%E5%92%8C%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/</id>
+    <published>2022-11-22T04:21:12.000Z</published>
+    <updated>2022-11-22T12:11:19.831Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍网络互联模型中数据在物理层和数据链路层传输方式以及相关协议。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    
+    
+    <category term="CSMA/CD" scheme="https://shuguang2000.xyz/tags/CSMA-CD/"/>
+    
+    <category term="PPP" scheme="https://shuguang2000.xyz/tags/PPP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网络协议 - 网络层</title>
+    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%B1%82/"/>
+    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%B1%82/</id>
+    <published>2022-11-22T04:21:12.000Z</published>
+    <updated>2022-11-25T15:19:09.532Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍网络层的数据段，重点介绍网络层首部相关信息。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>网络协议 - 网络基础知识</title>
+    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
+    <published>2022-11-22T02:22:12.000Z</published>
+    <updated>2022-11-22T13:56:17.573Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍现实中的网络和IP分配的相关知识。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    
+    
+    <category term="IP" scheme="https://shuguang2000.xyz/tags/IP/"/>
+    
+    <category term="NAT" scheme="https://shuguang2000.xyz/tags/NAT/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网络协议 - 路由器</title>
+    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E8%B7%AF%E7%94%B1%E5%99%A8/</id>
+    <published>2022-11-22T02:21:12.000Z</published>
+    <updated>2022-11-22T12:22:11.307Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍网络通信中路由器的作用及其相关概念。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    
+    
+    <category term="Router" scheme="https://shuguang2000.xyz/tags/Router/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网络协议 - MAC地址、IP地址和子网掩码</title>
+    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20MAC%E5%9C%B0%E5%9D%80%E3%80%81IP%E5%9C%B0%E5%9D%80%E5%92%8C%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81/"/>
+    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20MAC%E5%9C%B0%E5%9D%80%E3%80%81IP%E5%9C%B0%E5%9D%80%E5%92%8C%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81/</id>
+    <published>2022-11-21T02:21:12.000Z</published>
+    <updated>2022-11-22T12:10:02.481Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍网络通信中的端与端互相通信的基础：IP地址和MAC地址以及子网掩码。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    
+    
+    <category term="MAC" scheme="https://shuguang2000.xyz/tags/MAC/"/>
+    
+    <category term="IP" scheme="https://shuguang2000.xyz/tags/IP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网络协议 - 基本概念</title>
+    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
+    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
+    <published>2022-11-21T02:21:12.000Z</published>
+    <updated>2022-11-22T13:55:47.800Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍网络通信的基础协议、网络中的一些基础设备的优缺点。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    
+    
+    <category term="MAC" scheme="https://shuguang2000.xyz/tags/MAC/"/>
+    
+    <category term="IP" scheme="https://shuguang2000.xyz/tags/IP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于Git 的使用</title>
+    <link href="https://shuguang2000.xyz/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>https://shuguang2000.xyz/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+    <published>2022-11-20T05:31:58.000Z</published>
+    <updated>2022-11-23T13:05:10.291Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Git 是一个分布式版本控制系统，每个客户端都是一个完整的版本库。&lt;br&gt;
+&lt;/br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Git 本质上是一个&lt;strong&gt;key-value的数据库&lt;/strong&gt;加上&lt;strong&gt;默克尔树形成的有向无环图&lt;/strong&gt;（DAG）。&lt;br&gt;
+&lt;/br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;关于Git 更多内容，参考&lt;a href=&quot;https://git-scm.com/book/zh/v2&quot;&gt;Pro Git book&lt;/a&gt; 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Blog" scheme="https://shuguang2000.xyz/categories/Blog/"/>
+    
+    
+    <category term="Git" scheme="https://shuguang2000.xyz/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自动化测试模型</title>
+    <link href="https://shuguang2000.xyz/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%9E%8B/"/>
+    <id>https://shuguang2000.xyz/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%9E%8B/</id>
+    <published>2022-11-20T05:31:58.000Z</published>
+    <updated>2022-11-21T13:21:25.913Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍自动化测试模型相关概念和实例。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Software Testing" scheme="https://shuguang2000.xyz/categories/Software-Testing/"/>
+    
+    
+    <category term="Automated Testing" scheme="https://shuguang2000.xyz/tags/Automated-Testing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WebDriver API</title>
+    <link href="https://shuguang2000.xyz/Software-Testing/WebDriver%20API/"/>
+    <id>https://shuguang2000.xyz/Software-Testing/WebDriver%20API/</id>
+    <published>2022-11-19T05:31:58.000Z</published>
+    <updated>2022-11-22T07:55:38.293Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;WebDriver是一个用于实现Web自动化的第三方库，本文主要介绍WebDriver的用法及原理。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Software Testing" scheme="https://shuguang2000.xyz/categories/Software-Testing/"/>
+    
+    
+    <category term="WebDriver" scheme="https://shuguang2000.xyz/tags/WebDriver/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>环境搭建基础</title>
+    <link href="https://shuguang2000.xyz/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/"/>
+    <id>https://shuguang2000.xyz/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</id>
+    <published>2022-11-19T05:31:58.000Z</published>
+    <updated>2022-11-23T13:06:16.978Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍自动化测试环境搭建、Python相关概念和pip包管理工具。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Software Testing" scheme="https://shuguang2000.xyz/categories/Software-Testing/"/>
+    
+    
+    <category term="Python" scheme="https://shuguang2000.xyz/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自动化测试基础</title>
+    <link href="https://shuguang2000.xyz/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
+    <id>https://shuguang2000.xyz/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</id>
+    <published>2022-11-19T05:31:58.000Z</published>
+    <updated>2022-11-21T08:25:34.283Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍软件测试、软件自动化测试相关概念和工具。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Software Testing" scheme="https://shuguang2000.xyz/categories/Software-Testing/"/>
+    
+    
+    <category term="Selenium" scheme="https://shuguang2000.xyz/tags/Selenium/"/>
+    
+    <category term="Automated Testing" scheme="https://shuguang2000.xyz/tags/Automated-Testing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 常用操作</title>
+    <link href="https://shuguang2000.xyz/Blog/Hexo%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"/>
+    <id>https://shuguang2000.xyz/Blog/Hexo%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</id>
+    <published>2022-11-12T08:31:58.000Z</published>
+    <updated>2022-11-21T11:36:08.645Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;本文主要介绍了关于Hexo&lt;strong&gt;基础知识&lt;/strong&gt;、&lt;strong&gt;常用命令&lt;/strong&gt;、&lt;strong&gt;自定义&lt;/strong&gt;以及&lt;strong&gt;标签插件&lt;/strong&gt;四个方面内容。&lt;br&gt;
+&lt;/br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;更多相关内容参考：&lt;a href=&quot;https://hexo.io/zh-cn/docs/&quot;&gt;Hexo文档&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Blog" scheme="https://shuguang2000.xyz/categories/Blog/"/>
+    
+    
+    <category term="Hexo" scheme="https://shuguang2000.xyz/tags/Hexo/"/>
+    
+    <category term="Next" scheme="https://shuguang2000.xyz/tags/Next/"/>
+    
+  </entry>
+  
+</feed>
