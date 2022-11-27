@@ -424,27 +424,6 @@
   </entry>
   
   <entry>
-    <title>WebDriver API</title>
-    <link href="https://shuguang2000.xyz/Software-Testing/WebDriver%20API/"/>
-    <id>https://shuguang2000.xyz/Software-Testing/WebDriver%20API/</id>
-    <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2022-11-22T07:55:38.293Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;WebDriver是一个用于实现Web自动化的第三方库，本文主要介绍WebDriver的用法及原理。&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Software Testing" scheme="https://shuguang2000.xyz/categories/Software-Testing/"/>
-    
-    
-    <category term="WebDriver" scheme="https://shuguang2000.xyz/tags/WebDriver/"/>
-    
-  </entry>
-  
-  <entry>
     <title>环境搭建基础</title>
     <link href="https://shuguang2000.xyz/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/"/>
     <id>https://shuguang2000.xyz/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</id>
@@ -462,6 +441,27 @@
     
     
     <category term="Python" scheme="https://shuguang2000.xyz/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WebDriver API</title>
+    <link href="https://shuguang2000.xyz/Software-Testing/WebDriver%20API/"/>
+    <id>https://shuguang2000.xyz/Software-Testing/WebDriver%20API/</id>
+    <published>2022-11-19T05:31:58.000Z</published>
+    <updated>2022-11-22T07:55:38.293Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;WebDriver是一个用于实现Web自动化的第三方库，本文主要介绍WebDriver的用法及原理。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Software Testing" scheme="https://shuguang2000.xyz/categories/Software-Testing/"/>
+    
+    
+    <category term="WebDriver" scheme="https://shuguang2000.xyz/tags/WebDriver/"/>
     
   </entry>
   
