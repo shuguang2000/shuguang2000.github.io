@@ -215,7 +215,7 @@
     <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E4%BC%A0%E8%BE%93%E5%B1%82/"/>
     <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E4%BC%A0%E8%BE%93%E5%B1%82/</id>
     <published>2022-11-22T07:21:12.000Z</published>
-    <updated>2022-11-22T12:23:27.269Z</updated>
+    <updated>2022-11-29T14:37:41.309Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -424,27 +424,6 @@
   </entry>
   
   <entry>
-    <title>环境搭建基础</title>
-    <link href="https://shuguang2000.xyz/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/"/>
-    <id>https://shuguang2000.xyz/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</id>
-    <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2022-11-23T13:06:16.978Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;本文主要介绍自动化测试环境搭建、Python相关概念和pip包管理工具。&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Software Testing" scheme="https://shuguang2000.xyz/categories/Software-Testing/"/>
-    
-    
-    <category term="Python" scheme="https://shuguang2000.xyz/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
     <title>WebDriver API</title>
     <link href="https://shuguang2000.xyz/Software-Testing/WebDriver%20API/"/>
     <id>https://shuguang2000.xyz/Software-Testing/WebDriver%20API/</id>
@@ -470,7 +449,7 @@
     <link href="https://shuguang2000.xyz/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
     <id>https://shuguang2000.xyz/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</id>
     <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2022-11-21T08:25:34.283Z</updated>
+    <updated>2022-11-29T21:34:02.770Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -485,6 +464,27 @@
     <category term="Selenium" scheme="https://shuguang2000.xyz/tags/Selenium/"/>
     
     <category term="Automated Testing" scheme="https://shuguang2000.xyz/tags/Automated-Testing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>环境搭建基础</title>
+    <link href="https://shuguang2000.xyz/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/"/>
+    <id>https://shuguang2000.xyz/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</id>
+    <published>2022-11-19T05:31:58.000Z</published>
+    <updated>2022-11-23T13:06:16.978Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍自动化测试环境搭建、Python相关概念和pip包管理工具。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Software Testing" scheme="https://shuguang2000.xyz/categories/Software-Testing/"/>
+    
+    
+    <category term="Python" scheme="https://shuguang2000.xyz/tags/Python/"/>
     
   </entry>
   
