@@ -370,14 +370,14 @@
   </url>
   
   <url>
-    <loc>https://shuguang2000.xyz/tags/GitHub-Pages/</loc>
+    <loc>https://shuguang2000.xyz/tags/Git/</loc>
     <lastmod>2022-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://shuguang2000.xyz/tags/Git/</loc>
+    <loc>https://shuguang2000.xyz/tags/GitHub-Pages/</loc>
     <lastmod>2022-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -405,6 +405,20 @@
   </url>
   
   <url>
+    <loc>https://shuguang2000.xyz/tags/RSS/</loc>
+    <lastmod>2022-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.xyz/tags/Aotm/</loc>
+    <lastmod>2022-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://shuguang2000.xyz/tags/SPDY/</loc>
     <lastmod>2022-12-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -420,20 +434,6 @@
   
   <url>
     <loc>https://shuguang2000.xyz/tags/HTTP3/</loc>
-    <lastmod>2022-12-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.xyz/tags/RSS/</loc>
-    <lastmod>2022-12-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.xyz/tags/Aotm/</loc>
     <lastmod>2022-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -601,13 +601,6 @@
   </url>
   
   <url>
-    <loc>https://shuguang2000.xyz/tags/NAT/</loc>
-    <lastmod>2022-12-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://shuguang2000.xyz/tags/DoS/</loc>
     <lastmod>2022-12-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -630,6 +623,13 @@
   
   <url>
     <loc>https://shuguang2000.xyz/tags/CA/</loc>
+    <lastmod>2022-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.xyz/tags/NAT/</loc>
     <lastmod>2022-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -664,6 +664,13 @@
   </url>
   
   <url>
+    <loc>https://shuguang2000.xyz/tags/Python/</loc>
+    <lastmod>2022-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://shuguang2000.xyz/tags/WebDriver/</loc>
     <lastmod>2022-12-01</lastmod>
     <changefreq>weekly</changefreq>
@@ -672,13 +679,6 @@
   
   <url>
     <loc>https://shuguang2000.xyz/tags/Automated-Testing/</loc>
-    <lastmod>2022-12-01</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.xyz/tags/Python/</loc>
     <lastmod>2022-12-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
