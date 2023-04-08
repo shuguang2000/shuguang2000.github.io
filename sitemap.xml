@@ -3,15 +3,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://shuguang2000.xyz/uncategorized/Problems/</loc>
-    
-    <lastmod>2023-03-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://shuguang2000.xyz/Blog/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/</loc>
     
     <lastmod>2022-12-03</lastmod>
@@ -414,6 +405,62 @@
   </url>
   
   <url>
+    <loc>https://shuguang2000.xyz/tags/RSS/</loc>
+    <lastmod>2023-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.xyz/tags/Aotm/</loc>
+    <lastmod>2023-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.xyz/tags/Anaconda/</loc>
+    <lastmod>2023-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.xyz/tags/conda/</loc>
+    <lastmod>2023-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.xyz/tags/pip/</loc>
+    <lastmod>2023-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.xyz/tags/WebDriver/</loc>
+    <lastmod>2023-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.xyz/tags/Python/</loc>
+    <lastmod>2023-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.xyz/tags/Automated-Testing/</loc>
+    <lastmod>2023-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://shuguang2000.xyz/tags/SPDY/</loc>
     <lastmod>2023-04-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -471,20 +518,6 @@
   
   <url>
     <loc>https://shuguang2000.xyz/tags/IP/</loc>
-    <lastmod>2023-04-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.xyz/tags/RSS/</loc>
-    <lastmod>2023-04-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.xyz/tags/Aotm/</loc>
     <lastmod>2023-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -554,6 +587,20 @@
   </url>
   
   <url>
+    <loc>https://shuguang2000.xyz/tags/CSMA-CD/</loc>
+    <lastmod>2023-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.xyz/tags/PPP/</loc>
+    <lastmod>2023-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://shuguang2000.xyz/tags/DNS/</loc>
     <lastmod>2023-04-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -576,20 +623,6 @@
   
   <url>
     <loc>https://shuguang2000.xyz/tags/CDN/</loc>
-    <lastmod>2023-04-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.xyz/tags/CSMA-CD/</loc>
-    <lastmod>2023-04-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.xyz/tags/PPP/</loc>
     <lastmod>2023-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -645,49 +678,7 @@
   </url>
   
   <url>
-    <loc>https://shuguang2000.xyz/tags/Anaconda/</loc>
-    <lastmod>2023-04-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.xyz/tags/conda/</loc>
-    <lastmod>2023-04-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.xyz/tags/pip/</loc>
-    <lastmod>2023-04-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://shuguang2000.xyz/tags/Router/</loc>
-    <lastmod>2023-04-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.xyz/tags/WebDriver/</loc>
-    <lastmod>2023-04-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.xyz/tags/Automated-Testing/</loc>
-    <lastmod>2023-04-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.xyz/tags/Python/</loc>
     <lastmod>2023-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
