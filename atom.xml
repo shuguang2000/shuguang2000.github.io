@@ -7,7 +7,7 @@
   <link href="https://shuguang2000.xyz/atom.xml" rel="self"/>
   
   <link href="https://shuguang2000.xyz/"/>
-  <updated>2022-11-25T15:18:45.106Z</updated>
+  <updated>2023-03-28T15:44:56.078Z</updated>
   <id>https://shuguang2000.xyz/</id>
   
   <author>
@@ -16,6 +16,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Problems</title>
+    <link href="https://shuguang2000.xyz/uncategorized/Problems/"/>
+    <id>https://shuguang2000.xyz/uncategorized/Problems/</id>
+    <published>2023-03-28T14:35:11.000Z</published>
+    <updated>2023-03-28T15:44:56.078Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;关于出国工作的一些问题。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>网络协议 - 相关补充</title>
@@ -424,27 +441,6 @@
   </entry>
   
   <entry>
-    <title>环境搭建基础</title>
-    <link href="https://shuguang2000.xyz/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/"/>
-    <id>https://shuguang2000.xyz/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</id>
-    <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2022-11-23T13:06:16.978Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;本文主要介绍自动化测试环境搭建、Python相关概念和pip包管理工具。&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Software Testing" scheme="https://shuguang2000.xyz/categories/Software-Testing/"/>
-    
-    
-    <category term="Python" scheme="https://shuguang2000.xyz/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
     <title>WebDriver API</title>
     <link href="https://shuguang2000.xyz/Software-Testing/WebDriver%20API/"/>
     <id>https://shuguang2000.xyz/Software-Testing/WebDriver%20API/</id>
@@ -489,31 +485,23 @@
   </entry>
   
   <entry>
-    <title>Hexo 常用操作</title>
-    <link href="https://shuguang2000.xyz/Blog/Hexo%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"/>
-    <id>https://shuguang2000.xyz/Blog/Hexo%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</id>
-    <published>2022-11-12T08:31:58.000Z</published>
-    <updated>2022-11-21T11:36:08.645Z</updated>
+    <title>环境搭建基础</title>
+    <link href="https://shuguang2000.xyz/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/"/>
+    <id>https://shuguang2000.xyz/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</id>
+    <published>2022-11-19T05:31:58.000Z</published>
+    <updated>2022-11-23T13:06:16.978Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;本文主要介绍了关于Hexo&lt;strong&gt;基础知识&lt;/strong&gt;、&lt;strong&gt;常用命令&lt;/strong&gt;、&lt;strong&gt;自定义&lt;/strong&gt;以及&lt;strong&gt;标签插件&lt;/strong&gt;四个方面内容。&lt;br&gt;
-&lt;/br&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;更多相关内容参考：&lt;a href=&quot;https://hexo.io/zh-cn/docs/&quot;&gt;Hexo文档&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;本文主要介绍自动化测试环境搭建、Python相关概念和pip包管理工具。&lt;/li&gt;
 &lt;/ul&gt;</summary>
     
     
     
-    <category term="Blog" scheme="https://shuguang2000.xyz/categories/Blog/"/>
+    <category term="Software Testing" scheme="https://shuguang2000.xyz/categories/Software-Testing/"/>
     
     
-    <category term="Hexo" scheme="https://shuguang2000.xyz/tags/Hexo/"/>
-    
-    <category term="Next" scheme="https://shuguang2000.xyz/tags/Next/"/>
+    <category term="Python" scheme="https://shuguang2000.xyz/tags/Python/"/>
     
   </entry>
   
