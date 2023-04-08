@@ -2280,8 +2280,12 @@ SHA-256，SHA-384，SHA-512，散列值长度分别是256bit，384bit，512bit</
 <li>
 <p><code>conda create -n your_env_name python=X.X（2.7、3.6等)</code></p>
 <ul>
-<li>命令创建python版本为X.X、名字为your_env_name的虚拟环境。</li>
-<li>your_env_name文件可以在Anaconda安装目录envs文件下找到</li>
+<li>
+<p>命令创建python版本为X.X、名字为your_env_name的虚拟环境。</p>
+</li>
+<li>
+<p>your_env_name文件可以在Anaconda安装目录envs文件下找到。</p>
+</li>
 </ul>
 </li>
 <li>
@@ -8517,7 +8521,7 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
 <h3 id="消息来源简述"><a class="header-anchor" href="#消息来源简述">#</a>消息来源简述</h3>
 <ul>
 <li>
-<p>消息来源（英语：web feed、news feed、syndicated feed）是一种资料格式，网站可透过它将最新信息传播给用户，用户能够订阅网站的先决条件<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="在计算机编程中，先决条件或先验条件指在执行一段代码前必须成立的条件。
+<p><strong>消息来源</strong>（英语：web feed、news feed、syndicated feed）是一种资料格式，网站可透过它将最新信息传播给用户，用户能够订阅网站的先决条件<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="在计算机编程中，先决条件或先验条件指在执行一段代码前必须成立的条件。
 ">[1]</span></a></sup>是网站可提供持续更新的信息。<br>
 </br></p>
 </li>
@@ -8536,9 +8540,6 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
 <li>
 <p>除了网页之外，feed内容也可以是通往其他数字多媒体的链接。供用户订阅的内容若是音频或视频等多媒体信息，则称为播客（podcast）（如：在线电台）。<br>
 </br></p>
-</li>
-<li>
-<p>补充：虽然RSS让创作者和读者之间缺乏沟通的桥梁，但是缺能绕过现今平台的推荐机制，能有效避免接受的信息同质化，导致自身视野受限。</p>
 </li>
 </ul>
 <hr>
@@ -8559,9 +8560,6 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
 ">[4]</span></a></sup> 概要来获得更健全的内容汇集。此种传承允许更多的变化却又能够符合标准，在不用更改 RSS 核心之下执行。为了达成此项延伸，严密规范的字汇（在 RSS 中为“模块”；XML 中为“概要”）通过 XML namesspace 命名各种概念之中的概念。<br>
 </br></p>
 </li>
-<li>
-<p>在计算机编程中，先决条件或先验条件指在执行一段代码前必须成立的条件。</p>
-</li>
 </ul>
 <hr>
 <h4 id="Atom简述"><a class="header-anchor" href="#Atom简述">#</a>Atom简述</h4>
@@ -8581,7 +8579,7 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
 <h4 id="聚合器"><a class="header-anchor" href="#聚合器">#</a>聚合器</h4>
 <ul>
 <li>
-<p>RSS 阅读器会定期检阅网站是否有更新，然后下载至监看用户界面。<br>
+<p>RSS阅读器会将不同订阅源整合并定期检阅网站是否有更新，然后下载至监看用户界面。<br>
 </br></p>
 </li>
 <li>
@@ -8592,15 +8590,63 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
 <li><a href="https://github.com/yang991178/fluent-reader/releases" rel="external nofollow noreferrer">Fluent Reader</a></li>
 </ul>
 </li>
-<li>Android(Google Play平台)
+<li>Android
 <ul>
-<li>FocusReader</li>
-<li>Inoreader</li>
+<li><a href="https://github.com/yang991178/fluent-reader-lite/releases" rel="external nofollow noreferrer">Fluent Reader</a></li>
+<li>…</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
+<hr>
+<h4 id="RSS和平台的内容聚合区别"><a class="header-anchor" href="#RSS和平台的内容聚合区别">#</a>RSS和平台的内容聚合区别</h4>
+<ul>
+<li>
+<p>从内容聚合的对象角度看</p>
+<ul>
+<li>
+<p><strong>RSS的内容聚合</strong>：聚合的是每个订阅源的作者希望传达的所有信息，不受平台监管和推荐权重的影响，也不受信息分类的影响（信息之间可以很方便的关联），每条订阅源信息的使用由读者自行选择和使用。可以说每个RSS的订阅源的背后都是一个活生生存在的人，不存在学科化的人为割裂。</p>
+</li>
+<li>
+<p><strong>平台的内容聚合</strong>：聚合的是特定主题（topic）的内容，通过人为的将信息分类，再将信息人为聚合的方式，信息之间关联性弱，并且信息易受推荐算法、人为监管、环境范围等方式的影响，信息的传递过程定向且可控。可以说平台的订阅源背后都是人为操纵的信息，信息存在片面性和不真实性。<br>
+</br></p>
+</li>
+</ul>
+</li>
+<li>
+<p>从信息的流动性角度看</p>
+<ul>
+<li>
+<p><strong>RSS的内容聚合</strong>：信息在作者和读者之间单向流动，缺少及时沟通的桥梁。</p>
+</li>
+<li>
+<p><strong>平台的内容聚合</strong>: 信息在作者和读者之间双向流动，信息能快速和频繁的流动。<br>
+</br></p>
+</li>
+</ul>
+</li>
+<li>
+<p>从实用范围的的角度看</p>
+<ul>
+<li>
+<p><strong>RSS的内容聚合</strong>：适合真实的、客观的和流动性不强内容。</p>
+</li>
+<li>
+<p><strong>平台的内容聚合</strong>: 适合虚拟的、情绪化的和流动性强的内容。<br>
+</br></p>
+</li>
+</ul>
+</li>
+<li>
+<p>总结</p>
+<ul>
+<li>虽然RSS让创作者和读者之间缺乏沟通的桥梁，但是却能绕过平台的推荐机制，能有效避免接受的信息同质化，导致自身视野受限。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="RSS源"><a class="header-anchor" href="#RSS源">#</a>RSS源</h4>
 <hr>
 <h4 id="致谢"><a class="header-anchor" href="#致谢">#</a>致谢</h4>
 <ul>
@@ -8609,7 +8655,11 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
 </br></p>
 </li>
 <li>
-<p><a href="https://zh.m.wikipedia.org/wiki/RSS" rel="external nofollow noreferrer">RSS-维基百科</a></p>
+<p><a href="https://zh.m.wikipedia.org/wiki/RSS" rel="external nofollow noreferrer">RSS-维基百科</a><br>
+</br></p>
+</li>
+<li>
+<p><a href="https://zhuanlan.zhihu.com/p/349349861" rel="external nofollow noreferrer">知道RSS的人越少，我就越希望它能被人知道！</a></p>
 </li>
 </ul>
 <div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">在计算机编程中，先决条件或先验条件指在执行一段代码前必须成立的条件。<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">“资源描述框架站点摘要”（RDF Site Summary）即 RSS 的英文原意。<a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">后来通过逆向首字母缩略词变更为“Really Simple Syndication”（简易信息聚合）。<a href="#fnref:3" rev="footnote"> ↩</a></span></li><li id="fn:4"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">4.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">可扩展标记语言（英语：Extensible Markup Language，简称：XML）是一种标记语言。XML是从标准通用标记语言（SGML）中简化修改出来的。它主要用到的有可扩展标记语言、可扩展样式语言（XSL）、XBRL和XPath等。<a href="#fnref:4" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
