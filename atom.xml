@@ -517,4 +517,189 @@
     
   </entry>
   
+  <entry>
+    <title>常用 Git 命令清单</title>
+    <link href="https://shuguang2000.xyz/Blog/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>https://shuguang2000.xyz/Blog/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+    <published>2022-11-11T06:31:58.000Z</published>
+    <updated>2022-11-21T11:36:10.128Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;Git常用命令，参考自&lt;a href=&quot;https://blog.51cto.com/u_14595972/4940805&quot;&gt;常用 Git 命令清单（阮一峰）&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Blog" scheme="https://shuguang2000.xyz/categories/Blog/"/>
+    
+    
+    <category term="Git" scheme="https://shuguang2000.xyz/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitHub Pages中的自定义域</title>
+    <link href="https://shuguang2000.xyz/Blog/GitHub%20Pages%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/"/>
+    <id>https://shuguang2000.xyz/Blog/GitHub%20Pages%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/</id>
+    <published>2022-11-10T07:31:58.000Z</published>
+    <updated>2022-11-21T11:36:09.410Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;GitHub Pages 支持使用自定义域，或将站点 URL 的根从默认值（如&lt;code&gt;username.github.io&lt;/code&gt;）更改为拥有的任何域（如&lt;code&gt;blog.octocat.com&lt;/code&gt;）。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Blog" scheme="https://shuguang2000.xyz/categories/Blog/"/>
+    
+    
+    <category term="GitHub Pages" scheme="https://shuguang2000.xyz/tags/GitHub-Pages/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客优化</title>
+    <link href="https://shuguang2000.xyz/Blog/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"/>
+    <id>https://shuguang2000.xyz/Blog/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/</id>
+    <published>2022-10-30T05:31:58.000Z</published>
+    <updated>2022-12-03T05:34:53.051Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;本次博客优化包含: 对整个博客站点的&lt;strong&gt;模板优化&lt;/strong&gt;以及&lt;strong&gt;性能优化&lt;/strong&gt;。&lt;br&gt;
+&lt;/br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;模板优化&lt;/strong&gt;: 主要是对Next的主题优化和功能扩展。&lt;br&gt;
+&lt;/br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;性能优化&lt;/strong&gt;: 主要是针对性能和网站推广优化。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Blog" scheme="https://shuguang2000.xyz/categories/Blog/"/>
+    
+    
+    <category term="Hexo" scheme="https://shuguang2000.xyz/tags/Hexo/"/>
+    
+    <category term="Next" scheme="https://shuguang2000.xyz/tags/Next/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>环境搭建</title>
+    <link href="https://shuguang2000.xyz/Blog/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>https://shuguang2000.xyz/Blog/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</id>
+    <published>2022-10-30T03:31:58.000Z</published>
+    <updated>2022-11-22T04:23:27.950Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本次环境搭建过程涉及&lt;strong&gt;工具安装&lt;/strong&gt;，&lt;strong&gt;搭建仓库并生成SSH Key&lt;/strong&gt;，&lt;strong&gt;初始化本地博客&lt;/strong&gt;和&lt;strong&gt;部署博客到远程GitHub&lt;/strong&gt;四个过程。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Blog" scheme="https://shuguang2000.xyz/categories/Blog/"/>
+    
+    
+    <category term="Hexo" scheme="https://shuguang2000.xyz/tags/Hexo/"/>
+    
+    <category term="Next" scheme="https://shuguang2000.xyz/tags/Next/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客搭建指南</title>
+    <link href="https://shuguang2000.xyz/Blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/"/>
+    <id>https://shuguang2000.xyz/Blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</id>
+    <published>2022-10-29T04:31:58.000Z</published>
+    <updated>2022-11-27T05:35:59.203Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;基于Hexo和GitHub Pages博客搭建指南，并同时使用Git进行版本控制备份（本地文件）。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Blog" scheme="https://shuguang2000.xyz/categories/Blog/"/>
+    
+    
+    <category term="Git" scheme="https://shuguang2000.xyz/tags/Git/"/>
+    
+    <category term="GitHub Pages" scheme="https://shuguang2000.xyz/tags/GitHub-Pages/"/>
+    
+    <category term="Hexo" scheme="https://shuguang2000.xyz/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>消息来源</title>
+    <link href="https://shuguang2000.xyz/Blog/%E6%B6%88%E6%81%AF%E6%9D%A5%E6%BA%90/"/>
+    <id>https://shuguang2000.xyz/Blog/%E6%B6%88%E6%81%AF%E6%9D%A5%E6%BA%90/</id>
+    <published>2022-10-29T02:31:59.000Z</published>
+    <updated>2023-04-09T05:27:56.432Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;消息来源：用于向用户提供频繁更新的内容的数据格式（如：新闻订阅，网源等），网站可透过它将最新信息传递给用户。&lt;br&gt;
+&lt;/br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;RSS：是一系列网络订阅源格式，也是一种内容聚合的工具，有RSS 和 Aotm 两种协议，XML&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot; aria-label=&quot;可扩展标记语言（英语：Extensible Markup Language，简称：XML）是一种标记语言。XML是从标准通用标记语言（SGML）中简化修改出来的。它主要用到的有可扩展标记语言、可扩展样式语言（XSL）、XBRL和XPath等。
+&quot;&gt;[4]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;为基础协议。&lt;br&gt;
+&lt;/br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Aotm（标准）：用于网络源的可扩展标记语言，借鉴了RSS的经验。&lt;br&gt;
+&lt;/br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Blog" scheme="https://shuguang2000.xyz/categories/Blog/"/>
+    
+    
+    <category term="RSS" scheme="https://shuguang2000.xyz/tags/RSS/"/>
+    
+    <category term="Aotm" scheme="https://shuguang2000.xyz/tags/Aotm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown使用教程</title>
+    <link href="https://shuguang2000.xyz/Blog/Markdown%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <id>https://shuguang2000.xyz/Blog/Markdown%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
+    <published>2022-09-29T09:32:58.000Z</published>
+    <updated>2022-12-02T08:35:38.459Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;关于Markdown常用语法的使用的梳理，主要是方便自己总结和回顾使用。&lt;br&gt;
+&lt;/br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;关于Markdown的使用也可以自行通过&lt;a href=&quot;https://markdown.com.cn/&quot;&gt;Markdown官网&lt;/a&gt;来学习。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Blog" scheme="https://shuguang2000.xyz/categories/Blog/"/>
+    
+    
+    <category term="Markdown" scheme="https://shuguang2000.xyz/tags/Markdown/"/>
+    
+  </entry>
+  
 </feed>
