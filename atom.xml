@@ -2,13 +2,13 @@
 <?xml-stylesheet type="text/css" href="book.css"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>shuguang&#39;s blog</title>
-  <icon>https://shuguang2000.xyz/icon.png</icon>
+  <icon>https://shuguang2000.github.io/icon.png</icon>
   <subtitle>环境决定基础，选择决定价值，努力决定方向。</subtitle>
-  <link href="https://shuguang2000.xyz/atom.xml" rel="self"/>
+  <link href="https://shuguang2000.github.io/atom.xml" rel="self"/>
   
-  <link href="https://shuguang2000.xyz/"/>
-  <updated>2022-11-25T15:18:45.106Z</updated>
-  <id>https://shuguang2000.xyz/</id>
+  <link href="https://shuguang2000.github.io/"/>
+  <updated>2024-01-01T09:18:24.863Z</updated>
+  <id>https://shuguang2000.github.io/</id>
   
   <author>
     <name>shuguang2000</name>
@@ -18,9 +18,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>哲学</title>
+    <link href="https://shuguang2000.github.io/uncategorized/%E5%93%B2%E5%AD%A6/"/>
+    <id>https://shuguang2000.github.io/uncategorized/%E5%93%B2%E5%AD%A6/</id>
+    <published>2023-04-20T12:47:46.000Z</published>
+    <updated>2024-01-01T09:18:24.863Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;人没有必要被世俗的标准绑架。从概率上看，大部分男人不可能都成功，大部分女人不可能都漂亮；大部分人&lt;strong&gt;痛苦的来源&lt;/strong&gt;就是被世俗的标准所控制。&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;教育的真实目的&lt;/strong&gt;其实就是成为&lt;strong&gt;人上人&lt;/strong&gt;，学习知识不过是顺带的行为。&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;教育最大的成功&lt;/strong&gt;就是向大多数人&lt;strong&gt;刻印&lt;/strong&gt;（一辈子的）&lt;strong&gt;成功的标准&lt;/strong&gt;，并且还会传承这个标准到下一代（长期驯化），进而而实现少数人对多数人的控制。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;找准消息的真实来源，分析其立场和动机，真正的实事落到哪里。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>网络协议 - 相关补充</title>
-    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%9B%B8%E5%85%B3%E8%A1%A5%E5%85%85/"/>
-    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%9B%B8%E5%85%B3%E8%A1%A5%E5%85%85/</id>
+    <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%9B%B8%E5%85%B3%E8%A1%A5%E5%85%85/"/>
+    <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%9B%B8%E5%85%B3%E8%A1%A5%E5%85%85/</id>
     <published>2022-11-25T10:11:15.000Z</published>
     <updated>2022-11-25T15:18:45.106Z</updated>
     
@@ -31,19 +61,19 @@
     
     
     
-    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    <category term="Network Protocols" scheme="https://shuguang2000.github.io/categories/Network-Protocols/"/>
     
     
-    <category term="VPN" scheme="https://shuguang2000.xyz/tags/VPN/"/>
+    <category term="VPN" scheme="https://shuguang2000.github.io/tags/VPN/"/>
     
-    <category term="IPv6" scheme="https://shuguang2000.xyz/tags/IPv6/"/>
+    <category term="IPv6" scheme="https://shuguang2000.github.io/tags/IPv6/"/>
     
   </entry>
   
   <entry>
     <title>网络协议 - 其他协议</title>
-    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%85%B6%E4%BB%96%E5%8D%8F%E8%AE%AE/"/>
-    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%85%B6%E4%BB%96%E5%8D%8F%E8%AE%AE/</id>
+    <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%85%B6%E4%BB%96%E5%8D%8F%E8%AE%AE/"/>
+    <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%85%B6%E4%BB%96%E5%8D%8F%E8%AE%AE/</id>
     <published>2022-11-25T08:21:12.000Z</published>
     <updated>2022-11-25T15:16:08.424Z</updated>
     
@@ -54,29 +84,29 @@
     
     
     
-    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    <category term="Network Protocols" scheme="https://shuguang2000.github.io/categories/Network-Protocols/"/>
     
     
-    <category term="WebSocket" scheme="https://shuguang2000.xyz/tags/WebSocket/"/>
+    <category term="WebSocket" scheme="https://shuguang2000.github.io/tags/WebSocket/"/>
     
-    <category term="RESTful" scheme="https://shuguang2000.xyz/tags/RESTful/"/>
+    <category term="RESTful" scheme="https://shuguang2000.github.io/tags/RESTful/"/>
     
-    <category term="HTTPDNS" scheme="https://shuguang2000.xyz/tags/HTTPDNS/"/>
+    <category term="HTTPDNS" scheme="https://shuguang2000.github.io/tags/HTTPDNS/"/>
     
-    <category term="FTP" scheme="https://shuguang2000.xyz/tags/FTP/"/>
+    <category term="FTP" scheme="https://shuguang2000.github.io/tags/FTP/"/>
     
-    <category term="SMTP" scheme="https://shuguang2000.xyz/tags/SMTP/"/>
+    <category term="SMTP" scheme="https://shuguang2000.github.io/tags/SMTP/"/>
     
-    <category term="POP" scheme="https://shuguang2000.xyz/tags/POP/"/>
+    <category term="POP" scheme="https://shuguang2000.github.io/tags/POP/"/>
     
-    <category term="IMAP" scheme="https://shuguang2000.xyz/tags/IMAP/"/>
+    <category term="IMAP" scheme="https://shuguang2000.github.io/tags/IMAP/"/>
     
   </entry>
   
   <entry>
     <title>网络协议 - HTTP1.1的升级改进</title>
-    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20HTTP1.1%E7%9A%84%E5%8D%87%E7%BA%A7%E6%94%B9%E8%BF%9B/"/>
-    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20HTTP1.1%E7%9A%84%E5%8D%87%E7%BA%A7%E6%94%B9%E8%BF%9B/</id>
+    <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20HTTP1.1%E7%9A%84%E5%8D%87%E7%BA%A7%E6%94%B9%E8%BF%9B/"/>
+    <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20HTTP1.1%E7%9A%84%E5%8D%87%E7%BA%A7%E6%94%B9%E8%BF%9B/</id>
     <published>2022-11-25T06:21:12.000Z</published>
     <updated>2022-11-25T16:22:18.448Z</updated>
     
@@ -87,21 +117,21 @@
     
     
     
-    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    <category term="Network Protocols" scheme="https://shuguang2000.github.io/categories/Network-Protocols/"/>
     
     
-    <category term="SPDY" scheme="https://shuguang2000.xyz/tags/SPDY/"/>
+    <category term="SPDY" scheme="https://shuguang2000.github.io/tags/SPDY/"/>
     
-    <category term="HTTP2" scheme="https://shuguang2000.xyz/tags/HTTP2/"/>
+    <category term="HTTP2" scheme="https://shuguang2000.github.io/tags/HTTP2/"/>
     
-    <category term="HTTP3" scheme="https://shuguang2000.xyz/tags/HTTP3/"/>
+    <category term="HTTP3" scheme="https://shuguang2000.github.io/tags/HTTP3/"/>
     
   </entry>
   
   <entry>
     <title>网络协议 - HTTPS</title>
-    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20HTTPS/"/>
-    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20HTTPS/</id>
+    <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20HTTPS/"/>
+    <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20HTTPS/</id>
     <published>2022-11-25T02:21:12.000Z</published>
     <updated>2022-11-25T12:13:40.734Z</updated>
     
@@ -112,23 +142,23 @@
     
     
     
-    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    <category term="Network Protocols" scheme="https://shuguang2000.github.io/categories/Network-Protocols/"/>
     
     
-    <category term="HTTPS" scheme="https://shuguang2000.xyz/tags/HTTPS/"/>
+    <category term="HTTPS" scheme="https://shuguang2000.github.io/tags/HTTPS/"/>
     
-    <category term="TLS" scheme="https://shuguang2000.xyz/tags/TLS/"/>
+    <category term="TLS" scheme="https://shuguang2000.github.io/tags/TLS/"/>
     
-    <category term="SSL" scheme="https://shuguang2000.xyz/tags/SSL/"/>
+    <category term="SSL" scheme="https://shuguang2000.github.io/tags/SSL/"/>
     
-    <category term="OpenSSL" scheme="https://shuguang2000.xyz/tags/OpenSSL/"/>
+    <category term="OpenSSL" scheme="https://shuguang2000.github.io/tags/OpenSSL/"/>
     
   </entry>
   
   <entry>
     <title>网络协议 - 网络安全</title>
-    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
-    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</id>
+    <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
+    <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</id>
     <published>2022-11-24T02:21:12.000Z</published>
     <updated>2022-11-25T10:44:12.552Z</updated>
     
@@ -139,23 +169,23 @@
     
     
     
-    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    <category term="Network Protocols" scheme="https://shuguang2000.github.io/categories/Network-Protocols/"/>
     
     
-    <category term="DoS" scheme="https://shuguang2000.xyz/tags/DoS/"/>
+    <category term="DoS" scheme="https://shuguang2000.github.io/tags/DoS/"/>
     
-    <category term="RSA" scheme="https://shuguang2000.xyz/tags/RSA/"/>
+    <category term="RSA" scheme="https://shuguang2000.github.io/tags/RSA/"/>
     
-    <category term="AES" scheme="https://shuguang2000.xyz/tags/AES/"/>
+    <category term="AES" scheme="https://shuguang2000.github.io/tags/AES/"/>
     
-    <category term="CA" scheme="https://shuguang2000.xyz/tags/CA/"/>
+    <category term="CA" scheme="https://shuguang2000.github.io/tags/CA/"/>
     
   </entry>
   
   <entry>
     <title>Anaconda 使用教程</title>
-    <link href="https://shuguang2000.xyz/Software-Testing/Anaconda%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
-    <id>https://shuguang2000.xyz/Software-Testing/Anaconda%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
+    <link href="https://shuguang2000.github.io/Software-Testing/Anaconda%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <id>https://shuguang2000.github.io/Software-Testing/Anaconda%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
     <published>2022-11-23T05:31:58.000Z</published>
     <updated>2023-04-08T09:00:23.351Z</updated>
     
@@ -166,21 +196,21 @@
     
     
     
-    <category term="Software Testing" scheme="https://shuguang2000.xyz/categories/Software-Testing/"/>
+    <category term="Software Testing" scheme="https://shuguang2000.github.io/categories/Software-Testing/"/>
     
     
-    <category term="Anaconda" scheme="https://shuguang2000.xyz/tags/Anaconda/"/>
+    <category term="Anaconda" scheme="https://shuguang2000.github.io/tags/Anaconda/"/>
     
-    <category term="conda" scheme="https://shuguang2000.xyz/tags/conda/"/>
+    <category term="conda" scheme="https://shuguang2000.github.io/tags/conda/"/>
     
-    <category term="pip" scheme="https://shuguang2000.xyz/tags/pip/"/>
+    <category term="pip" scheme="https://shuguang2000.github.io/tags/pip/"/>
     
   </entry>
   
   <entry>
     <title>网络协议 - 应用层</title>
-    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%BA%94%E7%94%A8%E5%B1%82/"/>
-    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%BA%94%E7%94%A8%E5%B1%82/</id>
+    <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%BA%94%E7%94%A8%E5%B1%82/"/>
+    <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%BA%94%E7%94%A8%E5%B1%82/</id>
     <published>2022-11-22T10:21:12.000Z</published>
     <updated>2022-11-22T14:03:25.861Z</updated>
     
@@ -197,23 +227,23 @@
     
     
     
-    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    <category term="Network Protocols" scheme="https://shuguang2000.github.io/categories/Network-Protocols/"/>
     
     
-    <category term="DNS" scheme="https://shuguang2000.xyz/tags/DNS/"/>
+    <category term="DNS" scheme="https://shuguang2000.github.io/tags/DNS/"/>
     
-    <category term="DHCP" scheme="https://shuguang2000.xyz/tags/DHCP/"/>
+    <category term="DHCP" scheme="https://shuguang2000.github.io/tags/DHCP/"/>
     
-    <category term="HTTP" scheme="https://shuguang2000.xyz/tags/HTTP/"/>
+    <category term="HTTP" scheme="https://shuguang2000.github.io/tags/HTTP/"/>
     
-    <category term="CDN" scheme="https://shuguang2000.xyz/tags/CDN/"/>
+    <category term="CDN" scheme="https://shuguang2000.github.io/tags/CDN/"/>
     
   </entry>
   
   <entry>
     <title>网络协议 - 传输层</title>
-    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E4%BC%A0%E8%BE%93%E5%B1%82/"/>
-    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E4%BC%A0%E8%BE%93%E5%B1%82/</id>
+    <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E4%BC%A0%E8%BE%93%E5%B1%82/"/>
+    <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E4%BC%A0%E8%BE%93%E5%B1%82/</id>
     <published>2022-11-22T07:21:12.000Z</published>
     <updated>2022-11-29T14:37:41.309Z</updated>
     
@@ -230,19 +260,19 @@
     
     
     
-    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    <category term="Network Protocols" scheme="https://shuguang2000.github.io/categories/Network-Protocols/"/>
     
     
-    <category term="TCP" scheme="https://shuguang2000.xyz/tags/TCP/"/>
+    <category term="TCP" scheme="https://shuguang2000.github.io/tags/TCP/"/>
     
-    <category term="UDP" scheme="https://shuguang2000.xyz/tags/UDP/"/>
+    <category term="UDP" scheme="https://shuguang2000.github.io/tags/UDP/"/>
     
   </entry>
   
   <entry>
     <title>网络协议 - 物理层和数据链路层</title>
-    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%89%A9%E7%90%86%E5%B1%82%E5%92%8C%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/"/>
-    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%89%A9%E7%90%86%E5%B1%82%E5%92%8C%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/</id>
+    <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%89%A9%E7%90%86%E5%B1%82%E5%92%8C%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/"/>
+    <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%89%A9%E7%90%86%E5%B1%82%E5%92%8C%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/</id>
     <published>2022-11-22T04:21:12.000Z</published>
     <updated>2022-11-22T12:11:19.831Z</updated>
     
@@ -253,19 +283,19 @@
     
     
     
-    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    <category term="Network Protocols" scheme="https://shuguang2000.github.io/categories/Network-Protocols/"/>
     
     
-    <category term="CSMA/CD" scheme="https://shuguang2000.xyz/tags/CSMA-CD/"/>
+    <category term="CSMA/CD" scheme="https://shuguang2000.github.io/tags/CSMA-CD/"/>
     
-    <category term="PPP" scheme="https://shuguang2000.xyz/tags/PPP/"/>
+    <category term="PPP" scheme="https://shuguang2000.github.io/tags/PPP/"/>
     
   </entry>
   
   <entry>
     <title>网络协议 - 网络层</title>
-    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%B1%82/"/>
-    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%B1%82/</id>
+    <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%B1%82/"/>
+    <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%B1%82/</id>
     <published>2022-11-22T04:21:12.000Z</published>
     <updated>2022-11-25T15:19:09.532Z</updated>
     
@@ -276,15 +306,15 @@
     
     
     
-    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    <category term="Network Protocols" scheme="https://shuguang2000.github.io/categories/Network-Protocols/"/>
     
     
   </entry>
   
   <entry>
     <title>网络协议 - 网络基础知识</title>
-    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
+    <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
     <published>2022-11-22T02:22:12.000Z</published>
     <updated>2022-11-22T13:56:17.573Z</updated>
     
@@ -295,19 +325,19 @@
     
     
     
-    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    <category term="Network Protocols" scheme="https://shuguang2000.github.io/categories/Network-Protocols/"/>
     
     
-    <category term="IP" scheme="https://shuguang2000.xyz/tags/IP/"/>
+    <category term="IP" scheme="https://shuguang2000.github.io/tags/IP/"/>
     
-    <category term="NAT" scheme="https://shuguang2000.xyz/tags/NAT/"/>
+    <category term="NAT" scheme="https://shuguang2000.github.io/tags/NAT/"/>
     
   </entry>
   
   <entry>
     <title>网络协议 - 路由器</title>
-    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
-    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E8%B7%AF%E7%94%B1%E5%99%A8/</id>
+    <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E8%B7%AF%E7%94%B1%E5%99%A8/</id>
     <published>2022-11-22T02:21:12.000Z</published>
     <updated>2022-11-22T12:22:11.307Z</updated>
     
@@ -318,17 +348,17 @@
     
     
     
-    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    <category term="Network Protocols" scheme="https://shuguang2000.github.io/categories/Network-Protocols/"/>
     
     
-    <category term="Router" scheme="https://shuguang2000.xyz/tags/Router/"/>
+    <category term="Router" scheme="https://shuguang2000.github.io/tags/Router/"/>
     
   </entry>
   
   <entry>
     <title>网络协议 - MAC地址、IP地址和子网掩码</title>
-    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20MAC%E5%9C%B0%E5%9D%80%E3%80%81IP%E5%9C%B0%E5%9D%80%E5%92%8C%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81/"/>
-    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20MAC%E5%9C%B0%E5%9D%80%E3%80%81IP%E5%9C%B0%E5%9D%80%E5%92%8C%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81/</id>
+    <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20MAC%E5%9C%B0%E5%9D%80%E3%80%81IP%E5%9C%B0%E5%9D%80%E5%92%8C%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81/"/>
+    <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20MAC%E5%9C%B0%E5%9D%80%E3%80%81IP%E5%9C%B0%E5%9D%80%E5%92%8C%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81/</id>
     <published>2022-11-21T02:21:12.000Z</published>
     <updated>2022-11-22T12:10:02.481Z</updated>
     
@@ -339,19 +369,19 @@
     
     
     
-    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    <category term="Network Protocols" scheme="https://shuguang2000.github.io/categories/Network-Protocols/"/>
     
     
-    <category term="MAC" scheme="https://shuguang2000.xyz/tags/MAC/"/>
+    <category term="MAC" scheme="https://shuguang2000.github.io/tags/MAC/"/>
     
-    <category term="IP" scheme="https://shuguang2000.xyz/tags/IP/"/>
+    <category term="IP" scheme="https://shuguang2000.github.io/tags/IP/"/>
     
   </entry>
   
   <entry>
     <title>网络协议 - 基本概念</title>
-    <link href="https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
-    <id>https://shuguang2000.xyz/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
+    <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
+    <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
     <published>2022-11-21T02:21:12.000Z</published>
     <updated>2022-11-22T13:55:47.800Z</updated>
     
@@ -362,19 +392,19 @@
     
     
     
-    <category term="Network Protocols" scheme="https://shuguang2000.xyz/categories/Network-Protocols/"/>
+    <category term="Network Protocols" scheme="https://shuguang2000.github.io/categories/Network-Protocols/"/>
     
     
-    <category term="MAC" scheme="https://shuguang2000.xyz/tags/MAC/"/>
+    <category term="MAC" scheme="https://shuguang2000.github.io/tags/MAC/"/>
     
-    <category term="IP" scheme="https://shuguang2000.xyz/tags/IP/"/>
+    <category term="IP" scheme="https://shuguang2000.github.io/tags/IP/"/>
     
   </entry>
   
   <entry>
     <title>关于Git 的使用</title>
-    <link href="https://shuguang2000.xyz/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>https://shuguang2000.xyz/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+    <link href="https://shuguang2000.github.io/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>https://shuguang2000.github.io/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
     <published>2022-11-20T05:31:58.000Z</published>
     <updated>2022-11-23T13:05:10.291Z</updated>
     
@@ -395,17 +425,17 @@
     
     
     
-    <category term="Blog" scheme="https://shuguang2000.xyz/categories/Blog/"/>
+    <category term="Blog" scheme="https://shuguang2000.github.io/categories/Blog/"/>
     
     
-    <category term="Git" scheme="https://shuguang2000.xyz/tags/Git/"/>
+    <category term="Git" scheme="https://shuguang2000.github.io/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>自动化测试模型</title>
-    <link href="https://shuguang2000.xyz/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%9E%8B/"/>
-    <id>https://shuguang2000.xyz/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%9E%8B/</id>
+    <link href="https://shuguang2000.github.io/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%9E%8B/"/>
+    <id>https://shuguang2000.github.io/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%9E%8B/</id>
     <published>2022-11-20T05:31:58.000Z</published>
     <updated>2022-11-21T13:21:25.913Z</updated>
     
@@ -416,17 +446,38 @@
     
     
     
-    <category term="Software Testing" scheme="https://shuguang2000.xyz/categories/Software-Testing/"/>
+    <category term="Software Testing" scheme="https://shuguang2000.github.io/categories/Software-Testing/"/>
     
     
-    <category term="Automated Testing" scheme="https://shuguang2000.xyz/tags/Automated-Testing/"/>
+    <category term="Automated Testing" scheme="https://shuguang2000.github.io/tags/Automated-Testing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>环境搭建基础</title>
+    <link href="https://shuguang2000.github.io/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/"/>
+    <id>https://shuguang2000.github.io/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</id>
+    <published>2022-11-19T05:31:58.000Z</published>
+    <updated>2024-08-09T14:57:28.876Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍自动化测试环境搭建、Python相关概念和pip包管理工具。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Software Testing" scheme="https://shuguang2000.github.io/categories/Software-Testing/"/>
+    
+    
+    <category term="Python" scheme="https://shuguang2000.github.io/tags/Python/"/>
     
   </entry>
   
   <entry>
     <title>WebDriver API</title>
-    <link href="https://shuguang2000.xyz/Software-Testing/WebDriver%20API/"/>
-    <id>https://shuguang2000.xyz/Software-Testing/WebDriver%20API/</id>
+    <link href="https://shuguang2000.github.io/Software-Testing/WebDriver%20API/"/>
+    <id>https://shuguang2000.github.io/Software-Testing/WebDriver%20API/</id>
     <published>2022-11-19T05:31:58.000Z</published>
     <updated>2022-11-22T07:55:38.293Z</updated>
     
@@ -437,40 +488,19 @@
     
     
     
-    <category term="Software Testing" scheme="https://shuguang2000.xyz/categories/Software-Testing/"/>
+    <category term="Software Testing" scheme="https://shuguang2000.github.io/categories/Software-Testing/"/>
     
     
-    <category term="WebDriver" scheme="https://shuguang2000.xyz/tags/WebDriver/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>环境搭建基础</title>
-    <link href="https://shuguang2000.xyz/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/"/>
-    <id>https://shuguang2000.xyz/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</id>
-    <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2022-11-23T13:06:16.978Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;本文主要介绍自动化测试环境搭建、Python相关概念和pip包管理工具。&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Software Testing" scheme="https://shuguang2000.xyz/categories/Software-Testing/"/>
-    
-    
-    <category term="Python" scheme="https://shuguang2000.xyz/tags/Python/"/>
+    <category term="WebDriver" scheme="https://shuguang2000.github.io/tags/WebDriver/"/>
     
   </entry>
   
   <entry>
     <title>自动化测试基础</title>
-    <link href="https://shuguang2000.xyz/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
-    <id>https://shuguang2000.xyz/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</id>
+    <link href="https://shuguang2000.github.io/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
+    <id>https://shuguang2000.github.io/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</id>
     <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2022-11-29T21:34:02.770Z</updated>
+    <updated>2024-08-09T14:57:31.206Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -479,19 +509,19 @@
     
     
     
-    <category term="Software Testing" scheme="https://shuguang2000.xyz/categories/Software-Testing/"/>
+    <category term="Software Testing" scheme="https://shuguang2000.github.io/categories/Software-Testing/"/>
     
     
-    <category term="Selenium" scheme="https://shuguang2000.xyz/tags/Selenium/"/>
+    <category term="Selenium" scheme="https://shuguang2000.github.io/tags/Selenium/"/>
     
-    <category term="Automated Testing" scheme="https://shuguang2000.xyz/tags/Automated-Testing/"/>
+    <category term="Automated Testing" scheme="https://shuguang2000.github.io/tags/Automated-Testing/"/>
     
   </entry>
   
   <entry>
     <title>Hexo 常用操作</title>
-    <link href="https://shuguang2000.xyz/Blog/Hexo%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"/>
-    <id>https://shuguang2000.xyz/Blog/Hexo%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</id>
+    <link href="https://shuguang2000.github.io/Blog/Hexo%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"/>
+    <id>https://shuguang2000.github.io/Blog/Hexo%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</id>
     <published>2022-11-12T08:31:58.000Z</published>
     <updated>2022-11-21T11:36:08.645Z</updated>
     
@@ -508,19 +538,19 @@
     
     
     
-    <category term="Blog" scheme="https://shuguang2000.xyz/categories/Blog/"/>
+    <category term="Blog" scheme="https://shuguang2000.github.io/categories/Blog/"/>
     
     
-    <category term="Hexo" scheme="https://shuguang2000.xyz/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://shuguang2000.github.io/tags/Hexo/"/>
     
-    <category term="Next" scheme="https://shuguang2000.xyz/tags/Next/"/>
+    <category term="Next" scheme="https://shuguang2000.github.io/tags/Next/"/>
     
   </entry>
   
   <entry>
     <title>常用 Git 命令清单</title>
-    <link href="https://shuguang2000.xyz/Blog/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>https://shuguang2000.xyz/Blog/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+    <link href="https://shuguang2000.github.io/Blog/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>https://shuguang2000.github.io/Blog/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
     <published>2022-11-11T06:31:58.000Z</published>
     <updated>2022-11-21T11:36:10.128Z</updated>
     
@@ -531,17 +561,17 @@
     
     
     
-    <category term="Blog" scheme="https://shuguang2000.xyz/categories/Blog/"/>
+    <category term="Blog" scheme="https://shuguang2000.github.io/categories/Blog/"/>
     
     
-    <category term="Git" scheme="https://shuguang2000.xyz/tags/Git/"/>
+    <category term="Git" scheme="https://shuguang2000.github.io/tags/Git/"/>
     
   </entry>
   
   <entry>
     <title>GitHub Pages中的自定义域</title>
-    <link href="https://shuguang2000.xyz/Blog/GitHub%20Pages%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/"/>
-    <id>https://shuguang2000.xyz/Blog/GitHub%20Pages%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/</id>
+    <link href="https://shuguang2000.github.io/Blog/GitHub%20Pages%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/"/>
+    <id>https://shuguang2000.github.io/Blog/GitHub%20Pages%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/</id>
     <published>2022-11-10T07:31:58.000Z</published>
     <updated>2022-11-21T11:36:09.410Z</updated>
     
@@ -552,17 +582,17 @@
     
     
     
-    <category term="Blog" scheme="https://shuguang2000.xyz/categories/Blog/"/>
+    <category term="Blog" scheme="https://shuguang2000.github.io/categories/Blog/"/>
     
     
-    <category term="GitHub Pages" scheme="https://shuguang2000.xyz/tags/GitHub-Pages/"/>
+    <category term="GitHub Pages" scheme="https://shuguang2000.github.io/tags/GitHub-Pages/"/>
     
   </entry>
   
   <entry>
     <title>博客优化</title>
-    <link href="https://shuguang2000.xyz/Blog/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"/>
-    <id>https://shuguang2000.xyz/Blog/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/</id>
+    <link href="https://shuguang2000.github.io/Blog/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"/>
+    <id>https://shuguang2000.github.io/Blog/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/</id>
     <published>2022-10-30T05:31:58.000Z</published>
     <updated>2022-12-03T05:34:53.051Z</updated>
     
@@ -583,19 +613,19 @@
     
     
     
-    <category term="Blog" scheme="https://shuguang2000.xyz/categories/Blog/"/>
+    <category term="Blog" scheme="https://shuguang2000.github.io/categories/Blog/"/>
     
     
-    <category term="Hexo" scheme="https://shuguang2000.xyz/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://shuguang2000.github.io/tags/Hexo/"/>
     
-    <category term="Next" scheme="https://shuguang2000.xyz/tags/Next/"/>
+    <category term="Next" scheme="https://shuguang2000.github.io/tags/Next/"/>
     
   </entry>
   
   <entry>
     <title>环境搭建</title>
-    <link href="https://shuguang2000.xyz/Blog/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-    <id>https://shuguang2000.xyz/Blog/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</id>
+    <link href="https://shuguang2000.github.io/Blog/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>https://shuguang2000.github.io/Blog/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</id>
     <published>2022-10-30T03:31:58.000Z</published>
     <updated>2022-11-22T04:23:27.950Z</updated>
     
@@ -606,79 +636,79 @@
     
     
     
-    <category term="Blog" scheme="https://shuguang2000.xyz/categories/Blog/"/>
+    <category term="Blog" scheme="https://shuguang2000.github.io/categories/Blog/"/>
     
     
-    <category term="Hexo" scheme="https://shuguang2000.xyz/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://shuguang2000.github.io/tags/Hexo/"/>
     
-    <category term="Next" scheme="https://shuguang2000.xyz/tags/Next/"/>
+    <category term="Next" scheme="https://shuguang2000.github.io/tags/Next/"/>
     
   </entry>
   
   <entry>
     <title>博客搭建指南</title>
-    <link href="https://shuguang2000.xyz/Blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/"/>
-    <id>https://shuguang2000.xyz/Blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</id>
+    <link href="https://shuguang2000.github.io/Blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/"/>
+    <id>https://shuguang2000.github.io/Blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</id>
     <published>2022-10-29T04:31:58.000Z</published>
-    <updated>2022-11-27T05:35:59.203Z</updated>
+    <updated>2023-04-20T15:41:40.507Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
-&lt;li&gt;基于Hexo和GitHub Pages博客搭建指南，并同时使用Git进行版本控制备份（本地文件）。&lt;/li&gt;
+&lt;li&gt;基于 &lt;strong&gt;Hexo&lt;/strong&gt; 和 &lt;strong&gt;GitHub Pages&lt;/strong&gt; 博客搭建指南，并同时使用 &lt;strong&gt;Git&lt;/strong&gt; 进行版本控制（备份本地文件）。&lt;/li&gt;
 &lt;/ul&gt;</summary>
     
     
     
-    <category term="Blog" scheme="https://shuguang2000.xyz/categories/Blog/"/>
+    <category term="Blog" scheme="https://shuguang2000.github.io/categories/Blog/"/>
     
     
-    <category term="Git" scheme="https://shuguang2000.xyz/tags/Git/"/>
+    <category term="Git" scheme="https://shuguang2000.github.io/tags/Git/"/>
     
-    <category term="GitHub Pages" scheme="https://shuguang2000.xyz/tags/GitHub-Pages/"/>
+    <category term="GitHub Pages" scheme="https://shuguang2000.github.io/tags/GitHub-Pages/"/>
     
-    <category term="Hexo" scheme="https://shuguang2000.xyz/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://shuguang2000.github.io/tags/Hexo/"/>
     
   </entry>
   
   <entry>
     <title>消息来源</title>
-    <link href="https://shuguang2000.xyz/Blog/%E6%B6%88%E6%81%AF%E6%9D%A5%E6%BA%90/"/>
-    <id>https://shuguang2000.xyz/Blog/%E6%B6%88%E6%81%AF%E6%9D%A5%E6%BA%90/</id>
+    <link href="https://shuguang2000.github.io/Blog/%E6%B6%88%E6%81%AF%E6%9D%A5%E6%BA%90/"/>
+    <id>https://shuguang2000.github.io/Blog/%E6%B6%88%E6%81%AF%E6%9D%A5%E6%BA%90/</id>
     <published>2022-10-29T02:31:59.000Z</published>
-    <updated>2023-04-09T05:27:56.432Z</updated>
+    <updated>2023-04-20T14:09:26.471Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;消息来源：用于向用户提供频繁更新的内容的数据格式（如：新闻订阅，网源等），网站可透过它将最新信息传递给用户。&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;消息来源&lt;/strong&gt;：用于向用户提供频繁更新的内容的数据格式（如：新闻订阅，网源等），网站可透过它将最新信息传递给用户。&lt;br&gt;
 &lt;/br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;RSS：是一系列网络订阅源格式，也是一种内容聚合的工具，有RSS 和 Aotm 两种协议，XML&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot; aria-label=&quot;可扩展标记语言（英语：Extensible Markup Language，简称：XML）是一种标记语言。XML是从标准通用标记语言（SGML）中简化修改出来的。它主要用到的有可扩展标记语言、可扩展样式语言（XSL）、XBRL和XPath等。
+&lt;p&gt;&lt;strong&gt;RSS&lt;/strong&gt;：是一系列网络订阅源格式，也是一种内容聚合的工具，有RSS 和 Aotm 两种协议，XML&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot; aria-label=&quot;可扩展标记语言（英语：Extensible Markup Language，简称：XML）是一种标记语言。XML是从标准通用标记语言（SGML）中简化修改出来的。它主要用到的有可扩展标记语言、可扩展样式语言（XSL）、XBRL和XPath等。
 &quot;&gt;[4]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;为基础协议。&lt;br&gt;
 &lt;/br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Aotm（标准）：用于网络源的可扩展标记语言，借鉴了RSS的经验。&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;Aotm&lt;/strong&gt;（标准）：用于网络源的可扩展标记语言，借鉴了RSS的经验。&lt;br&gt;
 &lt;/br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</summary>
     
     
     
-    <category term="Blog" scheme="https://shuguang2000.xyz/categories/Blog/"/>
+    <category term="Blog" scheme="https://shuguang2000.github.io/categories/Blog/"/>
     
     
-    <category term="RSS" scheme="https://shuguang2000.xyz/tags/RSS/"/>
+    <category term="RSS" scheme="https://shuguang2000.github.io/tags/RSS/"/>
     
-    <category term="Aotm" scheme="https://shuguang2000.xyz/tags/Aotm/"/>
+    <category term="Aotm" scheme="https://shuguang2000.github.io/tags/Aotm/"/>
     
   </entry>
   
   <entry>
     <title>Markdown使用教程</title>
-    <link href="https://shuguang2000.xyz/Blog/Markdown%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
-    <id>https://shuguang2000.xyz/Blog/Markdown%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
+    <link href="https://shuguang2000.github.io/Blog/Markdown%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <id>https://shuguang2000.github.io/Blog/Markdown%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
     <published>2022-09-29T09:32:58.000Z</published>
     <updated>2022-12-02T08:35:38.459Z</updated>
     
@@ -695,10 +725,10 @@
     
     
     
-    <category term="Blog" scheme="https://shuguang2000.xyz/categories/Blog/"/>
+    <category term="Blog" scheme="https://shuguang2000.github.io/categories/Blog/"/>
     
     
-    <category term="Markdown" scheme="https://shuguang2000.xyz/tags/Markdown/"/>
+    <category term="Markdown" scheme="https://shuguang2000.github.io/tags/Markdown/"/>
     
   </entry>
   

@@ -15,5 +15,4 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: https://shuguang2000.xyz/sitemap.xml
-Sitemap: https://shuguang2000.xyz/baidusitemap.xml
+Sitemap: https://shuguang2000.github.io/sitemap.xml
