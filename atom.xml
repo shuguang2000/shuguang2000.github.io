@@ -7,7 +7,7 @@
   <link href="https://shuguang2000.github.io/atom.xml" rel="self"/>
   
   <link href="https://shuguang2000.github.io/"/>
-  <updated>2024-01-01T09:18:24.863Z</updated>
+  <updated>2024-08-10T12:22:04.222Z</updated>
   <id>https://shuguang2000.github.io/</id>
   
   <author>
@@ -18,41 +18,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>哲学</title>
-    <link href="https://shuguang2000.github.io/uncategorized/%E5%93%B2%E5%AD%A6/"/>
-    <id>https://shuguang2000.github.io/uncategorized/%E5%93%B2%E5%AD%A6/</id>
-    <published>2023-04-20T12:47:46.000Z</published>
-    <updated>2024-01-01T09:18:24.863Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;人没有必要被世俗的标准绑架。从概率上看，大部分男人不可能都成功，大部分女人不可能都漂亮；大部分人&lt;strong&gt;痛苦的来源&lt;/strong&gt;就是被世俗的标准所控制。&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;教育的真实目的&lt;/strong&gt;其实就是成为&lt;strong&gt;人上人&lt;/strong&gt;，学习知识不过是顺带的行为。&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;教育最大的成功&lt;/strong&gt;就是向大多数人&lt;strong&gt;刻印&lt;/strong&gt;（一辈子的）&lt;strong&gt;成功的标准&lt;/strong&gt;，并且还会传承这个标准到下一代（长期驯化），进而而实现少数人对多数人的控制。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;找准消息的真实来源，分析其立场和动机，真正的实事落到哪里。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>网络协议 - 相关补充</title>
     <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%9B%B8%E5%85%B3%E8%A1%A5%E5%85%85/"/>
     <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%9B%B8%E5%85%B3%E8%A1%A5%E5%85%85/</id>
     <published>2022-11-25T10:11:15.000Z</published>
-    <updated>2022-11-25T15:18:45.106Z</updated>
+    <updated>2024-08-10T12:22:04.222Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -75,7 +45,7 @@
     <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%85%B6%E4%BB%96%E5%8D%8F%E8%AE%AE/"/>
     <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%85%B6%E4%BB%96%E5%8D%8F%E8%AE%AE/</id>
     <published>2022-11-25T08:21:12.000Z</published>
-    <updated>2022-11-25T15:16:08.424Z</updated>
+    <updated>2024-08-10T12:21:45.394Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -108,7 +78,7 @@
     <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20HTTP1.1%E7%9A%84%E5%8D%87%E7%BA%A7%E6%94%B9%E8%BF%9B/"/>
     <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20HTTP1.1%E7%9A%84%E5%8D%87%E7%BA%A7%E6%94%B9%E8%BF%9B/</id>
     <published>2022-11-25T06:21:12.000Z</published>
-    <updated>2022-11-25T16:22:18.448Z</updated>
+    <updated>2024-08-10T12:22:12.152Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -133,7 +103,7 @@
     <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20HTTPS/"/>
     <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20HTTPS/</id>
     <published>2022-11-25T02:21:12.000Z</published>
-    <updated>2022-11-25T12:13:40.734Z</updated>
+    <updated>2024-08-10T12:22:16.462Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -160,7 +130,7 @@
     <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/"/>
     <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/</id>
     <published>2022-11-24T02:21:12.000Z</published>
-    <updated>2022-11-25T10:44:12.552Z</updated>
+    <updated>2024-08-10T12:21:49.137Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -187,7 +157,7 @@
     <link href="https://shuguang2000.github.io/Software-Testing/Anaconda%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
     <id>https://shuguang2000.github.io/Software-Testing/Anaconda%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
     <published>2022-11-23T05:31:58.000Z</published>
-    <updated>2023-04-08T09:00:23.351Z</updated>
+    <updated>2024-08-10T12:22:37.840Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -212,13 +182,13 @@
     <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%BA%94%E7%94%A8%E5%B1%82/"/>
     <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%BA%94%E7%94%A8%E5%B1%82/</id>
     <published>2022-11-22T10:21:12.000Z</published>
-    <updated>2022-11-22T14:03:25.861Z</updated>
+    <updated>2024-08-10T12:22:08.086Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;本文主要介绍网站请求流程中所用到的协议DNS，HTTP和DHCP相关概念和作用。&lt;br&gt;
-&lt;/br&gt;&lt;/p&gt;
+&lt;br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;本文也着重介绍了HTTP请求和应答过程中的相关规则，包括报文格式、状态码、跨代理和CDN相关知识。&lt;/p&gt;
@@ -245,13 +215,13 @@
     <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E4%BC%A0%E8%BE%93%E5%B1%82/"/>
     <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E4%BC%A0%E8%BE%93%E5%B1%82/</id>
     <published>2022-11-22T07:21:12.000Z</published>
-    <updated>2022-11-29T14:37:41.309Z</updated>
+    <updated>2024-08-10T12:21:32.387Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;本文主要介绍传输层的两个协议&lt;strong&gt;TCP&lt;/strong&gt;和&lt;strong&gt;UDP&lt;/strong&gt;数据格式，并将两者进行了比较。&lt;br&gt;
-&lt;/br&gt;&lt;/p&gt;
+&lt;br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;本文也重点介绍了TCP的&lt;strong&gt;可靠传输&lt;/strong&gt;（超时重传）、&lt;strong&gt;流量控制&lt;/strong&gt;（点到点）、&lt;strong&gt;拥塞控制&lt;/strong&gt; (共同维护)、&lt;strong&gt;连接管理&lt;/strong&gt;（建立连接、释放连接）四个方面技术。&lt;/p&gt;
@@ -274,7 +244,7 @@
     <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%89%A9%E7%90%86%E5%B1%82%E5%92%8C%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/"/>
     <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%89%A9%E7%90%86%E5%B1%82%E5%92%8C%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/</id>
     <published>2022-11-22T04:21:12.000Z</published>
-    <updated>2022-11-22T12:11:19.831Z</updated>
+    <updated>2024-08-10T12:22:00.268Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -297,7 +267,7 @@
     <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%B1%82/"/>
     <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%B1%82/</id>
     <published>2022-11-22T04:21:12.000Z</published>
-    <updated>2022-11-25T15:19:09.532Z</updated>
+    <updated>2024-08-10T12:21:53.134Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -316,7 +286,7 @@
     <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
     <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</id>
     <published>2022-11-22T02:22:12.000Z</published>
-    <updated>2022-11-22T13:56:17.573Z</updated>
+    <updated>2024-08-10T12:21:56.672Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -339,7 +309,7 @@
     <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
     <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E8%B7%AF%E7%94%B1%E5%99%A8/</id>
     <published>2022-11-22T02:21:12.000Z</published>
-    <updated>2022-11-22T12:22:11.307Z</updated>
+    <updated>2024-08-10T12:21:41.312Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -360,7 +330,7 @@
     <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20MAC%E5%9C%B0%E5%9D%80%E3%80%81IP%E5%9C%B0%E5%9D%80%E5%92%8C%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81/"/>
     <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20MAC%E5%9C%B0%E5%9D%80%E3%80%81IP%E5%9C%B0%E5%9D%80%E5%92%8C%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81/</id>
     <published>2022-11-21T02:21:12.000Z</published>
-    <updated>2022-11-22T12:10:02.481Z</updated>
+    <updated>2024-08-10T12:22:20.057Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -383,7 +353,7 @@
     <link href="https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
     <id>https://shuguang2000.github.io/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
     <published>2022-11-21T02:21:12.000Z</published>
-    <updated>2022-11-22T13:55:47.800Z</updated>
+    <updated>2024-08-10T12:21:37.072Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -402,42 +372,11 @@
   </entry>
   
   <entry>
-    <title>关于Git 的使用</title>
-    <link href="https://shuguang2000.github.io/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>https://shuguang2000.github.io/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
-    <published>2022-11-20T05:31:58.000Z</published>
-    <updated>2022-11-23T13:05:10.291Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Git 是一个分布式版本控制系统，每个客户端都是一个完整的版本库。&lt;br&gt;
-&lt;/br&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Git 本质上是一个&lt;strong&gt;key-value的数据库&lt;/strong&gt;加上&lt;strong&gt;默克尔树形成的有向无环图&lt;/strong&gt;（DAG）。&lt;br&gt;
-&lt;/br&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;关于Git 更多内容，参考&lt;a href=&quot;https://git-scm.com/book/zh/v2&quot;&gt;Pro Git book&lt;/a&gt; 。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Blog" scheme="https://shuguang2000.github.io/categories/Blog/"/>
-    
-    
-    <category term="Git" scheme="https://shuguang2000.github.io/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
     <title>自动化测试模型</title>
     <link href="https://shuguang2000.github.io/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%9E%8B/"/>
     <id>https://shuguang2000.github.io/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%9E%8B/</id>
     <published>2022-11-20T05:31:58.000Z</published>
-    <updated>2022-11-21T13:21:25.913Z</updated>
+    <updated>2024-08-10T12:22:33.488Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -454,32 +393,11 @@
   </entry>
   
   <entry>
-    <title>环境搭建基础</title>
-    <link href="https://shuguang2000.github.io/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/"/>
-    <id>https://shuguang2000.github.io/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</id>
-    <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2024-08-09T14:57:28.876Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;本文主要介绍自动化测试环境搭建、Python相关概念和pip包管理工具。&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Software Testing" scheme="https://shuguang2000.github.io/categories/Software-Testing/"/>
-    
-    
-    <category term="Python" scheme="https://shuguang2000.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
     <title>WebDriver API</title>
     <link href="https://shuguang2000.github.io/Software-Testing/WebDriver%20API/"/>
     <id>https://shuguang2000.github.io/Software-Testing/WebDriver%20API/</id>
     <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2022-11-22T07:55:38.293Z</updated>
+    <updated>2024-08-10T12:22:42.464Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -496,11 +414,32 @@
   </entry>
   
   <entry>
+    <title>环境搭建基础</title>
+    <link href="https://shuguang2000.github.io/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/"/>
+    <id>https://shuguang2000.github.io/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</id>
+    <published>2022-11-19T05:31:58.000Z</published>
+    <updated>2024-08-10T12:22:26.132Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍自动化测试环境搭建、Python相关概念和pip包管理工具。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Software Testing" scheme="https://shuguang2000.github.io/categories/Software-Testing/"/>
+    
+    
+    <category term="Python" scheme="https://shuguang2000.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>自动化测试基础</title>
     <link href="https://shuguang2000.github.io/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
     <id>https://shuguang2000.github.io/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</id>
     <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2024-08-09T14:57:31.206Z</updated>
+    <updated>2024-08-10T12:22:29.776Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -523,13 +462,13 @@
     <link href="https://shuguang2000.github.io/Blog/Hexo%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"/>
     <id>https://shuguang2000.github.io/Blog/Hexo%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</id>
     <published>2022-11-12T08:31:58.000Z</published>
-    <updated>2022-11-21T11:36:08.645Z</updated>
+    <updated>2024-08-10T12:21:03.154Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;本文主要介绍了关于Hexo&lt;strong&gt;基础知识&lt;/strong&gt;、&lt;strong&gt;常用命令&lt;/strong&gt;、&lt;strong&gt;自定义&lt;/strong&gt;以及&lt;strong&gt;标签插件&lt;/strong&gt;四个方面内容。&lt;br&gt;
-&lt;/br&gt;&lt;/p&gt;
+&lt;br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;更多相关内容参考：&lt;a href=&quot;https://hexo.io/zh-cn/docs/&quot;&gt;Hexo文档&lt;/a&gt;&lt;/p&gt;
@@ -552,7 +491,7 @@
     <link href="https://shuguang2000.github.io/Blog/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>https://shuguang2000.github.io/Blog/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
     <published>2022-11-11T06:31:58.000Z</published>
-    <updated>2022-11-21T11:36:10.128Z</updated>
+    <updated>2024-08-10T12:20:53.075Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -573,7 +512,7 @@
     <link href="https://shuguang2000.github.io/Blog/GitHub%20Pages%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/"/>
     <id>https://shuguang2000.github.io/Blog/GitHub%20Pages%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/</id>
     <published>2022-11-10T07:31:58.000Z</published>
-    <updated>2022-11-21T11:36:09.410Z</updated>
+    <updated>2024-08-10T12:20:58.534Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -594,17 +533,17 @@
     <link href="https://shuguang2000.github.io/Blog/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"/>
     <id>https://shuguang2000.github.io/Blog/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/</id>
     <published>2022-10-30T05:31:58.000Z</published>
-    <updated>2022-12-03T05:34:53.051Z</updated>
+    <updated>2024-08-10T12:20:25.892Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;本次博客优化包含: 对整个博客站点的&lt;strong&gt;模板优化&lt;/strong&gt;以及&lt;strong&gt;性能优化&lt;/strong&gt;。&lt;br&gt;
-&lt;/br&gt;&lt;/p&gt;
+&lt;br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;模板优化&lt;/strong&gt;: 主要是对Next的主题优化和功能扩展。&lt;br&gt;
-&lt;/br&gt;&lt;/p&gt;
+&lt;br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;性能优化&lt;/strong&gt;: 主要是针对性能和网站推广优化。&lt;/p&gt;
@@ -627,7 +566,7 @@
     <link href="https://shuguang2000.github.io/Blog/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     <id>https://shuguang2000.github.io/Blog/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</id>
     <published>2022-10-30T03:31:58.000Z</published>
-    <updated>2022-11-22T04:23:27.950Z</updated>
+    <updated>2024-08-10T12:35:36.094Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -650,11 +589,11 @@
     <link href="https://shuguang2000.github.io/Blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/"/>
     <id>https://shuguang2000.github.io/Blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</id>
     <published>2022-10-29T04:31:58.000Z</published>
-    <updated>2023-04-20T15:41:40.507Z</updated>
+    <updated>2024-08-10T15:02:45.662Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
-&lt;li&gt;基于 &lt;strong&gt;Hexo&lt;/strong&gt; 和 &lt;strong&gt;GitHub Pages&lt;/strong&gt; 博客搭建指南，并同时使用 &lt;strong&gt;Git&lt;/strong&gt; 进行版本控制（备份本地文件）。&lt;/li&gt;
+&lt;li&gt;基于 &lt;strong&gt;Hexo&lt;/strong&gt; 和 &lt;strong&gt;GitHub Pages&lt;/strong&gt; 博客搭建指南，并使用 &lt;strong&gt;Git&lt;/strong&gt; 进行版本控制（备份本地文件）。&lt;/li&gt;
 &lt;/ul&gt;</summary>
     
     
@@ -664,9 +603,9 @@
     
     <category term="Git" scheme="https://shuguang2000.github.io/tags/Git/"/>
     
-    <category term="GitHub Pages" scheme="https://shuguang2000.github.io/tags/GitHub-Pages/"/>
-    
     <category term="Hexo" scheme="https://shuguang2000.github.io/tags/Hexo/"/>
+    
+    <category term="GitHub Pages" scheme="https://shuguang2000.github.io/tags/GitHub-Pages/"/>
     
   </entry>
   
@@ -675,22 +614,22 @@
     <link href="https://shuguang2000.github.io/Blog/%E6%B6%88%E6%81%AF%E6%9D%A5%E6%BA%90/"/>
     <id>https://shuguang2000.github.io/Blog/%E6%B6%88%E6%81%AF%E6%9D%A5%E6%BA%90/</id>
     <published>2022-10-29T02:31:59.000Z</published>
-    <updated>2023-04-20T14:09:26.471Z</updated>
+    <updated>2024-08-10T12:20:45.748Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;消息来源&lt;/strong&gt;：用于向用户提供频繁更新的内容的数据格式（如：新闻订阅，网源等），网站可透过它将最新信息传递给用户。&lt;br&gt;
-&lt;/br&gt;&lt;/p&gt;
+&lt;br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;RSS&lt;/strong&gt;：是一系列网络订阅源格式，也是一种内容聚合的工具，有RSS 和 Aotm 两种协议，XML&lt;sup id=&quot;fnref:4&quot;&gt;&lt;a href=&quot;#fn:4&quot; rel=&quot;footnote&quot;&gt;&lt;span class=&quot;hint--top hint--error hint--medium hint--rounded hint--bounce&quot; aria-label=&quot;可扩展标记语言（英语：Extensible Markup Language，简称：XML）是一种标记语言。XML是从标准通用标记语言（SGML）中简化修改出来的。它主要用到的有可扩展标记语言、可扩展样式语言（XSL）、XBRL和XPath等。
 &quot;&gt;[4]&lt;/span&gt;&lt;/a&gt;&lt;/sup&gt;为基础协议。&lt;br&gt;
-&lt;/br&gt;&lt;/p&gt;
+&lt;br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Aotm&lt;/strong&gt;（标准）：用于网络源的可扩展标记语言，借鉴了RSS的经验。&lt;br&gt;
-&lt;/br&gt;&lt;/p&gt;
+&lt;br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</summary>
     
@@ -710,13 +649,13 @@
     <link href="https://shuguang2000.github.io/Blog/Markdown%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
     <id>https://shuguang2000.github.io/Blog/Markdown%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
     <published>2022-09-29T09:32:58.000Z</published>
-    <updated>2022-12-02T08:35:38.459Z</updated>
+    <updated>2024-08-10T12:21:08.066Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;关于Markdown常用语法的使用的梳理，主要是方便自己总结和回顾使用。&lt;br&gt;
-&lt;/br&gt;&lt;/p&gt;
+&lt;br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;关于Markdown的使用也可以自行通过&lt;a href=&quot;https://markdown.com.cn/&quot;&gt;Markdown官网&lt;/a&gt;来学习。&lt;/p&gt;
