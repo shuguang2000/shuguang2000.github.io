@@ -372,6 +372,37 @@
   </entry>
   
   <entry>
+    <title>关于Git 的使用</title>
+    <link href="https://shuguang2000.github.io/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>https://shuguang2000.github.io/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+    <published>2022-11-20T05:31:58.000Z</published>
+    <updated>2024-08-17T16:47:02.982Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Git 是一个分布式版本控制系统，每个客户端都是一个完整的版本库。&lt;br&gt;
+&lt;/br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Git 本质上是一个&lt;strong&gt;key-value的数据库&lt;/strong&gt;加上&lt;strong&gt;默克尔树形成的有向无环图&lt;/strong&gt;（DAG）。&lt;br&gt;
+&lt;/br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;关于Git 更多内容，参考&lt;a href=&quot;https://git-scm.com/book/zh/v2&quot;&gt;Pro Git book&lt;/a&gt; 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Blog" scheme="https://shuguang2000.github.io/categories/Blog/"/>
+    
+    
+    <category term="Git" scheme="https://shuguang2000.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
     <title>自动化测试模型</title>
     <link href="https://shuguang2000.github.io/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%9E%8B/"/>
     <id>https://shuguang2000.github.io/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%9E%8B/</id>
@@ -393,27 +424,6 @@
   </entry>
   
   <entry>
-    <title>WebDriver API</title>
-    <link href="https://shuguang2000.github.io/Software-Testing/WebDriver%20API/"/>
-    <id>https://shuguang2000.github.io/Software-Testing/WebDriver%20API/</id>
-    <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2024-08-10T12:22:42.464Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;WebDriver是一个用于实现Web自动化的第三方库，本文主要介绍WebDriver的用法及原理。&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Software Testing" scheme="https://shuguang2000.github.io/categories/Software-Testing/"/>
-    
-    
-    <category term="WebDriver" scheme="https://shuguang2000.github.io/tags/WebDriver/"/>
-    
-  </entry>
-  
-  <entry>
     <title>环境搭建基础</title>
     <link href="https://shuguang2000.github.io/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/"/>
     <id>https://shuguang2000.github.io/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</id>
@@ -431,6 +441,27 @@
     
     
     <category term="Python" scheme="https://shuguang2000.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WebDriver API</title>
+    <link href="https://shuguang2000.github.io/Software-Testing/WebDriver%20API/"/>
+    <id>https://shuguang2000.github.io/Software-Testing/WebDriver%20API/</id>
+    <published>2022-11-19T05:31:58.000Z</published>
+    <updated>2024-08-10T12:22:42.464Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;WebDriver是一个用于实现Web自动化的第三方库，本文主要介绍WebDriver的用法及原理。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Software Testing" scheme="https://shuguang2000.github.io/categories/Software-Testing/"/>
+    
+    
+    <category term="WebDriver" scheme="https://shuguang2000.github.io/tags/WebDriver/"/>
     
   </entry>
   
@@ -491,7 +522,7 @@
     <link href="https://shuguang2000.github.io/Blog/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>https://shuguang2000.github.io/Blog/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
     <published>2022-11-11T06:31:58.000Z</published>
-    <updated>2024-08-10T12:20:53.075Z</updated>
+    <updated>2024-08-17T16:49:09.871Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -566,7 +597,7 @@
     <link href="https://shuguang2000.github.io/Blog/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     <id>https://shuguang2000.github.io/Blog/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</id>
     <published>2022-10-30T03:31:58.000Z</published>
-    <updated>2024-08-10T12:35:36.094Z</updated>
+    <updated>2024-08-17T07:28:16.049Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -589,7 +620,7 @@
     <link href="https://shuguang2000.github.io/Blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/"/>
     <id>https://shuguang2000.github.io/Blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</id>
     <published>2022-10-29T04:31:58.000Z</published>
-    <updated>2024-08-10T15:02:45.662Z</updated>
+    <updated>2024-08-11T17:40:10.310Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -603,9 +634,9 @@
     
     <category term="Git" scheme="https://shuguang2000.github.io/tags/Git/"/>
     
-    <category term="Hexo" scheme="https://shuguang2000.github.io/tags/Hexo/"/>
-    
     <category term="GitHub Pages" scheme="https://shuguang2000.github.io/tags/GitHub-Pages/"/>
+    
+    <category term="Hexo" scheme="https://shuguang2000.github.io/tags/Hexo/"/>
     
   </entry>
   
