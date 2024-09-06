@@ -7,7 +7,7 @@
   <link href="https://shuguang2000.github.io/atom.xml" rel="self"/>
   
   <link href="https://shuguang2000.github.io/"/>
-  <updated>2024-08-10T12:22:04.222Z</updated>
+  <updated>2024-09-06T15:06:50.692Z</updated>
   <id>https://shuguang2000.github.io/</id>
   
   <author>
@@ -16,6 +16,49 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>正向代理和反向代理</title>
+    <link href="https://shuguang2000.github.io/Tools/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"/>
+    <id>https://shuguang2000.github.io/Tools/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</id>
+    <published>2024-09-02T05:31:58.000Z</published>
+    <updated>2024-09-06T15:06:50.692Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;正向代理和反向代理的应用和作用。&lt;br&gt;
+&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Tools" scheme="https://shuguang2000.github.io/categories/Tools/"/>
+    
+    
+    <category term="Proxy" scheme="https://shuguang2000.github.io/tags/Proxy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微软激活脚本工具</title>
+    <link href="https://shuguang2000.github.io/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC%E5%B7%A5%E5%85%B7/"/>
+    <id>https://shuguang2000.github.io/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC%E5%B7%A5%E5%85%B7/</id>
+    <published>2023-09-02T05:31:58.000Z</published>
+    <updated>2024-09-05T16:22:05.454Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;Microsoft 激活脚本（MAS），官方文档：&lt;a href=&quot;https://github.com/massgravel/Microsoft-Activation-Scripts&quot;&gt;https://github.com/massgravel/Microsoft-Activation-Scripts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Tools" scheme="https://shuguang2000.github.io/categories/Tools/"/>
+    
+    
+    <category term="Windows" scheme="https://shuguang2000.github.io/tags/Windows/"/>
+    
+  </entry>
   
   <entry>
     <title>网络协议 - 相关补充</title>
@@ -539,6 +582,31 @@
   </entry>
   
   <entry>
+    <title>自建代理服务器</title>
+    <link href="https://shuguang2000.github.io/category1/%E8%87%AA%E5%BB%BA%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>https://shuguang2000.github.io/category1/%E8%87%AA%E5%BB%BA%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8/</id>
+    <published>2022-11-11T05:31:58.000Z</published>
+    <updated>2024-09-06T15:41:10.991Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;pass&lt;br&gt;
+&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;pass&lt;br&gt;
+&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;pass&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="category1" scheme="https://shuguang2000.github.io/categories/category1/"/>
+    
+    
+    <category term="tag1" scheme="https://shuguang2000.github.io/tags/tag1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>GitHub Pages中的自定义域</title>
     <link href="https://shuguang2000.github.io/Blog/GitHub%20Pages%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/"/>
     <id>https://shuguang2000.github.io/Blog/GitHub%20Pages%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/</id>
@@ -620,7 +688,7 @@
     <link href="https://shuguang2000.github.io/Blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/"/>
     <id>https://shuguang2000.github.io/Blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</id>
     <published>2022-10-29T04:31:58.000Z</published>
-    <updated>2024-08-11T17:40:10.310Z</updated>
+    <updated>2024-09-02T05:36:25.689Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
