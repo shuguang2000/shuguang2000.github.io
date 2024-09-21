@@ -3,27 +3,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://shuguang2000.github.io/category1/%E8%87%AA%E5%BB%BA%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <loc>https://shuguang2000.github.io/Blog/GitHub%20Pages%20%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/</loc>
     
-    <lastmod>2024-09-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/Tools/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</loc>
-    
-    <lastmod>2024-09-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC%E5%B7%A5%E5%85%B7/</loc>
-    
-    <lastmod>2024-09-05</lastmod>
+    <lastmod>2024-09-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -32,25 +14,178 @@
   <url>
     <loc>https://shuguang2000.github.io/Blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</loc>
     
-    <lastmod>2024-09-02</lastmod>
+    <lastmod>2024-09-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://shuguang2000.github.io/Blog/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://shuguang2000.github.io/links/</loc>
     
-    <lastmod>2024-08-17</lastmod>
+    <lastmod>2024-09-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://shuguang2000.github.io/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
+    <loc>https://shuguang2000.github.io/books/</loc>
     
-    <lastmod>2024-08-17</lastmod>
+    <lastmod>2024-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Study/%E8%87%AA%E5%8F%91%E5%AD%A6%E4%B9%A0/</loc>
+    
+    <lastmod>2024-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Games/CSGO%20%E6%89%B9%E9%87%8F%E5%87%BA%E5%94%AE%E9%A5%B0%E5%93%81/</loc>
+    
+    <lastmod>2024-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Study/%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%BF%83%E5%BE%97/</loc>
+    
+    <lastmod>2024-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Games/%E7%A4%BC%E5%93%81%E5%8D%A1/</loc>
+    
+    <lastmod>2024-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Tools/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</loc>
+    
+    <lastmod>2024-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Tools/%E8%87%AA%E5%BB%BA%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    
+    <lastmod>2024-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Tools/Markdown%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2024-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Blog/VSCode%20%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%20Hexo%20%E6%96%87%E7%AB%A0/</loc>
+    
+    <lastmod>2024-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Blog/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/</loc>
+    
+    <lastmod>2024-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Tools/Windows%20%E8%A7%A3%E5%86%B3%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</loc>
+    
+    <lastmod>2024-09-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Books/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%AE%B0/</loc>
+    
+    <lastmod>2024-09-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Books/%E5%BF%83%E6%B5%81/</loc>
+    
+    <lastmod>2024-09-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Books/%E4%B9%A1%E5%9C%9F%E4%B8%AD%E5%9B%BD/</loc>
+    
+    <lastmod>2024-09-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Books/%E8%AE%A4%E7%9F%A5%E9%A9%B1%E5%8A%A8/</loc>
+    
+    <lastmod>2024-09-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Books/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92/</loc>
+    
+    <lastmod>2024-09-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Books/%E6%9D%8E%E5%85%89%E8%80%80%E8%A7%82%E5%A4%A9%E4%B8%8B/</loc>
+    
+    <lastmod>2024-09-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Books/%E5%B7%A5%E4%BD%9C%E3%80%81%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA/</loc>
+    
+    <lastmod>2024-09-17</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -59,7 +194,61 @@
   <url>
     <loc>https://shuguang2000.github.io/Blog/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
     
-    <lastmod>2024-08-17</lastmod>
+    <lastmod>2024-09-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Blog/%E6%B6%88%E6%81%AF%E6%9D%A5%E6%BA%90/</loc>
+    
+    <lastmod>2024-09-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
+    
+    <lastmod>2024-09-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Blog/Hexo%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</loc>
+    
+    <lastmod>2024-09-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/</loc>
+    
+    <lastmod>2024-09-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/</loc>
+    
+    <lastmod>2024-09-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/categories/</loc>
+    
+    <lastmod>2024-09-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -227,498 +416,382 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://shuguang2000.github.io/Blog/Markdown%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
-    
-    <lastmod>2024-08-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/Blog/Hexo%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</loc>
-    
-    <lastmod>2024-08-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/Blog/GitHub%20Pages%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/</loc>
-    
-    <lastmod>2024-08-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/Blog/%E6%B6%88%E6%81%AF%E6%9D%A5%E6%BA%90/</loc>
-    
-    <lastmod>2024-08-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/Blog/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/</loc>
-    
-    <lastmod>2024-08-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/books/%E5%B7%A5%E4%BD%9C%E3%80%81%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA</loc>
-    
-    <lastmod>2023-04-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/links/</loc>
-    
-    <lastmod>2022-11-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/books/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92</loc>
-    
-    <lastmod>2022-10-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/books/%E8%AE%A4%E7%9F%A5%E9%A9%B1%E5%8A%A8</loc>
-    
-    <lastmod>2022-10-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/books/%E4%B9%A1%E5%9C%9F%E4%B8%AD%E5%9B%BD</loc>
-    
-    <lastmod>2022-10-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/books/%E5%BF%83%E6%B5%81</loc>
-    
-    <lastmod>2022-10-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/books/</loc>
-    
-    <lastmod>2022-10-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/books/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%AE%B0</loc>
-    
-    <lastmod>2022-10-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/books/%E6%9D%8E%E5%85%89%E8%80%80%E8%A7%82%E5%A4%A9%E4%B8%8B</loc>
-    
-    <lastmod>2022-10-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/categories/</loc>
-    
-    <lastmod>2022-10-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/</loc>
-    
-    <lastmod>2022-09-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://shuguang2000.github.io/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <lastmod>2024-09-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://shuguang2000.github.io/tags/tag1/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/Selenium/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/Git/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://shuguang2000.github.io/tags/GitHub-Pages/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <lastmod>2024-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://shuguang2000.github.io/tags/Markdown/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <loc>https://shuguang2000.github.io/tags/Domain/</loc>
+    <lastmod>2024-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://shuguang2000.github.io/tags/Hexo/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <lastmod>2024-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://shuguang2000.github.io/tags/Next/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <lastmod>2024-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://shuguang2000.github.io/tags/SPDY/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <loc>https://shuguang2000.github.io/tags/Tools/</loc>
+    <lastmod>2024-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://shuguang2000.github.io/tags/HTTP2/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/HTTP3/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/HTTPS/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/TLS/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/SSL/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/OpenSSL/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <loc>https://shuguang2000.github.io/tags/Git/</loc>
+    <lastmod>2024-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://shuguang2000.github.io/tags/RSS/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <lastmod>2024-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://shuguang2000.github.io/tags/Aotm/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <lastmod>2024-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://shuguang2000.github.io/tags/MAC/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <loc>https://shuguang2000.github.io/tags/CSGO/</loc>
+    <lastmod>2024-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://shuguang2000.github.io/tags/IP/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <loc>https://shuguang2000.github.io/tags/Markdown/</loc>
+    <lastmod>2024-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://shuguang2000.github.io/tags/TCP/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/UDP/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/WebSocket/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/RESTful/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/HTTPDNS/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/FTP/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/SMTP/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/POP/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/IMAP/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/DNS/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/DHCP/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/HTTP/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/CDN/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/CSMA-CD/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/PPP/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/VPN/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/IPv6/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/NAT/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/DoS/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/RSA/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/AES/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/CA/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/Anaconda/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/conda/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/pip/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/Router/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/Python/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <loc>https://shuguang2000.github.io/tags/Port/</loc>
+    <lastmod>2024-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://shuguang2000.github.io/tags/Windows/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/tags/WebDriver/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <lastmod>2024-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://shuguang2000.github.io/tags/Proxy/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/WebDriver/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/Python/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/Anaconda/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/conda/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/pip/</loc>
+    <lastmod>2024-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://shuguang2000.github.io/tags/Automated-Testing/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/Selenium/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/study/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/SPDY/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/HTTP2/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/HTTP3/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/HTTPS/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/TLS/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/SSL/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/OpenSSL/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/WebSocket/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/RESTful/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/HTTPDNS/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/FTP/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/SMTP/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/POP/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/IMAP/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/MAC/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/IP/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/TCP/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/UDP/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/DNS/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/DHCP/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/HTTP/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/CDN/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/CSMA-CD/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/PPP/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/NAT/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/Router/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/DoS/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/RSA/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/AES/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/CA/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/VPN/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/tags/IPv6/</loc>
+    <lastmod>2024-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -726,36 +799,50 @@
 
   
   <url>
-    <loc>https://shuguang2000.github.io/categories/Software-Testing/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shuguang2000.github.io/categories/category1/</loc>
-    <lastmod>2024-09-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://shuguang2000.github.io/categories/Blog/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <lastmod>2024-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://shuguang2000.github.io/categories/Network-Protocols/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <loc>https://shuguang2000.github.io/categories/Games/</loc>
+    <lastmod>2024-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://shuguang2000.github.io/categories/Tools/</loc>
-    <lastmod>2024-09-06</lastmod>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/categories/Books/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/categories/Software-Testing/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/categories/Study/</loc>
+    <lastmod>2024-09-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shuguang2000.github.io/categories/Network-Protocols/</loc>
+    <lastmod>2024-09-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

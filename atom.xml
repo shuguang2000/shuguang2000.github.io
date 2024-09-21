@@ -7,7 +7,7 @@
   <link href="https://shuguang2000.github.io/atom.xml" rel="self"/>
   
   <link href="https://shuguang2000.github.io/"/>
-  <updated>2024-09-06T15:06:50.692Z</updated>
+  <updated>2024-09-20T01:42:03.655Z</updated>
   <id>https://shuguang2000.github.io/</id>
   
   <author>
@@ -18,11 +18,119 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Windows 解决端口占用</title>
+    <link href="https://shuguang2000.github.io/Tools/Windows%20%E8%A7%A3%E5%86%B3%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/"/>
+    <id>https://shuguang2000.github.io/Tools/Windows%20%E8%A7%A3%E5%86%B3%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</id>
+    <published>2024-09-17T23:23:11.000Z</published>
+    <updated>2024-09-20T01:42:03.655Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;Windows 解决端口占用问题。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Tools" scheme="https://shuguang2000.github.io/categories/Tools/"/>
+    
+    
+    <category term="Port" scheme="https://shuguang2000.github.io/tags/Port/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VSCode 快速创建 Hexo 文章</title>
+    <link href="https://shuguang2000.github.io/Blog/VSCode%20%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%20Hexo%20%E6%96%87%E7%AB%A0/"/>
+    <id>https://shuguang2000.github.io/Blog/VSCode%20%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%20Hexo%20%E6%96%87%E7%AB%A0/</id>
+    <published>2024-09-16T13:29:14.000Z</published>
+    <updated>2024-09-20T07:13:08.329Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;使用VSCode快速创建带有Front-matter格式的Markdown文档。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Blog" scheme="https://shuguang2000.github.io/categories/Blog/"/>
+    
+    
+    <category term="Tools" scheme="https://shuguang2000.github.io/tags/Tools/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习的心得</title>
+    <link href="https://shuguang2000.github.io/Study/%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%BF%83%E5%BE%97/"/>
+    <id>https://shuguang2000.github.io/Study/%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%BF%83%E5%BE%97/</id>
+    <published>2024-09-15T05:31:58.000Z</published>
+    <updated>2024-09-20T07:30:45.969Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;学习方法的总结和思路梳理。&lt;br&gt;
+&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://shuguang2000.github.io/categories/Study/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>自建代理服务器</title>
+    <link href="https://shuguang2000.github.io/Tools/%E8%87%AA%E5%BB%BA%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    <id>https://shuguang2000.github.io/Tools/%E8%87%AA%E5%BB%BA%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8/</id>
+    <published>2024-09-06T05:31:58.000Z</published>
+    <updated>2024-09-20T07:19:03.436Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;pass&lt;br&gt;
+&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;pass&lt;br&gt;
+&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;pass&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Tools" scheme="https://shuguang2000.github.io/categories/Tools/"/>
+    
+    
+    <category term="Proxy" scheme="https://shuguang2000.github.io/tags/Proxy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微软激活脚本</title>
+    <link href="https://shuguang2000.github.io/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/"/>
+    <id>https://shuguang2000.github.io/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/</id>
+    <published>2024-09-02T05:31:58.000Z</published>
+    <updated>2024-09-16T23:23:42.194Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;Microsoft 激活脚本（MAS），官方文档：&lt;a href=&quot;https://github.com/massgravel/Microsoft-Activation-Scripts&quot;&gt;https://github.com/massgravel/Microsoft-Activation-Scripts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Tools" scheme="https://shuguang2000.github.io/categories/Tools/"/>
+    
+    
+    <category term="Windows" scheme="https://shuguang2000.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
     <title>正向代理和反向代理</title>
     <link href="https://shuguang2000.github.io/Tools/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"/>
     <id>https://shuguang2000.github.io/Tools/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</id>
     <published>2024-09-02T05:31:58.000Z</published>
-    <updated>2024-09-06T15:06:50.692Z</updated>
+    <updated>2024-09-20T07:19:17.672Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -40,23 +148,213 @@
   </entry>
   
   <entry>
-    <title>微软激活脚本工具</title>
-    <link href="https://shuguang2000.github.io/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC%E5%B7%A5%E5%85%B7/"/>
-    <id>https://shuguang2000.github.io/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC%E5%B7%A5%E5%85%B7/</id>
-    <published>2023-09-02T05:31:58.000Z</published>
-    <updated>2024-09-05T16:22:05.454Z</updated>
+    <title>CSGO 批量出售饰品</title>
+    <link href="https://shuguang2000.github.io/Games/CSGO%20%E6%89%B9%E9%87%8F%E5%87%BA%E5%94%AE%E9%A5%B0%E5%93%81/"/>
+    <id>https://shuguang2000.github.io/Games/CSGO%20%E6%89%B9%E9%87%8F%E5%87%BA%E5%94%AE%E9%A5%B0%E5%93%81/</id>
+    <published>2023-11-11T05:31:58.000Z</published>
+    <updated>2024-09-20T07:32:13.882Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
-&lt;li&gt;Microsoft 激活脚本（MAS），官方文档：&lt;a href=&quot;https://github.com/massgravel/Microsoft-Activation-Scripts&quot;&gt;https://github.com/massgravel/Microsoft-Activation-Scripts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;简要介绍 Steam 如何一次出售多个饰品。&lt;/li&gt;
 &lt;/ul&gt;</summary>
     
     
     
-    <category term="Tools" scheme="https://shuguang2000.github.io/categories/Tools/"/>
+    <category term="Games" scheme="https://shuguang2000.github.io/categories/Games/"/>
     
     
-    <category term="Windows" scheme="https://shuguang2000.github.io/tags/Windows/"/>
+    <category term="CSGO" scheme="https://shuguang2000.github.io/tags/CSGO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自发学习</title>
+    <link href="https://shuguang2000.github.io/Study/%E8%87%AA%E5%8F%91%E5%AD%A6%E4%B9%A0/"/>
+    <id>https://shuguang2000.github.io/Study/%E8%87%AA%E5%8F%91%E5%AD%A6%E4%B9%A0/</id>
+    <published>2023-11-11T05:31:58.000Z</published>
+    <updated>2024-09-20T07:33:50.883Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;pass&lt;br&gt;
+&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;pass&lt;br&gt;
+&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;pass&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Study" scheme="https://shuguang2000.github.io/categories/Study/"/>
+    
+    
+    <category term="study" scheme="https://shuguang2000.github.io/tags/study/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>工作、消费主义和新穷人</title>
+    <link href="https://shuguang2000.github.io/Books/%E5%B7%A5%E4%BD%9C%E3%80%81%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA/"/>
+    <id>https://shuguang2000.github.io/Books/%E5%B7%A5%E4%BD%9C%E3%80%81%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA/</id>
+    <published>2023-04-19T14:43:59.000Z</published>
+    <updated>2024-09-17T21:39:55.574Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;每个社会都存在穷人，这是一种&lt;strong&gt;社会的常识&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;社会往往不同于真实环境的&lt;strong&gt;缓慢自化的过程&lt;/strong&gt;，因为真实环境不会&lt;strong&gt;刻意的&lt;/strong&gt;追求多或者少。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;人类创造的环境是一种快速、脆弱并伴随&lt;strong&gt;周期性&lt;/strong&gt;的&lt;strong&gt;以多求少&lt;/strong&gt;的系统。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Books" scheme="https://shuguang2000.github.io/categories/Books/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>乡土中国</title>
+    <link href="https://shuguang2000.github.io/Books/%E4%B9%A1%E5%9C%9F%E4%B8%AD%E5%9B%BD/"/>
+    <id>https://shuguang2000.github.io/Books/%E4%B9%A1%E5%9C%9F%E4%B8%AD%E5%9B%BD/</id>
+    <published>2023-04-19T14:43:59.000Z</published>
+    <updated>2024-09-17T21:40:47.622Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Books" scheme="https://shuguang2000.github.io/categories/Books/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>心流</title>
+    <link href="https://shuguang2000.github.io/Books/%E5%BF%83%E6%B5%81/"/>
+    <id>https://shuguang2000.github.io/Books/%E5%BF%83%E6%B5%81/</id>
+    <published>2023-04-19T14:43:59.000Z</published>
+    <updated>2024-09-17T21:40:51.657Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Books" scheme="https://shuguang2000.github.io/categories/Books/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>狂人日记</title>
+    <link href="https://shuguang2000.github.io/Books/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%AE%B0/"/>
+    <id>https://shuguang2000.github.io/Books/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%AE%B0/</id>
+    <published>2023-04-19T14:43:59.000Z</published>
+    <updated>2024-09-17T21:40:55.165Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Books" scheme="https://shuguang2000.github.io/categories/Books/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>认知觉醒</title>
+    <link href="https://shuguang2000.github.io/Books/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92/"/>
+    <id>https://shuguang2000.github.io/Books/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92/</id>
+    <published>2023-04-19T14:43:59.000Z</published>
+    <updated>2024-09-17T21:40:40.147Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Books" scheme="https://shuguang2000.github.io/categories/Books/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>李光耀观天下</title>
+    <link href="https://shuguang2000.github.io/Books/%E6%9D%8E%E5%85%89%E8%80%80%E8%A7%82%E5%A4%A9%E4%B8%8B/"/>
+    <id>https://shuguang2000.github.io/Books/%E6%9D%8E%E5%85%89%E8%80%80%E8%A7%82%E5%A4%A9%E4%B8%8B/</id>
+    <published>2023-04-19T14:43:59.000Z</published>
+    <updated>2024-09-17T21:40:34.968Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Books" scheme="https://shuguang2000.github.io/categories/Books/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>认知驱动</title>
+    <link href="https://shuguang2000.github.io/Books/%E8%AE%A4%E7%9F%A5%E9%A9%B1%E5%8A%A8/"/>
+    <id>https://shuguang2000.github.io/Books/%E8%AE%A4%E7%9F%A5%E9%A9%B1%E5%8A%A8/</id>
+    <published>2023-04-19T14:43:59.000Z</published>
+    <updated>2024-09-17T21:40:43.906Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Books" scheme="https://shuguang2000.github.io/categories/Books/"/>
+    
     
   </entry>
   
@@ -415,37 +713,6 @@
   </entry>
   
   <entry>
-    <title>关于Git 的使用</title>
-    <link href="https://shuguang2000.github.io/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>https://shuguang2000.github.io/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
-    <published>2022-11-20T05:31:58.000Z</published>
-    <updated>2024-08-17T16:47:02.982Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Git 是一个分布式版本控制系统，每个客户端都是一个完整的版本库。&lt;br&gt;
-&lt;/br&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Git 本质上是一个&lt;strong&gt;key-value的数据库&lt;/strong&gt;加上&lt;strong&gt;默克尔树形成的有向无环图&lt;/strong&gt;（DAG）。&lt;br&gt;
-&lt;/br&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;关于Git 更多内容，参考&lt;a href=&quot;https://git-scm.com/book/zh/v2&quot;&gt;Pro Git book&lt;/a&gt; 。&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Blog" scheme="https://shuguang2000.github.io/categories/Blog/"/>
-    
-    
-    <category term="Git" scheme="https://shuguang2000.github.io/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
     <title>自动化测试模型</title>
     <link href="https://shuguang2000.github.io/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%9E%8B/"/>
     <id>https://shuguang2000.github.io/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%9E%8B/</id>
@@ -463,27 +730,6 @@
     
     
     <category term="Automated Testing" scheme="https://shuguang2000.github.io/tags/Automated-Testing/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>环境搭建基础</title>
-    <link href="https://shuguang2000.github.io/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/"/>
-    <id>https://shuguang2000.github.io/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</id>
-    <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2024-08-10T12:22:26.132Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;本文主要介绍自动化测试环境搭建、Python相关概念和pip包管理工具。&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Software Testing" scheme="https://shuguang2000.github.io/categories/Software-Testing/"/>
-    
-    
-    <category term="Python" scheme="https://shuguang2000.github.io/tags/Python/"/>
     
   </entry>
   
@@ -509,6 +755,27 @@
   </entry>
   
   <entry>
+    <title>环境搭建基础</title>
+    <link href="https://shuguang2000.github.io/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/"/>
+    <id>https://shuguang2000.github.io/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</id>
+    <published>2022-11-19T05:31:58.000Z</published>
+    <updated>2024-08-10T12:22:26.132Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍自动化测试环境搭建、Python相关概念和pip包管理工具。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Software Testing" scheme="https://shuguang2000.github.io/categories/Software-Testing/"/>
+    
+    
+    <category term="Python" scheme="https://shuguang2000.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>自动化测试基础</title>
     <link href="https://shuguang2000.github.io/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
     <id>https://shuguang2000.github.io/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</id>
@@ -525,9 +792,40 @@
     <category term="Software Testing" scheme="https://shuguang2000.github.io/categories/Software-Testing/"/>
     
     
+    <category term="Automated Testing" scheme="https://shuguang2000.github.io/tags/Automated-Testing/"/>
+    
     <category term="Selenium" scheme="https://shuguang2000.github.io/tags/Selenium/"/>
     
-    <category term="Automated Testing" scheme="https://shuguang2000.github.io/tags/Automated-Testing/"/>
+  </entry>
+  
+  <entry>
+    <title>关于Git 的使用</title>
+    <link href="https://shuguang2000.github.io/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>https://shuguang2000.github.io/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+    <published>2022-11-15T16:25:16.341Z</published>
+    <updated>2024-09-17T14:32:07.141Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Git 是一个分布式版本控制系统，每个客户端都是一个完整的版本库。&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Git 本质上是一个&lt;strong&gt;key-value的数据库&lt;/strong&gt;加上&lt;strong&gt;默克尔树形成的有向无环图&lt;/strong&gt;（DAG）。&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;关于Git 更多内容，参考&lt;a href=&quot;https://git-scm.com/book/zh/v2&quot;&gt;Pro Git book&lt;/a&gt; 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Blog" scheme="https://shuguang2000.github.io/categories/Blog/"/>
+    
+    
+    <category term="Git" scheme="https://shuguang2000.github.io/tags/Git/"/>
     
   </entry>
   
@@ -536,12 +834,12 @@
     <link href="https://shuguang2000.github.io/Blog/Hexo%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"/>
     <id>https://shuguang2000.github.io/Blog/Hexo%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</id>
     <published>2022-11-12T08:31:58.000Z</published>
-    <updated>2024-08-10T12:21:03.154Z</updated>
+    <updated>2024-09-16T23:55:31.261Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;本文主要介绍了关于Hexo&lt;strong&gt;基础知识&lt;/strong&gt;、&lt;strong&gt;常用命令&lt;/strong&gt;、&lt;strong&gt;自定义&lt;/strong&gt;以及&lt;strong&gt;标签插件&lt;/strong&gt;四个方面内容。&lt;br&gt;
+&lt;p&gt;本文主要介绍了关于Hexo&lt;strong&gt;基础知识&lt;/strong&gt;和&lt;strong&gt;常用命令&lt;/strong&gt;。&lt;br&gt;
 &lt;br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
@@ -561,57 +859,11 @@
   </entry>
   
   <entry>
-    <title>常用 Git 命令清单</title>
-    <link href="https://shuguang2000.github.io/Blog/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
-    <id>https://shuguang2000.github.io/Blog/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
-    <published>2022-11-11T06:31:58.000Z</published>
-    <updated>2024-08-17T16:49:09.871Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;Git常用命令，参考自&lt;a href=&quot;https://blog.51cto.com/u_14595972/4940805&quot;&gt;常用 Git 命令清单（阮一峰）&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Blog" scheme="https://shuguang2000.github.io/categories/Blog/"/>
-    
-    
-    <category term="Git" scheme="https://shuguang2000.github.io/tags/Git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>自建代理服务器</title>
-    <link href="https://shuguang2000.github.io/category1/%E8%87%AA%E5%BB%BA%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    <id>https://shuguang2000.github.io/category1/%E8%87%AA%E5%BB%BA%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8/</id>
-    <published>2022-11-11T05:31:58.000Z</published>
-    <updated>2024-09-06T15:41:10.991Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;pass&lt;br&gt;
-&lt;br&gt;&lt;/li&gt;
-&lt;li&gt;pass&lt;br&gt;
-&lt;br&gt;&lt;/li&gt;
-&lt;li&gt;pass&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="category1" scheme="https://shuguang2000.github.io/categories/category1/"/>
-    
-    
-    <category term="tag1" scheme="https://shuguang2000.github.io/tags/tag1/"/>
-    
-  </entry>
-  
-  <entry>
     <title>GitHub Pages中的自定义域</title>
-    <link href="https://shuguang2000.github.io/Blog/GitHub%20Pages%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/"/>
-    <id>https://shuguang2000.github.io/Blog/GitHub%20Pages%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/</id>
+    <link href="https://shuguang2000.github.io/Blog/GitHub%20Pages%20%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/"/>
+    <id>https://shuguang2000.github.io/Blog/GitHub%20Pages%20%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/</id>
     <published>2022-11-10T07:31:58.000Z</published>
-    <updated>2024-08-10T12:20:58.534Z</updated>
+    <updated>2024-09-21T09:27:29.060Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -625,6 +877,34 @@
     
     <category term="GitHub Pages" scheme="https://shuguang2000.github.io/tags/GitHub-Pages/"/>
     
+    <category term="Domain" scheme="https://shuguang2000.github.io/tags/Domain/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>礼品卡</title>
+    <link href="https://shuguang2000.github.io/Games/%E7%A4%BC%E5%93%81%E5%8D%A1/"/>
+    <id>https://shuguang2000.github.io/Games/%E7%A4%BC%E5%93%81%E5%8D%A1/</id>
+    <published>2022-10-31T13:20:00.000Z</published>
+    <updated>2024-09-20T07:29:10.708Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;摘要&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#摘要&quot;&gt;#&lt;/a&gt;摘要&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;实体物品礼品卡：以等价值商品为&lt;strong&gt;信用&lt;/strong&gt;，从而进行资金回流的经营手段，能创造流动性。（本质类似于&lt;strong&gt;发债&lt;/strong&gt;）&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;虚拟物品礼品卡：虚拟类行业以等价值虚拟物品为信用，从而进行资金回流的经营手段，能创造流动性。（本质类似于&lt;strong&gt;发债&lt;/strong&gt;）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Games" scheme="https://shuguang2000.github.io/categories/Games/"/>
+    
+    
   </entry>
   
   <entry>
@@ -632,21 +912,11 @@
     <link href="https://shuguang2000.github.io/Blog/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"/>
     <id>https://shuguang2000.github.io/Blog/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/</id>
     <published>2022-10-30T05:31:58.000Z</published>
-    <updated>2024-08-10T12:20:25.892Z</updated>
+    <updated>2024-09-20T06:56:26.758Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;本次博客优化包含: 对整个博客站点的&lt;strong&gt;模板优化&lt;/strong&gt;以及&lt;strong&gt;性能优化&lt;/strong&gt;。&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;模板优化&lt;/strong&gt;: 主要是对Next的主题优化和功能扩展。&lt;br&gt;
-&lt;br&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;性能优化&lt;/strong&gt;: 主要是针对性能和网站推广优化。&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;本次博客优化包含: 对整个博客站点的&lt;strong&gt;模板配置&lt;/strong&gt;以及&lt;strong&gt;性能优化&lt;/strong&gt;。主要是对Next的性能和网站推广优化。&lt;/li&gt;
 &lt;/ul&gt;</summary>
     
     
@@ -665,7 +935,7 @@
     <link href="https://shuguang2000.github.io/Blog/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     <id>https://shuguang2000.github.io/Blog/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</id>
     <published>2022-10-30T03:31:58.000Z</published>
-    <updated>2024-08-17T07:28:16.049Z</updated>
+    <updated>2024-09-17T19:12:20.087Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -688,11 +958,11 @@
     <link href="https://shuguang2000.github.io/Blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/"/>
     <id>https://shuguang2000.github.io/Blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</id>
     <published>2022-10-29T04:31:58.000Z</published>
-    <updated>2024-09-02T05:36:25.689Z</updated>
+    <updated>2024-09-21T02:36:00.815Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
-&lt;li&gt;基于 &lt;strong&gt;Hexo&lt;/strong&gt; 和 &lt;strong&gt;GitHub Pages&lt;/strong&gt; 博客搭建指南，并使用 &lt;strong&gt;Git&lt;/strong&gt; 进行版本控制（备份本地文件）。&lt;/li&gt;
+&lt;li&gt;基于 &lt;strong&gt;Hexo&lt;/strong&gt; 和 &lt;strong&gt;GitHub Pages&lt;/strong&gt; 博客搭建指南，并使用 &lt;strong&gt;Git&lt;/strong&gt; 进行版本控制。&lt;/li&gt;
 &lt;/ul&gt;</summary>
     
     
@@ -700,11 +970,11 @@
     <category term="Blog" scheme="https://shuguang2000.github.io/categories/Blog/"/>
     
     
-    <category term="Git" scheme="https://shuguang2000.github.io/tags/Git/"/>
-    
     <category term="GitHub Pages" scheme="https://shuguang2000.github.io/tags/GitHub-Pages/"/>
     
     <category term="Hexo" scheme="https://shuguang2000.github.io/tags/Hexo/"/>
+    
+    <category term="Git" scheme="https://shuguang2000.github.io/tags/Git/"/>
     
   </entry>
   
@@ -713,7 +983,7 @@
     <link href="https://shuguang2000.github.io/Blog/%E6%B6%88%E6%81%AF%E6%9D%A5%E6%BA%90/"/>
     <id>https://shuguang2000.github.io/Blog/%E6%B6%88%E6%81%AF%E6%9D%A5%E6%BA%90/</id>
     <published>2022-10-29T02:31:59.000Z</published>
-    <updated>2024-08-10T12:20:45.748Z</updated>
+    <updated>2024-09-17T14:58:46.128Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -745,25 +1015,25 @@
   
   <entry>
     <title>Markdown使用教程</title>
-    <link href="https://shuguang2000.github.io/Blog/Markdown%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
-    <id>https://shuguang2000.github.io/Blog/Markdown%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
+    <link href="https://shuguang2000.github.io/Tools/Markdown%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <id>https://shuguang2000.github.io/Tools/Markdown%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
     <published>2022-09-29T09:32:58.000Z</published>
-    <updated>2024-08-10T12:21:08.066Z</updated>
+    <updated>2024-09-20T07:16:44.074Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;关于Markdown常用语法的使用的梳理，主要是方便自己总结和回顾使用。&lt;br&gt;
+&lt;p&gt;关于Markdown常用语法的使用的梳理，主要是方便自己总结和回顾使用，也可以自行通过&lt;a href=&quot;https://markdown.com.cn/&quot;&gt;Markdown官网&lt;/a&gt;来学习。&lt;br&gt;
 &lt;br&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;关于Markdown的使用也可以自行通过&lt;a href=&quot;https://markdown.com.cn/&quot;&gt;Markdown官网&lt;/a&gt;来学习。&lt;/p&gt;
+&lt;p&gt;推荐使用VSCode插件&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one&quot;&gt;markdown-all-in-one&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;</summary>
     
     
     
-    <category term="Blog" scheme="https://shuguang2000.github.io/categories/Blog/"/>
+    <category term="Tools" scheme="https://shuguang2000.github.io/categories/Tools/"/>
     
     
     <category term="Markdown" scheme="https://shuguang2000.github.io/tags/Markdown/"/>
