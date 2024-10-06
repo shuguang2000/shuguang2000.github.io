@@ -1,6 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>VSCode 快速切换工作区</title>
+    <url>/Tools/VSCode%20%E5%BF%AB%E9%80%9F%E5%88%87%E6%8D%A2%E5%B7%A5%E4%BD%9C%E5%8C%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li>
+<p>VSCode 目前只允许<strong>一次打开一个工作区实例</strong>，即 custom.code-workspace 且只能在 VSCode 的一个窗口中打开。<br>
+<br></p>
+</li>
+<li>
+<p>本文就是为解决 VSCode 快速切换不同的工作区问题。</p>
+</li>
+</ul>
+<span id="more"></span>
+<hr>
+<h3 id="VSCode-快速切换工作区"><a class="header-anchor" href="#VSCode-快速切换工作区">#</a>VSCode 快速切换工作区</h3>
+<ol>
+<li>
+<p><strong>手动创建 VSCode 工作区</strong></p>
+<ul>
+<li>将工作区文件夹添加到工作区，另存为 <code>custom.code-workspace</code>文件，通过文件打开工作区间。</li>
+</ul>
+</li>
+<li>
+<p><strong>使用 VSCode 插件 Workspace Explorer</strong>【推荐】</p>
+<ul>
+<li>通过插件手动配置不同工作区，实现快速切换不同的工作区。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h4 id="手动创建-VSCode-工作区"><a class="header-anchor" href="#手动创建-VSCode-工作区">#</a>手动创建 VSCode 工作区</h4>
+<ul>
+<li>
+<p>将工作区文件夹添加到工作区，另存为 <code>custom.code-workspace</code>文件，通过文件打开工作区间。<br>
+<br></p>
+</li>
+<li>
+<p>通过 <code>Ctrl + Shif + P</code> 打开Open Workspace Settings(json)任务编辑工作区文件和工作区设置。</p>
+</li>
+</ul>
+<hr>
+<h4 id="使用-VSCode-插件-Workspace-Explorer"><a class="header-anchor" href="#使用-VSCode-插件-Workspace-Explorer">#</a>使用 VSCode 插件 Workspace Explorer</h4>
+<ul>
+<li>
+<p>安装插件 <a href="https://marketplace.visualstudio.com/items?itemName=tomsaunders.vscode-workspace-explorer" rel="external nofollow noreferrer">Workspace Explorer</a></p>
+</li>
+<li>
+<p><a href="https://github.com/sirfuzzalot/workspace-explorer?tab=readme-ov-file#opening-a-workspace-using-command-palette" rel="external nofollow noreferrer">Workspace Explorer Github 文档</a><br>
+<br></p>
+</li>
+<li>
+<p>配置 Workspace Explorer</p>
+<ul>
+<li>设置<strong>自定义图标目录路径</strong>和<strong>工作区文件目录</strong>，并开启自定义图片搜索
+<ul>
+<li>需注意：windows 平台不能设置路径为盘符根目录即（如 D:\）<br>
+<br></li>
+</ul>
+</li>
+</ul>
+<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/%E9%85%8D%E7%BD%AEWorkspaceExplorer.png" alt="配置 Workspace Explorer"><br>
+<br></p>
+<ul>
+<li>关于自定义图标可以从<a href="https://www.flaticon.com/" rel="external nofollow noreferrer">Flaticon</a>下载。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>最终实现快速切换不同工作区<br>
+<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/20240924151131.png" alt="Workspace"></p>
+</li>
+</ul>
+<hr>
+<h4 id="Thanks"><a class="header-anchor" href="#Thanks">#</a>Thanks</h4>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=tomsaunders.vscode-workspace-explorer" rel="external nofollow noreferrer">Workspace Explorer</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Tools</category>
+      </categories>
+      <tags>
+        <tag>VSCode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Cloudflare 使用最优 CDN 免费加速网站</title>
+    <url>/Tools/Cloudflare%20%E4%BD%BF%E7%94%A8%E6%9C%80%E4%BC%98%20CDN%20%E5%85%8D%E8%B4%B9%E5%8A%A0%E9%80%9F%E7%BD%91%E7%AB%99/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li>使用 Cloudflare 使用最优 CDN 免费加速在中国的网页的访问速度和稳定性。</li>
+</ul>
+<span id="more"></span>
+<hr>
+<h3 id="Cloudflare-最优-CDN-免费加速网站"><a class="header-anchor" href="#Cloudflare-最优-CDN-免费加速网站">#</a>Cloudflare 最优 CDN 免费加速网站</h3>
+<ul>
+<li>
+<p><strong>关于使用 Cloudflare 的 SAAS（Software as a Service） 功能的原因</strong></p>
+<ul>
+<li>
+<p>Cloudflare 域名服务器配置的域名无法直接接入 Cloudflare 的优选域名<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="CDN优选是指根据特定标准和需求，从多个内容分发网络（CDN）中选择最合适的服务提供商。优选过程通常考虑因素包括性能、地理覆盖、安全性、兼容性、成本和客户支持等，旨在确保内容以最佳方式快速、安全地传递给最终用户。">[1]</span></a></sup>。</p>
+<ul>
+<li>因为要使用优选域名例如：<code>cloudflare.182682.xyz</code>, 需要 cname 记录为非 Cloudflare 域名服务器提供的 cname 记录完来成。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>其他需使用 SAAS(cname) 的场景</p>
+<ul>
+<li>使用 Cloudflare 作为 cdn 服务器并保护源 ip （即开启橙色云朵）</li>
+<li>使用 Cloudflare Worker 的同时想使用优选域名</li>
+<li>使用 Cloudflare 的 Zero Trust<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>CloudFlare SAAS(cname) 接入网站域名</strong></p>
+<ul>
+<li>添加自定义主机名（免费用户可添加100个）</li>
+<li>添加回退源（免费用户只能添加一个）
+<ul>
+<li>回退源可以是该主域名的任意子域名，但需该域名的A记录为源IP（并开启橙色云朵）<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>关于网站使用 CloudFlare 优选域名</strong></p>
+<ul>
+<li>
+<p><strong>方法一：两个 CloudFlare 域名</strong></p>
+<ul>
+<li>用户访问你的网站域名
+<ul>
+<li>若回退源域名使用了 https 加密，则网站域名加密方式需为“严格”</li>
+</ul>
+</li>
+<li>用于 SAAS 回退源的域名<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>方法二：一个域名</strong></p>
+<ul>
+<li>顶级域名托管在 CloudFlare</li>
+<li>该顶级域的子域名通过 NS 记录托管在其他的权威 DNS 服务器，例如：
+<ul>
+<li>腾讯云的 <a href="https://www.dnspod.cn/" rel="external nofollow noreferrer">DNSPod</a></li>
+<li><a href="https://dns.he.net/" rel="external nofollow noreferrer">Hurricane Electric DNS</a></li>
+<li>…</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="网站使用-CloudFlare-优选域名"><a class="header-anchor" href="#网站使用-CloudFlare-优选域名">#</a>网站使用 CloudFlare 优选域名</h4>
+<ul>
+<li>关于 <a href="https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/" rel="external nofollow noreferrer">CloudFlare SAAS</a>
+<ul>
+<li>官网的解释是：
+<ul>
+<li>允许你通过客户自己的自定义或虚域<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="“虚域”通常指的是一种通过域名进行虚拟化的方式。它可以用来在同一台服务器上托管多个网站或应用程序，每个网站或应用程序都使用不同的域名。虚域名通过 DNS 解析指向同一 IP 地址，但服务器会根据请求的域名来区分不同的内容。">[2]</span></a></sup>将 Cloudflare 网络的安全和性能优势扩展到你的客户。</li>
+</ul>
+</li>
+<li>其实就是：
+<ul>
+<li>允许你的域名提供该域名下的自定义域名的接入功能。</li>
+</ul>
+</li>
+<li>例如，Github个人站点<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="Github 给个人用户默认提供`username.github.io`的个人站点，Github 用户可购买自己的域名（例如：www.example.com）指向这 Github 默认域实现对该账户下所有公开仓库的访问。
+">[3]</span></a></sup>：
+<ul>
+<li>
+<p>Github 用户通过自定义域名路由到（或者说回退到）Github 默认域（即<code>github.io</code>这个顶级域），这样 Github 就可轻松管理所有用户站点应用程序的安全防护、内容分发、SSL/TLS加密等问题。<br>
+<br></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/CloudFlare%20SAAS.png" alt="CloudFlare SAAS"></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<p>使用两个 CloudFlare 域名实现网站加速</p>
+<ul>
+<li>pass<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>使用一个域名网站加速</p>
+<ul>
+<li>pass</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="Thanks"><a class="header-anchor" href="#Thanks">#</a>Thanks</h4>
+<ul>
+<li><a href="https://github.com/xingpingcn/enhanced-FaaS-in-China/blob/main/docs/how2use-SaaS-for-CF/how2use-SaaS-for-CF.md" rel="external nofollow noreferrer">如何使用 cloudflare 的 saas 功能</a><br>
+<br></li>
+</ul>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">CDN优选是指根据特定标准和需求，从多个内容分发网络（CDN）中选择最合适的服务提供商。优选过程通常考虑因素包括性能、地理覆盖、安全性、兼容性、成本和客户支持等，旨在确保内容以最佳方式快速、安全地传递给最终用户。<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">“虚域”通常指的是一种通过域名进行虚拟化的方式。它可以用来在同一台服务器上托管多个网站或应用程序，每个网站或应用程序都使用不同的域名。虚域名通过 DNS 解析指向同一 IP 地址，但服务器会根据请求的域名来区分不同的内容。<a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">Github 给个人用户默认提供<code>username.github.io</code>的个人站点，Github 用户可购买自己的域名（例如：www.example.com）指向这 Github 默认域实现对该账户下所有公开仓库的访问。<a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+      <categories>
+        <category>Tools</category>
+      </categories>
+      <tags>
+        <tag>CDN</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Windows 解决端口占用</title>
     <url>/Tools/Windows%20%E8%A7%A3%E5%86%B3%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
@@ -127,7 +344,7 @@
 <ul>
 <li>当端口被防火墙阻止时
 <ul>
-<li>可以选择“高级安全Windows防火墙”，新建“入站规则”，指定规则类型为端口并输入端口号配置即可解决端口问腿。</li>
+<li>可以选择“高级安全Windows防火墙”，新建“入站规则”，指定规则类型为端口并输入端口号配置即可解决端口问题。</li>
 </ul>
 </li>
 </ul>
@@ -264,10 +481,10 @@
 <li>
 <p><strong>补充</strong>（推荐）</p>
 <ul>
-<li>可使用自定义快捷键不用输入前缀，快速在任意文件中插入自定义代码片段（这里使用的是 <code>Ctrl+Alt+M</code> ）
+<li>可使用自定义快捷键实现不用输入前缀，即可快速在任意文件中插入自定义代码片段（这里使用的是 <code>Ctrl+Alt+M</code> ）
 <ul>
-<li>打开 VSCode，进入 “文件” &gt; “首选项” &gt; “键盘快捷方式” &gt; “打开键盘快捷方式JSON” &gt; keybindings.json</li>
-<li>打开keybindings.json文件（默认在C:\Users&lt;your_username&gt;\AppData\Roaming\Code\User下）添加下面JSON代码：<br>
+<li>打开 VSCode，进入 “文件” &gt; “首选项” &gt; “键盘快捷方式” &gt; “打开键盘快捷方式JSON” &gt; <code>keybindings.json</code></li>
+<li>或者是打开<code>keybindings.json</code>文件（默认在<code>C:\Users\&lt;your_username&gt;\AppData\Roaming\Code\User</code>下）添加下面JSON代码：<br>
 <br></li>
 </ul>
 </li>
@@ -303,8 +520,7 @@
 <li><strong>运行任务</strong>
 <ul>
 <li>
-<p><code>Ctrl + Shift + P</code> 选择<code>Takes: Run Task</code>运行这个标签为 Create Hexo Post 的任务。<br>
-<br></p>
+<p><code>Ctrl + Shift + P</code> 选择<code>Takes: Run Task</code>运行这个标签为 Create Hexo Post 的任务。</p>
 </li>
 <li>
 <p><a href="https://code.visualstudio.com/docs/editor/tasks" rel="external nofollow noreferrer">VSCode自定义任务文档</a></p>
@@ -323,7 +539,7 @@
 </ul>
 </li>
 <li>
-<p>侧边栏点击加号输入标题即可创建文章。</p>
+<p>侧边栏点击加号输入标题即可快速创建文章。</p>
 </li>
 </ul>
 <hr>
@@ -377,7 +593,7 @@
         <category>Blog</category>
       </categories>
       <tags>
-        <tag>Tools</tag>
+        <tag>VSCode</tag>
       </tags>
   </entry>
   <entry>
@@ -555,7 +771,7 @@
 <h4 id="致谢"><a class="header-anchor" href="#致谢">#</a>致谢</h4>
 <ul>
 <li>
-<p><a href="https://github.com/massgravel/Microsoft-Activation-Scripts" rel="external nofollow noreferrer">Microsoft 激活脚本 Github</a><br>
+<p><a href="https://github.com/massgravel/Microsoft-Activation-Scripts" rel="external nofollow noreferrer">Microsoft 激活脚本 Github 地址</a><br>
 <br></p>
 </li>
 <li>
@@ -581,7 +797,8 @@
 <hr>
 <h3 id="正向代理和反向代理"><a class="header-anchor" href="#正向代理和反向代理">#</a>正向代理和反向代理</h3>
 <ol>
-<li><strong>正向代理</strong>
+<li>
+<p><strong>正向代理</strong></p>
 <ul>
 <li>类似一个跳板机，代理用户发送请求来访问外部资源。<br>
 <br></li>
@@ -593,11 +810,16 @@
 </li>
 </ul>
 </li>
-<li><strong>反向代理</strong>
+<li>
+<p><strong>反向代理</strong></p>
 <ul>
-<li>不同地区的客户端并不知道自己访问的是不同的代理服务器，客户端是无感知代理的存在的。<br>
-<br></li>
-<li>客户端不需要任何配置就可以获取资源。</li>
+<li>
+<p>不同地区的客户端并不知道自己访问的是不同的代理服务器，客户端是无感知代理的存在的。<br>
+<br></p>
+</li>
+<li>
+<p>客户端不需要任何配置就可以获取资源。</p>
+</li>
 </ul>
 </li>
 </ol>
@@ -626,18 +848,21 @@
 <hr>
 <h5 id="正向代理和反向代理的区别"><a class="header-anchor" href="#正向代理和反向代理的区别">#</a>正向代理和反向代理的区别</h5>
 <ul>
-<li>正向代理
+<li>
+<p>正向代理</p>
 <ul>
 <li>可以看作是用户（client）和代理（proxy）处在一个局域网（LAN），代理（proxy）服务器对于Web服务器（server）是透明的。<br>
 <br></li>
 </ul>
 </li>
-<li>反向代理
+<li>
+<p>反向代理</p>
 <ul>
 <li>可以看作是服务器（server）和代理（proxy）处在一个局域网（LAN），Web服务器（server）对于代理（proxy）服务器是透明。</li>
 </ul>
 </li>
-<li>总结
+<li>
+<p>总结</p>
 <ul>
 <li>实际使用的正向和反向代理中，代理服务器做的都是代收发请求，类似于现实中的中介。</li>
 </ul>
@@ -661,11 +886,10 @@
 <span id="more"></span>
 <hr>
 <h3 id="CSGO-批量出售"><a class="header-anchor" href="#CSGO-批量出售">#</a>CSGO 批量出售</h3>
-<ol>
+<ul>
 <li>CSGO 批量出售链接
 <ul>
-<li><code>https://steamcommunity.com/market/multisell?appid=730&amp;contextid=2&amp;items[]=Snakebite%20Case</code>
-<ul>
+<li><code>https://steamcommunity.com/market/multisell?appid=730&amp;contextid=2&amp;items[]=Snakebite%20Case</code></li>
 <li><code>multisell</code>: 代表批量出售。</li>
 <li><code>appid</code>: 代表游戏ID，<code>730</code>是<code>CSGO 2</code>而<code>570</code>是<code>Dota 2</code>。</li>
 <li><code>contextid</code>: 用来区别服务的，当一个微服务需要调用另一个微服务提供的多个不同接口时，就需要contextId在运行时能够正确地识别和区分彼此，避免出现冲突和混淆。</li>
@@ -674,8 +898,6 @@
 </ul>
 </li>
 </ul>
-</li>
-</ol>
 <hr>
 ]]></content>
       <categories>
@@ -689,66 +911,72 @@
     <title>自发学习</title>
     <url>/Study/%E8%87%AA%E5%8F%91%E5%AD%A6%E4%B9%A0/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>pass<br>
-<br></li>
-<li>pass<br>
-<br></li>
-<li>pass</li>
+<li>自发学习的核心是逐步加强的对自身的理解和控制能力。</li>
 </ul>
 <span id="more"></span>
 <hr>
-<h3 id="标题简述"><a class="header-anchor" href="#标题简述">#</a>标题简述</h3>
+<h3 id="前言"><a class="header-anchor" href="#前言">#</a>前言</h3>
+<ul>
+<li>
+<p>想到自发学习，总不自然联想到社会主义，人总是希望思想能够直接控制行为，然而人和人群一样都是基于抽象主义。<br>
+<br></p>
+</li>
+<li>
+<p>从抽象直接控制具体是不现实，反之亦然。</p>
+</li>
+</ul>
+<hr>
+<h4 id="自发学习"><a class="header-anchor" href="#自发学习">#</a>自发学习</h4>
 <ol>
-<li>pass
-<ul>
-<li>pass</li>
-<li>pass<br>
-<br></li>
-</ul>
+<li>
+<p><strong>可行性方案</strong><br>
+<br></p>
 </li>
-<li>pass
-<ul>
-<li>pass</li>
-<li>pass<br>
-<br></li>
-</ul>
+<li>
+<p><strong>安全可明白性的输入</strong><br>
+<br></p>
 </li>
-<li>pass
-<ul>
-<li>pass</li>
-<li>pass<br>
-<br></li>
-</ul>
+<li>
+<p><strong>忍受歧义接受不完美</strong><br>
+<br></p>
 </li>
-<li>pass
-<ul>
-<li>pass</li>
-<li>pass</li>
-</ul>
+<li>
+<p><strong>分解解构</strong><br>
+<br></p>
+</li>
+<li>
+<p><strong>形成工具箱</strong></p>
 </li>
 </ol>
-<br>
 <hr>
-<h4 id="具体流程"><a class="header-anchor" href="#具体流程">#</a>具体流程</h4>
+<h4 id="可行性方案"><a class="header-anchor" href="#可行性方案">#</a>可行性方案</h4>
 <ul>
-<li>准备工作<br>
-<br></li>
-<li>思路<br>
-<br></li>
-<li>具体流程<br>
-<br></li>
-<li>总结</li>
+<li>明确的可执行的方案
+<ul>
+<li>模仿已知方案</li>
+<li>寻求有效性</li>
+<li>识别并运用</li>
 </ul>
-<h5 id="副标题1"><a class="header-anchor" href="#副标题1">#</a>副标题1</h5>
-<ul>
-<li>pass</li>
+</li>
 </ul>
 <hr>
-<h5 id="总结"><a class="header-anchor" href="#总结">#</a>总结</h5>
-<hr>
-<h5 id="致谢"><a class="header-anchor" href="#致谢">#</a>致谢</h5>
+<h4 id="安全可明白性的输入"><a class="header-anchor" href="#安全可明白性的输入">#</a>安全可明白性的输入</h4>
 <ul>
-<li><a href="https://github.com/" rel="external nofollow noreferrer">pass</a></li>
+<li>开心、放松、好奇大脑状态</li>
+<li>忍受歧义接受不完美</li>
+<li>安全理解和反馈（AI工具）</li>
+</ul>
+<hr>
+<h4 id="分解解构"><a class="header-anchor" href="#分解解构">#</a>分解解构</h4>
+<ul>
+<li>理解基础意思</li>
+<li>创造和基础运用</li>
+</ul>
+<hr>
+<h4 id="形成工具箱"><a class="header-anchor" href="#形成工具箱">#</a>形成工具箱</h4>
+<ul>
+<li>基础工具箱</li>
+<li>自己的工具箱</li>
 </ul>
 ]]></content>
       <categories>
@@ -757,6 +985,15 @@
       <tags>
         <tag>study</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>乡土中国</title>
+    <url>/Books/%E4%B9%A1%E5%9C%9F%E4%B8%AD%E5%9B%BD/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><hr>
+]]></content>
+      <categories>
+        <category>Books</category>
+      </categories>
   </entry>
   <entry>
     <title>工作、消费主义和新穷人</title>
@@ -811,8 +1048,8 @@
       </categories>
   </entry>
   <entry>
-    <title>乡土中国</title>
-    <url>/Books/%E4%B9%A1%E5%9C%9F%E4%B8%AD%E5%9B%BD/</url>
+    <title>心流</title>
+    <url>/Books/%E5%BF%83%E6%B5%81/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><hr>
 ]]></content>
       <categories>
@@ -829,17 +1066,8 @@
       </categories>
   </entry>
   <entry>
-    <title>心流</title>
-    <url>/Books/%E5%BF%83%E6%B5%81/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><hr>
-]]></content>
-      <categories>
-        <category>Books</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>狂人日记</title>
-    <url>/Books/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%AE%B0/</url>
+    <title>认知驱动</title>
+    <url>/Books/%E8%AE%A4%E7%9F%A5%E9%A9%B1%E5%8A%A8/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><hr>
 ]]></content>
       <categories>
@@ -856,8 +1084,8 @@
       </categories>
   </entry>
   <entry>
-    <title>认知驱动</title>
-    <url>/Books/%E8%AE%A4%E7%9F%A5%E9%A9%B1%E5%8A%A8/</url>
+    <title>狂人日记</title>
+    <url>/Books/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%AE%B0/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><hr>
 ]]></content>
       <categories>
@@ -4034,10 +4262,10 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
         <category>Network Protocols</category>
       </categories>
       <tags>
+        <tag>CDN</tag>
         <tag>DNS</tag>
         <tag>DHCP</tag>
         <tag>HTTP</tag>
-        <tag>CDN</tag>
       </tags>
   </entry>
   <entry>
@@ -7561,197 +7789,177 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
       </categories>
       <tags>
         <tag>Hexo</tag>
-        <tag>Next</tag>
       </tags>
   </entry>
   <entry>
     <title>GitHub Pages中的自定义域</title>
     <url>/Blog/GitHub%20Pages%20%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>GitHub Pages 支持使用自定义域，或将站点 URL 的根从默认值（如<code>username.github.io</code>）更改为拥有的任何域（如<code>blog.octocat.com</code>）。</li>
+<li>关于 GitHub Pages 使用自定义域使用的基础。</li>
 </ul>
 <span id="more"></span>
 <hr>
-<h3 id="GitHub-Pages中的自定义域简述"><a class="header-anchor" href="#GitHub-Pages中的自定义域简述">#</a>GitHub Pages中的自定义域简述</h3>
+<h3 id="GitHub-Pages中的自定义域"><a class="header-anchor" href="#GitHub-Pages中的自定义域">#</a>GitHub Pages中的自定义域</h3>
 <ul>
-<li>支持的自定义域
+<li>
+<p><strong>支持的自定义域</strong></p>
+<ul>
+<li>GitHub支持子域和顶点域（apex）。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>多仓库使用自定义域</strong></p>
+<ul>
+<li>默认情况下（也就是说项目 Github Pages 站点已发布但不定义自定义域名时），Github Pages 的个人站点的域名将会作用于名下所有已发布的项目站点（<a href="http://xn--www-kd9d0x15v1rpy0slw1f18hc0a.octocat.com/%E9%A1%B9%E7%9B%AE%E5%90%8D%E6%9D%A5%E8%AE%BF%E9%97%AE%EF%BC%89%E3%80%82" rel="external nofollow noreferrer">也就是说可以通过www.octocat.com/项目名来访问）。</a><br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>验证自定义域</strong></p>
+<ul>
+<li>当Github Pages 站点被禁用，但设置了自定义域，则存在域接管的风险。通过验证自定义域可以防止其他 GitHub 用户将你的域用于他们的存储库。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>自定义域使用方法</strong></p>
+<ul>
+<li>关于 Github Pages常见的使用流程和方法。</li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li><strong>自定义域相关问题</strong>
+<ul>
+<li>关于 Github Pages 实际使用中遇到的问题解决方案。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="支持的自定义域"><a class="header-anchor" href="#支持的自定义域">#</a>支持的自定义域</h4>
 <ul>
 <li>GitHub Pages 适用于两种类型的域：
 <ul>
-<li>子域
+<li>
+<p>子域</p>
 <ul>
 <li>www子域：<code>www.example.com</code></li>
 <li>自定义子域：<code>blog.example.com</code><br>
 <br></li>
 </ul>
 </li>
-<li>顶级域（apex 域）：<code>example.com</code>
-<ul>
-<li>顶点域是不包含子域的自定义域</li>
-<li>也称为基本域、裸域、裸域、根顶点或区域顶点域。<br>
-<br></li>
-</ul>
-</li>
-<li>配置了自定义域后，自定义域将替换该帐户所拥有但未配置自定义域的任何<strong>项目站点</strong>的 username.github.io或organization.github.io部分 URL。(如<code>www.octocat.com/blog</code>)<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>为 GitHub Pages 站点使用子域
-<ul>
-<li>子域通过 DNS 提供商配置有CNAME指向站点默认域（<code>username.github.io</code>）。
-<ul>
-<li>www子域
-<ul>
-<li>最常用的子域类型。例如，www.example.com包括一个www子域。</li>
-<li>www子域是<strong>最稳定</strong>的自定义域类型，因为www子域不受 GitHub <strong>服务器 IP 地址</strong>更改的影响。<br>
-<br></li>
-</ul>
-</li>
-<li>自定义子域
-<ul>
-<li>自定义子域是一种不使用标准www变体的子域。<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>为 GitHub Pages 站点使用顶级域
-<ul>
 <li>
-<p>顶级域通过 DNS 提供商配置有A、ALIAS或记录。<br>
-<br></p>
+<p>顶级域（apex 域）：<code>example.com</code></p>
+<ul>
+<li>顶点域是不包含子域的自定义域<br>
+<br></li>
+</ul>
 </li>
 <li>
-<p>如果使用 apex 域作为自定义域名，<strong>建议</strong>还设置一个 www 子域。</p>
-</li>
-<li>
-<p>如果通过 DNS 提供程序配置每种域类型的正确记录，GitHub Pages 将自动在域之间创建重定向。</p>
+<p>始终建议使用 www 子域</p>
 <ul>
-<li>例如，如果将 <code>www.example.com</code> 配置为站点的自定义域，并且为顶点和 www 域设置了 GitHub Pages DNS 记录，则 <code>example.com</code> 将重定向到 <code>www.example.com</code> 。（反之也一样） <strong>注意</strong>，自动重定向仅适用于 www 子域。<br>
-<br></li>
+<li>www 子域不受 GitHub 服务器的 IP 地址变动的影响。</li>
+<li>如果通过 DNS 提供程序配置每种域类型的正确记录，GitHub Pages 将自动在域之间创建重定向（自动重定向仅适用于 www 子域和顶点域之间）。</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>保护 GitHub Pages 站点的自定义域
-<ul>
-<li>如果 GitHub Pages 站点已禁用，但设置了自定义域，则存在域接管的风险。</li>
-<li>验证自定义域可防止其他 GitHub 用户将你的域用于他们的存储库。</li>
-<li>验证的域会阻止其他 GitHub 用户接管的自定义域并使用它来发布他们自己的 GitHub Pages 站点。<br>
-<br></li>
-</ul>
-</li>
-<li>建议始终使用www子域，即使还使用顶级域。
-<ul>
-<li>当使用顶级域创建新站点时，会自动尝试保护www子域以在提供站点内容时使用，但需要更改 DNS 才能使用www子域。如果配置www子域，会自动尝试保护关联的顶级域。</li>
 </ul>
 </li>
 </ul>
 <hr>
-<h4 id="管理自定义域"><a class="header-anchor" href="#管理自定义域">#</a>管理自定义域</h4>
+<h4 id="验证自定义域"><a class="header-anchor" href="#验证自定义域">#</a>验证自定义域</h4>
 <ul>
 <li>
-<p>可以设置或更新某些 DNS 记录和存储库设置，以将 GitHub Pages 站点的默认域指向自定义域。</p>
-</li>
-<li>
-<p>配置子域</p>
+<p>当 GitHub Pages 站点被禁用时，能避免域被接管</p>
 <ul>
-<li>在存储库中为站点配置自定义子域（如<code>www.octocat.com</code>）</li>
-<li>使用 DNS 提供商配置 CNAME 记录
-<ul>
-<li>配置子域（如www）指向站点默认域名（如<code>username.github.io</code>）</li>
-</ul>
-</li>
-<li>若要为站点强制实施 HTTPS 加密，请选择“强制实施 HTTPS”。（<strong>可选</strong>）<br>
+<li>可防止其他 GitHub 用户将你的域用于他们的存储库。</li>
+<li>验证的域会阻止其他 GitHub 用户接管你的自定义域并使用它来发布他们自己的 GitHub Pages 站点。<br>
 <br></li>
 </ul>
 </li>
 <li>
-<p>配置顶点域</p>
+<p>不建议使用自定义子域指向顶点域</p>
 <ul>
-<li>在存储库中为站点配置顶点域（如<code>octocat.com</code>）</li>
-<li>使用 DNS 提供商至少配置 一个ALIAS、ANAME或A 记录
-<ul>
-<li>配置A记录指向站点ip</li>
-<li>配置AAAA记录指向站点ipv6</li>
-<li>若要为站点强制实施 HTTPS 加密，请选择“强制实施 HTTPS”。（<strong>可选</strong>）</li>
-<li>建议还设置一个 www 子域（GitHub Pages 将自动在域之间创建重定向）</li>
-<li>建议勿使用通配符 DNS 记录，例如 *.example.com。(通配符 DNS 记录将允许任何人在你的其中一个子域上托管 GitHub Pages 站点)<br>
-<br></li>
+<li>会遇到对网站强制实施 HTTPS 的问题，此外还可能会遇到子域根本无法访问 GitHub Pages 网站的问题。</li>
 </ul>
 </li>
 </ul>
-</li>
+<hr>
+<h4 id="自定义域使用方法"><a class="header-anchor" href="#自定义域使用方法">#</a>自定义域使用方法</h4>
+<ul>
 <li>
-<p>配置顶点域和www子域变体</p>
+<p><strong>关于 DNS 解析的使用</strong></p>
 <ul>
-<li>使用 DNS 提供商配置 A 记录</li>
-<li>使用 DNS 提供商配置 CNAME 记录<br>
+<li><a href="https://developers.cloudflare.com/dns/" rel="external nofollow noreferrer">Cloudflare DNS 文档</a><br>
 <br></li>
 </ul>
 </li>
 <li>
-<p>验证自定义域</p>
+<p><strong>配置子域和顶点域</strong></p>
 <ul>
-<li>通过DNS TXT record验证自定义域
+<li>使用 DNS 提供商配置 A 记录（如<code>www.username.com</code> -&gt; <code>185.199.108.153</code>）</li>
+<li>使用 DNS 提供商配置 CNAME 记录（如<code>www.username.com</code> -&gt; <code>www.username.github.io</code>）<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>验证自定义域</strong></p>
+<ul>
+<li>通过 DNS 提供商配置 TXT record 验证顶点域
 <ul>
 <li>使用 GitHub 提供 TXT 记录</li>
-<li>使用 DNS 提供商配置该 TXT 记录</li>
+<li>使用 DNS 提供商配置该 TXT 记录<br>
+<br></li>
 </ul>
 </li>
 </ul>
-</li>
-<li>
-<p>更多操作参考：<a href="https://docs.github.com/cn/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site" rel="external nofollow noreferrer">GitHub Pages 管理自定义域</a></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/20240922214418.png" alt="Github Pages 验证顶点域"></p>
 </li>
 </ul>
 <hr>
 <h4 id="自定义域相关问题"><a class="header-anchor" href="#自定义域相关问题">#</a>自定义域相关问题</h4>
 <ul>
-<li>关于给项目站点添加自定义域
+<li>
+<p>关于Hexo个人站点添加自定义域</p>
 <ul>
-<li>使用 DNS 提供商配置一条CNAME记录
-<ul>
-<li>如: 添加一条CNAME记录<code>blog.example.com</code>指向GitHub Pages默认域<code>username.github.io</code></li>
-</ul>
-</li>
-<li>Hexo可以直接手动在source目录添加CNAME文件并填写自定义域（<code>blog.example.com</code>）。<br>
+<li>Hexo可以直接手动在source目录添加CNAME文件并填写自定义域（<code>www.example.com</code>）, 这样就可以实现自定义域 -&gt; 个人站点的默认域（<code>username.github.io.</code>）跳转。<br>
 <br></li>
 </ul>
 </li>
-<li>关于<a href="https://www.godaddy.com/" rel="external nofollow noreferrer">GoDaddy</a>
+<li>
+<p>关于<a href="https://www.godaddy.com/" rel="external nofollow noreferrer">GoDaddy</a></p>
 <ul>
-<li>由于GoDaddy购买的域名默认是停放的（Parked），并且www子域名是默认指向顶级域。
+<li>由于GoDaddy购买的域名默认是停放的（Parked），并且 www 子域名是默认指向顶级域。
 <ul>
 <li>删除关于&quot; A @ Parked&quot; 的 A 记录</li>
-<li>建议更改www子域指向GitHub Pages 站点的默认域（<code>username.github.io.</code>）<br>
+<li>建议将 www 子域指向 <code>username.github.io.</code>，将顶点域名指向 www 子域。<br>
 <br></li>
 </ul>
 </li>
 </ul>
 </li>
-<li>关于使用强制 HTTPS
+<li>
+<p>关于使用强制 HTTPS</p>
 <ul>
 <li>GitHub 不会颁发 TSL 证书，除非的 CNAME 记录www子域指向站点默认域（<code>username.github.io.</code>）</li>
-<li>关于项目站点：在站点默认域成功更改自定义域后，项目站点即可勾选强制HTTPS<br>
-<br></li>
+<li>关于项目站点：在站点默认域成功更改自定义域后，项目站点即可勾选强制HTTPS</li>
 </ul>
 </li>
-<li><a href="https://github.com/orgs/community/discussions/22052" rel="external nofollow noreferrer">更多 GitHub Pages 的证书问题</a></li>
 </ul>
 <hr>
-<h5 id="致谢"><a class="header-anchor" href="#致谢">#</a>致谢</h5>
+<h5 id="Thanks"><a class="header-anchor" href="#Thanks">#</a>Thanks</h5>
 <ul>
 <li>
-<p><a href="https://docs.github.com/cn/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages#supported-custom-domains" rel="external nofollow noreferrer">GitHub Pages配置自定义域</a><br>
+<p><a href="https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages" rel="external nofollow noreferrer">GitHub Pages 中的自定义域</a><br>
 <br></p>
 </li>
 <li>
-<p><a href="https://github.com/orgs/community/discussions/22052" rel="external nofollow noreferrer">GitHub证书请求错误</a></p>
+<p><a href="https://github.com/orgs/community/discussions/22052" rel="external nofollow noreferrer">GitHub 证书请求错误</a><br>
+<br></p>
+</li>
+<li>
+<p><a href="https://developers.cloudflare.com/dns/" rel="external nofollow noreferrer">Cloudflare DNS 文档</a></p>
 </li>
 </ul>
 ]]></content>
@@ -8454,7 +8662,8 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
 <p>For 同时也使用 Git 管理站点目录</p>
 <ul>
 <li>如果同时使用Git管理站点目录，应当注意部署分支应当不同于写作分支。(Hexo每次部署会<strong>完全覆盖</strong>该分支下的内容)</li>
-<li>一个好的实践是：将站点目录和 Pages 分别存放在两个不同的 Git 仓库中，然后手动提交并推送你的写作分支，这样就可以有效避免相互覆盖。<br>
+<li>一个好的实践是：将站点目录和 Pages 分别存放在两个不同的 Git 仓库中，也就是使用Github Actions<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="CI/CD 平台指的是持续集成（Continuous Integration）和持续交付/部署（Continuous Delivery/Deployment）的工具和服务，旨在自动化软件开发过程。CI 通过频繁集成代码，确保代码在共享环境中正常工作，而 CD 则自动化将软件交付到生产环境的过程，提升发布频率和软件质量。常见的 CI/CD 平台有 Jenkins、GitLab CI、CircleCI 和 Travis CI 等。
+">[1]</span></a></sup> ，然后手动提交并推送你的写作分支，这样就可以有效避免相互覆盖。<br>
 <br></li>
 </ul>
 </li>
@@ -8575,7 +8784,7 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
 <p><a href="https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows" rel="external nofollow noreferrer">使用SSH密钥密码</a></p>
 </li>
 </ul>
-]]></content>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">CI/CD 平台指的是持续集成（Continuous Integration）和持续交付/部署（Continuous Delivery/Deployment）的工具和服务，旨在自动化软件开发过程。CI 通过频繁集成代码，确保代码在共享环境中正常工作，而 CD 则自动化将软件交付到生产环境的过程，提升发布频率和软件质量。常见的 CI/CD 平台有 Jenkins、GitLab CI、CircleCI 和 Travis CI 等。<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
       <categories>
         <category>Blog</category>
       </categories>
@@ -8601,7 +8810,6 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
 <li><a href="#2-%E7%86%9F%E6%82%89%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C">2. 熟悉常用操作</a></li>
 <li><a href="#3-%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96">3. 博客优化</a></li>
 <li><a href="#4-%E6%89%A9%E5%B1%95%E5%85%B6%E4%BB%96%E9%A1%B9%E7%9B%AE%E7%AB%99%E7%82%B9">4. 扩展其他项目站点</a></li>
-<li><a href="#5-%E6%80%BB%E7%BB%93">5. 总结</a></li>
 </ul>
 </li>
 </ul>
@@ -8798,9 +9006,9 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
 </ul>
 </li>
 <li>
-<p><strong>自定义</strong></p>
+<p><strong>自定义使用 swig 模板</strong></p>
 <ul>
-<li>关于hexo会自动</li>
+<li>默认情况下 Markdown 文件中的 Front-matter 中指定<code>layout: &quot;books&quot;</code>时，意味着 hexo 会根据该文件的路由寻找文件名为books的swig模板文件（即books.swig）来渲染该Markdown文件。</li>
 </ul>
 </li>
 <li>
@@ -8813,14 +9021,23 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
 <hr>
 <h4 id="4-扩展其他项目站点"><a class="header-anchor" href="#4-扩展其他项目站点">#</a>4. 扩展其他项目站点</h4>
 <ul>
-<li>扩展其他项目站点</li>
-<li>代理工具</li>
-<li>AI工具</li>
-<li>音乐</li>
-<li>游戏</li>
+<li>主页
+<ul>
+<li>使用 VuePress 搭建主页站点，主要做内容聚合。</li>
 </ul>
-<hr>
-<h4 id="5-总结"><a class="header-anchor" href="#5-总结">#</a>5. 总结</h4>
+</li>
+<li>代理工具
+<ul>
+<li>主要使用 <a href="https://github.com/shadowsocks/shadowsocks/blob/master/README.md" rel="external nofollow noreferrer">Shadowsocks</a> 搭建。</li>
+</ul>
+</li>
+<li>AI工具</li>
+<li>游戏
+<ul>
+<li>使用 hugo 搭建，主要用来写文档。</li>
+</ul>
+</li>
+</ul>
 ]]></content>
       <categories>
         <category>Blog</category>
@@ -9719,15 +9936,17 @@ http://www.example.com
 <p>两种用法如下：</p>
 </blockquote>
 <pre><code>1. 自动生成目录
-    - 用法：[toc]
-    - TOC (Table of Content)
-      - 部分平台支持
-        - Visual Studio Code + TOC 扩展插件支持
-        - Typora支持
-   - 要在TOC排除一个标题：在其后面添加 &#123;ignore=true&#125;
+  1.1 直接使用语法TOC (Table of Content)
+    - 部分平台支持直接使用 [toc]
+      - Typora支持
+      - Visual Studio Code + TOC 扩展插件支持
+    - 要在TOC排除一个标题：在其后面添加 &#123;ignore=true&#125;
+  1.2 使用快捷键快速生成目录
+    - 使用 Visual Studio Code + vscode-Markdown All in One插件（生成与手写目录基本一样，都是id选择器）
+    - 用法：
+      - 快捷键 Ctrl + Shift + P -&gt; 运行任务 Create table of contents 
+      - 推荐给 Create table of contents 任务设置快捷键为 Ctrl + Alt + T 这样就可以直接使用快捷键直接插入目录。
 2. 手动书写目录
-    - Visual Studio Code + vscode-Markdown All in One插件（生成与手写目录基本一样，都是id选择器）
-      - 用法：快捷键 Ctrl + Shift + P -&gt; Create table of contents 或者给 Create table of contents 任务设置快捷键为 Ctrl + Alt + T
     - 手写目录
       - 用法：[目录名](#标题链接)
       - 注意：
