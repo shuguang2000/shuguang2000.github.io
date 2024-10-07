@@ -7,7 +7,7 @@
   <link href="https://www.shuguang2000.us.kg/atom.xml" rel="self"/>
   
   <link href="https://www.shuguang2000.us.kg/"/>
-  <updated>2024-09-25T06:52:58.174Z</updated>
+  <updated>2024-10-06T15:14:40.458Z</updated>
   <id>https://www.shuguang2000.us.kg/</id>
   
   <author>
@@ -18,11 +18,53 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>VSCode 进阶使用</title>
+    <link href="https://www.shuguang2000.us.kg/category1/VSCode%20%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8/"/>
+    <id>https://www.shuguang2000.us.kg/category1/VSCode%20%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8/</id>
+    <published>2024-10-06T15:14:38.000Z</published>
+    <updated>2024-10-06T15:14:40.458Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;pass&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="category1" scheme="https://www.shuguang2000.us.kg/categories/category1/"/>
+    
+    
+    <category term="tag1" scheme="https://www.shuguang2000.us.kg/tags/tag1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mkdocs 生成文档</title>
+    <link href="https://www.shuguang2000.us.kg/category1/Mkdocs%20%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3/"/>
+    <id>https://www.shuguang2000.us.kg/category1/Mkdocs%20%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3/</id>
+    <published>2024-10-06T15:12:06.000Z</published>
+    <updated>2024-10-06T15:13:25.118Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;使用 Mkdocs 自动生成文档，解决麻烦的文档书写过程。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="category1" scheme="https://www.shuguang2000.us.kg/categories/category1/"/>
+    
+    
+    <category term="tag1" scheme="https://www.shuguang2000.us.kg/tags/tag1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>VSCode 快速切换工作区</title>
     <link href="https://www.shuguang2000.us.kg/Tools/VSCode%20%E5%BF%AB%E9%80%9F%E5%88%87%E6%8D%A2%E5%B7%A5%E4%BD%9C%E5%8C%BA/"/>
     <id>https://www.shuguang2000.us.kg/Tools/VSCode%20%E5%BF%AB%E9%80%9F%E5%88%87%E6%8D%A2%E5%B7%A5%E4%BD%9C%E5%8C%BA/</id>
     <published>2024-09-24T06:09:49.000Z</published>
-    <updated>2024-09-25T06:52:58.174Z</updated>
+    <updated>2024-10-07T06:38:47.738Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -49,7 +91,7 @@
     <link href="https://www.shuguang2000.us.kg/Tools/Cloudflare%20%E4%BD%BF%E7%94%A8%E6%9C%80%E4%BC%98%20CDN%20%E5%85%8D%E8%B4%B9%E5%8A%A0%E9%80%9F%E7%BD%91%E7%AB%99/"/>
     <id>https://www.shuguang2000.us.kg/Tools/Cloudflare%20%E4%BD%BF%E7%94%A8%E6%9C%80%E4%BC%98%20CDN%20%E5%85%8D%E8%B4%B9%E5%8A%A0%E9%80%9F%E7%BD%91%E7%AB%99/</id>
     <published>2024-09-23T09:39:04.000Z</published>
-    <updated>2024-09-25T12:33:44.117Z</updated>
+    <updated>2024-10-06T14:26:33.237Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -70,7 +112,7 @@
     <link href="https://www.shuguang2000.us.kg/Tools/Windows%20%E8%A7%A3%E5%86%B3%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/"/>
     <id>https://www.shuguang2000.us.kg/Tools/Windows%20%E8%A7%A3%E5%86%B3%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</id>
     <published>2024-09-17T23:23:11.000Z</published>
-    <updated>2024-09-21T10:18:49.352Z</updated>
+    <updated>2024-10-06T06:59:27.196Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -91,7 +133,7 @@
     <link href="https://www.shuguang2000.us.kg/Blog/VSCode%20%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%20Hexo%20%E6%96%87%E7%AB%A0/"/>
     <id>https://www.shuguang2000.us.kg/Blog/VSCode%20%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%20Hexo%20%E6%96%87%E7%AB%A0/</id>
     <published>2024-09-16T13:29:14.000Z</published>
-    <updated>2024-09-24T06:11:03.595Z</updated>
+    <updated>2024-10-06T15:00:34.910Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -334,29 +376,6 @@
   </entry>
   
   <entry>
-    <title>认知驱动</title>
-    <link href="https://www.shuguang2000.us.kg/Books/%E8%AE%A4%E7%9F%A5%E9%A9%B1%E5%8A%A8/"/>
-    <id>https://www.shuguang2000.us.kg/Books/%E8%AE%A4%E7%9F%A5%E9%A9%B1%E5%8A%A8/</id>
-    <published>2023-04-19T14:43:59.000Z</published>
-    <updated>2024-09-17T21:40:43.906Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Books" scheme="https://www.shuguang2000.us.kg/categories/Books/"/>
-    
-    
-  </entry>
-  
-  <entry>
     <title>认知觉醒</title>
     <link href="https://www.shuguang2000.us.kg/Books/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92/"/>
     <id>https://www.shuguang2000.us.kg/Books/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92/</id>
@@ -385,6 +404,29 @@
     <id>https://www.shuguang2000.us.kg/Books/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%AE%B0/</id>
     <published>2023-04-19T14:43:59.000Z</published>
     <updated>2024-09-17T21:40:55.165Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Books" scheme="https://www.shuguang2000.us.kg/categories/Books/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>认知驱动</title>
+    <link href="https://www.shuguang2000.us.kg/Books/%E8%AE%A4%E7%9F%A5%E9%A9%B1%E5%8A%A8/"/>
+    <id>https://www.shuguang2000.us.kg/Books/%E8%AE%A4%E7%9F%A5%E9%A9%B1%E5%8A%A8/</id>
+    <published>2023-04-19T14:43:59.000Z</published>
+    <updated>2024-09-17T21:40:43.906Z</updated>
     
     
       
@@ -585,13 +627,13 @@
     <category term="Network Protocols" scheme="https://www.shuguang2000.us.kg/categories/Network-Protocols/"/>
     
     
-    <category term="CDN" scheme="https://www.shuguang2000.us.kg/tags/CDN/"/>
-    
     <category term="DNS" scheme="https://www.shuguang2000.us.kg/tags/DNS/"/>
     
     <category term="DHCP" scheme="https://www.shuguang2000.us.kg/tags/DHCP/"/>
     
     <category term="HTTP" scheme="https://www.shuguang2000.us.kg/tags/HTTP/"/>
+    
+    <category term="CDN" scheme="https://www.shuguang2000.us.kg/tags/CDN/"/>
     
   </entry>
   
@@ -778,15 +820,15 @@
   </entry>
   
   <entry>
-    <title>WebDriver API</title>
-    <link href="https://www.shuguang2000.us.kg/Software-Testing/WebDriver%20API/"/>
-    <id>https://www.shuguang2000.us.kg/Software-Testing/WebDriver%20API/</id>
+    <title>自动化测试基础</title>
+    <link href="https://www.shuguang2000.us.kg/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
+    <id>https://www.shuguang2000.us.kg/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</id>
     <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2024-08-10T12:22:42.464Z</updated>
+    <updated>2024-08-10T12:22:29.776Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
-&lt;li&gt;WebDriver是一个用于实现Web自动化的第三方库，本文主要介绍WebDriver的用法及原理。&lt;/li&gt;
+&lt;li&gt;本文主要介绍软件测试、软件自动化测试相关概念和工具。&lt;/li&gt;
 &lt;/ul&gt;</summary>
     
     
@@ -794,7 +836,9 @@
     <category term="Software Testing" scheme="https://www.shuguang2000.us.kg/categories/Software-Testing/"/>
     
     
-    <category term="WebDriver" scheme="https://www.shuguang2000.us.kg/tags/WebDriver/"/>
+    <category term="Automated Testing" scheme="https://www.shuguang2000.us.kg/tags/Automated-Testing/"/>
+    
+    <category term="Selenium" scheme="https://www.shuguang2000.us.kg/tags/Selenium/"/>
     
   </entry>
   
@@ -820,15 +864,15 @@
   </entry>
   
   <entry>
-    <title>自动化测试基础</title>
-    <link href="https://www.shuguang2000.us.kg/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
-    <id>https://www.shuguang2000.us.kg/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</id>
+    <title>WebDriver API</title>
+    <link href="https://www.shuguang2000.us.kg/Software-Testing/WebDriver%20API/"/>
+    <id>https://www.shuguang2000.us.kg/Software-Testing/WebDriver%20API/</id>
     <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2024-08-10T12:22:29.776Z</updated>
+    <updated>2024-08-10T12:22:42.464Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
-&lt;li&gt;本文主要介绍软件测试、软件自动化测试相关概念和工具。&lt;/li&gt;
+&lt;li&gt;WebDriver是一个用于实现Web自动化的第三方库，本文主要介绍WebDriver的用法及原理。&lt;/li&gt;
 &lt;/ul&gt;</summary>
     
     
@@ -836,9 +880,7 @@
     <category term="Software Testing" scheme="https://www.shuguang2000.us.kg/categories/Software-Testing/"/>
     
     
-    <category term="Automated Testing" scheme="https://www.shuguang2000.us.kg/tags/Automated-Testing/"/>
-    
-    <category term="Selenium" scheme="https://www.shuguang2000.us.kg/tags/Selenium/"/>
+    <category term="WebDriver" scheme="https://www.shuguang2000.us.kg/tags/WebDriver/"/>
     
   </entry>
   
@@ -847,7 +889,7 @@
     <link href="https://www.shuguang2000.us.kg/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <id>https://www.shuguang2000.us.kg/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
     <published>2022-11-15T16:25:16.341Z</published>
-    <updated>2024-09-24T06:16:36.260Z</updated>
+    <updated>2024-10-06T08:35:39.453Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -928,7 +970,7 @@
     <link href="https://www.shuguang2000.us.kg/Games/%E7%A4%BC%E5%93%81%E5%8D%A1/"/>
     <id>https://www.shuguang2000.us.kg/Games/%E7%A4%BC%E5%93%81%E5%8D%A1/</id>
     <published>2022-10-31T13:20:00.000Z</published>
-    <updated>2024-09-20T07:29:10.708Z</updated>
+    <updated>2024-10-06T13:08:15.754Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;摘要&quot;&gt;&lt;a class=&quot;header-anchor&quot; href=&quot;#摘要&quot;&gt;#&lt;/a&gt;摘要&lt;/h2&gt;
@@ -1000,7 +1042,7 @@
     <link href="https://www.shuguang2000.us.kg/Blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/"/>
     <id>https://www.shuguang2000.us.kg/Blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</id>
     <published>2022-10-29T04:31:58.000Z</published>
-    <updated>2024-09-25T05:29:46.293Z</updated>
+    <updated>2024-10-06T12:48:02.229Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -1012,9 +1054,9 @@
     <category term="Blog" scheme="https://www.shuguang2000.us.kg/categories/Blog/"/>
     
     
-    <category term="GitHub Pages" scheme="https://www.shuguang2000.us.kg/tags/GitHub-Pages/"/>
-    
     <category term="Hexo" scheme="https://www.shuguang2000.us.kg/tags/Hexo/"/>
+    
+    <category term="GitHub Pages" scheme="https://www.shuguang2000.us.kg/tags/GitHub-Pages/"/>
     
     <category term="Git" scheme="https://www.shuguang2000.us.kg/tags/Git/"/>
     
