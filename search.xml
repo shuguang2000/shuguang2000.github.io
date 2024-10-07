@@ -1186,8 +1186,8 @@
       </categories>
   </entry>
   <entry>
-    <title>认知觉醒</title>
-    <url>/Books/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92/</url>
+    <title>狂人日记</title>
+    <url>/Books/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%AE%B0/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><hr>
 ]]></content>
       <categories>
@@ -1195,8 +1195,8 @@
       </categories>
   </entry>
   <entry>
-    <title>狂人日记</title>
-    <url>/Books/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%AE%B0/</url>
+    <title>认知觉醒</title>
+    <url>/Books/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><hr>
 ]]></content>
       <categories>
@@ -6256,6 +6256,455 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
       </tags>
   </entry>
   <entry>
+    <title>WebDriver API</title>
+    <url>/Software-Testing/WebDriver%20API/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li>WebDriver是一个用于实现Web自动化的第三方库，本文主要介绍WebDriver的用法及原理。</li>
+</ul>
+<span id="more"></span>
+<hr>
+<h4 id="定位元素"><a class="header-anchor" href="#定位元素">#</a>定位元素</h4>
+<ul>
+<li>
+<p>WebDriver 提供了八种定位方法(tag 标签，partial局部的)</p>
+<ul>
+<li>id -&gt; name</li>
+<li>class name -&gt; tag name</li>
+<li>link text -&gt; partial link text</li>
+<li>xpath -&gt; css selector</li>
+<li>find_element_by_id() -&gt; find_element_by_name()</li>
+<li>find_element_by_class_name() -&gt; find_element_by_tag_name()</li>
+<li>find_element_by_link_text() -&gt; find_element_by_partial_link_text()</li>
+<li>find_element_by_xpath() -&gt; find_element_by_css_selector<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>Xpath定位</strong>(find_element_by_xpath())</p>
+<ul>
+<li>
+<p>Xpath简介：<strong>XPath 是一门在 XML 文档中查找信息的语言</strong></p>
+</li>
+<li>
+<p>Xpath主要用：标签名的层级关系来定位元素的绝对路径。举例:div[2]代表当前层级下第二个div</p>
+</li>
+<li>
+<p><strong>绝对路径定位</strong>：使用XPath语言定位。</p>
+</li>
+<li>
+<p><strong>利用元素属性定位</strong>(XPath可使用<strong>元素的任意属性</strong>)</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">find_element_by_xpath(<span class="string">&quot;//input[@id=&#x27;kw&#x27;]&quot;</span>)</span><br><span class="line">find_element_by_xpath(<span class="string">&quot;//input[@name=&#x27;wd&#x27;]&quot;</span>)</span><br><span class="line">find_element_by_xpath(<span class="string">&quot;//input[@class=&#x27;s_ipt&#x27;]&quot;</span>)</span><br><span class="line">find_element_by_xpath(<span class="string">&quot;//*[@class=&#x27;bg s_btn&#x27;]&quot;</span>)</span><br><span class="line">find_element_by_xpath(<span class="string">&quot;//input[@maxlength=&#x27;100&#x27;]&quot;</span>)</span><br><span class="line">find_element_by_xpath(<span class="string">&quot;//input[@autocomplete=&#x27;off&#x27;]&quot;</span>)</span><br><span class="line">find_element_by_xpath(<span class="string">&quot;//input[@type=&#x27;submit&#x27;]&quot;</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>//<strong>代表当前页面某个目录</strong></p>
+<ul>
+<li>不指定标签名，也可以用- 代替</li>
+</ul>
+</li>
+<li>
+<p><strong>层级与属性结合</strong>（元素本身没有唯一可标识的属性值）’</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">find_element_by_xpath(<span class="string">&quot;//span[@class=&#x27;bg s_ipt_wr&#x27;]/input&quot;</span>)</span><br><span class="line">find_element_by_xpath(<span class="string">&quot;//from[@id=&#x27;from&#x27;]/span/input&quot;</span>)</span><br><span class="line">find_element_by_xpath(<span class="string">&quot;//from[@id=&#x27;from&#x27;]/sapn[2]/input&quot;</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>使用逻辑运算符(属性不能唯一得区分一个元素,连接多个属性)</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">find_element_by_xpath(<span class="string">&quot;//input[@id=&#x27;kw&#x27; and @class=&#x27;su&#x27;]/span/input&quot;</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>FirePath插件直接生成Xpath语法</p>
+</li>
+<li>
+<p><strong>使用starts-with方法</strong></p>
+<ul>
+<li><code>//*[starts-with(@attribute, &quot;xxx&quot;)]</code></li>
+</ul>
+</li>
+<li>
+<p><strong>使用contains方法</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># driver.find_element_by_xpath(&quot;//a[contains(text(),&#x27;一个很长的&#x27;)]&quot;)</span></span><br><span class="line">driver.find_element_by_xpath(<span class="string">&quot;//span[contains(@class,&#x27;s_ipt_wr&#x27;)]/input&quot;</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><strong>使用text()方法</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># //*[text()=&quot;xxx&quot;]</span></span><br><span class="line">driver.find_element_by_xpath(<span class="string">&quot;//a[text(),&#x27;新闻&#x27;)]&quot;</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<p><strong>CSS定位</strong>(一般情况下速度要比XPath快)</p>
+<ul>
+<li>
+<p>选择所有元素</p>
+<ul>
+<li><code>find_element_by_class_selector(&quot;*&quot;)</code></li>
+</ul>
+</li>
+<li>
+<p>使用class属性定位</p>
+<ul>
+<li><code>find_element_by_class_selector(&quot;.s_ipt&quot;)</code></li>
+</ul>
+</li>
+<li>
+<p>使用id属性来定位：</p>
+<ul>
+<li><code>find_element_by_class_selector(&quot;#kw&quot;)</code></li>
+</ul>
+</li>
+<li>
+<p>使用标签名来定位元素</p>
+<ul>
+<li><code>find_element_by_class_selector(&quot;input&quot;)</code></li>
+</ul>
+</li>
+<li>
+<p>通过父子关系来定位</p>
+<ul>
+<li>span下的所有input
+<ul>
+<li><code>find_element_by_class_selector(&quot;span&gt;input&quot;)</code></li>
+</ul>
+</li>
+<li>同一级span之后的所有input
+<ul>
+<li><code>find_element_by_class_selector(&quot;span+input&quot;)</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>通过属性定位</p>
+<ul>
+<li><code>find_element_by_class_selector(&quot;[name='kw']&quot;)</code></li>
+</ul>
+</li>
+<li>
+<p>组合定位</p>
+<ul>
+<li><code>find_element_by_class_selector(&quot;span.bg si_sipt_wr&gt;input.s_ipt&quot;)</code></li>
+</ul>
+</li>
+<li>
+<p>使用属性的部分定位的CSS表达式：</p>
+<ul>
+<li>标签[属性^=‘值’] 属性开头包含</li>
+<li>标签[属性$=‘值’] 属性结尾包含</li>
+<li>标签[属性*=‘值’] 属性开头包含</li>
+</ul>
+</li>
+<li>
+<p>使用伪类选择器的CSS表达式</p>
+<ul>
+<li>伪类选择器（简称：伪类）通过冒号来定义，它定义了元素的状态，如点击按下，点击完成等，通过伪类可以为元素的状态修改样式。</li>
+<li>div#div1:first-child</li>
+<li>div#div1:nth-child</li>
+<li>div#div1:last-child</li>
+<li>input:focus</li>
+<li>input:enabled</li>
+<li>input:checked</li>
+</ul>
+</li>
+<li>
+<p>查找同级元素的CSS表达式</p>
+<ul>
+<li>div#div1 - input + a</li>
+<li>div#div1 - input + a + img</li>
+<li>div#div1 - input + - + img<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>使用谷歌console验证</p>
+<ul>
+<li>$(‘css表达式’)验证css表达式</li>
+<li>输入$x(‘xpath表达式’)验证xpath表达式<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>使用By定位</strong></p>
+<ul>
+<li>
+<p>用By定位元素（统一调用find_element()方法）</p>
+</li>
+<li>
+<p>将By类导入: <code>from selenium.webdriver.common.by import By</code></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">find_element(By.ID,<span class="string">&quot;kw&quot;</span>)</span><br><span class="line">find_element(By.NAME,<span class="string">&quot;wd&quot;</span>)</span><br><span class="line">find_element(By.TAG_NAME,<span class="string">&quot;input&quot;</span>)</span><br><span class="line">find_element(By.LINK_TEXT,<span class="string">&quot;新闻&quot;</span>)</span><br><span class="line">find_element(By.PARTIAL-LINK-TEXT,<span class="string">&quot;新&quot;</span>)</span><br><span class="line">find_element(By.XPATH,<span class="string">&quot;//*[@class=&#x27;bg s_btn&#x27;]&quot;</span>)</span><br><span class="line">find_element(By.CSS_SELECTOR,<span class="string">&quot;span.bg s_btn-wr&gt;input#su&quot;</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>注意事项</p>
+<ul>
+<li>WebDriver更加推荐前面介绍的写法（父子类）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="控制浏览器"><a class="header-anchor" href="#控制浏览器">#</a>控制浏览器</h4>
+<ul>
+<li>
+<p>WebDriver 主要提供的是操作页面上各种元素的方法，但是也提供了操作浏览器的一些方法，例如控制浏览器的大小，操作浏览器的前进和后退等。<br>
+<br></p>
+</li>
+<li>
+<p>控制浏览窗口的大小</p>
+<ul>
+<li><code>set_window_size()</code></li>
+<li><code>maximize_window()</code>方法打开浏览器的全屏显示</li>
+</ul>
+</li>
+<li>
+<p>模拟浏览器刷新</p>
+<ul>
+<li><code>dirver.refresh()</code>   # 刷新当前页面<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>简单的元素操作</p>
+<ul>
+<li><code>driver.forword()</code>前进</li>
+<li><code>driver.back()</code>后退</li>
+<li><code>clear()</code>清除文本</li>
+<li><code>send_keys(*value)</code> 模拟按键输入</li>
+<li><code>click()</code>单击元素</li>
+<li><code>submit（）</code>方法用来提交表单<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>获取元素的属性</strong></p>
+<ul>
+<li>size     返回元素的尺寸。</li>
+<li>text     获取元素的文本</li>
+<li><code>get_attribute(name)</code>获得属性值</li>
+<li><code>is_displayed()</code>设置该元素是否用户可见。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>鼠标事件</strong></p>
+<ul>
+<li>需要导入ActionChains类</li>
+<li>ActionChains(driver)</li>
+<li>perform()执行所有ActionChains的存储行为, 提交动作</li>
+<li>context(right_click)模拟鼠标右键操作，需要元素定位</li>
+<li>double_click()双击</li>
+<li>drag_and_drop()拖动和释放</li>
+<li>move_to_element()鼠标悬停<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>键盘事件</strong></p>
+<ul>
+<li>Keys类几乎提供了键盘上的所有方法。</li>
+<li>send_keys(Keys.BACK_SPACE) 删除键（BackSpace）</li>
+<li>send_keys(Keys.SPACE) 空格键(Space)</li>
+<li>send_keys(Keys.TAB) 制表键(Tab)</li>
+<li>send_keys(Keys.ESCAPE) 回退键（Esc）</li>
+<li>send_keys(Keys.ENTER) 回车键（Enter）</li>
+<li>send_keys(Keys.CONTROL,‘a’) 全选（Ctrl+A）</li>
+<li>send_keys(Keys.CONTROL,‘c’) 复制（Ctrl+C）</li>
+<li>send_keys(Keys.CONTROL,‘x’) 剪切（Ctrl+X）</li>
+<li>send_keys(Keys.CONTROL,‘v’) 粘贴（Ctrl+V）</li>
+<li>send_keys(Keys.F1) 键盘 F1</li>
+<li>send_keys(Keys.F12) 键盘 F12<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>获取验证信息</strong></p>
+<ul>
+<li>通常用的最多的验证信息（title、URL和text）</li>
+<li>获取当前页面的title
+<ul>
+<li><code>driver.title</code></li>
+</ul>
+</li>
+<li>获取当前页面的url
+<ul>
+<li><code>driver.current_url</code></li>
+</ul>
+</li>
+<li>获取标签的文本
+<ul>
+<li><code>driver.find_element_by _id(&quot;kw&quot;).text</code><br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>设置元素等待</strong></p>
+<ul>
+<li>
+<p>页面上元素可能并不是同时被加载完成的（web应用程序使用了大量的AJAX技术）这给定位增加了困难</p>
+</li>
+<li>
+<p><strong>显示等待</strong>（达到最大时限时抛出超时异常）</p>
+<ul>
+<li>WebDriverWait类时WebDriver提供的等待方法，在设置时间内，默认每隔一段时间检测当前页面元素是否存在，如果超过设定时间检测不到则抛出异常。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> `selenium.webdriver.support` <span class="keyword">import</span> expected_conditions <span class="keyword">as</span> EC</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.common.by <span class="keyword">import</span> By</span><br><span class="line"></span><br><span class="line">element = WebDriverWaitdriver(driver,<span class="number">5</span>,<span class="number">0.5</span>).until</span><br><span class="line">(EC.presence_of_element_located((By.ID,<span class="string">&quot;kw&quot;</span>)))</span><br><span class="line">element.send_keys(<span class="string">&quot;selenium&quot;</span>)</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><strong>隐式等待</strong>（抛出无此元素异常）</p>
+<ul>
+<li>
+<p>超过设定时常元素还没有被加载，就抛出NoSuchElementException异常。</p>
+</li>
+<li>
+<p>implicitly_wait()实现隐式等待</p>
+</li>
+<li>
+<p>webdriver提供了implicitly_wait()来实现隐式等待, 默认为0 , 一般在元素定位操作之前设置</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>强制等待</strong>: <code>sleep()</code></p>
+<ul>
+<li>通过Python内置time模块提供，通过sleep(n秒)强制等待来延迟执行下一个操作 （参数可以是小数）</li>
+</ul>
+</li>
+<li>
+<p>不同等待之间的区别</p>
+<ul>
+<li>强制等待的时间是固定的<br>
+<br></li>
+<li>显式等待是在等待时间内对条件轮询(0.5s),当超出等待时间条件仍不满足,抛出超时异常(TimeOutException), <strong>建议在js异步和需要延时才能查找到元素的场景下使用显式等待.</strong>（能够确定等待时间时使用）<br>
+<br></li>
+<li>隐式等待是在等待时间内对页面加载完毕的当前dom轮询,查看元素是否加载,当超出等待时间,抛出无此元素的异常(NoSuchElementException), 如有多个元素查找会创建多个隐式等待<br>
+<br></li>
+<li>若同时设置显示等待和隐式等待，当显示等待在设定的等待时间内条件满足,则停止等待,执行后面的操作(使用隐式等待),否则抛出超时异常。<br>
+<br></li>
+<li><strong>显示等待会优先于隐式等待，当显式等待超时少于隐式等待超时,会继续进入隐式等待。</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="WebDriver-常用操作"><a class="header-anchor" href="#WebDriver-常用操作">#</a>WebDriver 常用操作</h4>
+<ul>
+<li>
+<p><strong>定位一组元素</strong></p>
+<ul>
+<li><code>find_elements_xxx(&quot;xx&quot;)</code>   定位一组元素</li>
+</ul>
+</li>
+<li>
+<p><strong>多表单切换</strong></p>
+<ul>
+<li><code>switch_to.frame()</code>  进入表单</li>
+<li><code>switch_to.default_content()</code>  退出表单至根页面</li>
+</ul>
+</li>
+<li>
+<p><strong>多窗口切换</strong></p>
+<ul>
+<li><code>switch_to.window()</code>切换窗口</li>
+<li>current_window_handle 获得当前窗口的句柄</li>
+<li>window_handles：返回所有窗口的句柄到当前会话</li>
+</ul>
+</li>
+<li>
+<p><strong>警告框</strong></p>
+<ul>
+<li>text：返回 alert/confirm/prompt 中的文字信息。</li>
+<li>accept()：接受现有警告框。</li>
+<li>dismiss()：解散现有警告框。</li>
+<li>send_keys(keysToSend)： 发送文本至警告框。</li>
+</ul>
+</li>
+<li>
+<p><strong>下拉框</strong></p>
+<ul>
+<li>Select  操作select标签的下拉框。</li>
+<li>select_by_value()  选择value属性选择。</li>
+<li>select_by_visible_text() 通过选项名称选择。</li>
+<li>select_by_index() 通过索引选择</li>
+</ul>
+</li>
+<li>
+<p><strong>文件上传</strong></p>
+<ul>
+<li>
+<p><strong>Chrome浏览器</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">chrome浏览器实现下载</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line">options = webdriver.ChromeOptions() </span><br><span class="line">prefs = &#123;<span class="string">&#x27;profile.default_content_settings.popups&#x27;</span>: <span class="number">0</span>,</span><br><span class="line"><span class="string">&#x27;download.default_directory&#x27;</span>: os.getcwd()&#125;</span><br><span class="line">options.add_experimental_option(<span class="string">&#x27;prefs&#x27;</span>, prefs) </span><br><span class="line"></span><br><span class="line">driver = webdriver.Chrome(chrome_options=options) </span><br><span class="line">driver.get(<span class="string">&quot;https://pypi.org/project/selenium/#files&quot;</span>)</span><br><span class="line">driver.find_element_by_partial_link_text(<span class="string">&quot;selenium-3.141.0.tar.gz&quot;</span>).click()</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><strong>Firefox浏览器</strong></p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">firefox浏览器实现下载</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line">fp = webdriver.FirefoxProfile()</span><br><span class="line">fp.set_preference(<span class="string">&quot;browser.download.folderList&quot;</span>, <span class="number">2</span>)</span><br><span class="line">fp.set_preference(<span class="string">&quot;browser.download.dir&quot;</span>, os.getcwd())</span><br><span class="line">fp.set_preference(<span class="string">&quot;browser.helperApps.neverAsk.saveToDisk&quot;</span>, <span class="string">&quot;binary/octet-stream&quot;</span>)</span><br><span class="line">driver = webdriver.Firefox(firefox_profile=fp)</span><br><span class="line">driver.get(<span class="string">&quot;https://pypi.org/project/selenium/#files&quot;</span>)</span><br><span class="line">driver.find_element_by_partial_link_text(<span class="string">&quot;selenium-3.141.0.tar.gz&quot;</span>).click()</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Cookie</strong></p>
+<ul>
+<li>
+<p><code>driver.add_cookie(dict)</code></p>
+</li>
+<li>
+<p><code>driver.get_cookies()</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>调用js代码</strong></p>
+<ul>
+<li><code>driver.execute_script(js)</code></li>
+</ul>
+</li>
+<li>
+<p><strong>窗口截图</strong></p>
+<ul>
+<li>driver.get_screenshot_as_file(“/Screenshots/foo.png”)</li>
+</ul>
+</li>
+<li>
+<p><strong>关闭窗口</strong></p>
+<ul>
+<li><code>driver.close()</code></li>
+</ul>
+</li>
+<li>
+<p><strong>使用logging模块basicCofig()方法</strong></p>
+<ul>
+<li>
+<p>开启debug模块捕获客户端向服务器发送的post请求。</p>
+  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> logging</span><br><span class="line">logging.basicConfig(level=logging.DEBUG)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h5 id="WebDriver原理"><a class="header-anchor" href="#WebDriver原理">#</a>WebDriver原理</h5>
+<ul>
+<li>
+<p>WebDriver启动目标浏览器，并绑定到指定的端口，将创建的浏览器实例作为WebDriver的Remote Server（远程服务器）</p>
+</li>
+<li>
+<p>Client端通过<code>CommandExcuter</code>发送<code>HTTPRequest</code>给Remote Server的侦听端口。</p>
+</li>
+<li>
+<p>Remote Server需要原生的浏览器组件（<code>chromdriver</code>，等来转换浏览器的本地（native）调用）</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Software Testing</category>
+      </categories>
+      <tags>
+        <tag>WebDriver</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>自动化测试基础</title>
     <url>/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
@@ -6767,455 +7216,6 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
       </categories>
       <tags>
         <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WebDriver API</title>
-    <url>/Software-Testing/WebDriver%20API/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>WebDriver是一个用于实现Web自动化的第三方库，本文主要介绍WebDriver的用法及原理。</li>
-</ul>
-<span id="more"></span>
-<hr>
-<h4 id="定位元素"><a class="header-anchor" href="#定位元素">#</a>定位元素</h4>
-<ul>
-<li>
-<p>WebDriver 提供了八种定位方法(tag 标签，partial局部的)</p>
-<ul>
-<li>id -&gt; name</li>
-<li>class name -&gt; tag name</li>
-<li>link text -&gt; partial link text</li>
-<li>xpath -&gt; css selector</li>
-<li>find_element_by_id() -&gt; find_element_by_name()</li>
-<li>find_element_by_class_name() -&gt; find_element_by_tag_name()</li>
-<li>find_element_by_link_text() -&gt; find_element_by_partial_link_text()</li>
-<li>find_element_by_xpath() -&gt; find_element_by_css_selector<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>Xpath定位</strong>(find_element_by_xpath())</p>
-<ul>
-<li>
-<p>Xpath简介：<strong>XPath 是一门在 XML 文档中查找信息的语言</strong></p>
-</li>
-<li>
-<p>Xpath主要用：标签名的层级关系来定位元素的绝对路径。举例:div[2]代表当前层级下第二个div</p>
-</li>
-<li>
-<p><strong>绝对路径定位</strong>：使用XPath语言定位。</p>
-</li>
-<li>
-<p><strong>利用元素属性定位</strong>(XPath可使用<strong>元素的任意属性</strong>)</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">find_element_by_xpath(<span class="string">&quot;//input[@id=&#x27;kw&#x27;]&quot;</span>)</span><br><span class="line">find_element_by_xpath(<span class="string">&quot;//input[@name=&#x27;wd&#x27;]&quot;</span>)</span><br><span class="line">find_element_by_xpath(<span class="string">&quot;//input[@class=&#x27;s_ipt&#x27;]&quot;</span>)</span><br><span class="line">find_element_by_xpath(<span class="string">&quot;//*[@class=&#x27;bg s_btn&#x27;]&quot;</span>)</span><br><span class="line">find_element_by_xpath(<span class="string">&quot;//input[@maxlength=&#x27;100&#x27;]&quot;</span>)</span><br><span class="line">find_element_by_xpath(<span class="string">&quot;//input[@autocomplete=&#x27;off&#x27;]&quot;</span>)</span><br><span class="line">find_element_by_xpath(<span class="string">&quot;//input[@type=&#x27;submit&#x27;]&quot;</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>//<strong>代表当前页面某个目录</strong></p>
-<ul>
-<li>不指定标签名，也可以用- 代替</li>
-</ul>
-</li>
-<li>
-<p><strong>层级与属性结合</strong>（元素本身没有唯一可标识的属性值）’</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">find_element_by_xpath(<span class="string">&quot;//span[@class=&#x27;bg s_ipt_wr&#x27;]/input&quot;</span>)</span><br><span class="line">find_element_by_xpath(<span class="string">&quot;//from[@id=&#x27;from&#x27;]/span/input&quot;</span>)</span><br><span class="line">find_element_by_xpath(<span class="string">&quot;//from[@id=&#x27;from&#x27;]/sapn[2]/input&quot;</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>使用逻辑运算符(属性不能唯一得区分一个元素,连接多个属性)</p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">find_element_by_xpath(<span class="string">&quot;//input[@id=&#x27;kw&#x27; and @class=&#x27;su&#x27;]/span/input&quot;</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>FirePath插件直接生成Xpath语法</p>
-</li>
-<li>
-<p><strong>使用starts-with方法</strong></p>
-<ul>
-<li><code>//*[starts-with(@attribute, &quot;xxx&quot;)]</code></li>
-</ul>
-</li>
-<li>
-<p><strong>使用contains方法</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># driver.find_element_by_xpath(&quot;//a[contains(text(),&#x27;一个很长的&#x27;)]&quot;)</span></span><br><span class="line">driver.find_element_by_xpath(<span class="string">&quot;//span[contains(@class,&#x27;s_ipt_wr&#x27;)]/input&quot;</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p><strong>使用text()方法</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># //*[text()=&quot;xxx&quot;]</span></span><br><span class="line">driver.find_element_by_xpath(<span class="string">&quot;//a[text(),&#x27;新闻&#x27;)]&quot;</span>)</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-<br>
-<ul>
-<li>
-<p><strong>CSS定位</strong>(一般情况下速度要比XPath快)</p>
-<ul>
-<li>
-<p>选择所有元素</p>
-<ul>
-<li><code>find_element_by_class_selector(&quot;*&quot;)</code></li>
-</ul>
-</li>
-<li>
-<p>使用class属性定位</p>
-<ul>
-<li><code>find_element_by_class_selector(&quot;.s_ipt&quot;)</code></li>
-</ul>
-</li>
-<li>
-<p>使用id属性来定位：</p>
-<ul>
-<li><code>find_element_by_class_selector(&quot;#kw&quot;)</code></li>
-</ul>
-</li>
-<li>
-<p>使用标签名来定位元素</p>
-<ul>
-<li><code>find_element_by_class_selector(&quot;input&quot;)</code></li>
-</ul>
-</li>
-<li>
-<p>通过父子关系来定位</p>
-<ul>
-<li>span下的所有input
-<ul>
-<li><code>find_element_by_class_selector(&quot;span&gt;input&quot;)</code></li>
-</ul>
-</li>
-<li>同一级span之后的所有input
-<ul>
-<li><code>find_element_by_class_selector(&quot;span+input&quot;)</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>通过属性定位</p>
-<ul>
-<li><code>find_element_by_class_selector(&quot;[name='kw']&quot;)</code></li>
-</ul>
-</li>
-<li>
-<p>组合定位</p>
-<ul>
-<li><code>find_element_by_class_selector(&quot;span.bg si_sipt_wr&gt;input.s_ipt&quot;)</code></li>
-</ul>
-</li>
-<li>
-<p>使用属性的部分定位的CSS表达式：</p>
-<ul>
-<li>标签[属性^=‘值’] 属性开头包含</li>
-<li>标签[属性$=‘值’] 属性结尾包含</li>
-<li>标签[属性*=‘值’] 属性开头包含</li>
-</ul>
-</li>
-<li>
-<p>使用伪类选择器的CSS表达式</p>
-<ul>
-<li>伪类选择器（简称：伪类）通过冒号来定义，它定义了元素的状态，如点击按下，点击完成等，通过伪类可以为元素的状态修改样式。</li>
-<li>div#div1:first-child</li>
-<li>div#div1:nth-child</li>
-<li>div#div1:last-child</li>
-<li>input:focus</li>
-<li>input:enabled</li>
-<li>input:checked</li>
-</ul>
-</li>
-<li>
-<p>查找同级元素的CSS表达式</p>
-<ul>
-<li>div#div1 - input + a</li>
-<li>div#div1 - input + a + img</li>
-<li>div#div1 - input + - + img<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>使用谷歌console验证</p>
-<ul>
-<li>$(‘css表达式’)验证css表达式</li>
-<li>输入$x(‘xpath表达式’)验证xpath表达式<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>使用By定位</strong></p>
-<ul>
-<li>
-<p>用By定位元素（统一调用find_element()方法）</p>
-</li>
-<li>
-<p>将By类导入: <code>from selenium.webdriver.common.by import By</code></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">find_element(By.ID,<span class="string">&quot;kw&quot;</span>)</span><br><span class="line">find_element(By.NAME,<span class="string">&quot;wd&quot;</span>)</span><br><span class="line">find_element(By.TAG_NAME,<span class="string">&quot;input&quot;</span>)</span><br><span class="line">find_element(By.LINK_TEXT,<span class="string">&quot;新闻&quot;</span>)</span><br><span class="line">find_element(By.PARTIAL-LINK-TEXT,<span class="string">&quot;新&quot;</span>)</span><br><span class="line">find_element(By.XPATH,<span class="string">&quot;//*[@class=&#x27;bg s_btn&#x27;]&quot;</span>)</span><br><span class="line">find_element(By.CSS_SELECTOR,<span class="string">&quot;span.bg s_btn-wr&gt;input#su&quot;</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p>注意事项</p>
-<ul>
-<li>WebDriver更加推荐前面介绍的写法（父子类）</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="控制浏览器"><a class="header-anchor" href="#控制浏览器">#</a>控制浏览器</h4>
-<ul>
-<li>
-<p>WebDriver 主要提供的是操作页面上各种元素的方法，但是也提供了操作浏览器的一些方法，例如控制浏览器的大小，操作浏览器的前进和后退等。<br>
-<br></p>
-</li>
-<li>
-<p>控制浏览窗口的大小</p>
-<ul>
-<li><code>set_window_size()</code></li>
-<li><code>maximize_window()</code>方法打开浏览器的全屏显示</li>
-</ul>
-</li>
-<li>
-<p>模拟浏览器刷新</p>
-<ul>
-<li><code>dirver.refresh()</code>   # 刷新当前页面<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>简单的元素操作</p>
-<ul>
-<li><code>driver.forword()</code>前进</li>
-<li><code>driver.back()</code>后退</li>
-<li><code>clear()</code>清除文本</li>
-<li><code>send_keys(*value)</code> 模拟按键输入</li>
-<li><code>click()</code>单击元素</li>
-<li><code>submit（）</code>方法用来提交表单<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>获取元素的属性</strong></p>
-<ul>
-<li>size     返回元素的尺寸。</li>
-<li>text     获取元素的文本</li>
-<li><code>get_attribute(name)</code>获得属性值</li>
-<li><code>is_displayed()</code>设置该元素是否用户可见。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>鼠标事件</strong></p>
-<ul>
-<li>需要导入ActionChains类</li>
-<li>ActionChains(driver)</li>
-<li>perform()执行所有ActionChains的存储行为, 提交动作</li>
-<li>context(right_click)模拟鼠标右键操作，需要元素定位</li>
-<li>double_click()双击</li>
-<li>drag_and_drop()拖动和释放</li>
-<li>move_to_element()鼠标悬停<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>键盘事件</strong></p>
-<ul>
-<li>Keys类几乎提供了键盘上的所有方法。</li>
-<li>send_keys(Keys.BACK_SPACE) 删除键（BackSpace）</li>
-<li>send_keys(Keys.SPACE) 空格键(Space)</li>
-<li>send_keys(Keys.TAB) 制表键(Tab)</li>
-<li>send_keys(Keys.ESCAPE) 回退键（Esc）</li>
-<li>send_keys(Keys.ENTER) 回车键（Enter）</li>
-<li>send_keys(Keys.CONTROL,‘a’) 全选（Ctrl+A）</li>
-<li>send_keys(Keys.CONTROL,‘c’) 复制（Ctrl+C）</li>
-<li>send_keys(Keys.CONTROL,‘x’) 剪切（Ctrl+X）</li>
-<li>send_keys(Keys.CONTROL,‘v’) 粘贴（Ctrl+V）</li>
-<li>send_keys(Keys.F1) 键盘 F1</li>
-<li>send_keys(Keys.F12) 键盘 F12<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>获取验证信息</strong></p>
-<ul>
-<li>通常用的最多的验证信息（title、URL和text）</li>
-<li>获取当前页面的title
-<ul>
-<li><code>driver.title</code></li>
-</ul>
-</li>
-<li>获取当前页面的url
-<ul>
-<li><code>driver.current_url</code></li>
-</ul>
-</li>
-<li>获取标签的文本
-<ul>
-<li><code>driver.find_element_by _id(&quot;kw&quot;).text</code><br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>设置元素等待</strong></p>
-<ul>
-<li>
-<p>页面上元素可能并不是同时被加载完成的（web应用程序使用了大量的AJAX技术）这给定位增加了困难</p>
-</li>
-<li>
-<p><strong>显示等待</strong>（达到最大时限时抛出超时异常）</p>
-<ul>
-<li>WebDriverWait类时WebDriver提供的等待方法，在设置时间内，默认每隔一段时间检测当前页面元素是否存在，如果超过设定时间检测不到则抛出异常。</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> `selenium.webdriver.support` <span class="keyword">import</span> expected_conditions <span class="keyword">as</span> EC</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.common.by <span class="keyword">import</span> By</span><br><span class="line"></span><br><span class="line">element = WebDriverWaitdriver(driver,<span class="number">5</span>,<span class="number">0.5</span>).until</span><br><span class="line">(EC.presence_of_element_located((By.ID,<span class="string">&quot;kw&quot;</span>)))</span><br><span class="line">element.send_keys(<span class="string">&quot;selenium&quot;</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p><strong>隐式等待</strong>（抛出无此元素异常）</p>
-<ul>
-<li>
-<p>超过设定时常元素还没有被加载，就抛出NoSuchElementException异常。</p>
-</li>
-<li>
-<p>implicitly_wait()实现隐式等待</p>
-</li>
-<li>
-<p>webdriver提供了implicitly_wait()来实现隐式等待, 默认为0 , 一般在元素定位操作之前设置</p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>强制等待</strong>: <code>sleep()</code></p>
-<ul>
-<li>通过Python内置time模块提供，通过sleep(n秒)强制等待来延迟执行下一个操作 （参数可以是小数）</li>
-</ul>
-</li>
-<li>
-<p>不同等待之间的区别</p>
-<ul>
-<li>强制等待的时间是固定的<br>
-<br></li>
-<li>显式等待是在等待时间内对条件轮询(0.5s),当超出等待时间条件仍不满足,抛出超时异常(TimeOutException), <strong>建议在js异步和需要延时才能查找到元素的场景下使用显式等待.</strong>（能够确定等待时间时使用）<br>
-<br></li>
-<li>隐式等待是在等待时间内对页面加载完毕的当前dom轮询,查看元素是否加载,当超出等待时间,抛出无此元素的异常(NoSuchElementException), 如有多个元素查找会创建多个隐式等待<br>
-<br></li>
-<li>若同时设置显示等待和隐式等待，当显示等待在设定的等待时间内条件满足,则停止等待,执行后面的操作(使用隐式等待),否则抛出超时异常。<br>
-<br></li>
-<li><strong>显示等待会优先于隐式等待，当显式等待超时少于隐式等待超时,会继续进入隐式等待。</strong></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="WebDriver-常用操作"><a class="header-anchor" href="#WebDriver-常用操作">#</a>WebDriver 常用操作</h4>
-<ul>
-<li>
-<p><strong>定位一组元素</strong></p>
-<ul>
-<li><code>find_elements_xxx(&quot;xx&quot;)</code>   定位一组元素</li>
-</ul>
-</li>
-<li>
-<p><strong>多表单切换</strong></p>
-<ul>
-<li><code>switch_to.frame()</code>  进入表单</li>
-<li><code>switch_to.default_content()</code>  退出表单至根页面</li>
-</ul>
-</li>
-<li>
-<p><strong>多窗口切换</strong></p>
-<ul>
-<li><code>switch_to.window()</code>切换窗口</li>
-<li>current_window_handle 获得当前窗口的句柄</li>
-<li>window_handles：返回所有窗口的句柄到当前会话</li>
-</ul>
-</li>
-<li>
-<p><strong>警告框</strong></p>
-<ul>
-<li>text：返回 alert/confirm/prompt 中的文字信息。</li>
-<li>accept()：接受现有警告框。</li>
-<li>dismiss()：解散现有警告框。</li>
-<li>send_keys(keysToSend)： 发送文本至警告框。</li>
-</ul>
-</li>
-<li>
-<p><strong>下拉框</strong></p>
-<ul>
-<li>Select  操作select标签的下拉框。</li>
-<li>select_by_value()  选择value属性选择。</li>
-<li>select_by_visible_text() 通过选项名称选择。</li>
-<li>select_by_index() 通过索引选择</li>
-</ul>
-</li>
-<li>
-<p><strong>文件上传</strong></p>
-<ul>
-<li>
-<p><strong>Chrome浏览器</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">chrome浏览器实现下载</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line">options = webdriver.ChromeOptions() </span><br><span class="line">prefs = &#123;<span class="string">&#x27;profile.default_content_settings.popups&#x27;</span>: <span class="number">0</span>,</span><br><span class="line"><span class="string">&#x27;download.default_directory&#x27;</span>: os.getcwd()&#125;</span><br><span class="line">options.add_experimental_option(<span class="string">&#x27;prefs&#x27;</span>, prefs) </span><br><span class="line"></span><br><span class="line">driver = webdriver.Chrome(chrome_options=options) </span><br><span class="line">driver.get(<span class="string">&quot;https://pypi.org/project/selenium/#files&quot;</span>)</span><br><span class="line">driver.find_element_by_partial_link_text(<span class="string">&quot;selenium-3.141.0.tar.gz&quot;</span>).click()</span><br></pre></td></tr></table></figure>
-</li>
-<li>
-<p><strong>Firefox浏览器</strong></p>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">firefox浏览器实现下载</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line">fp = webdriver.FirefoxProfile()</span><br><span class="line">fp.set_preference(<span class="string">&quot;browser.download.folderList&quot;</span>, <span class="number">2</span>)</span><br><span class="line">fp.set_preference(<span class="string">&quot;browser.download.dir&quot;</span>, os.getcwd())</span><br><span class="line">fp.set_preference(<span class="string">&quot;browser.helperApps.neverAsk.saveToDisk&quot;</span>, <span class="string">&quot;binary/octet-stream&quot;</span>)</span><br><span class="line">driver = webdriver.Firefox(firefox_profile=fp)</span><br><span class="line">driver.get(<span class="string">&quot;https://pypi.org/project/selenium/#files&quot;</span>)</span><br><span class="line">driver.find_element_by_partial_link_text(<span class="string">&quot;selenium-3.141.0.tar.gz&quot;</span>).click()</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Cookie</strong></p>
-<ul>
-<li>
-<p><code>driver.add_cookie(dict)</code></p>
-</li>
-<li>
-<p><code>driver.get_cookies()</code></p>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>调用js代码</strong></p>
-<ul>
-<li><code>driver.execute_script(js)</code></li>
-</ul>
-</li>
-<li>
-<p><strong>窗口截图</strong></p>
-<ul>
-<li>driver.get_screenshot_as_file(“/Screenshots/foo.png”)</li>
-</ul>
-</li>
-<li>
-<p><strong>关闭窗口</strong></p>
-<ul>
-<li><code>driver.close()</code></li>
-</ul>
-</li>
-<li>
-<p><strong>使用logging模块basicCofig()方法</strong></p>
-<ul>
-<li>
-<p>开启debug模块捕获客户端向服务器发送的post请求。</p>
-  <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> logging</span><br><span class="line">logging.basicConfig(level=logging.DEBUG)</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h5 id="WebDriver原理"><a class="header-anchor" href="#WebDriver原理">#</a>WebDriver原理</h5>
-<ul>
-<li>
-<p>WebDriver启动目标浏览器，并绑定到指定的端口，将创建的浏览器实例作为WebDriver的Remote Server（远程服务器）</p>
-</li>
-<li>
-<p>Client端通过<code>CommandExcuter</code>发送<code>HTTPRequest</code>给Remote Server的侦听端口。</p>
-</li>
-<li>
-<p>Remote Server需要原生的浏览器组件（<code>chromdriver</code>，等来转换浏览器的本地（native）调用）</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Software Testing</category>
-      </categories>
-      <tags>
-        <tag>WebDriver</tag>
       </tags>
   </entry>
   <entry>
@@ -9163,8 +9163,8 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
         <category>Blog</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
         <tag>GitHub Pages</tag>
+        <tag>Hexo</tag>
         <tag>Git</tag>
       </tags>
   </entry>

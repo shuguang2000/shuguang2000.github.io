@@ -376,11 +376,11 @@
   </entry>
   
   <entry>
-    <title>认知觉醒</title>
-    <link href="https://www.shuguang2000.us.kg/Books/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92/"/>
-    <id>https://www.shuguang2000.us.kg/Books/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92/</id>
+    <title>狂人日记</title>
+    <link href="https://www.shuguang2000.us.kg/Books/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%AE%B0/"/>
+    <id>https://www.shuguang2000.us.kg/Books/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%AE%B0/</id>
     <published>2023-04-19T14:43:59.000Z</published>
-    <updated>2024-09-17T21:40:40.147Z</updated>
+    <updated>2024-09-17T21:40:55.165Z</updated>
     
     
       
@@ -399,11 +399,11 @@
   </entry>
   
   <entry>
-    <title>狂人日记</title>
-    <link href="https://www.shuguang2000.us.kg/Books/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%AE%B0/"/>
-    <id>https://www.shuguang2000.us.kg/Books/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%AE%B0/</id>
+    <title>认知觉醒</title>
+    <link href="https://www.shuguang2000.us.kg/Books/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92/"/>
+    <id>https://www.shuguang2000.us.kg/Books/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92/</id>
     <published>2023-04-19T14:43:59.000Z</published>
-    <updated>2024-09-17T21:40:55.165Z</updated>
+    <updated>2024-09-17T21:40:40.147Z</updated>
     
     
       
@@ -820,6 +820,27 @@
   </entry>
   
   <entry>
+    <title>WebDriver API</title>
+    <link href="https://www.shuguang2000.us.kg/Software-Testing/WebDriver%20API/"/>
+    <id>https://www.shuguang2000.us.kg/Software-Testing/WebDriver%20API/</id>
+    <published>2022-11-19T05:31:58.000Z</published>
+    <updated>2024-08-10T12:22:42.464Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;WebDriver是一个用于实现Web自动化的第三方库，本文主要介绍WebDriver的用法及原理。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Software Testing" scheme="https://www.shuguang2000.us.kg/categories/Software-Testing/"/>
+    
+    
+    <category term="WebDriver" scheme="https://www.shuguang2000.us.kg/tags/WebDriver/"/>
+    
+  </entry>
+  
+  <entry>
     <title>自动化测试基础</title>
     <link href="https://www.shuguang2000.us.kg/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
     <id>https://www.shuguang2000.us.kg/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</id>
@@ -860,27 +881,6 @@
     
     
     <category term="Python" scheme="https://www.shuguang2000.us.kg/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>WebDriver API</title>
-    <link href="https://www.shuguang2000.us.kg/Software-Testing/WebDriver%20API/"/>
-    <id>https://www.shuguang2000.us.kg/Software-Testing/WebDriver%20API/</id>
-    <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2024-08-10T12:22:42.464Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;WebDriver是一个用于实现Web自动化的第三方库，本文主要介绍WebDriver的用法及原理。&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Software Testing" scheme="https://www.shuguang2000.us.kg/categories/Software-Testing/"/>
-    
-    
-    <category term="WebDriver" scheme="https://www.shuguang2000.us.kg/tags/WebDriver/"/>
     
   </entry>
   
@@ -1054,9 +1054,9 @@
     <category term="Blog" scheme="https://www.shuguang2000.us.kg/categories/Blog/"/>
     
     
-    <category term="Hexo" scheme="https://www.shuguang2000.us.kg/tags/Hexo/"/>
-    
     <category term="GitHub Pages" scheme="https://www.shuguang2000.us.kg/tags/GitHub-Pages/"/>
+    
+    <category term="Hexo" scheme="https://www.shuguang2000.us.kg/tags/Hexo/"/>
     
     <category term="Git" scheme="https://www.shuguang2000.us.kg/tags/Git/"/>
     
