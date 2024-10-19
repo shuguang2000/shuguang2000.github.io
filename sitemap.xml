@@ -516,6 +516,27 @@
   </url>
   
   <url>
+    <loc>https://www.shuguang2000.us.kg/tags/SPDY/</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.shuguang2000.us.kg/tags/HTTP2/</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.shuguang2000.us.kg/tags/HTTP3/</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shuguang2000.us.kg/tags/HTTPS/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -544,21 +565,14 @@
   </url>
   
   <url>
-    <loc>https://www.shuguang2000.us.kg/tags/SPDY/</loc>
+    <loc>https://www.shuguang2000.us.kg/tags/MAC/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.shuguang2000.us.kg/tags/HTTP2/</loc>
-    <lastmod>2024-10-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.shuguang2000.us.kg/tags/HTTP3/</loc>
+    <loc>https://www.shuguang2000.us.kg/tags/IP/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -573,20 +587,6 @@
   
   <url>
     <loc>https://www.shuguang2000.us.kg/tags/UDP/</loc>
-    <lastmod>2024-10-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.shuguang2000.us.kg/tags/MAC/</loc>
-    <lastmod>2024-10-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.shuguang2000.us.kg/tags/IP/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -642,14 +642,14 @@
   </url>
   
   <url>
-    <loc>https://www.shuguang2000.us.kg/tags/VPN/</loc>
+    <loc>https://www.shuguang2000.us.kg/tags/CSMA-CD/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.shuguang2000.us.kg/tags/IPv6/</loc>
+    <loc>https://www.shuguang2000.us.kg/tags/PPP/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -691,35 +691,21 @@
   </url>
   
   <url>
-    <loc>https://www.shuguang2000.us.kg/tags/CSMA-CD/</loc>
+    <loc>https://www.shuguang2000.us.kg/tags/VPN/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.shuguang2000.us.kg/tags/PPP/</loc>
+    <loc>https://www.shuguang2000.us.kg/tags/IPv6/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.shuguang2000.us.kg/tags/Anaconda/</loc>
-    <lastmod>2024-10-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.shuguang2000.us.kg/tags/conda/</loc>
-    <lastmod>2024-10-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.shuguang2000.us.kg/tags/pip/</loc>
+    <loc>https://www.shuguang2000.us.kg/tags/Router/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -754,7 +740,21 @@
   </url>
   
   <url>
-    <loc>https://www.shuguang2000.us.kg/tags/Router/</loc>
+    <loc>https://www.shuguang2000.us.kg/tags/Anaconda/</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.shuguang2000.us.kg/tags/conda/</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.shuguang2000.us.kg/tags/pip/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -768,42 +768,7 @@
   </url>
   
   <url>
-    <loc>https://www.shuguang2000.us.kg/tags/study/</loc>
-    <lastmod>2024-10-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.shuguang2000.us.kg/tags/Python/</loc>
-    <lastmod>2024-10-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.shuguang2000.us.kg/tags/Markdown/</loc>
-    <lastmod>2024-10-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.shuguang2000.us.kg/tags/tag1/</loc>
-    <lastmod>2024-10-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.shuguang2000.us.kg/tags/Port/</loc>
-    <lastmod>2024-10-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.shuguang2000.us.kg/tags/Windows/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -824,6 +789,41 @@
   </url>
   
   <url>
+    <loc>https://www.shuguang2000.us.kg/tags/study/</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.shuguang2000.us.kg/tags/tag1/</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.shuguang2000.us.kg/tags/Markdown/</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.shuguang2000.us.kg/tags/Port/</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.shuguang2000.us.kg/tags/Windows/</loc>
+    <lastmod>2024-10-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.shuguang2000.us.kg/tags/Proxy/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -833,14 +833,14 @@
 
   
   <url>
-    <loc>https://www.shuguang2000.us.kg/categories/Blog/</loc>
+    <loc>https://www.shuguang2000.us.kg/categories/Books/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.shuguang2000.us.kg/categories/Books/</loc>
+    <loc>https://www.shuguang2000.us.kg/categories/Blog/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -875,14 +875,14 @@
   </url>
   
   <url>
-    <loc>https://www.shuguang2000.us.kg/categories/Tools/</loc>
+    <loc>https://www.shuguang2000.us.kg/categories/category1/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.shuguang2000.us.kg/categories/category1/</loc>
+    <loc>https://www.shuguang2000.us.kg/categories/Tools/</loc>
     <lastmod>2024-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
