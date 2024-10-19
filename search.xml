@@ -201,148 +201,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Cloudflare 使用最优 CDN 免费加速网站</title>
-    <url>/Tools/Cloudflare%20%E4%BD%BF%E7%94%A8%E6%9C%80%E4%BC%98%20CDN%20%E5%85%8D%E8%B4%B9%E5%8A%A0%E9%80%9F%E7%BD%91%E7%AB%99/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>使用 Cloudflare 使用最优 CDN 免费加速在中国的网页的访问速度和稳定性。</li>
-</ul>
-<span id="more"></span>
-<hr>
-<h3 id="Cloudflare-最优-CDN-免费加速网站"><a class="header-anchor" href="#Cloudflare-最优-CDN-免费加速网站">#</a>Cloudflare 最优 CDN 免费加速网站</h3>
-<ul>
-<li>
-<p><strong>关于使用 Cloudflare 的 SAAS（Software as a Service） 功能的原因</strong></p>
-<ul>
-<li>
-<p>Cloudflare 域名服务器配置的域名无法直接接入 Cloudflare 的优选域名<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="CDN优选是指根据特定标准和需求，从多个内容分发网络（CDN）中选择最合适的服务提供商。优选过程通常考虑因素包括性能、地理覆盖、安全性、兼容性、成本和客户支持等，旨在确保内容以最佳方式快速、安全地传递给最终用户。">[1]</span></a></sup>去实现请求分发。</p>
-<ul>
-<li>因为要使用优选域名例如：<code>cloudflare.182682.xyz</code>, 需要 cname 记录为非 Cloudflare 域名服务器提供的 cname 记录完来成。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>其他需使用 SAAS(cname) 的场景</p>
-<ul>
-<li>使用 Cloudflare 作为 cdn 服务器并保护源 ip （即开启橙色云朵）</li>
-<li>使用 Cloudflare Worker 的同时想使用优选域名</li>
-<li>使用 Cloudflare 的 Zero Trust<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>CloudFlare SAAS(cname) 接入网站域名</strong></p>
-<ul>
-<li>添加自定义主机名（免费用户可添加100个）</li>
-<li>添加回退源（免费用户只能添加一个）
-<ul>
-<li>回退源可以是该主域名的任意子域名，但需该域名的A记录为源IP（并开启橙色云朵）<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>关于网站使用 CloudFlare 优选域名</strong></p>
-<ul>
-<li>
-<p><strong>方法一：两个 CloudFlare 域名</strong></p>
-<ul>
-<li><strong>前提：</strong></li>
-<li>用户访问你的网站的域名
-<ul>
-<li>注：若回退源域名使用了 https 加密，则网站域名加密方式需为“严格”</li>
-</ul>
-</li>
-<li>用于 SAAS 回退源的域名<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>方法二：一个域名</strong></p>
-<ul>
-<li>顶级域名托管在 CloudFlare DNS 服务器</li>
-<li>该顶级域的子域名通过 NS 记录托管在其他的权威 DNS 服务器，例如：
-<ul>
-<li>腾讯云的 <a href="https://www.dnspod.cn/" rel="external nofollow noreferrer">DNSPod</a></li>
-<li><a href="https://dns.he.net/" rel="external nofollow noreferrer">Hurricane Electric DNS</a>
-<ul>
-<li>注：HE稍微不好的就是完全生效时间需要48小时</li>
-</ul>
-</li>
-<li>…</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="网站使用-CloudFlare-优选域名"><a class="header-anchor" href="#网站使用-CloudFlare-优选域名">#</a>网站使用 CloudFlare 优选域名</h4>
-<ul>
-<li>关于 <a href="https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/" rel="external nofollow noreferrer">CloudFlare SAAS</a>
-<ul>
-<li>官网的解释是：
-<ul>
-<li>允许你通过客户自己的自定义或虚域<sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="“虚域”通常指的是一种通过域名进行虚拟化的方式。它可以用来在同一台服务器上托管多个网站或应用程序，每个网站或应用程序都使用不同的域名。虚域名通过 DNS 解析指向同一 IP 地址，但服务器会根据请求的域名来区分不同的内容。">[2]</span></a></sup>将 Cloudflare 网络的安全和性能优势扩展到你的客户。</li>
-</ul>
-</li>
-<li>其实就是：
-<ul>
-<li>允许你的域名提供该域名下的自定义域名的接入功能。</li>
-</ul>
-</li>
-<li>例如，Github个人站点<sup id="fnref:3"><a href="#fn:3" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="Github 给个人用户默认提供`username.github.io`的个人站点，Github 用户可购买自己的域名（例如：www.example.com）指向这 Github 默认域实现对该账户下所有公开仓库的访问。
-">[3]</span></a></sup>：
-<ul>
-<li>
-<p>Github 用户通过自定义域名路由到（或者说回退到）Github 默认域（即<code>github.io</code>这个顶级域），这样 Github 就可轻松管理所有用户站点应用程序的安全防护、内容分发、SSL/TLS加密等问题。<br>
-<br></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/CloudFlare%20SAAS.png" alt="CloudFlare SAAS"></p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<br>
-<ul>
-<li>
-<p>使用两个 CloudFlare 域名实现网站加速</p>
-<ul>
-<li>pass<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>使用一个域名网站加速</p>
-<ul>
-<li>pass</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="Thanks"><a class="header-anchor" href="#Thanks">#</a>Thanks</h4>
-<ul>
-<li>
-<p><a href="https://github.com/xingpingcn/enhanced-FaaS-in-China/blob/main/docs/how2use-SaaS-for-CF/how2use-SaaS-for-CF.md" rel="external nofollow noreferrer">如何使用 cloudflare 的 saas 功能</a><br>
-<br></p>
-</li>
-<li>
-<p><a href="https://dnschecker.org/ns-lookup.php" rel="external nofollow noreferrer">DNS Checker</a></p>
-</li>
-</ul>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">CDN优选是指根据特定标准和需求，从多个内容分发网络（CDN）中选择最合适的服务提供商。优选过程通常考虑因素包括性能、地理覆盖、安全性、兼容性、成本和客户支持等，旨在确保内容以最佳方式快速、安全地传递给最终用户。<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">“虚域”通常指的是一种通过域名进行虚拟化的方式。它可以用来在同一台服务器上托管多个网站或应用程序，每个网站或应用程序都使用不同的域名。虚域名通过 DNS 解析指向同一 IP 地址，但服务器会根据请求的域名来区分不同的内容。<a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:3"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">3.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">Github 给个人用户默认提供<code>username.github.io</code>的个人站点，Github 用户可购买自己的域名（例如：www.example.com）指向这 Github 默认域实现对该账户下所有公开仓库的访问。<a href="#fnref:3" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
-      <categories>
-        <category>Tools</category>
-      </categories>
-      <tags>
-        <tag>CDN</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Windows 解决端口占用</title>
     <url>/Tools/Windows%20%E8%A7%A3%E5%86%B3%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
@@ -1120,6 +978,15 @@
       </categories>
   </entry>
   <entry>
+    <title>心流</title>
+    <url>/Books/%E5%BF%83%E6%B5%81/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><hr>
+]]></content>
+      <categories>
+        <category>Books</category>
+      </categories>
+  </entry>
+  <entry>
     <title>工作、消费主义和新穷人</title>
     <url>/Books/%E5%B7%A5%E4%BD%9C%E3%80%81%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
@@ -1172,26 +1039,8 @@
       </categories>
   </entry>
   <entry>
-    <title>心流</title>
-    <url>/Books/%E5%BF%83%E6%B5%81/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><hr>
-]]></content>
-      <categories>
-        <category>Books</category>
-      </categories>
-  </entry>
-  <entry>
     <title>李光耀观天下</title>
     <url>/Books/%E6%9D%8E%E5%85%89%E8%80%80%E8%A7%82%E5%A4%A9%E4%B8%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><hr>
-]]></content>
-      <categories>
-        <category>Books</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>认知觉醒</title>
-    <url>/Books/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><hr>
 ]]></content>
       <categories>
@@ -1210,6 +1059,15 @@
   <entry>
     <title>认知驱动</title>
     <url>/Books/%E8%AE%A4%E7%9F%A5%E9%A9%B1%E5%8A%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><hr>
+]]></content>
+      <categories>
+        <category>Books</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>认知觉醒</title>
+    <url>/Books/%E8%AE%A4%E7%9F%A5%E8%A7%89%E9%86%92/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><hr>
 ]]></content>
       <categories>
