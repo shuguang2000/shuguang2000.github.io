@@ -5833,6 +5833,310 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
       </tags>
   </entry>
   <entry>
+    <title>自动化测试基础</title>
+    <url>/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li>本文主要介绍软件测试、软件自动化测试相关概念和工具。</li>
+</ul>
+<span id="more"></span>
+<hr>
+<h4 id="软件测试分类"><a class="header-anchor" href="#软件测试分类">#</a>软件测试分类</h4>
+<ul>
+<li>
+<p>根据项目流程划分</p>
+<ul>
+<li>
+<p>单元测试（模块测试）</p>
+<ul>
+<li>子程序或具有独立功能代码块</li>
+</ul>
+</li>
+<li>
+<p>集成测试</p>
+<ul>
+<li>先组成系统或子系统再测试，重点检查模块间的接口</li>
+</ul>
+</li>
+<li>
+<p>系统测试</p>
+<ul>
+<li>整个产品系统（需求说明书）</li>
+</ul>
+</li>
+<li>
+<p>验收测试</p>
+<ul>
+<li>最终测试（完成系统和功能测试后，产品发布之前的测试）(验证功能和性能)<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>按照对代码可见度来划分</p>
+<ul>
+<li>白盒测试
+<ul>
+<li>关注内部动作</li>
+</ul>
+</li>
+<li>黑盒测试
+<ul>
+<li>关注外部输入输出</li>
+</ul>
+</li>
+<li>灰盒测试
+<ul>
+<li>既关注外部输入输出又关注内部动作。<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>软件的不同测试面来划分</p>
+<ul>
+<li>功能测试
+<ul>
+<li>逻辑功能测试，界面测试，易用性测试，安装测试，兼容性测试等。</li>
+</ul>
+</li>
+<li>性能测试
+<ul>
+<li>时间性能(具体环境)</li>
+</ul>
+</li>
+<li>空间性能（带宽，CPU）<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>按照自动化程度划分</p>
+<ul>
+<li>手工测试</li>
+<li>自动化测试
+<ul>
+<li>功能自动化和性能自动化<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>测试周期中的一些方法</p>
+<ul>
+<li>冒烟测试
+<ul>
+<li>测试新版本之前，投入较少人力和时间验证软件主要功能。</li>
+</ul>
+</li>
+<li>回归测试
+<ul>
+<li>修改了旧代码后，重新进行测试以确定修改没有引入新错误或导致其他代码产生错误。（第二轮）</li>
+</ul>
+</li>
+<li>随机测试
+<ul>
+<li>测试输入数据随机生成，目的是模拟用户<strong>真实操作</strong>，发现<strong>边缘错误。</strong></li>
+</ul>
+</li>
+<li>探索性测试
+<ul>
+<li>测试的思维技术，一种<strong>思维方式</strong>，强调测试人员<strong>主观能动性</strong>，遇到问题时<strong>改变测试策略</strong>。</li>
+</ul>
+</li>
+<li>安全测试
+<ul>
+<li>生命周期中特别是<strong>开发基本完成到发布阶段</strong>，对产品验证符合产品<strong>安全需求定义</strong>和<strong>质量标准</strong>的过程</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="分层的自动化测试"><a class="header-anchor" href="#分层的自动化测试">#</a>分层的自动化测试</h4>
+<ul>
+<li>
+<p>背景</p>
+<ul>
+<li>传统的自动化测试：
+<ul>
+<li>基于产品的UI的自动化测试，将黑盒测试转化为通过程序或工具执行的一种自动化测试。</li>
+</ul>
+</li>
+<li>传统的自动化测试缺点（黑盒测试环节尽可能全面覆盖，自动化）
+<ul>
+<li>测试规模增大</li>
+<li>全面UI自动化测试（由于UI易变，使得UI维护成本相对高昂）<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>分层自动化测试</p>
+<ul>
+<li>
+<p>强调从黑盒（UI）单层到黑白盒多层的自动化测试体系</p>
+</li>
+<li>
+<p>从全面黑盒自动化测试到对系统的不同层次进行自动化测试</p>
+</li>
+<li>
+<p>单元自动化测试（10%）</p>
+<ul>
+<li>对软件中的最小可测试单元检查和验证。（类，函数，窗口）<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>接口自动化测试(20%)</p>
+<ul>
+<li>模块接口测试和Web接口测试
+<ul>
+<li>模块接口测试（单元测试基础 -&gt; 单元结果验证）
+<ul>
+<li>工具与单元自动化测试相同</li>
+</ul>
+</li>
+<li>Web接口测试
+<ul>
+<li><strong>服务器接口测试</strong>和<strong>外部接口测试</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>服务器接口测试
+<ul>
+<li>浏览器与服务器的接口（通过HTTP协议实现前后端数据传递）</li>
+</ul>
+</li>
+<li>外部接口测试(70%)
+<ul>
+<li>第三方系统提供的接口（第三方登录接口）</li>
+</ul>
+</li>
+<li>接口测试相应的类库和工具： HttpUnit 、Postman<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>UI自动化测试</p>
+<ul>
+<li>由于所有功能的展示都在这一层，所以测试工作大多集中在这一层。</li>
+<li>因此建议提倡<strong>半自动化</strong>开展测试工作。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="自动化测试应用场景"><a class="header-anchor" href="#自动化测试应用场景">#</a>自动化测试应用场景</h4>
+<ul>
+<li>一般满足以下三个条件就可开展自动化测试
+<ul>
+<li>软件需求变动不频繁</li>
+<li>项目的周期长</li>
+<li>自动化测试脚本可重复利用</li>
+</ul>
+</li>
+<li>任务测试明确，不会频繁变动(<strong>重要</strong>)</li>
+<li>每日构建后的测试验证</li>
+<li>比较频繁的回归测试</li>
+<li>软件系统界面稳定，变动少</li>
+<li>需要在多个平台上运行相同的测试案例、组合遍历型的测试、大量重复的任务。</li>
+<li>软件维护的周期长（<strong>重要</strong>）</li>
+<li>项目的进度压力不大。</li>
+<li>被测软件系统开发较为规范，能够保证系统可测试性。</li>
+<li>具备大量自动化测试平台。</li>
+<li>测试人员具备较强的编程能力。</li>
+<li>自动化测试脚本可重复利用（<strong>重要</strong>）</li>
+</ul>
+<hr>
+<h4 id="自动化测试及其工具"><a class="header-anchor" href="#自动化测试及其工具">#</a>自动化测试及其工具</h4>
+<ul>
+<li>
+<p><strong>广义</strong>上的自动化测试：指的是借助工具来辅助进行软件测试的方式</p>
+</li>
+<li>
+<p><strong>狭义</strong>上的自动化测试：指的是基于UI的功能测试</p>
+</li>
+<li>
+<p>自动化测试工具</p>
+<ul>
+<li>UFT（QTP和ST合并）</li>
+<li>Robot FrameWork（基于python）</li>
+<li>Watir(基于ruby)</li>
+<li>selenium</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="Selenium工具介绍"><a class="header-anchor" href="#Selenium工具介绍">#</a>Selenium工具介绍</h4>
+<ul>
+<li>
+<p>Selenium工具介绍</p>
+<ul>
+<li>主要用于Web应用程序的自动化测试</li>
+</ul>
+</li>
+<li>
+<p>Selenium IDE</p>
+<ul>
+<li>火狐插件，方便开发脚本</li>
+</ul>
+</li>
+<li>
+<p>Selenium Grid</p>
+<ul>
+<li><strong>自动化测试辅助工具</strong>可加快Web-App功能测试，很方便在对台机器和异构环境执行测试用例（不同计算机和系统的网络环境）</li>
+</ul>
+</li>
+<li>
+<p>Selenium RC</p>
+<ul>
+<li>Selenium家族核心部分,支持多种语言编写的自动化测试脚本。</li>
+</ul>
+</li>
+<li>
+<p>Selenium2.0</p>
+<ul>
+<li>Selenium1.0 = Selenium IDE+Selenium Grid+Selenium RC</li>
+<li>Selenium2.0 = Selenium 1.0 +WebDirver</li>
+<li>Selenium3.0</li>
+<li>WebDriver是通过原生的浏览器支持或浏览器扩展来直接控制浏览器</li>
+<li>WebDriver能利用操作系统级别调用，能够更好模拟用户输入。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="前端基础（补充）"><a class="header-anchor" href="#前端基础（补充）">#</a>前端基础（补充）</h4>
+<ul>
+<li>基础知识
+<ul>
+<li>HTMl 超文本标记语言</li>
+<li>JavaScript 前端脚本语言（轻量级语言），是一种解释性的语言，不需要预编译</li>
+<li>XML 可扩展标记语言 通用标记语言的一个子集。作为传输工具和存储数据。（数据内容）</li>
+</ul>
+</li>
+<li>前端工具
+<ul>
+<li>Fire Bug  火狐开发类插件</li>
+<li>FirePath XPath(XML的路径语言,用来确定XML文档中的部分位置)</li>
+<li>Chrome开发人员工具</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Software Testing</category>
+      </categories>
+      <tags>
+        <tag>Automated Testing</tag>
+        <tag>Selenium</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>WebDriver API</title>
     <url>/Software-Testing/WebDriver%20API/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
@@ -6492,310 +6796,6 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
       </tags>
   </entry>
   <entry>
-    <title>自动化测试基础</title>
-    <url>/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>本文主要介绍软件测试、软件自动化测试相关概念和工具。</li>
-</ul>
-<span id="more"></span>
-<hr>
-<h4 id="软件测试分类"><a class="header-anchor" href="#软件测试分类">#</a>软件测试分类</h4>
-<ul>
-<li>
-<p>根据项目流程划分</p>
-<ul>
-<li>
-<p>单元测试（模块测试）</p>
-<ul>
-<li>子程序或具有独立功能代码块</li>
-</ul>
-</li>
-<li>
-<p>集成测试</p>
-<ul>
-<li>先组成系统或子系统再测试，重点检查模块间的接口</li>
-</ul>
-</li>
-<li>
-<p>系统测试</p>
-<ul>
-<li>整个产品系统（需求说明书）</li>
-</ul>
-</li>
-<li>
-<p>验收测试</p>
-<ul>
-<li>最终测试（完成系统和功能测试后，产品发布之前的测试）(验证功能和性能)<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>按照对代码可见度来划分</p>
-<ul>
-<li>白盒测试
-<ul>
-<li>关注内部动作</li>
-</ul>
-</li>
-<li>黑盒测试
-<ul>
-<li>关注外部输入输出</li>
-</ul>
-</li>
-<li>灰盒测试
-<ul>
-<li>既关注外部输入输出又关注内部动作。<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>软件的不同测试面来划分</p>
-<ul>
-<li>功能测试
-<ul>
-<li>逻辑功能测试，界面测试，易用性测试，安装测试，兼容性测试等。</li>
-</ul>
-</li>
-<li>性能测试
-<ul>
-<li>时间性能(具体环境)</li>
-</ul>
-</li>
-<li>空间性能（带宽，CPU）<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>按照自动化程度划分</p>
-<ul>
-<li>手工测试</li>
-<li>自动化测试
-<ul>
-<li>功能自动化和性能自动化<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>测试周期中的一些方法</p>
-<ul>
-<li>冒烟测试
-<ul>
-<li>测试新版本之前，投入较少人力和时间验证软件主要功能。</li>
-</ul>
-</li>
-<li>回归测试
-<ul>
-<li>修改了旧代码后，重新进行测试以确定修改没有引入新错误或导致其他代码产生错误。（第二轮）</li>
-</ul>
-</li>
-<li>随机测试
-<ul>
-<li>测试输入数据随机生成，目的是模拟用户<strong>真实操作</strong>，发现<strong>边缘错误。</strong></li>
-</ul>
-</li>
-<li>探索性测试
-<ul>
-<li>测试的思维技术，一种<strong>思维方式</strong>，强调测试人员<strong>主观能动性</strong>，遇到问题时<strong>改变测试策略</strong>。</li>
-</ul>
-</li>
-<li>安全测试
-<ul>
-<li>生命周期中特别是<strong>开发基本完成到发布阶段</strong>，对产品验证符合产品<strong>安全需求定义</strong>和<strong>质量标准</strong>的过程</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="分层的自动化测试"><a class="header-anchor" href="#分层的自动化测试">#</a>分层的自动化测试</h4>
-<ul>
-<li>
-<p>背景</p>
-<ul>
-<li>传统的自动化测试：
-<ul>
-<li>基于产品的UI的自动化测试，将黑盒测试转化为通过程序或工具执行的一种自动化测试。</li>
-</ul>
-</li>
-<li>传统的自动化测试缺点（黑盒测试环节尽可能全面覆盖，自动化）
-<ul>
-<li>测试规模增大</li>
-<li>全面UI自动化测试（由于UI易变，使得UI维护成本相对高昂）<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>分层自动化测试</p>
-<ul>
-<li>
-<p>强调从黑盒（UI）单层到黑白盒多层的自动化测试体系</p>
-</li>
-<li>
-<p>从全面黑盒自动化测试到对系统的不同层次进行自动化测试</p>
-</li>
-<li>
-<p>单元自动化测试（10%）</p>
-<ul>
-<li>对软件中的最小可测试单元检查和验证。（类，函数，窗口）<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>接口自动化测试(20%)</p>
-<ul>
-<li>模块接口测试和Web接口测试
-<ul>
-<li>模块接口测试（单元测试基础 -&gt; 单元结果验证）
-<ul>
-<li>工具与单元自动化测试相同</li>
-</ul>
-</li>
-<li>Web接口测试
-<ul>
-<li><strong>服务器接口测试</strong>和<strong>外部接口测试</strong></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>服务器接口测试
-<ul>
-<li>浏览器与服务器的接口（通过HTTP协议实现前后端数据传递）</li>
-</ul>
-</li>
-<li>外部接口测试(70%)
-<ul>
-<li>第三方系统提供的接口（第三方登录接口）</li>
-</ul>
-</li>
-<li>接口测试相应的类库和工具： HttpUnit 、Postman<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>UI自动化测试</p>
-<ul>
-<li>由于所有功能的展示都在这一层，所以测试工作大多集中在这一层。</li>
-<li>因此建议提倡<strong>半自动化</strong>开展测试工作。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="自动化测试应用场景"><a class="header-anchor" href="#自动化测试应用场景">#</a>自动化测试应用场景</h4>
-<ul>
-<li>一般满足以下三个条件就可开展自动化测试
-<ul>
-<li>软件需求变动不频繁</li>
-<li>项目的周期长</li>
-<li>自动化测试脚本可重复利用</li>
-</ul>
-</li>
-<li>任务测试明确，不会频繁变动(<strong>重要</strong>)</li>
-<li>每日构建后的测试验证</li>
-<li>比较频繁的回归测试</li>
-<li>软件系统界面稳定，变动少</li>
-<li>需要在多个平台上运行相同的测试案例、组合遍历型的测试、大量重复的任务。</li>
-<li>软件维护的周期长（<strong>重要</strong>）</li>
-<li>项目的进度压力不大。</li>
-<li>被测软件系统开发较为规范，能够保证系统可测试性。</li>
-<li>具备大量自动化测试平台。</li>
-<li>测试人员具备较强的编程能力。</li>
-<li>自动化测试脚本可重复利用（<strong>重要</strong>）</li>
-</ul>
-<hr>
-<h4 id="自动化测试及其工具"><a class="header-anchor" href="#自动化测试及其工具">#</a>自动化测试及其工具</h4>
-<ul>
-<li>
-<p><strong>广义</strong>上的自动化测试：指的是借助工具来辅助进行软件测试的方式</p>
-</li>
-<li>
-<p><strong>狭义</strong>上的自动化测试：指的是基于UI的功能测试</p>
-</li>
-<li>
-<p>自动化测试工具</p>
-<ul>
-<li>UFT（QTP和ST合并）</li>
-<li>Robot FrameWork（基于python）</li>
-<li>Watir(基于ruby)</li>
-<li>selenium</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="Selenium工具介绍"><a class="header-anchor" href="#Selenium工具介绍">#</a>Selenium工具介绍</h4>
-<ul>
-<li>
-<p>Selenium工具介绍</p>
-<ul>
-<li>主要用于Web应用程序的自动化测试</li>
-</ul>
-</li>
-<li>
-<p>Selenium IDE</p>
-<ul>
-<li>火狐插件，方便开发脚本</li>
-</ul>
-</li>
-<li>
-<p>Selenium Grid</p>
-<ul>
-<li><strong>自动化测试辅助工具</strong>可加快Web-App功能测试，很方便在对台机器和异构环境执行测试用例（不同计算机和系统的网络环境）</li>
-</ul>
-</li>
-<li>
-<p>Selenium RC</p>
-<ul>
-<li>Selenium家族核心部分,支持多种语言编写的自动化测试脚本。</li>
-</ul>
-</li>
-<li>
-<p>Selenium2.0</p>
-<ul>
-<li>Selenium1.0 = Selenium IDE+Selenium Grid+Selenium RC</li>
-<li>Selenium2.0 = Selenium 1.0 +WebDirver</li>
-<li>Selenium3.0</li>
-<li>WebDriver是通过原生的浏览器支持或浏览器扩展来直接控制浏览器</li>
-<li>WebDriver能利用操作系统级别调用，能够更好模拟用户输入。</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="前端基础（补充）"><a class="header-anchor" href="#前端基础（补充）">#</a>前端基础（补充）</h4>
-<ul>
-<li>基础知识
-<ul>
-<li>HTMl 超文本标记语言</li>
-<li>JavaScript 前端脚本语言（轻量级语言），是一种解释性的语言，不需要预编译</li>
-<li>XML 可扩展标记语言 通用标记语言的一个子集。作为传输工具和存储数据。（数据内容）</li>
-</ul>
-</li>
-<li>前端工具
-<ul>
-<li>Fire Bug  火狐开发类插件</li>
-<li>FirePath XPath(XML的路径语言,用来确定XML文档中的部分位置)</li>
-<li>Chrome开发人员工具</li>
-</ul>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Software Testing</category>
-      </categories>
-      <tags>
-        <tag>Automated Testing</tag>
-        <tag>Selenium</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于Git 的使用</title>
     <url>/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
@@ -7210,10 +7210,16 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
 </li>
 </ul>
 <hr>
-<h5 id="致谢"><a class="header-anchor" href="#致谢">#</a>致谢</h5>
+<h5 id="Thanks"><a class="header-anchor" href="#Thanks">#</a>Thanks</h5>
+<ul>
+<li>
 <p><a href="https://github.com/gitkraken/vscode-gitlens.git" rel="external nofollow noreferrer">GitLens</a><br>
 <br></p>
+</li>
+<li>
 <p><a href="https://git-scm.com/book/zh/v2" rel="external nofollow noreferrer">Pro Git book</a></p>
+</li>
+</ul>
 ]]></content>
       <categories>
         <category>Blog</category>
@@ -8767,8 +8773,8 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
         <category>Blog</category>
       </categories>
       <tags>
-        <tag>GitHub Pages</tag>
         <tag>Hexo</tag>
+        <tag>GitHub Pages</tag>
         <tag>Git</tag>
       </tags>
   </entry>
