@@ -151,7 +151,7 @@
 <li>
 <p>关于使用强制 HTTPS</p>
 <ul>
-<li>GitHub 不会颁发 TSL 证书，除非的 CNAME 记录www子域指向站点默认域（<code>username.github.io.</code>）</li>
+<li>GitHub 不会默认颁发 TSL 证书，除非的 CNAME 记录www子域指向站点默认域（<code>username.github.io.</code>）</li>
 <li>关于项目站点：在站点默认域成功更改自定义域后，项目站点即可勾选强制HTTPS</li>
 </ul>
 </li>
@@ -178,6 +178,246 @@
       <tags>
         <tag>GitHub Pages</tag>
         <tag>Domain</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VSCode 快速创建 Hexo 文章</title>
+    <url>/Blog/VSCode%20%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%20Hexo%20%E6%96%87%E7%AB%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li>使用VSCode快速创建带有Front-matter格式的Markdown文档。</li>
+</ul>
+<span id="more"></span>
+<hr>
+<h3 id="VSCode-快速创建-Hexo-文章"><a class="header-anchor" href="#VSCode-快速创建-Hexo-文章">#</a>VSCode 快速创建 Hexo 文章</h3>
+<ol>
+<li>
+<p><strong>使用 Hexo CLI</strong></p>
+<ul>
+<li>在终端中运行 <code>hexo new post &lt;post-title&gt;</code> 命令来创建新文章。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>使用代码片段</strong>（Snippets）</p>
+<ul>
+<li>设置自定义代码片段来插入文章的基本结构。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>使用自定义脚本任务</strong></p>
+<ul>
+<li>在 tasks.json 文件中配置一个任务，运行 Hexo 的新建文章命令。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>使用插件 vscode-hexo-utils</strong></p>
+<ul>
+<li>使用专门的 Hexo 插件，如 <a href="https://github.com/0x-jerry/vscode-hexo-utils?tab=readme-ov-file" rel="external nofollow noreferrer">vscode-hexo-utils</a>，来生成文章模板。</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h4 id="使用-Hexo-CLI"><a class="header-anchor" href="#使用-Hexo-CLI">#</a>使用 Hexo CLI</h4>
+<ul>
+<li>
+<p><strong>使用VSCode终端</strong></p>
+<ul>
+<li>使用快捷键 Ctrl+` 打开VSCode集成终端</li>
+<li>在终端中使用 Git Bash 终端并运行命令 <code>hexo new post &quot;Title&quot;</code>
+<ul>
+<li>关于hexo常用命令：<a href="./Hexo%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C.md">Hexo 常用操作</a><br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>关于集成终端显示此系统上禁止运行脚本问题</strong></p>
+<ul>
+<li>
+<p>通常是由于 Windows 的执行策略限制了脚本的执行<br>
+<br></p>
+</li>
+<li>
+<p>解决方案：</p>
+<ul>
+<li>打开 PowerShell 以管理员身份运行</li>
+<li>使用<code>Get-ExecutionPolicy</code>命令检查当前的执行策略</li>
+<li>使用<code>Set-ExecutionPolicy RemoteSigned</code>命令更改策略为 RemoteSigned 或者使用<code>Set-ExecutionPolicy Unrestricted</code> 命令更改策略为 Unrestricted<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>关于这三种策略：</p>
+<ul>
+<li><strong>Restricted</strong>
+<ul>
+<li>是 PowerShell 的默认执行策略，该策略下 PowerShell 只能运行交互式命令，不能执行脚本文件（.ps1 文件）或配置文件</li>
+</ul>
+</li>
+<li><strong>RemoteSigned</strong>
+<ul>
+<li>要求所有从互联网下载的脚本必须经过签名才能执行，但本地创建的脚本可以不需要签名</li>
+</ul>
+</li>
+<li><strong>Unrestricted</strong>
+<ul>
+<li>不限制脚本的来源或签名，允许所有脚本（包括从互联网下载的未签名脚本）运行</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="使用自定义代码片段（推荐）"><a class="header-anchor" href="#使用自定义代码片段（推荐）">#</a>使用自定义代码片段（推荐）</h4>
+<ul>
+<li>
+<p><strong>创建代码块</strong></p>
+<ul>
+<li>打开 VSCode，进入 “文件” &gt; “首选项” &gt; “用户代码片段”</li>
+<li>选择 “New Global Snippets file” 或 “New Snippets file for &lt;your_workspace&gt;”（如果只在某个工作区有效）。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>添加代码片段</strong></p>
+<ul>
+<li>默认会在&lt;your_workspace&gt;/.vscode下创建Enter.code-snippets文件(建议在.gitignore文件中忽略该文件夹)</li>
+<li><a href="https://code.visualstudio.com/docs/editor/userdefinedsnippets" rel="external nofollow noreferrer">自定义代码片段官方文档</a><br>
+<br></li>
+</ul>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;Hexo Post Template&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;prefix&quot;</span><span class="punctuation">:</span> <span class="string">&quot;hexopost&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;body&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="string">&quot;---&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;title: $&#123;TM_FILENAME_BASE&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;date: $&#123;CURRENT_YEAR&#125;-$&#123;CURRENT_MONTH&#125;-$&#123;CURRENT_DATE&#125; $&#123;CURRENT_HOUR&#125;:$&#123;CURRENT_MINUTE&#125;:$&#123;CURRENT_SECOND&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;updated: &#123;&#123; updated &#125;&#125;&quot;</span><span class="punctuation">,</span> </span><br><span class="line">    <span class="string">&quot;categories: $&#123;2:category1&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;tags: $&#123;3:tag1&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;keywords: $&#123;4:keyword1&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;author: shuguang2000&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;comments: true&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;---&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;- $&#123;1:pass&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;\n&lt;!--more--&gt;\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;------\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;### Topic Introduction\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;1. $&#123;5:One&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;   - $&#123;6:pass&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;&lt;br&gt;\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;2. $&#123;7:Two&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;   - $&#123;8:pass&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;&lt;br&gt;\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;------\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;#### Topic\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;- $&#123;9:pass&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;&lt;br&gt;\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;- $&#123;10:pass&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;&lt;br&gt;\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;------\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;#### Thanks\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;- $&#123;11:pass&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;&lt;br&gt;\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;- $&#123;12:pass&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;&lt;br&gt;\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Template for Hexo post&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<p><strong>使用代码块</strong></p>
+<ul>
+<li>使用 <code>Ctrl+N</code> 快捷键新建一个文件，输入我们上面定义好的代码前缀（即：hexopost）即可快速插入。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>补充</strong>【推荐】</p>
+<ul>
+<li>可使用自定义快捷键实现不用输入前缀，即可快速在任意文件中插入自定义代码片段（这里使用的是 <code>Ctrl+Alt+M</code> ），并通过 Tab 键快速修改内容。
+<ul>
+<li>打开 VSCode，进入 “文件” &gt; “首选项” &gt; “键盘快捷方式” &gt; “打开键盘快捷方式JSON” &gt; <code>keybindings.json</code></li>
+<li>或者是打开<code>keybindings.json</code>文件（默认在<code>C:\Users\&lt;your_username&gt;\AppData\Roaming\Code\User</code>下）添加下面JSON代码：<br>
+<br></li>
+</ul>
+</li>
+</ul>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">  <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;key&quot;</span><span class="punctuation">:</span> <span class="string">&quot;ctrl+alt+m&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;command&quot;</span><span class="punctuation">:</span> <span class="string">&quot;editor.action.insertSnippet&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;when&quot;</span><span class="punctuation">:</span> <span class="string">&quot;editorTextFocus&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;langId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;markdown&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Hexo Post Template&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<h4 id="使用自定义任务"><a class="header-anchor" href="#使用自定义任务">#</a>使用自定义任务</h4>
+<ul>
+<li>
+<p><strong>准备工作</strong></p>
+<ul>
+<li>
+<p>配置默认终端配置为： <code>Git Bash</code></p>
+<ul>
+<li>在xxx.code-workspace文件中添加如下代码：<br>
+<br></li>
+</ul>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="attr">&quot;settings&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;terminal.integrated.defaultProfile.linux&quot;</span><span class="punctuation">:</span> <span class="string">&quot;bash&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;terminal.integrated.defaultProfile.osx&quot;</span><span class="punctuation">:</span> <span class="string">&quot;bash&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;terminal.integrated.defaultProfile.windows&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Git Bash&quot;</span><span class="punctuation">,</span> <span class="comment">// 如果你在 Windows 上使用 Git Bash</span></span><br><span class="line"><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br></pre></td></tr></table></figure>
+<br>
+</li>
+<li>
+<p>在&lt;your_workspace&gt;/.vscode下创建 <code>tasks.json</code> 文件, 编辑生成的 <code>tasks.json</code> 文件，添加一个新任务来运行 Hexo 命令：<br>
+<br></p>
+</li>
+</ul>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line"><span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2.0.0&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;tasks&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">  <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;label&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Create Hexo Post&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;shell&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;command&quot;</span><span class="punctuation">:</span> <span class="string">&quot;bash&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">      <span class="string">&quot;-c&quot;</span><span class="punctuation">,</span> <span class="comment">//用于指定要执行的命令字符串</span></span><br><span class="line">      <span class="string">&quot;hexo new $&#123;input:postTitle&#125;&quot;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;problemMatcher&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line"><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;inputs&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">  <span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="string">&quot;postTitle&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;promptString&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Enter the title of the new post&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<br>
+<ul>
+<li><strong>运行任务</strong>
+<ul>
+<li>
+<p><code>Ctrl + Shift + P</code> 选择<code>Takes: Run Task</code>运行标签为 Create Hexo Post 的任务。</p>
+</li>
+<li>
+<p><a href="https://code.visualstudio.com/docs/editor/tasks" rel="external nofollow noreferrer">VSCode自定义任务文档</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="使用插件-vscode-hexo-utils"><a class="header-anchor" href="#使用插件-vscode-hexo-utils">#</a>使用插件 vscode-hexo-utils</h4>
+<ul>
+<li>
+<p>使用 VSCode 插件 <a href="https://github.com/0x-jerry/vscode-hexo-utils?tab=readme-ov-file" rel="external nofollow noreferrer">vscode-hexo-utils</a></p>
+<ul>
+<li>安装后在插件扩展设置中，设置时间格式<code>YYYY-MM-DD HH:mm:ss</code>。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>侧边栏 Hexo 图标点开再点击加号输入标题即可快速创建模板文章（默认模板是scaffolds/post.md）。</p>
+</li>
+</ul>
+<hr>
+<h4 id="总结"><a class="header-anchor" href="#总结">#</a>总结</h4>
+<ul>
+<li>
+<p><strong>使用 Hexo CLI</strong></p>
+<ul>
+<li>适合简单的创建模板。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>使用代码片段</strong>（Snippets）</p>
+<ul>
+<li>适合快速插入简单的模板。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>使用自定义脚本任务</strong></p>
+<ul>
+<li>适合更复杂的模板生成或批量创建。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>使用插件 vscode-hexo-utils</strong></p>
+<ul>
+<li>能集成 Hexo 特性，并使用更多的功能，比如图片上传，文章分类显示等。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="Thanks"><a class="header-anchor" href="#Thanks">#</a>Thanks</h4>
+<ul>
+<li>
+<p><a href="https://code.visualstudio.com/docs/editor/tasks" rel="external nofollow noreferrer">Integrate with External Tools via Tasks</a><br>
+<br></p>
+</li>
+<li>
+<p><a href="https://code.visualstudio.com/docs/editor/tasks" rel="external nofollow noreferrer">Snippets in Visual Studio Code</a><br>
+<br></p>
+</li>
+<li>
+<p><a href="https://github.com/0x-jerry/vscode-hexo-utils?tab=readme-ov-file" rel="external nofollow noreferrer">vscode-hexo-utils</a></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Blog</category>
+      </categories>
+      <tags>
+        <tag>VSCode</tag>
       </tags>
   </entry>
   <entry>
@@ -444,246 +684,6 @@
       </categories>
       <tags>
         <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>VSCode 快速创建 Hexo 文章</title>
-    <url>/Blog/VSCode%20%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%20Hexo%20%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>使用VSCode快速创建带有Front-matter格式的Markdown文档。</li>
-</ul>
-<span id="more"></span>
-<hr>
-<h3 id="VSCode-快速创建-Hexo-文章"><a class="header-anchor" href="#VSCode-快速创建-Hexo-文章">#</a>VSCode 快速创建 Hexo 文章</h3>
-<ol>
-<li>
-<p><strong>使用 Hexo CLI</strong></p>
-<ul>
-<li>在终端中运行 <code>hexo new post &lt;post-title&gt;</code> 命令来创建新文章。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>使用代码片段</strong>（Snippets）</p>
-<ul>
-<li>设置自定义代码片段来插入文章的基本结构。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>使用自定义脚本任务</strong></p>
-<ul>
-<li>在 tasks.json 文件中配置一个任务，运行 Hexo 的新建文章命令。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>使用插件 vscode-hexo-utils</strong></p>
-<ul>
-<li>使用专门的 Hexo 插件，如 <a href="https://github.com/0x-jerry/vscode-hexo-utils?tab=readme-ov-file" rel="external nofollow noreferrer">vscode-hexo-utils</a>，来生成文章模板。</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h4 id="使用-Hexo-CLI"><a class="header-anchor" href="#使用-Hexo-CLI">#</a>使用 Hexo CLI</h4>
-<ul>
-<li>
-<p><strong>使用VSCode终端</strong></p>
-<ul>
-<li>使用快捷键 Ctrl+` 打开VSCode集成终端</li>
-<li>在终端中使用 Git Bash 终端并运行命令 <code>hexo new post &quot;Title&quot;</code>
-<ul>
-<li>关于hexo常用命令：<a href="./Hexo%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C.md">Hexo 常用操作</a><br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>关于集成终端显示此系统上禁止运行脚本问题</strong></p>
-<ul>
-<li>
-<p>通常是由于 Windows 的执行策略限制了脚本的执行<br>
-<br></p>
-</li>
-<li>
-<p>解决方案：</p>
-<ul>
-<li>打开 PowerShell 以管理员身份运行</li>
-<li>使用<code>Get-ExecutionPolicy</code>命令检查当前的执行策略</li>
-<li>使用<code>Set-ExecutionPolicy RemoteSigned</code>命令更改策略为 RemoteSigned 或者使用<code>Set-ExecutionPolicy Unrestricted</code> 命令更改策略为 Unrestricted<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>关于这三种策略：</p>
-<ul>
-<li><strong>Restricted</strong>
-<ul>
-<li>是 PowerShell 的默认执行策略，该策略下 PowerShell 只能运行交互式命令，不能执行脚本文件（.ps1 文件）或配置文件</li>
-</ul>
-</li>
-<li><strong>RemoteSigned</strong>
-<ul>
-<li>要求所有从互联网下载的脚本必须经过签名才能执行，但本地创建的脚本可以不需要签名</li>
-</ul>
-</li>
-<li><strong>Unrestricted</strong>
-<ul>
-<li>不限制脚本的来源或签名，允许所有脚本（包括从互联网下载的未签名脚本）运行</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="使用自定义代码片段（推荐）"><a class="header-anchor" href="#使用自定义代码片段（推荐）">#</a>使用自定义代码片段（推荐）</h4>
-<ul>
-<li>
-<p><strong>创建代码块</strong></p>
-<ul>
-<li>打开 VSCode，进入 “文件” &gt; “首选项” &gt; “用户代码片段”</li>
-<li>选择 “New Global Snippets file” 或 “New Snippets file for &lt;your_workspace&gt;”（如果只在某个工作区有效）。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>添加代码片段</strong></p>
-<ul>
-<li>默认会在&lt;your_workspace&gt;/.vscode下创建Enter.code-snippets文件(建议在.gitignore文件中忽略该文件夹)</li>
-<li><a href="https://code.visualstudio.com/docs/editor/userdefinedsnippets" rel="external nofollow noreferrer">自定义代码片段官方文档</a><br>
-<br></li>
-</ul>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;Hexo Post Template&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;prefix&quot;</span><span class="punctuation">:</span> <span class="string">&quot;hexopost&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;body&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="string">&quot;---&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;title: $&#123;TM_FILENAME_BASE&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;date: $&#123;CURRENT_YEAR&#125;-$&#123;CURRENT_MONTH&#125;-$&#123;CURRENT_DATE&#125; $&#123;CURRENT_HOUR&#125;:$&#123;CURRENT_MINUTE&#125;:$&#123;CURRENT_SECOND&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;updated: &#123;&#123; updated &#125;&#125;&quot;</span><span class="punctuation">,</span> </span><br><span class="line">    <span class="string">&quot;categories: $&#123;2:category1&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;tags: $&#123;3:tag1&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;keywords: $&#123;4:keyword1&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;author: shuguang2000&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;comments: true&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;---&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;- $&#123;1:pass&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;\n&lt;!--more--&gt;\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;------\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;### Topic Introduction\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;1. $&#123;5:One&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;   - $&#123;6:pass&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;&lt;br&gt;\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;2. $&#123;7:Two&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;   - $&#123;8:pass&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;&lt;br&gt;\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;------\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;#### Topic\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;- $&#123;9:pass&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;&lt;br&gt;\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;- $&#123;10:pass&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;&lt;br&gt;\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;------\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;#### Thanks\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;- $&#123;11:pass&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;&lt;br&gt;\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;- $&#123;12:pass&#125;&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;&lt;br&gt;\n&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Template for Hexo post&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<br>
-<ul>
-<li>
-<p><strong>使用代码块</strong></p>
-<ul>
-<li>使用 <code>Ctrl+N</code> 快捷键新建一个文件，输入我们上面定义好的代码前缀（即：hexopost）即可快速插入。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>补充</strong>【推荐】</p>
-<ul>
-<li>可使用自定义快捷键实现不用输入前缀，即可快速在任意文件中插入自定义代码片段（这里使用的是 <code>Ctrl+Alt+M</code> ），并通过 Tab 键快速修改内容。
-<ul>
-<li>打开 VSCode，进入 “文件” &gt; “首选项” &gt; “键盘快捷方式” &gt; “打开键盘快捷方式JSON” &gt; <code>keybindings.json</code></li>
-<li>或者是打开<code>keybindings.json</code>文件（默认在<code>C:\Users\&lt;your_username&gt;\AppData\Roaming\Code\User</code>下）添加下面JSON代码：<br>
-<br></li>
-</ul>
-</li>
-</ul>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">  <span class="punctuation">&#123;</span></span><br><span class="line">      <span class="attr">&quot;key&quot;</span><span class="punctuation">:</span> <span class="string">&quot;ctrl+alt+m&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;command&quot;</span><span class="punctuation">:</span> <span class="string">&quot;editor.action.insertSnippet&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;when&quot;</span><span class="punctuation">:</span> <span class="string">&quot;editorTextFocus&quot;</span><span class="punctuation">,</span></span><br><span class="line">      <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;langId&quot;</span><span class="punctuation">:</span> <span class="string">&quot;markdown&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Hexo Post Template&quot;</span></span><br><span class="line">      <span class="punctuation">&#125;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<hr>
-<h4 id="使用自定义任务"><a class="header-anchor" href="#使用自定义任务">#</a>使用自定义任务</h4>
-<ul>
-<li>
-<p><strong>准备工作</strong></p>
-<ul>
-<li>
-<p>配置默认终端配置为： <code>Git Bash</code></p>
-<ul>
-<li>在xxx.code-workspace文件中添加如下代码：<br>
-<br></li>
-</ul>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="attr">&quot;settings&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;terminal.integrated.defaultProfile.linux&quot;</span><span class="punctuation">:</span> <span class="string">&quot;bash&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;terminal.integrated.defaultProfile.osx&quot;</span><span class="punctuation">:</span> <span class="string">&quot;bash&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;terminal.integrated.defaultProfile.windows&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Git Bash&quot;</span><span class="punctuation">,</span> <span class="comment">// 如果你在 Windows 上使用 Git Bash</span></span><br><span class="line"><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br></pre></td></tr></table></figure>
-<br>
-</li>
-<li>
-<p>在&lt;your_workspace&gt;/.vscode下创建 <code>tasks.json</code> 文件, 编辑生成的 <code>tasks.json</code> 文件，添加一个新任务来运行 Hexo 命令：<br>
-<br></p>
-</li>
-</ul>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line"><span class="attr">&quot;version&quot;</span><span class="punctuation">:</span> <span class="string">&quot;2.0.0&quot;</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;tasks&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">  <span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;label&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Create Hexo Post&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;shell&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;command&quot;</span><span class="punctuation">:</span> <span class="string">&quot;bash&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;args&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">      <span class="string">&quot;-c&quot;</span><span class="punctuation">,</span> <span class="comment">//用于指定要执行的命令字符串</span></span><br><span class="line">      <span class="string">&quot;hexo new $&#123;input:postTitle&#125;&quot;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;problemMatcher&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line"><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line"><span class="attr">&quot;inputs&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">  <span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="string">&quot;postTitle&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;type&quot;</span><span class="punctuation">:</span> <span class="string">&quot;promptString&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Enter the title of the new post&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<br>
-<ul>
-<li><strong>运行任务</strong>
-<ul>
-<li>
-<p><code>Ctrl + Shift + P</code> 选择<code>Takes: Run Task</code>运行标签为 Create Hexo Post 的任务。</p>
-</li>
-<li>
-<p><a href="https://code.visualstudio.com/docs/editor/tasks" rel="external nofollow noreferrer">VSCode自定义任务文档</a></p>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="使用插件-vscode-hexo-utils"><a class="header-anchor" href="#使用插件-vscode-hexo-utils">#</a>使用插件 vscode-hexo-utils</h4>
-<ul>
-<li>
-<p>使用 VSCode 插件 <a href="https://github.com/0x-jerry/vscode-hexo-utils?tab=readme-ov-file" rel="external nofollow noreferrer">vscode-hexo-utils</a></p>
-<ul>
-<li>安装后在插件扩展设置中，设置时间格式<code>YYYY-MM-DD HH:mm:ss</code>。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>侧边栏 Hexo 图标点开再点击加号输入标题即可快速创建模板文章（默认模板是scaffolds/post.md）。</p>
-</li>
-</ul>
-<hr>
-<h4 id="总结"><a class="header-anchor" href="#总结">#</a>总结</h4>
-<ul>
-<li>
-<p><strong>使用 Hexo CLI</strong></p>
-<ul>
-<li>适合简单的创建模板。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>使用代码片段</strong>（Snippets）</p>
-<ul>
-<li>适合快速插入简单的模板。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>使用自定义脚本任务</strong></p>
-<ul>
-<li>适合更复杂的模板生成或批量创建。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>使用插件 vscode-hexo-utils</strong></p>
-<ul>
-<li>能集成 Hexo 特性，并使用更多的功能，比如图片上传，文章分类显示等。</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="Thanks"><a class="header-anchor" href="#Thanks">#</a>Thanks</h4>
-<ul>
-<li>
-<p><a href="https://code.visualstudio.com/docs/editor/tasks" rel="external nofollow noreferrer">Integrate with External Tools via Tasks</a><br>
-<br></p>
-</li>
-<li>
-<p><a href="https://code.visualstudio.com/docs/editor/tasks" rel="external nofollow noreferrer">Snippets in Visual Studio Code</a><br>
-<br></p>
-</li>
-<li>
-<p><a href="https://github.com/0x-jerry/vscode-hexo-utils?tab=readme-ov-file" rel="external nofollow noreferrer">vscode-hexo-utils</a></p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Blog</category>
-      </categories>
-      <tags>
-        <tag>VSCode</tag>
       </tags>
   </entry>
   <entry>
@@ -1296,6 +1296,7 @@
 <li>description
 <ul>
 <li>Next主题默认将摘要部分作为文章的description, 所以只需要添加keyword。</li>
+<li>description 的描述长度更改为介于 25 到 160 个字符之间（中文大概12到60个字符）。</li>
 </ul>
 </li>
 <li>keywords
@@ -1758,115 +1759,6 @@
       </tags>
   </entry>
   <entry>
-    <title>CSGO 批量出售饰品</title>
-    <url>/Games/CSGO%20%E6%89%B9%E9%87%8F%E5%87%BA%E5%94%AE%E9%A5%B0%E5%93%81/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>简要介绍 Steam 如何一次出售多个饰品。</li>
-</ul>
-<span id="more"></span>
-<hr>
-<h3 id="CSGO-批量出售"><a class="header-anchor" href="#CSGO-批量出售">#</a>CSGO 批量出售</h3>
-<ul>
-<li>CSGO 批量出售链接
-<ul>
-<li><code>https://steamcommunity.com/market/multisell?appid=730&amp;contextid=2&amp;items[]=Snakebite%20Case</code></li>
-<li><code>multisell</code>: 代表批量出售。</li>
-<li><code>appid</code>: 代表游戏ID，<code>730</code>是<code>CSGO 2</code>而<code>570</code>是<code>Dota 2</code>。</li>
-<li><code>contextid</code>: 用来区别服务的，当一个微服务需要调用另一个微服务提供的多个不同接口时，就需要contextId在运行时能够正确地识别和区分彼此，避免出现冲突和混淆。</li>
-<li><code>items[]=</code>: 数组，用于批量传输商品代码。</li>
-<li><code>Snakebite%20Case</code>代表数字ID，同样也是商品代码。</li>
-</ul>
-</li>
-</ul>
-<hr>
-]]></content>
-      <categories>
-        <category>Games</category>
-      </categories>
-      <tags>
-        <tag>CSGO</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>礼品卡</title>
-    <url>/Games/%E7%A4%BC%E5%93%81%E5%8D%A1/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="摘要"><a class="header-anchor" href="#摘要">#</a>摘要</h2>
-<ul>
-<li>
-<p>实体物品礼品卡：以等价值商品为<strong>信用</strong>，从而进行资金回流的经营手段，能创造流动性。（本质类似于<strong>发债</strong>）<br>
-<br></p>
-</li>
-<li>
-<p>虚拟物品礼品卡：虚拟类行业以等价值虚拟物品为信用，从而进行资金回流的经营手段，能创造流动性。（本质类似于<strong>发债</strong>）</p>
-</li>
-</ul>
-<span id="more"></span>
-<hr>
-<h3 id="礼品卡简述"><a class="header-anchor" href="#礼品卡简述">#</a>礼品卡简述</h3>
-<ul>
-<li>
-<p>实体物品礼品卡</p>
-<ul>
-<li>商家通过礼品卡的方式能快速创造流动性，快速获得流动性的资金，类似于资本市场的<strong>发债</strong>。</li>
-<li>礼品卡的本质是：该商家的一种<strong>负债</strong><sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="还能创造价值。
-">[1]</span></a></sup>，商家必须需要支付等价值的商品。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>虚拟物品礼品卡</p>
-<ul>
-<li>虚拟类商家的一种发债手段，与实体行业相比的优势是：
-<ul>
-<li>虚拟物品商家只支付虚拟物品，本身的虚拟<strong>资产</strong><sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="不能再创造价值。">[2]</span></a></sup>已独家代理给商家，商家只需要支付对应销量虚拟物品价值的分成给开发者（比如Steam就是抽30%）。</li>
-<li>需要支付的虚拟类商品不存在负债，还能增加流动性。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="使用场景"><a class="header-anchor" href="#使用场景">#</a>使用场景</h4>
-<ul>
-<li>外汇管制
-<ul>
-<li>提现的手续费比较高
-<ul>
-<li>例如： 中国自然人一年的结汇额度是五万美金。</li>
-<li>Paypal -&gt; 用礼品卡套出现金。<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>不愿意透露收入来源</li>
-<li>洗钱或跑路等手段</li>
-</ul>
-<hr>
-<h4 id="个人破产制度"><a class="header-anchor" href="#个人破产制度">#</a>个人破产制度</h4>
-<ul>
-<li>
-<p>为了稳定的社会中的个人的一种制度。<br>
-<br></p>
-</li>
-<li>
-<p>有钱人完成原始积累 -&gt; 资产泡沫 -&gt; 普通人 -&gt; 转移自己的资产<br>
-<br></p>
-</li>
-<li>
-<p>扩展</p>
-<ul>
-<li><a href="%E4%B8%8D%E4%B8%80%E5%AE%9A%E8%83%BD%E5%88%9B%E9%80%A0%E4%BB%B7%E5%80%BC%E3%80%82">纸面资产</a></li>
-<li><a href="%E5%80%BA%E5%8A%A1%E8%BD%AC%E7%A7%BB%E3%80%82">人口红利</a></li>
-</ul>
-</li>
-</ul>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">还能创造价值。<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">不能再创造价值。<a href="#fnref:2" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
-      <categories>
-        <category>Games</category>
-      </categories>
-  </entry>
-  <entry>
     <title>消息来源</title>
     <url>/Blog/%E6%B6%88%E6%81%AF%E6%9D%A5%E6%BA%90/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
@@ -2077,6 +1969,495 @@
         <tag>RSS</tag>
         <tag>Aotm</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>环境搭建</title>
+    <url>/Blog/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li>本次环境搭建过程涉及<strong>工具安装</strong>，<strong>搭建仓库并生成SSH Key</strong>，<strong>初始化本地博客</strong>和<strong>部署博客到远程GitHub</strong>四个过程。</li>
+</ul>
+<span id="more"></span>
+<h3 id="工具简述"><a class="header-anchor" href="#工具简述">#</a>工具简述</h3>
+<ol>
+<li>
+<p><strong>Node.Js</strong></p>
+<ul>
+<li>
+<p>Node.js 是一个开源和跨平台的 JavaScript 运行  时环境，用来支持 JavaScript 代码的执行。几乎是任何类型项目的流行工具。<br>
+<br></p>
+</li>
+<li>
+<p><strong>npm</strong></p>
+<ul>
+<li>npm（全称Node Package Manager），是Node.js包管理工具，是全球最大的模块生态系统，里面所有的模块都是开源免费的，能解决Node.js代码部署上的很多问题，相当于前端的Maven 。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>Hexo和Node.js关系</strong></p>
+<ul>
+<li>Hexo是基于Node.js开发。<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Git</strong></p>
+<ul>
+<li>
+<p>Git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。（如：版本迭代）<br>
+<br></p>
+</li>
+<li>
+<p><a href="https://git-scm.com/book/zh/v2" rel="external nofollow noreferrer">Git中文文档</a><br>
+<br></p>
+</li>
+<li>
+<p>版本控制（补充）</p>
+<ul>
+<li>
+<p>是一种记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统。<br>
+<br></p>
+</li>
+<li>
+<p>版本控制的作用</p>
+<ul>
+<li>将某个文件回溯到之前的状态，甚至将整个项目都回退到过去某个时间点的状态，可以比较文件的变化细节等。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>版本控制的分类</p>
+<ul>
+<li>
+<p>本地版本控制系统</p>
+<ul>
+<li>采用某种简单的数据库来记录文件的历次更新差异。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>集中式版本控制系统（协同工作，如SVN）</p>
+<ul>
+<li>使用单一的集中管理的服务器，保存所有文件的修订版本，而协同工作的人都通过客户端连到这台服务器，取出最新的文件或者提交更新。（缺点：容易单点故障、受网络影响大）<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>分布式版本控制系统(Git)</p>
+<ul>
+<li>客户端并不只提取最新版本的文件快照，而是把代码仓库完整地镜像下来。</li>
+<li>协同工作时，每个客户端都是完整的版本库。（缺点：每个客户端拥有全部的代码，有安全隐患。）<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Hexo</strong></p>
+<ul>
+<li>
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章。<br>
+<br></p>
+</li>
+<li>
+<p><a href="https://hexo.io/zh-cn/docs/" rel="external nofollow noreferrer">Hexo中文文档</a><br>
+<br></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Hexo 和 Typecho 的区别（扩展）</p>
+<ul>
+<li>“静态和动态”：主要是指其对数据处理的方式
+<ul>
+<li>Typecho：通过数据库来动态的查询、调用、展示的叫“动态”，</li>
+<li>Hexo：直接生成纯.html网页文件来供浏览的叫“静态”</li>
+</ul>
+</li>
+<li>Hexo
+<ul>
+<li>基于Node.js，不过多的依赖于常见的 LNMP 生产环境，只需要一个域名和一个免费托管平台。</li>
+</ul>
+</li>
+<li>Typecho
+<ul>
+<li>比Hexo成熟，但是域名、服务器，后台等都需要自己管理。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h4 id="1-工具安装"><a class="header-anchor" href="#1-工具安装">#</a>1. 工具安装</h4>
+<ol>
+<li>
+<p><a href="https://nodejs.org/en/" rel="external nofollow noreferrer">安装Node.Js</a></p>
+<ul>
+<li>以<strong>管理员模式</strong>打开命令提示符</li>
+<li>检查Node.Js安装：<code>node -v</code></li>
+<li>查看Node.Js安装路径：<code>where node</code>
+<ul>
+<li>检查npm安装：<code>npm -v</code></li>
+<li><code>npm</code>包管理工具
+<ul>
+<li>更改npm全局包安装路径
+<ul>
+<li>npm有两种安装方式
+<ul>
+<li>安装在当前项目路径中：<code>npm install</code>
+<ul>
+<li>修改全局包的安装路径
+<ul>
+<li>全局包的安装路径：<code>npm config set prefix &quot;E:/nodejs/npm_global&quot;</code></li>
+<li>全局包的缓存路径：<code>npm config set cache &quot;E:/nodejs/npm_cache&quot;</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>全局安装：<code>npm install -g</code>（推荐）
+<ul>
+<li>全局路径一般默认在：C:\Users\计算机名\AppData\Roaming\npm</li>
+</ul>
+</li>
+<li>查看是否配置成功：<code>npm config ls -l</code></li>
+</ul>
+</li>
+<li>更换淘宝镜像源：<code>npm config set registry http://registry.npmmirror.com/</code></li>
+<li>检查是否更换成功：<code>npm config get registry</code></li>
+<li>添加环境变量
+<ul>
+<li>新建变量名NODE_PATH， 值为上述添加的npm_global路径下(如：      E:\nodejs\npm_global\node_modules)</li>
+<li>将E:\nodejs\npm_global添加到path变量中。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>补充：解决Git bash找不到Hexo环境解决方法，
+<ul>
+<li>检查 Node.js 和 npm 是否已安装：<code>node -v</code>和<code>npm -v</code></li>
+<li>Hexo 的路径在环境变量中：
+<ul>
+<li>控制面板” → “系统和安全” → “系统” → “高级系统设置”。点击“环境变量”。通常是:<code>&lt;blog_folder&gt;/node_modules/.bin</code><br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><a href="https://git-scm.com/downloads" rel="external nofollow noreferrer">安装Git</a></p>
+<ul>
+<li>检查Git安装: <code>git --version</code></li>
+<li>配置全局用户名和邮箱：
+<ul>
+<li><code>git config --global user.name “github’s Name”</code></li>
+<li><code>git config --global user.email “github@xx.com”</code></li>
+<li><code>git config --list</code> //然后查看自己的配置<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>安装Hexo</p>
+<ul>
+<li><code>npm install hexo-cli -g</code></li>
+<li>检查安装：<code>hexo -v</code><br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><a href="https://github.com/" rel="external nofollow noreferrer">注册GitHub账户</a></p>
+</li>
+</ol>
+<hr>
+<h4 id="2-搭建仓库并生成SSH-Key"><a class="header-anchor" href="#2-搭建仓库并生成SSH-Key">#</a>2. 搭建仓库并生成SSH Key</h4>
+<ol>
+<li>
+<p><a href="https://zhuanlan.zhihu.com/p/28321740" rel="external nofollow noreferrer">搭建博客仓库</a></p>
+<ul>
+<li>username.github.io仓库就是GitHub为个人账户分配站点仓库。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>将博客部署在项目站点</p>
+<ul>
+<li>新建一个公开的username.github.io仓库（站点主页：导航）</li>
+<li>新建一个私人的pages仓库（博客的写作站点：备份）<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>生成SSH Key</p>
+<ul>
+<li><code>ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</code></li>
+<li>复制公钥（路径<code>C:\Users\UserName\.ssh\id_rsa.pub</code>）到添加到GitHub账户</li>
+<li>测试SSH连接
+<ul>
+<li><code>ssh -T git@github.com</code><br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>扩展（可选）</p>
+<ul>
+<li>
+<p>For 同时也使用 Git 管理站点目录</p>
+<ul>
+<li>如果同时使用Git管理站点目录，应当注意部署分支应当不同于写作分支。(Hexo每次部署会<strong>完全覆盖</strong>该分支下的内容)</li>
+<li>一个好的实践是：将站点目录和 Pages 分别存放在两个不同的 Git 仓库中，也就是使用Github Actions<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="CI/CD 平台指的是持续集成（Continuous Integration）和持续交付/部署（Continuous Delivery/Deployment）的工具和服务，旨在自动化软件开发过程。CI 通过频繁集成代码，确保代码在共享环境中正常工作，而 CD 则自动化将软件交付到生产环境的过程，提升发布频率和软件质量。常见的 CI/CD 平台有 Jenkins、GitLab CI、CircleCI 和 Travis CI 等。
+">[1]</span></a></sup> ，然后手动提交并推送你的写作分支，这样就可以有效避免相互覆盖。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>关于域名到期谷歌浏览器自动重定向旧域名：</p>
+<ul>
+<li>浏览器输入<code>chrome://history/</code>，删除全部数据。</li>
+</ul>
+</li>
+<li>
+<p>可以放弃使用SSH，转而使用令牌</p>
+<ul>
+<li>新建令牌注意保存密码，密码只会显示一次。</li>
+<li>远程部署时再输入用户名和密码。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>使用SSH私钥密码（可以保护 SSH 密钥并配置身份验证代理）</p>
+<ul>
+<li><code>ssh-keygen -p -f ~/.ssh/id_rsa</code><br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>在Git for Windows上自动启动ssh-agent</p>
+<ul>
+<li><a href="https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows" rel="external nofollow noreferrer">参考Github文档</a></li>
+<li>需要提示的是<code>.profile</code>文件在Git安装目录的/etc/下。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>关于使用443端口代替22端口进行ssh连接github</p>
+<ul>
+<li>解决使用代理无法连接22端口</li>
+<li><code>C:\Users\Your_user_name\.ssh</code>创建Config文件, 内容如下：</li>
+</ul>
+ <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="string">Host</span> <span class="string">github.com</span></span><br><span class="line"><span class="string">User</span> <span class="string">you_github_email@xxx.com</span></span><br><span class="line"><span class="string">Hostname</span> <span class="string">ssh.github.com</span></span><br><span class="line"><span class="string">PreferredAuthentications</span> <span class="string">publickey</span></span><br><span class="line"><span class="string">IdentityFile</span> <span class="string">~/.ssh/id_rsa</span></span><br><span class="line"><span class="string">Port</span> <span class="number">443</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h4 id="3-初始化本地博客内容"><a class="header-anchor" href="#3-初始化本地博客内容">#</a>3. 初始化本地博客内容</h4>
+<ul>
+<li>
+<p>新建本地博客文件夹（如：blog）<br>
+<br></p>
+</li>
+<li>
+<p>初始化Hexo到本地文件夹： <code>hexo init</code></p>
+<ul>
+<li>
+<p>这个命令做了两步：</p>
+<ul>
+<li>
+<p>Git clone <a href="https://github.com/hexojs/hexo-starter" rel="external nofollow noreferrer">hexo-starter</a> 和 <a href="https://github.com/hexojs/hexo-theme-landscape" rel="external nofollow noreferrer">hexo-theme-landscape</a> 主题到当前目录或指定目录。</p>
+</li>
+<li>
+<p>使用 <a href="https://classic.yarnpkg.com/lang/en/" rel="external nofollow noreferrer">Yarn 1</a>、<a href="https://pnpm.js.org/" rel="external nofollow noreferrer">pnpm</a> 或 <a href="https://docs.npmjs.com/cli/install" rel="external nofollow noreferrer">npm</a> 包管理器下载依赖（如有已安装多个，则列在前面的优先）。npm 默认随 Node.js 安装。<br>
+<br></p>
+</li>
+</ul>
+</li>
+<li>
+<p>安装Next主题</p>
+<ul>
+<li>通过git指令下载NexT最新的主题文件：<code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code></li>
+<li>修改本地博客下文件夹下的_config.yml文件</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br><span class="line"><span class="attr">theme_config:</span> </span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<p>生成本地服务器下的hexo 静态文件：<code>hexo server</code><br>
+<br></p>
+</li>
+<li>
+<p>访问本地博客：<a href="http://localhost:4000" rel="external nofollow noreferrer">http://localhost:4000</a></p>
+<ul>
+<li>更改本地服务器端口号：·<code>hexo server -p 5000</code> 或者 _config.yml中添加下面代码：<br>
+<br></li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">5000</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<h4 id="4-部署博客到GitHub"><a class="header-anchor" href="#4-部署博客到GitHub">#</a>4. 部署博客到GitHub</h4>
+<ul>
+<li>
+<p>基于SSH或者token连接GitHub</p>
+</li>
+<li>
+<p>修改本地博客下文件夹下的_config.yml文件<br>
+<br></p>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1. 设置站点URL及根目录</span></span><br><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://username.github.io</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/Folder/</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 设置部署源（注意仓库地址的选择）</span></span><br><span class="line"><span class="comment"># 基于SSH就使用SSH克隆地址 / 基于token就使用HTTP克隆地址</span></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">repository:</span> <span class="string">git@github.com:username</span> <span class="string">或</span> <span class="string">username.github.io.git</span></span><br><span class="line"><span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<br>
+<ul>
+<li>安装一键部署工具hexo-deployer-git：<code>npm install hexo-deployer-git --save</code></li>
+<li>生成完毕后自动部署到网站：<code>hexo clean &amp;&amp; hexo deploy</code></li>
+<li>访问博客：<code>https://username.github.io</code></li>
+</ul>
+<hr>
+<h5 id="5-致谢"><a class="header-anchor" href="#5-致谢">#</a>5. 致谢</h5>
+<ul>
+<li>
+<p><a href="https://blog.mikelyou.com/2020/07/22/github-pages-project-sites/" rel="external nofollow noreferrer">如何拥有多个GitHub Pages</a><br>
+<br></p>
+</li>
+<li>
+<p><a href="https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows" rel="external nofollow noreferrer">使用SSH密钥密码</a></p>
+</li>
+</ul>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">CI/CD 平台指的是持续集成（Continuous Integration）和持续交付/部署（Continuous Delivery/Deployment）的工具和服务，旨在自动化软件开发过程。CI 通过频繁集成代码，确保代码在共享环境中正常工作，而 CD 则自动化将软件交付到生产环境的过程，提升发布频率和软件质量。常见的 CI/CD 平台有 Jenkins、GitLab CI、CircleCI 和 Travis CI 等。<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+      <categories>
+        <category>Blog</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CSGO 批量出售饰品</title>
+    <url>/Games/CSGO%20%E6%89%B9%E9%87%8F%E5%87%BA%E5%94%AE%E9%A5%B0%E5%93%81/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li>简要介绍 Steam 如何一次出售多个饰品。</li>
+</ul>
+<span id="more"></span>
+<hr>
+<h3 id="CSGO-批量出售"><a class="header-anchor" href="#CSGO-批量出售">#</a>CSGO 批量出售</h3>
+<ul>
+<li>CSGO 批量出售链接
+<ul>
+<li><code>https://steamcommunity.com/market/multisell?appid=730&amp;contextid=2&amp;items[]=Snakebite%20Case</code></li>
+<li><code>multisell</code>: 代表批量出售。</li>
+<li><code>appid</code>: 代表游戏ID，<code>730</code>是<code>CSGO 2</code>而<code>570</code>是<code>Dota 2</code>。</li>
+<li><code>contextid</code>: 用来区别服务的，当一个微服务需要调用另一个微服务提供的多个不同接口时，就需要contextId在运行时能够正确地识别和区分彼此，避免出现冲突和混淆。</li>
+<li><code>items[]=</code>: 数组，用于批量传输商品代码。</li>
+<li><code>Snakebite%20Case</code>代表数字ID，同样也是商品代码。</li>
+</ul>
+</li>
+</ul>
+<hr>
+]]></content>
+      <categories>
+        <category>Games</category>
+      </categories>
+      <tags>
+        <tag>CSGO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>礼品卡</title>
+    <url>/Games/%E7%A4%BC%E5%93%81%E5%8D%A1/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h2 id="摘要"><a class="header-anchor" href="#摘要">#</a>摘要</h2>
+<ul>
+<li>
+<p>实体物品礼品卡：以等价值商品为<strong>信用</strong>，从而进行资金回流的经营手段，能创造流动性。（本质类似于<strong>发债</strong>）<br>
+<br></p>
+</li>
+<li>
+<p>虚拟物品礼品卡：虚拟类行业以等价值虚拟物品为信用，从而进行资金回流的经营手段，能创造流动性。（本质类似于<strong>发债</strong>）</p>
+</li>
+</ul>
+<span id="more"></span>
+<hr>
+<h3 id="礼品卡简述"><a class="header-anchor" href="#礼品卡简述">#</a>礼品卡简述</h3>
+<ul>
+<li>
+<p>实体物品礼品卡</p>
+<ul>
+<li>商家通过礼品卡的方式能快速创造流动性，快速获得流动性的资金，类似于资本市场的<strong>发债</strong>。</li>
+<li>礼品卡的本质是：该商家的一种<strong>负债</strong><sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="还能创造价值。
+">[1]</span></a></sup>，商家必须需要支付等价值的商品。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>虚拟物品礼品卡</p>
+<ul>
+<li>虚拟类商家的一种发债手段，与实体行业相比的优势是：
+<ul>
+<li>虚拟物品商家只支付虚拟物品，本身的虚拟<strong>资产</strong><sup id="fnref:2"><a href="#fn:2" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="不能再创造价值。">[2]</span></a></sup>已独家代理给商家，商家只需要支付对应销量虚拟物品价值的分成给开发者（比如Steam就是抽30%）。</li>
+<li>需要支付的虚拟类商品不存在负债，还能增加流动性。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="使用场景"><a class="header-anchor" href="#使用场景">#</a>使用场景</h4>
+<ul>
+<li>外汇管制
+<ul>
+<li>提现的手续费比较高
+<ul>
+<li>例如： 中国自然人一年的结汇额度是五万美金。</li>
+<li>Paypal -&gt; 用礼品卡套出现金。<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>不愿意透露收入来源</li>
+<li>洗钱或跑路等手段</li>
+</ul>
+<hr>
+<h4 id="个人破产制度"><a class="header-anchor" href="#个人破产制度">#</a>个人破产制度</h4>
+<ul>
+<li>
+<p>为了稳定的社会中的个人的一种制度。<br>
+<br></p>
+</li>
+<li>
+<p>有钱人完成原始积累 -&gt; 资产泡沫 -&gt; 普通人 -&gt; 转移自己的资产<br>
+<br></p>
+</li>
+<li>
+<p>扩展</p>
+<ul>
+<li><a href="%E4%B8%8D%E4%B8%80%E5%AE%9A%E8%83%BD%E5%88%9B%E9%80%A0%E4%BB%B7%E5%80%BC%E3%80%82">纸面资产</a></li>
+<li><a href="%E5%80%BA%E5%8A%A1%E8%BD%AC%E7%A7%BB%E3%80%82">人口红利</a></li>
+</ul>
+</li>
+</ul>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">还能创造价值。<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">不能再创造价值。<a href="#fnref:2" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+      <categories>
+        <category>Games</category>
+      </categories>
   </entry>
   <entry>
     <title>网络协议 - HTTP1.1的升级改进</title>
@@ -2755,386 +3136,6 @@
         <tag>TLS</tag>
         <tag>SSL</tag>
         <tag>OpenSSL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>环境搭建</title>
-    <url>/Blog/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>本次环境搭建过程涉及<strong>工具安装</strong>，<strong>搭建仓库并生成SSH Key</strong>，<strong>初始化本地博客</strong>和<strong>部署博客到远程GitHub</strong>四个过程。</li>
-</ul>
-<span id="more"></span>
-<h3 id="工具简述"><a class="header-anchor" href="#工具简述">#</a>工具简述</h3>
-<ol>
-<li>
-<p><strong>Node.Js</strong></p>
-<ul>
-<li>
-<p>Node.js 是一个开源和跨平台的 JavaScript 运行  时环境，用来支持 JavaScript 代码的执行。几乎是任何类型项目的流行工具。<br>
-<br></p>
-</li>
-<li>
-<p><strong>npm</strong></p>
-<ul>
-<li>npm（全称Node Package Manager），是Node.js包管理工具，是全球最大的模块生态系统，里面所有的模块都是开源免费的，能解决Node.js代码部署上的很多问题，相当于前端的Maven 。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>Hexo和Node.js关系</strong></p>
-<ul>
-<li>Hexo是基于Node.js开发。<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Git</strong></p>
-<ul>
-<li>
-<p>Git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。（如：版本迭代）<br>
-<br></p>
-</li>
-<li>
-<p><a href="https://git-scm.com/book/zh/v2" rel="external nofollow noreferrer">Git中文文档</a><br>
-<br></p>
-</li>
-<li>
-<p>版本控制（补充）</p>
-<ul>
-<li>
-<p>是一种记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统。<br>
-<br></p>
-</li>
-<li>
-<p>版本控制的作用</p>
-<ul>
-<li>将某个文件回溯到之前的状态，甚至将整个项目都回退到过去某个时间点的状态，可以比较文件的变化细节等。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>版本控制的分类</p>
-<ul>
-<li>
-<p>本地版本控制系统</p>
-<ul>
-<li>采用某种简单的数据库来记录文件的历次更新差异。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>集中式版本控制系统（协同工作，如SVN）</p>
-<ul>
-<li>使用单一的集中管理的服务器，保存所有文件的修订版本，而协同工作的人都通过客户端连到这台服务器，取出最新的文件或者提交更新。（缺点：容易单点故障、受网络影响大）<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>分布式版本控制系统(Git)</p>
-<ul>
-<li>客户端并不只提取最新版本的文件快照，而是把代码仓库完整地镜像下来。</li>
-<li>协同工作时，每个客户端都是完整的版本库。（缺点：每个客户端拥有全部的代码，有安全隐患。）<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Hexo</strong></p>
-<ul>
-<li>
-<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章。<br>
-<br></p>
-</li>
-<li>
-<p><a href="https://hexo.io/zh-cn/docs/" rel="external nofollow noreferrer">Hexo中文文档</a><br>
-<br></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Hexo 和 Typecho 的区别（扩展）</p>
-<ul>
-<li>“静态和动态”：主要是指其对数据处理的方式
-<ul>
-<li>Typecho：通过数据库来动态的查询、调用、展示的叫“动态”，</li>
-<li>Hexo：直接生成纯.html网页文件来供浏览的叫“静态”</li>
-</ul>
-</li>
-<li>Hexo
-<ul>
-<li>基于Node.js，不过多的依赖于常见的 LNMP 生产环境，只需要一个域名和一个免费托管平台。</li>
-</ul>
-</li>
-<li>Typecho
-<ul>
-<li>比Hexo成熟，但是域名、服务器，后台等都需要自己管理。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h4 id="1-工具安装"><a class="header-anchor" href="#1-工具安装">#</a>1. 工具安装</h4>
-<ol>
-<li>
-<p><a href="https://nodejs.org/en/" rel="external nofollow noreferrer">安装Node.Js</a></p>
-<ul>
-<li>以<strong>管理员模式</strong>打开命令提示符</li>
-<li>检查Node.Js安装：<code>node -v</code></li>
-<li>查看Node.Js安装路径：<code>where node</code>
-<ul>
-<li>检查npm安装：<code>npm -v</code></li>
-<li><code>npm</code>包管理工具
-<ul>
-<li>更改npm全局包安装路径
-<ul>
-<li>npm有两种安装方式
-<ul>
-<li>安装在当前项目路径中：<code>npm install</code>
-<ul>
-<li>修改全局包的安装路径
-<ul>
-<li>全局包的安装路径：<code>npm config set prefix &quot;E:/nodejs/npm_global&quot;</code></li>
-<li>全局包的缓存路径：<code>npm config set cache &quot;E:/nodejs/npm_cache&quot;</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>全局安装：<code>npm install -g</code>（推荐）
-<ul>
-<li>全局路径一般默认在：C:\Users\计算机名\AppData\Roaming\npm</li>
-</ul>
-</li>
-<li>查看是否配置成功：<code>npm config ls -l</code></li>
-</ul>
-</li>
-<li>更换淘宝镜像源：<code>npm config set registry http://registry.npmmirror.com/</code></li>
-<li>检查是否更换成功：<code>npm config get registry</code></li>
-<li>添加环境变量
-<ul>
-<li>新建变量名NODE_PATH， 值为上述添加的npm_global路径下(如：      E:\nodejs\npm_global\node_modules)</li>
-<li>将E:\nodejs\npm_global添加到path变量中。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>补充：解决Git bash找不到Hexo环境解决方法，
-<ul>
-<li>检查 Node.js 和 npm 是否已安装：<code>node -v</code>和<code>npm -v</code></li>
-<li>Hexo 的路径在环境变量中：
-<ul>
-<li>控制面板” → “系统和安全” → “系统” → “高级系统设置”。点击“环境变量”。通常是:<code>&lt;blog_folder&gt;/node_modules/.bin</code><br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><a href="https://git-scm.com/downloads" rel="external nofollow noreferrer">安装Git</a></p>
-<ul>
-<li>检查Git安装: <code>git --version</code></li>
-<li>配置全局用户名和邮箱：
-<ul>
-<li><code>git config --global user.name “github’s Name”</code></li>
-<li><code>git config --global user.email “github@xx.com”</code></li>
-<li><code>git config --list</code> //然后查看自己的配置<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>安装Hexo</p>
-<ul>
-<li><code>npm install hexo-cli -g</code></li>
-<li>检查安装：<code>hexo -v</code><br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><a href="https://github.com/" rel="external nofollow noreferrer">注册GitHub账户</a></p>
-</li>
-</ol>
-<hr>
-<h4 id="2-搭建仓库并生成SSH-Key"><a class="header-anchor" href="#2-搭建仓库并生成SSH-Key">#</a>2. 搭建仓库并生成SSH Key</h4>
-<ol>
-<li>
-<p><a href="https://zhuanlan.zhihu.com/p/28321740" rel="external nofollow noreferrer">搭建博客仓库</a></p>
-<ul>
-<li>username.github.io仓库就是GitHub为个人账户分配站点仓库。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>将博客部署在项目站点</p>
-<ul>
-<li>新建一个公开的username.github.io仓库（站点主页：导航）</li>
-<li>新建一个私人的pages仓库（博客的写作站点：备份）<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>生成SSH Key</p>
-<ul>
-<li><code>ssh-keygen -t rsa -C &quot;your_email@example.com&quot;</code></li>
-<li>复制公钥（路径<code>C:\Users\UserName\.ssh\id_rsa.pub</code>）到添加到GitHub账户</li>
-<li>测试SSH连接
-<ul>
-<li><code>ssh -T git@github.com</code><br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>扩展（可选）</p>
-<ul>
-<li>
-<p>For 同时也使用 Git 管理站点目录</p>
-<ul>
-<li>如果同时使用Git管理站点目录，应当注意部署分支应当不同于写作分支。(Hexo每次部署会<strong>完全覆盖</strong>该分支下的内容)</li>
-<li>一个好的实践是：将站点目录和 Pages 分别存放在两个不同的 Git 仓库中，也就是使用Github Actions<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="CI/CD 平台指的是持续集成（Continuous Integration）和持续交付/部署（Continuous Delivery/Deployment）的工具和服务，旨在自动化软件开发过程。CI 通过频繁集成代码，确保代码在共享环境中正常工作，而 CD 则自动化将软件交付到生产环境的过程，提升发布频率和软件质量。常见的 CI/CD 平台有 Jenkins、GitLab CI、CircleCI 和 Travis CI 等。
-">[1]</span></a></sup> ，然后手动提交并推送你的写作分支，这样就可以有效避免相互覆盖。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>关于域名到期谷歌浏览器自动重定向旧域名：</p>
-<ul>
-<li>浏览器输入<code>chrome://history/</code>，删除全部数据。</li>
-</ul>
-</li>
-<li>
-<p>可以放弃使用SSH，转而使用令牌</p>
-<ul>
-<li>新建令牌注意保存密码，密码只会显示一次。</li>
-<li>远程部署时再输入用户名和密码。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>使用SSH私钥密码（可以保护 SSH 密钥并配置身份验证代理）</p>
-<ul>
-<li><code>ssh-keygen -p -f ~/.ssh/id_rsa</code><br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>在Git for Windows上自动启动ssh-agent</p>
-<ul>
-<li><a href="https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows" rel="external nofollow noreferrer">参考Github文档</a></li>
-<li>需要提示的是<code>.profile</code>文件在Git安装目录的/etc/下。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>关于使用443端口代替22端口进行ssh连接github</p>
-<ul>
-<li>解决使用代理无法连接22端口</li>
-<li><code>C:\Users\Your_user_name\.ssh</code>创建Config文件, 内容如下：</li>
-</ul>
- <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="string">Host</span> <span class="string">github.com</span></span><br><span class="line"><span class="string">User</span> <span class="string">you_github_email@xxx.com</span></span><br><span class="line"><span class="string">Hostname</span> <span class="string">ssh.github.com</span></span><br><span class="line"><span class="string">PreferredAuthentications</span> <span class="string">publickey</span></span><br><span class="line"><span class="string">IdentityFile</span> <span class="string">~/.ssh/id_rsa</span></span><br><span class="line"><span class="string">Port</span> <span class="number">443</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h4 id="3-初始化本地博客内容"><a class="header-anchor" href="#3-初始化本地博客内容">#</a>3. 初始化本地博客内容</h4>
-<ul>
-<li>
-<p>新建本地博客文件夹（如：blog）<br>
-<br></p>
-</li>
-<li>
-<p>初始化Hexo到本地文件夹： <code>hexo init</code></p>
-<ul>
-<li>
-<p>这个命令做了两步：</p>
-<ul>
-<li>
-<p>Git clone <a href="https://github.com/hexojs/hexo-starter" rel="external nofollow noreferrer">hexo-starter</a> 和 <a href="https://github.com/hexojs/hexo-theme-landscape" rel="external nofollow noreferrer">hexo-theme-landscape</a> 主题到当前目录或指定目录。</p>
-</li>
-<li>
-<p>使用 <a href="https://classic.yarnpkg.com/lang/en/" rel="external nofollow noreferrer">Yarn 1</a>、<a href="https://pnpm.js.org/" rel="external nofollow noreferrer">pnpm</a> 或 <a href="https://docs.npmjs.com/cli/install" rel="external nofollow noreferrer">npm</a> 包管理器下载依赖（如有已安装多个，则列在前面的优先）。npm 默认随 Node.js 安装。<br>
-<br></p>
-</li>
-</ul>
-</li>
-<li>
-<p>安装Next主题</p>
-<ul>
-<li>通过git指令下载NexT最新的主题文件：<code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code></li>
-<li>修改本地博客下文件夹下的_config.yml文件</li>
-</ul>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"></span><br><span class="line"><span class="attr">theme:</span> <span class="string">next</span></span><br><span class="line"><span class="attr">theme_config:</span> </span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-</ul>
-<br>
-<ul>
-<li>
-<p>生成本地服务器下的hexo 静态文件：<code>hexo server</code><br>
-<br></p>
-</li>
-<li>
-<p>访问本地博客：<a href="http://localhost:4000" rel="external nofollow noreferrer">http://localhost:4000</a></p>
-<ul>
-<li>更改本地服务器端口号：·<code>hexo server -p 5000</code> 或者 _config.yml中添加下面代码：<br>
-<br></li>
-</ul>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">5000</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<hr>
-<h4 id="4-部署博客到GitHub"><a class="header-anchor" href="#4-部署博客到GitHub">#</a>4. 部署博客到GitHub</h4>
-<ul>
-<li>
-<p>基于SSH或者token连接GitHub</p>
-</li>
-<li>
-<p>修改本地博客下文件夹下的_config.yml文件<br>
-<br></p>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 1. 设置站点URL及根目录</span></span><br><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## Set your site url here. For example, if you use GitHub Page, set url as &#x27;https://username.github.io/project&#x27;</span></span><br><span class="line"><span class="attr">url:</span> <span class="string">https://username.github.io</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/Folder/</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 设置部署源（注意仓库地址的选择）</span></span><br><span class="line"><span class="comment"># 基于SSH就使用SSH克隆地址 / 基于token就使用HTTP克隆地址</span></span><br><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">repository:</span> <span class="string">git@github.com:username</span> <span class="string">或</span> <span class="string">username.github.io.git</span></span><br><span class="line"><span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<br>
-<ul>
-<li>安装一键部署工具hexo-deployer-git：<code>npm install hexo-deployer-git --save</code></li>
-<li>生成完毕后自动部署到网站：<code>hexo clean &amp;&amp; hexo deploy</code></li>
-<li>访问博客：<code>https://username.github.io</code></li>
-</ul>
-<hr>
-<h5 id="5-致谢"><a class="header-anchor" href="#5-致谢">#</a>5. 致谢</h5>
-<ul>
-<li>
-<p><a href="https://blog.mikelyou.com/2020/07/22/github-pages-project-sites/" rel="external nofollow noreferrer">如何拥有多个GitHub Pages</a><br>
-<br></p>
-</li>
-<li>
-<p><a href="https://docs.github.com/zh/authentication/connecting-to-github-with-ssh/working-with-ssh-key-passphrases#auto-launching-ssh-agent-on-git-for-windows" rel="external nofollow noreferrer">使用SSH密钥密码</a></p>
-</li>
-</ul>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">CI/CD 平台指的是持续集成（Continuous Integration）和持续交付/部署（Continuous Delivery/Deployment）的工具和服务，旨在自动化软件开发过程。CI 通过频繁集成代码，确保代码在共享环境中正常工作，而 CD 则自动化将软件交付到生产环境的过程，提升发布频率和软件质量。常见的 CI/CD 平台有 Jenkins、GitLab CI、CircleCI 和 Travis CI 等。<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
-      <categories>
-        <category>Blog</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>Next</tag>
       </tags>
   </entry>
   <entry>
@@ -6032,138 +6033,6 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
       </tags>
   </entry>
   <entry>
-    <title>网络协议 - 网络层</title>
-    <url>/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%B1%82/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>本文主要介绍网络层的数据段，重点介绍网络层首部相关信息。</li>
-</ul>
-<span id="more"></span>
-<hr>
-<h4 id="网络层简介"><a class="header-anchor" href="#网络层简介">#</a>网络层简介</h4>
-<ul>
-<li><strong>数据</strong>：<strong>很多时候</strong>是由传输层传递下来的<strong>数据段</strong>（Segments）（IP、ICMP和ARP协议就是网络层协议，不涉及运输层）</li>
-</ul>
-<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20210501103831755.png" alt="网络层帧格式"></p>
-<hr>
-<h4 id="网络层首部-版本、首部长度、区分服务、总长度"><a class="header-anchor" href="#网络层首部-版本、首部长度、区分服务、总长度">#</a>网络层首部 - 版本、首部长度、区分服务、总长度</h4>
-<ul>
-<li>
-<p>版本（Version）</p>
-<ul>
-<li>占4位</li>
-<li>0b0100：IPv4</li>
-<li>0b0100：IPv6</li>
-</ul>
-</li>
-<li>
-<p>首部长度</p>
-<ul>
-<li>占4位，二进制转十进制值乘4才是最终长度</li>
-<li>0b0101 -&gt; 20(min)</li>
-<li>0b1111 -&gt; 60(max)</li>
-<li>可变部分最多是40字节</li>
-</ul>
-</li>
-<li>
-<p>区分服务（Differentiated Services Field）</p>
-<ul>
-<li>占8位</li>
-<li>用于提高网络服务质量（<code>QoS</code>, Quality of Service）</li>
-</ul>
-</li>
-<li>
-<p>总长度</p>
-<ul>
-<li>占16位</li>
-<li>首部 + 数据的长度之和，最大值是 65535（IP数据包MAX长度）字节</li>
-<li>帧的长度不能超过1500字节，所以帧的数据部分中网络层数据部分最大长度是1500 - 20 = 1480字节，而且在传输给数据链路层的过程中就需要<strong>分片</strong>（fragments），其中米都有自己的网路层首部（IP首部）。</li>
-</ul>
-</li>
-</ul>
-<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20210321164853754.png" alt="网络层数据段"></p>
-<hr>
-<h4 id="网络层首部-标识、标志、片偏移"><a class="header-anchor" href="#网络层首部-标识、标志、片偏移">#</a>网络层首部 - 标识、标志、片偏移</h4>
-<ul>
-<li>标识（Identification）
-<ul>
-<li>占16位</li>
-<li>数据包的ID,当数据包过大进行分片时， 同一数包的标识时一样的，用于代表</li>
-<li>有一个计数器专门管理数据包的ID,每发出一个数据包，ID就加1， 超出范围（65535）就会重新开始。</li>
-</ul>
-</li>
-<li>标志（Flags）
-<ul>
-<li>占3位</li>
-<li>第一位（0… = Reserved bit: Not set）保留位</li>
-<li>第二位（.1. = Don’t fragment: Set）1表示允许分片</li>
-<li>第三位（…0 = More fragments: Not set）0代表是最后一片</li>
-</ul>
-</li>
-<li>片偏移（Fragment offset）
-<ul>
-<li>占13位</li>
-<li>片偏移乘以8就是字节偏移</li>
-<li>每一片的长度时8的整数倍（片偏移 = 片的长度/8, 因为13位不一定存得下）</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="ping-的几个用法，wireshark抓包"><a class="header-anchor" href="#ping-的几个用法，wireshark抓包">#</a>ping 的几个用法，<code>wireshark</code>抓包</h4>
-<ul>
-<li>
-<p><code>ping /?</code> 查看ping的用法</p>
-</li>
-<li>
-<p><code>ping ip地址 -l 数据包大小</code> 发送指定大小的数据包</p>
-</li>
-<li>
-<p><code>ping ip地址 -f</code> 不允许分片</p>
-</li>
-<li>
-<p><code>ping ip地址 -i TTL数值</code></p>
-</li>
-<li>
-<p><code>tracert pathping</code><br>
-<br></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20210321174656873.png" alt="图1"></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20210321174347524.png" alt="图2"></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20210321180403768.png" alt="图3"></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20210321182232746.png" alt="图4"></p>
-<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20210321181914569.png" alt="图5"></p>
-</li>
-</ul>
-<hr>
-<h4 id="网络层首部-生存时间、协议、首部校验和"><a class="header-anchor" href="#网络层首部-生存时间、协议、首部校验和">#</a>网络层首部 - 生存时间、协议、首部校验和</h4>
-<ul>
-<li>
-<p>生存时间（Time To Live， TTL）</p>
-<ul>
-<li>占8位</li>
-<li>每个路由器转发前TTL减1，一旦发现TTL为0，路由器就会返回错误报告（防止路由表配置错误占用带宽）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="带宽一词最初指的是电磁波频带的宽度，也就是信号的最高频率与最低频率的差值。目前，它被更广泛地借用在数字通信中，用来描述网络或线路理论上传输数据的最高速率">[1]</span></a></sup></li>
-</ul>
-<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20210321184906875.png" alt="不同操作系统的的TTL"></p>
-</li>
-<li>
-<p>协议（Protocol）</p>
-<ul>
-<li>占8位</li>
-<li>表明网络层封装的数据使用的协议<br>
-<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20210321182902910.png" alt="不同协议的代号"></li>
-</ul>
-</li>
-<li>
-<p>首部校验和（Header Checksum）</p>
-<ul>
-<li>用于检测首部是否有错误</li>
-</ul>
-</li>
-</ul>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">带宽一词最初指的是电磁波频带的宽度，也就是信号的最高频率与最低频率的差值。目前，它被更广泛地借用在数字通信中，用来描述网络或线路理论上传输数据的最高速率<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
-      <categories>
-        <category>Network Protocols</category>
-      </categories>
-  </entry>
-  <entry>
     <title>网络协议 - 网络基础知识</title>
     <url>/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
@@ -7003,96 +6872,6 @@ SHA-256，SHA-384，SHA-512，散列值长度分别是256bit，384bit，512bit</
       </tags>
   </entry>
   <entry>
-    <title>网络协议 - 路由器</title>
-    <url>/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E8%B7%AF%E7%94%B1%E5%99%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>本文主要介绍网络通信中路由器的作用及其相关概念。</li>
-</ul>
-<span id="more"></span>
-<hr>
-<h4 id="路由器简介"><a class="header-anchor" href="#路由器简介">#</a>路由器简介</h4>
-<ul>
-<li>在不同网段之间<strong>转发数据</strong>，需要有路由器的支持。</li>
-</ul>
-<br>
-<ul>
-<li>默认情况下，路由器只知道跟它<strong>直连</strong>的网段，非直连的网段需要通过 <strong>静态路由、动态路由</strong> 告诉它。（路径选择）
-<ul>
-<li><strong>需要</strong>
-<ul>
-<li>广域网的接入</li>
-<li>路由协议支持</li>
-</ul>
-</li>
-<li><strong>静态路由</strong>
-<ul>
-<li>管理员手动添加路由信息</li>
-<li>适用于小规模网络</li>
-</ul>
-</li>
-<li><strong>动态路由</strong>
-<ul>
-<li>路由器通过<strong>路由选择协议</strong>（比如RIP、OSPF）<strong>自动获取</strong>路由信息</li>
-<li>适用于大规模网络</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="路由表的分类"><a class="header-anchor" href="#路由表的分类">#</a>路由表的分类</h4>
-<ul>
-<li>网络路由
-<ul>
-<li><code>194.180.1.0/24 via 194.170.1.2</code></li>
-<li><code>194.180.1.0/24 via 194.170.1.2</code></li>
-</ul>
-</li>
-<li>特定主机路由
-<ul>
-<li><code>194.180.1.10/32 via 194.170.1.2</code></li>
-<li><code>194.180.1.11/32 via 194.170.1.2</code></li>
-</ul>
-</li>
-<li>默认路由
-<ul>
-<li><code>0.0.0.0/0 via 194.170.1.2</code></li>
-</ul>
-</li>
-<li>汇总路由
-<ul>
-<li><code>194.180.0.0/16 via 194.170.1.2</code></li>
-<li><code>194.0.0.0/8 via 194.170.1.2</code></li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="数据包的传输过程"><a class="header-anchor" href="#数据包的传输过程">#</a>数据包的传输过程</h4>
-<ul>
-<li>数据包的传输过程中，主要分四类数据据、包括
-<ul>
-<li>源IP</li>
-<li>目标IP</li>
-<li>源MAC</li>
-<li>目标MAC</li>
-</ul>
-</li>
-<li>在传输过程中<strong>源IP</strong>、和<strong>目标IP</strong>一直没变，<strong>源MAC</strong>和<strong>目标MAC</strong>一直再改变。</li>
-</ul>
-<hr>
-<h4 id="路由器的第一个数据包丢失分析"><a class="header-anchor" href="#路由器的第一个数据包丢失分析">#</a>路由器的第一个数据包丢失分析</h4>
-<ul>
-<li><strong>原因：<strong>在数据包在传输过程中，当一个端设备在知道路由器的MAC地址后，再向路由器发送发送ICMP数据包后，由于</strong>路由器不知道目标IP的MAC地址</strong>，进而丢失了源端设备的<strong>ICMP数据包</strong>，转而发送ARP数据包。所以ping过程中会丢失第一个ICMP数据包。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Network Protocols</category>
-      </categories>
-      <tags>
-        <tag>Router</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Anaconda 使用教程</title>
     <url>/Software-Testing/Anaconda%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
@@ -7394,308 +7173,226 @@ SHA-256，SHA-384，SHA-512，散列值长度分别是256bit，384bit，512bit</
       </tags>
   </entry>
   <entry>
-    <title>自动化测试基础</title>
-    <url>/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</url>
+    <title>网络协议 - 路由器</title>
+    <url>/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E8%B7%AF%E7%94%B1%E5%99%A8/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>本文主要介绍软件测试、软件自动化测试相关概念和工具。</li>
+<li>本文主要介绍网络通信中路由器的作用及其相关概念。</li>
 </ul>
 <span id="more"></span>
 <hr>
-<h4 id="软件测试分类"><a class="header-anchor" href="#软件测试分类">#</a>软件测试分类</h4>
+<h4 id="路由器简介"><a class="header-anchor" href="#路由器简介">#</a>路由器简介</h4>
 <ul>
-<li>
-<p>根据项目流程划分</p>
+<li>在不同网段之间<strong>转发数据</strong>，需要有路由器的支持。</li>
+</ul>
+<br>
 <ul>
-<li>
-<p>单元测试（模块测试）</p>
+<li>默认情况下，路由器只知道跟它<strong>直连</strong>的网段，非直连的网段需要通过 <strong>静态路由、动态路由</strong> 告诉它。（路径选择）
 <ul>
-<li>子程序或具有独立功能代码块</li>
+<li><strong>需要</strong>
+<ul>
+<li>广域网的接入</li>
+<li>路由协议支持</li>
 </ul>
 </li>
-<li>
-<p>集成测试</p>
+<li><strong>静态路由</strong>
 <ul>
-<li>先组成系统或子系统再测试，重点检查模块间的接口</li>
+<li>管理员手动添加路由信息</li>
+<li>适用于小规模网络</li>
 </ul>
 </li>
-<li>
-<p>系统测试</p>
+<li><strong>动态路由</strong>
 <ul>
-<li>整个产品系统（需求说明书）</li>
-</ul>
-</li>
-<li>
-<p>验收测试</p>
-<ul>
-<li>最终测试（完成系统和功能测试后，产品发布之前的测试）(验证功能和性能)<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>按照对代码可见度来划分</p>
-<ul>
-<li>白盒测试
-<ul>
-<li>关注内部动作</li>
-</ul>
-</li>
-<li>黑盒测试
-<ul>
-<li>关注外部输入输出</li>
-</ul>
-</li>
-<li>灰盒测试
-<ul>
-<li>既关注外部输入输出又关注内部动作。<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>软件的不同测试面来划分</p>
-<ul>
-<li>功能测试
-<ul>
-<li>逻辑功能测试，界面测试，易用性测试，安装测试，兼容性测试等。</li>
-</ul>
-</li>
-<li>性能测试
-<ul>
-<li>时间性能(具体环境)</li>
-</ul>
-</li>
-<li>空间性能（带宽，CPU）<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>按照自动化程度划分</p>
-<ul>
-<li>手工测试</li>
-<li>自动化测试
-<ul>
-<li>功能自动化和性能自动化<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>测试周期中的一些方法</p>
-<ul>
-<li>冒烟测试
-<ul>
-<li>测试新版本之前，投入较少人力和时间验证软件主要功能。</li>
-</ul>
-</li>
-<li>回归测试
-<ul>
-<li>修改了旧代码后，重新进行测试以确定修改没有引入新错误或导致其他代码产生错误。（第二轮）</li>
-</ul>
-</li>
-<li>随机测试
-<ul>
-<li>测试输入数据随机生成，目的是模拟用户<strong>真实操作</strong>，发现<strong>边缘错误。</strong></li>
-</ul>
-</li>
-<li>探索性测试
-<ul>
-<li>测试的思维技术，一种<strong>思维方式</strong>，强调测试人员<strong>主观能动性</strong>，遇到问题时<strong>改变测试策略</strong>。</li>
-</ul>
-</li>
-<li>安全测试
-<ul>
-<li>生命周期中特别是<strong>开发基本完成到发布阶段</strong>，对产品验证符合产品<strong>安全需求定义</strong>和<strong>质量标准</strong>的过程</li>
+<li>路由器通过<strong>路由选择协议</strong>（比如RIP、OSPF）<strong>自动获取</strong>路由信息</li>
+<li>适用于大规模网络</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 <hr>
-<h4 id="分层的自动化测试"><a class="header-anchor" href="#分层的自动化测试">#</a>分层的自动化测试</h4>
+<h4 id="路由表的分类"><a class="header-anchor" href="#路由表的分类">#</a>路由表的分类</h4>
 <ul>
-<li>
-<p>背景</p>
+<li>网络路由
 <ul>
-<li>传统的自动化测试：
-<ul>
-<li>基于产品的UI的自动化测试，将黑盒测试转化为通过程序或工具执行的一种自动化测试。</li>
+<li><code>194.180.1.0/24 via 194.170.1.2</code></li>
+<li><code>194.180.1.0/24 via 194.170.1.2</code></li>
 </ul>
 </li>
-<li>传统的自动化测试缺点（黑盒测试环节尽可能全面覆盖，自动化）
+<li>特定主机路由
 <ul>
-<li>测试规模增大</li>
-<li>全面UI自动化测试（由于UI易变，使得UI维护成本相对高昂）<br>
-<br></li>
+<li><code>194.180.1.10/32 via 194.170.1.2</code></li>
+<li><code>194.180.1.11/32 via 194.170.1.2</code></li>
 </ul>
 </li>
+<li>默认路由
+<ul>
+<li><code>0.0.0.0/0 via 194.170.1.2</code></li>
 </ul>
 </li>
-<li>
-<p>分层自动化测试</p>
+<li>汇总路由
 <ul>
-<li>
-<p>强调从黑盒（UI）单层到黑白盒多层的自动化测试体系</p>
-</li>
-<li>
-<p>从全面黑盒自动化测试到对系统的不同层次进行自动化测试</p>
-</li>
-<li>
-<p>单元自动化测试（10%）</p>
-<ul>
-<li>对软件中的最小可测试单元检查和验证。（类，函数，窗口）<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>接口自动化测试(20%)</p>
-<ul>
-<li>模块接口测试和Web接口测试
-<ul>
-<li>模块接口测试（单元测试基础 -&gt; 单元结果验证）
-<ul>
-<li>工具与单元自动化测试相同</li>
-</ul>
-</li>
-<li>Web接口测试
-<ul>
-<li><strong>服务器接口测试</strong>和<strong>外部接口测试</strong></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>服务器接口测试
-<ul>
-<li>浏览器与服务器的接口（通过HTTP协议实现前后端数据传递）</li>
-</ul>
-</li>
-<li>外部接口测试(70%)
-<ul>
-<li>第三方系统提供的接口（第三方登录接口）</li>
-</ul>
-</li>
-<li>接口测试相应的类库和工具： HttpUnit 、Postman<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>UI自动化测试</p>
-<ul>
-<li>由于所有功能的展示都在这一层，所以测试工作大多集中在这一层。</li>
-<li>因此建议提倡<strong>半自动化</strong>开展测试工作。</li>
-</ul>
-</li>
+<li><code>194.180.0.0/16 via 194.170.1.2</code></li>
+<li><code>194.0.0.0/8 via 194.170.1.2</code></li>
 </ul>
 </li>
 </ul>
 <hr>
-<h4 id="自动化测试应用场景"><a class="header-anchor" href="#自动化测试应用场景">#</a>自动化测试应用场景</h4>
+<h4 id="数据包的传输过程"><a class="header-anchor" href="#数据包的传输过程">#</a>数据包的传输过程</h4>
 <ul>
-<li>一般满足以下三个条件就可开展自动化测试
+<li>数据包的传输过程中，主要分四类数据据、包括
 <ul>
-<li>软件需求变动不频繁</li>
-<li>项目的周期长</li>
-<li>自动化测试脚本可重复利用</li>
+<li>源IP</li>
+<li>目标IP</li>
+<li>源MAC</li>
+<li>目标MAC</li>
 </ul>
 </li>
-<li>任务测试明确，不会频繁变动(<strong>重要</strong>)</li>
-<li>每日构建后的测试验证</li>
-<li>比较频繁的回归测试</li>
-<li>软件系统界面稳定，变动少</li>
-<li>需要在多个平台上运行相同的测试案例、组合遍历型的测试、大量重复的任务。</li>
-<li>软件维护的周期长（<strong>重要</strong>）</li>
-<li>项目的进度压力不大。</li>
-<li>被测软件系统开发较为规范，能够保证系统可测试性。</li>
-<li>具备大量自动化测试平台。</li>
-<li>测试人员具备较强的编程能力。</li>
-<li>自动化测试脚本可重复利用（<strong>重要</strong>）</li>
+<li>在传输过程中<strong>源IP</strong>、和<strong>目标IP</strong>一直没变，<strong>源MAC</strong>和<strong>目标MAC</strong>一直再改变。</li>
 </ul>
 <hr>
-<h4 id="自动化测试及其工具"><a class="header-anchor" href="#自动化测试及其工具">#</a>自动化测试及其工具</h4>
+<h4 id="路由器的第一个数据包丢失分析"><a class="header-anchor" href="#路由器的第一个数据包丢失分析">#</a>路由器的第一个数据包丢失分析</h4>
 <ul>
-<li>
-<p><strong>广义</strong>上的自动化测试：指的是借助工具来辅助进行软件测试的方式</p>
-</li>
-<li>
-<p><strong>狭义</strong>上的自动化测试：指的是基于UI的功能测试</p>
-</li>
-<li>
-<p>自动化测试工具</p>
-<ul>
-<li>UFT（QTP和ST合并）</li>
-<li>Robot FrameWork（基于python）</li>
-<li>Watir(基于ruby)</li>
-<li>selenium</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="Selenium工具介绍"><a class="header-anchor" href="#Selenium工具介绍">#</a>Selenium工具介绍</h4>
-<ul>
-<li>
-<p>Selenium工具介绍</p>
-<ul>
-<li>主要用于Web应用程序的自动化测试</li>
-</ul>
-</li>
-<li>
-<p>Selenium IDE</p>
-<ul>
-<li>火狐插件，方便开发脚本</li>
-</ul>
-</li>
-<li>
-<p>Selenium Grid</p>
-<ul>
-<li><strong>自动化测试辅助工具</strong>可加快Web-App功能测试，很方便在对台机器和异构环境执行测试用例（不同计算机和系统的网络环境）</li>
-</ul>
-</li>
-<li>
-<p>Selenium RC</p>
-<ul>
-<li>Selenium家族核心部分,支持多种语言编写的自动化测试脚本。</li>
-</ul>
-</li>
-<li>
-<p>Selenium2.0</p>
-<ul>
-<li>Selenium1.0 = Selenium IDE+Selenium Grid+Selenium RC</li>
-<li>Selenium2.0 = Selenium 1.0 +WebDirver</li>
-<li>Selenium3.0</li>
-<li>WebDriver是通过原生的浏览器支持或浏览器扩展来直接控制浏览器</li>
-<li>WebDriver能利用操作系统级别调用，能够更好模拟用户输入。</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="前端基础（补充）"><a class="header-anchor" href="#前端基础（补充）">#</a>前端基础（补充）</h4>
-<ul>
-<li>基础知识
-<ul>
-<li>HTMl 超文本标记语言</li>
-<li>JavaScript 前端脚本语言（轻量级语言），是一种解释性的语言，不需要预编译</li>
-<li>XML 可扩展标记语言 通用标记语言的一个子集。作为传输工具和存储数据。（数据内容）</li>
-</ul>
-</li>
-<li>前端工具
-<ul>
-<li>Fire Bug  火狐开发类插件</li>
-<li>FirePath XPath(XML的路径语言,用来确定XML文档中的部分位置)</li>
-<li>Chrome开发人员工具</li>
-</ul>
-</li>
+<li><strong>原因：<strong>在数据包在传输过程中，当一个端设备在知道路由器的MAC地址后，再向路由器发送发送ICMP数据包后，由于</strong>路由器不知道目标IP的MAC地址</strong>，进而丢失了源端设备的<strong>ICMP数据包</strong>，转而发送ARP数据包。所以ping过程中会丢失第一个ICMP数据包。</li>
 </ul>
 ]]></content>
       <categories>
-        <category>Software Testing</category>
+        <category>Network Protocols</category>
       </categories>
       <tags>
-        <tag>Automated Testing</tag>
-        <tag>Selenium</tag>
+        <tag>Router</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>网络协议 - 网络层</title>
+    <url>/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%B1%82/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li>本文主要介绍网络层的数据段，重点介绍网络层首部相关信息。</li>
+</ul>
+<span id="more"></span>
+<hr>
+<h4 id="网络层简介"><a class="header-anchor" href="#网络层简介">#</a>网络层简介</h4>
+<ul>
+<li><strong>数据</strong>：<strong>很多时候</strong>是由传输层传递下来的<strong>数据段</strong>（Segments）（IP、ICMP和ARP协议就是网络层协议，不涉及运输层）</li>
+</ul>
+<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20210501103831755.png" alt="网络层帧格式"></p>
+<hr>
+<h4 id="网络层首部-版本、首部长度、区分服务、总长度"><a class="header-anchor" href="#网络层首部-版本、首部长度、区分服务、总长度">#</a>网络层首部 - 版本、首部长度、区分服务、总长度</h4>
+<ul>
+<li>
+<p>版本（Version）</p>
+<ul>
+<li>占4位</li>
+<li>0b0100：IPv4</li>
+<li>0b0100：IPv6</li>
+</ul>
+</li>
+<li>
+<p>首部长度</p>
+<ul>
+<li>占4位，二进制转十进制值乘4才是最终长度</li>
+<li>0b0101 -&gt; 20(min)</li>
+<li>0b1111 -&gt; 60(max)</li>
+<li>可变部分最多是40字节</li>
+</ul>
+</li>
+<li>
+<p>区分服务（Differentiated Services Field）</p>
+<ul>
+<li>占8位</li>
+<li>用于提高网络服务质量（<code>QoS</code>, Quality of Service）</li>
+</ul>
+</li>
+<li>
+<p>总长度</p>
+<ul>
+<li>占16位</li>
+<li>首部 + 数据的长度之和，最大值是 65535（IP数据包MAX长度）字节</li>
+<li>帧的长度不能超过1500字节，所以帧的数据部分中网络层数据部分最大长度是1500 - 20 = 1480字节，而且在传输给数据链路层的过程中就需要<strong>分片</strong>（fragments），其中米都有自己的网路层首部（IP首部）。</li>
+</ul>
+</li>
+</ul>
+<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20210321164853754.png" alt="网络层数据段"></p>
+<hr>
+<h4 id="网络层首部-标识、标志、片偏移"><a class="header-anchor" href="#网络层首部-标识、标志、片偏移">#</a>网络层首部 - 标识、标志、片偏移</h4>
+<ul>
+<li>标识（Identification）
+<ul>
+<li>占16位</li>
+<li>数据包的ID,当数据包过大进行分片时， 同一数包的标识时一样的，用于代表</li>
+<li>有一个计数器专门管理数据包的ID,每发出一个数据包，ID就加1， 超出范围（65535）就会重新开始。</li>
+</ul>
+</li>
+<li>标志（Flags）
+<ul>
+<li>占3位</li>
+<li>第一位（0… = Reserved bit: Not set）保留位</li>
+<li>第二位（.1. = Don’t fragment: Set）1表示允许分片</li>
+<li>第三位（…0 = More fragments: Not set）0代表是最后一片</li>
+</ul>
+</li>
+<li>片偏移（Fragment offset）
+<ul>
+<li>占13位</li>
+<li>片偏移乘以8就是字节偏移</li>
+<li>每一片的长度时8的整数倍（片偏移 = 片的长度/8, 因为13位不一定存得下）</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="ping-的几个用法，wireshark抓包"><a class="header-anchor" href="#ping-的几个用法，wireshark抓包">#</a>ping 的几个用法，<code>wireshark</code>抓包</h4>
+<ul>
+<li>
+<p><code>ping /?</code> 查看ping的用法</p>
+</li>
+<li>
+<p><code>ping ip地址 -l 数据包大小</code> 发送指定大小的数据包</p>
+</li>
+<li>
+<p><code>ping ip地址 -f</code> 不允许分片</p>
+</li>
+<li>
+<p><code>ping ip地址 -i TTL数值</code></p>
+</li>
+<li>
+<p><code>tracert pathping</code><br>
+<br></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20210321174656873.png" alt="图1"></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20210321174347524.png" alt="图2"></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20210321180403768.png" alt="图3"></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20210321182232746.png" alt="图4"></p>
+<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20210321181914569.png" alt="图5"></p>
+</li>
+</ul>
+<hr>
+<h4 id="网络层首部-生存时间、协议、首部校验和"><a class="header-anchor" href="#网络层首部-生存时间、协议、首部校验和">#</a>网络层首部 - 生存时间、协议、首部校验和</h4>
+<ul>
+<li>
+<p>生存时间（Time To Live， TTL）</p>
+<ul>
+<li>占8位</li>
+<li>每个路由器转发前TTL减1，一旦发现TTL为0，路由器就会返回错误报告（防止路由表配置错误占用带宽）<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="带宽一词最初指的是电磁波频带的宽度，也就是信号的最高频率与最低频率的差值。目前，它被更广泛地借用在数字通信中，用来描述网络或线路理论上传输数据的最高速率">[1]</span></a></sup></li>
+</ul>
+<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20210321184906875.png" alt="不同操作系统的的TTL"></p>
+</li>
+<li>
+<p>协议（Protocol）</p>
+<ul>
+<li>占8位</li>
+<li>表明网络层封装的数据使用的协议<br>
+<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20210321182902910.png" alt="不同协议的代号"></li>
+</ul>
+</li>
+<li>
+<p>首部校验和（Header Checksum）</p>
+<ul>
+<li>用于检测首部是否有错误</li>
+</ul>
+</li>
+</ul>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">带宽一词最初指的是电磁波频带的宽度，也就是信号的最高频率与最低频率的差值。目前，它被更广泛地借用在数字通信中，用来描述网络或线路理论上传输数据的最高速率<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+      <categories>
+        <category>Network Protocols</category>
+      </categories>
   </entry>
   <entry>
     <title>WebDriver API</title>
@@ -8357,6 +8054,310 @@ SHA-256，SHA-384，SHA-512，散列值长度分别是256bit，384bit，512bit</
       </tags>
   </entry>
   <entry>
+    <title>自动化测试基础</title>
+    <url>/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li>本文主要介绍软件测试、软件自动化测试相关概念和工具。</li>
+</ul>
+<span id="more"></span>
+<hr>
+<h4 id="软件测试分类"><a class="header-anchor" href="#软件测试分类">#</a>软件测试分类</h4>
+<ul>
+<li>
+<p>根据项目流程划分</p>
+<ul>
+<li>
+<p>单元测试（模块测试）</p>
+<ul>
+<li>子程序或具有独立功能代码块</li>
+</ul>
+</li>
+<li>
+<p>集成测试</p>
+<ul>
+<li>先组成系统或子系统再测试，重点检查模块间的接口</li>
+</ul>
+</li>
+<li>
+<p>系统测试</p>
+<ul>
+<li>整个产品系统（需求说明书）</li>
+</ul>
+</li>
+<li>
+<p>验收测试</p>
+<ul>
+<li>最终测试（完成系统和功能测试后，产品发布之前的测试）(验证功能和性能)<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>按照对代码可见度来划分</p>
+<ul>
+<li>白盒测试
+<ul>
+<li>关注内部动作</li>
+</ul>
+</li>
+<li>黑盒测试
+<ul>
+<li>关注外部输入输出</li>
+</ul>
+</li>
+<li>灰盒测试
+<ul>
+<li>既关注外部输入输出又关注内部动作。<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>软件的不同测试面来划分</p>
+<ul>
+<li>功能测试
+<ul>
+<li>逻辑功能测试，界面测试，易用性测试，安装测试，兼容性测试等。</li>
+</ul>
+</li>
+<li>性能测试
+<ul>
+<li>时间性能(具体环境)</li>
+</ul>
+</li>
+<li>空间性能（带宽，CPU）<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>按照自动化程度划分</p>
+<ul>
+<li>手工测试</li>
+<li>自动化测试
+<ul>
+<li>功能自动化和性能自动化<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>测试周期中的一些方法</p>
+<ul>
+<li>冒烟测试
+<ul>
+<li>测试新版本之前，投入较少人力和时间验证软件主要功能。</li>
+</ul>
+</li>
+<li>回归测试
+<ul>
+<li>修改了旧代码后，重新进行测试以确定修改没有引入新错误或导致其他代码产生错误。（第二轮）</li>
+</ul>
+</li>
+<li>随机测试
+<ul>
+<li>测试输入数据随机生成，目的是模拟用户<strong>真实操作</strong>，发现<strong>边缘错误。</strong></li>
+</ul>
+</li>
+<li>探索性测试
+<ul>
+<li>测试的思维技术，一种<strong>思维方式</strong>，强调测试人员<strong>主观能动性</strong>，遇到问题时<strong>改变测试策略</strong>。</li>
+</ul>
+</li>
+<li>安全测试
+<ul>
+<li>生命周期中特别是<strong>开发基本完成到发布阶段</strong>，对产品验证符合产品<strong>安全需求定义</strong>和<strong>质量标准</strong>的过程</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="分层的自动化测试"><a class="header-anchor" href="#分层的自动化测试">#</a>分层的自动化测试</h4>
+<ul>
+<li>
+<p>背景</p>
+<ul>
+<li>传统的自动化测试：
+<ul>
+<li>基于产品的UI的自动化测试，将黑盒测试转化为通过程序或工具执行的一种自动化测试。</li>
+</ul>
+</li>
+<li>传统的自动化测试缺点（黑盒测试环节尽可能全面覆盖，自动化）
+<ul>
+<li>测试规模增大</li>
+<li>全面UI自动化测试（由于UI易变，使得UI维护成本相对高昂）<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>分层自动化测试</p>
+<ul>
+<li>
+<p>强调从黑盒（UI）单层到黑白盒多层的自动化测试体系</p>
+</li>
+<li>
+<p>从全面黑盒自动化测试到对系统的不同层次进行自动化测试</p>
+</li>
+<li>
+<p>单元自动化测试（10%）</p>
+<ul>
+<li>对软件中的最小可测试单元检查和验证。（类，函数，窗口）<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>接口自动化测试(20%)</p>
+<ul>
+<li>模块接口测试和Web接口测试
+<ul>
+<li>模块接口测试（单元测试基础 -&gt; 单元结果验证）
+<ul>
+<li>工具与单元自动化测试相同</li>
+</ul>
+</li>
+<li>Web接口测试
+<ul>
+<li><strong>服务器接口测试</strong>和<strong>外部接口测试</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>服务器接口测试
+<ul>
+<li>浏览器与服务器的接口（通过HTTP协议实现前后端数据传递）</li>
+</ul>
+</li>
+<li>外部接口测试(70%)
+<ul>
+<li>第三方系统提供的接口（第三方登录接口）</li>
+</ul>
+</li>
+<li>接口测试相应的类库和工具： HttpUnit 、Postman<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>UI自动化测试</p>
+<ul>
+<li>由于所有功能的展示都在这一层，所以测试工作大多集中在这一层。</li>
+<li>因此建议提倡<strong>半自动化</strong>开展测试工作。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="自动化测试应用场景"><a class="header-anchor" href="#自动化测试应用场景">#</a>自动化测试应用场景</h4>
+<ul>
+<li>一般满足以下三个条件就可开展自动化测试
+<ul>
+<li>软件需求变动不频繁</li>
+<li>项目的周期长</li>
+<li>自动化测试脚本可重复利用</li>
+</ul>
+</li>
+<li>任务测试明确，不会频繁变动(<strong>重要</strong>)</li>
+<li>每日构建后的测试验证</li>
+<li>比较频繁的回归测试</li>
+<li>软件系统界面稳定，变动少</li>
+<li>需要在多个平台上运行相同的测试案例、组合遍历型的测试、大量重复的任务。</li>
+<li>软件维护的周期长（<strong>重要</strong>）</li>
+<li>项目的进度压力不大。</li>
+<li>被测软件系统开发较为规范，能够保证系统可测试性。</li>
+<li>具备大量自动化测试平台。</li>
+<li>测试人员具备较强的编程能力。</li>
+<li>自动化测试脚本可重复利用（<strong>重要</strong>）</li>
+</ul>
+<hr>
+<h4 id="自动化测试及其工具"><a class="header-anchor" href="#自动化测试及其工具">#</a>自动化测试及其工具</h4>
+<ul>
+<li>
+<p><strong>广义</strong>上的自动化测试：指的是借助工具来辅助进行软件测试的方式</p>
+</li>
+<li>
+<p><strong>狭义</strong>上的自动化测试：指的是基于UI的功能测试</p>
+</li>
+<li>
+<p>自动化测试工具</p>
+<ul>
+<li>UFT（QTP和ST合并）</li>
+<li>Robot FrameWork（基于python）</li>
+<li>Watir(基于ruby)</li>
+<li>selenium</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="Selenium工具介绍"><a class="header-anchor" href="#Selenium工具介绍">#</a>Selenium工具介绍</h4>
+<ul>
+<li>
+<p>Selenium工具介绍</p>
+<ul>
+<li>主要用于Web应用程序的自动化测试</li>
+</ul>
+</li>
+<li>
+<p>Selenium IDE</p>
+<ul>
+<li>火狐插件，方便开发脚本</li>
+</ul>
+</li>
+<li>
+<p>Selenium Grid</p>
+<ul>
+<li><strong>自动化测试辅助工具</strong>可加快Web-App功能测试，很方便在对台机器和异构环境执行测试用例（不同计算机和系统的网络环境）</li>
+</ul>
+</li>
+<li>
+<p>Selenium RC</p>
+<ul>
+<li>Selenium家族核心部分,支持多种语言编写的自动化测试脚本。</li>
+</ul>
+</li>
+<li>
+<p>Selenium2.0</p>
+<ul>
+<li>Selenium1.0 = Selenium IDE+Selenium Grid+Selenium RC</li>
+<li>Selenium2.0 = Selenium 1.0 +WebDirver</li>
+<li>Selenium3.0</li>
+<li>WebDriver是通过原生的浏览器支持或浏览器扩展来直接控制浏览器</li>
+<li>WebDriver能利用操作系统级别调用，能够更好模拟用户输入。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="前端基础（补充）"><a class="header-anchor" href="#前端基础（补充）">#</a>前端基础（补充）</h4>
+<ul>
+<li>基础知识
+<ul>
+<li>HTMl 超文本标记语言</li>
+<li>JavaScript 前端脚本语言（轻量级语言），是一种解释性的语言，不需要预编译</li>
+<li>XML 可扩展标记语言 通用标记语言的一个子集。作为传输工具和存储数据。（数据内容）</li>
+</ul>
+</li>
+<li>前端工具
+<ul>
+<li>Fire Bug  火狐开发类插件</li>
+<li>FirePath XPath(XML的路径语言,用来确定XML文档中的部分位置)</li>
+<li>Chrome开发人员工具</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Software Testing</category>
+      </categories>
+      <tags>
+        <tag>Automated Testing</tag>
+        <tag>Selenium</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>自动化测试模型</title>
     <url>/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%9E%8B/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
@@ -8531,224 +8532,6 @@ SHA-256，SHA-384，SHA-512，散列值长度分别是256bit，384bit，512bit</
       <categories>
         <category>Study</category>
       </categories>
-  </entry>
-  <entry>
-    <title>自发学习</title>
-    <url>/Study/%E8%87%AA%E5%8F%91%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>自发学习的核心是逐步加强的对自身的理解和控制能力。</li>
-</ul>
-<span id="more"></span>
-<hr>
-<h3 id="前言"><a class="header-anchor" href="#前言">#</a>前言</h3>
-<ul>
-<li>
-<p>想到自发学习，总不自然联想到社会主义，人总是希望思想能够直接控制行为，然而人和人群一样都是基于抽象主义。<br>
-<br></p>
-</li>
-<li>
-<p>从抽象直接控制具体是不现实，反之亦然。</p>
-</li>
-</ul>
-<hr>
-<h4 id="自发学习"><a class="header-anchor" href="#自发学习">#</a>自发学习</h4>
-<ol>
-<li>
-<p><strong>可行性方案</strong><br>
-<br></p>
-</li>
-<li>
-<p><strong>安全可明白性的输入</strong><br>
-<br></p>
-</li>
-<li>
-<p><strong>忍受歧义接受不完美</strong><br>
-<br></p>
-</li>
-<li>
-<p><strong>分解解构</strong><br>
-<br></p>
-</li>
-<li>
-<p><strong>形成工具箱</strong></p>
-</li>
-</ol>
-<hr>
-<h4 id="可行性方案"><a class="header-anchor" href="#可行性方案">#</a>可行性方案</h4>
-<ul>
-<li>明确的可执行的方案
-<ul>
-<li>模仿已知方案</li>
-<li>寻求有效性</li>
-<li>识别并运用</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="安全可明白性的输入"><a class="header-anchor" href="#安全可明白性的输入">#</a>安全可明白性的输入</h4>
-<ul>
-<li>开心、放松、好奇大脑状态</li>
-<li>忍受歧义接受不完美</li>
-<li>安全理解和反馈（AI工具）</li>
-</ul>
-<hr>
-<h4 id="分解解构"><a class="header-anchor" href="#分解解构">#</a>分解解构</h4>
-<ul>
-<li>理解基础意思</li>
-<li>创造和基础运用</li>
-</ul>
-<hr>
-<h4 id="形成工具箱"><a class="header-anchor" href="#形成工具箱">#</a>形成工具箱</h4>
-<ul>
-<li>基础工具箱</li>
-<li>自己的工具箱</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Study</category>
-      </categories>
-      <tags>
-        <tag>study</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows 解决端口占用</title>
-    <url>/Tools/Windows%20%E8%A7%A3%E5%86%B3%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>Windows 解决端口占用问题。</li>
-</ul>
-<span id="more"></span>
-<hr>
-<h3 id="Windows-解决端口占用的方法"><a class="header-anchor" href="#Windows-解决端口占用的方法">#</a>Windows 解决端口占用的方法</h3>
-<ul>
-<li>
-<p><strong>终止占用进程</strong></p>
-<ul>
-<li>使用命令查找占用端口的进程并终止它。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>更改端口号</strong></p>
-<ul>
-<li>在应用程序或服务的配置文件中更改端口号，避免与其他进程冲突。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>重新启动计算机</strong></p>
-<ul>
-<li>重启计算机可以清除端口占用情况，特别是当端口被僵尸进程占用时。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>检查防火墙设置</strong></p>
-<ul>
-<li>确保防火墙设置允许使用该端口，或添加规则以开放端口。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>查看网络配置</strong></p>
-<ul>
-<li>在某些情况下，网络配置或代理设置可能影响端口使用，检查并调整相关设置。</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="终止占用进程"><a class="header-anchor" href="#终止占用进程">#</a>终止占用进程</h4>
-<ul>
-<li>
-<p><strong>查找占用端口的进程的PID</strong></p>
-<ul>
-<li>运行cmd/powershell, 查找5000端口的 PID， 下图箭头即为PID
-<ul>
-<li>执行<code>netstat -aon|findstr :5000|findstr LISTEN</code><br>
-<br></li>
-</ul>
-</li>
-</ul>
-<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/FindPort.png" alt="FindPort"><br>
-<br></p>
-</li>
-<li>
-<p><strong>根据PID查找进程</strong></p>
-<ul>
-<li>接下来打开任务管理器，查找PID为6916的应用程序<br>
-<br><br>
-<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/FindProcess.png" alt="FindProcess"><br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>重点：补充</strong></p>
-<ul>
-<li>
-<p><strong>当占用进程为系统进程（即PID 4）或者是无法结束的进程（即服务）</strong></p>
-<ul>
-<li>运行cmd/powershell, <code>tasklist /svc | findstr</code> + PID 或者 服务名称，得到服务名称和PID：<br>
-<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/FindService.png" alt="FindService"></li>
-<li>然后以管理员权限运行cmd/powershell, 输入<code>net stop 服务名称 /y</code>停掉对应服务<br>
-<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/StopService.png" alt="StopService"><br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>当占用进程为PID4且没有服务名称</strong></p>
-<ul>
-<li>运行命令<code>netsh http show servicestate</code>查看进程PID对应的服务</li>
-<li>然后运行<code>net stop 服务名称 /y</code>停掉对应服务即可<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>关于443端口若被vmware-hostd.exe占用</strong></p>
-<ul>
-<li>打开vmwre &gt; 首选项 &gt; 共享虚拟机 &gt; 禁用共享, 或者自行修改为其他端口</li>
-<li>针对VMWARE16/更新版本,可以编辑（C:\ProgramData\VMware\hostd\proxy.xml），将httpsPort改成非443/80就行<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>当查询不到端口被任何进程占用</strong></p>
-<ul>
-<li>即 <code>netstat -aon|findstr :端口号|findstr LISTEN</code> 查询不到端口被任何进程占用且无法监听,可能是LSP<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="LSP（Layered Service Provider）是 Windows 平台上的一种技术，允许开发人员在(应用层)网络协议栈中插入自定义的层来实现网络数据的处理和管理。这可以包括数据包过滤、监控、修改等功能。
-">[1]</span></a></sup>被劫持的原因。</li>
-<li>然后以管理员权限运行cmd/powershell, 输入<code>netsh winsock reset</code>, 重启电脑</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="更改端口号"><a class="header-anchor" href="#更改端口号">#</a>更改端口号</h4>
-<ul>
-<li>
-<p>例如：Hexo可以通过更改本地服务器端口号解决端口占用</p>
-<ul>
-<li>bash 运行<code>hexo server -p 5000</code> 命令或者在 _config.yml中添加下面代码：<br>
-<br></li>
-</ul>
-<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">5000</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<hr>
-<h4 id="检查防火墙设置"><a class="header-anchor" href="#检查防火墙设置">#</a>检查防火墙设置</h4>
-<ul>
-<li>当端口被防火墙阻止时
-<ul>
-<li>可以选择“高级安全Windows防火墙”，新建“入站规则”，指定规则类型为端口并输入端口号配置即可解决端口问题。</li>
-</ul>
-</li>
-</ul>
-<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">LSP（Layered Service Provider）是 Windows 平台上的一种技术，允许开发人员在(应用层)网络协议栈中插入自定义的层来实现网络数据的处理和管理。这可以包括数据包过滤、监控、修改等功能。<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
-      <categories>
-        <category>Tools</category>
-      </categories>
-      <tags>
-        <tag>Port</tag>
-      </tags>
   </entry>
   <entry>
     <title>Markdown使用教程</title>
@@ -9506,6 +9289,85 @@ http://www.example.com
       </tags>
   </entry>
   <entry>
+    <title>自发学习</title>
+    <url>/Study/%E8%87%AA%E5%8F%91%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li>自发学习的核心是逐步加强的对自身的理解和控制能力。</li>
+</ul>
+<span id="more"></span>
+<hr>
+<h3 id="前言"><a class="header-anchor" href="#前言">#</a>前言</h3>
+<ul>
+<li>
+<p>想到自发学习，总不自然联想到社会主义，人总是希望思想能够直接控制行为，然而人和人群一样都是基于抽象主义。<br>
+<br></p>
+</li>
+<li>
+<p>从抽象直接控制具体是不现实，反之亦然。</p>
+</li>
+</ul>
+<hr>
+<h4 id="自发学习"><a class="header-anchor" href="#自发学习">#</a>自发学习</h4>
+<ol>
+<li>
+<p><strong>可行性方案</strong><br>
+<br></p>
+</li>
+<li>
+<p><strong>安全可明白性的输入</strong><br>
+<br></p>
+</li>
+<li>
+<p><strong>忍受歧义接受不完美</strong><br>
+<br></p>
+</li>
+<li>
+<p><strong>分解解构</strong><br>
+<br></p>
+</li>
+<li>
+<p><strong>形成工具箱</strong></p>
+</li>
+</ol>
+<hr>
+<h4 id="可行性方案"><a class="header-anchor" href="#可行性方案">#</a>可行性方案</h4>
+<ul>
+<li>明确的可执行的方案
+<ul>
+<li>模仿已知方案</li>
+<li>寻求有效性</li>
+<li>识别并运用</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="安全可明白性的输入"><a class="header-anchor" href="#安全可明白性的输入">#</a>安全可明白性的输入</h4>
+<ul>
+<li>开心、放松、好奇大脑状态</li>
+<li>忍受歧义接受不完美</li>
+<li>安全理解和反馈（AI工具）</li>
+</ul>
+<hr>
+<h4 id="分解解构"><a class="header-anchor" href="#分解解构">#</a>分解解构</h4>
+<ul>
+<li>理解基础意思</li>
+<li>创造和基础运用</li>
+</ul>
+<hr>
+<h4 id="形成工具箱"><a class="header-anchor" href="#形成工具箱">#</a>形成工具箱</h4>
+<ul>
+<li>基础工具箱</li>
+<li>自己的工具箱</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Study</category>
+      </categories>
+      <tags>
+        <tag>study</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>VSCode 快速切换工作区</title>
     <url>/Tools/VSCode%20%E5%BF%AB%E9%80%9F%E5%88%87%E6%8D%A2%E5%B7%A5%E4%BD%9C%E5%8C%BA/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
@@ -9592,59 +9454,142 @@ http://www.example.com
       </tags>
   </entry>
   <entry>
-    <title>微软激活脚本</title>
-    <url>/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/</url>
+    <title>Windows 解决端口占用</title>
+    <url>/Tools/Windows%20%E8%A7%A3%E5%86%B3%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>Microsoft 激活脚本（MAS），官方文档：<a href="https://github.com/massgravel/Microsoft-Activation-Scripts" rel="external nofollow noreferrer">https://github.com/massgravel/Microsoft-Activation-Scripts</a></li>
+<li>Windows 解决端口占用问题。</li>
 </ul>
 <span id="more"></span>
 <hr>
-<h3 id="Microsoft-激活脚本（MAS）"><a class="header-anchor" href="#Microsoft-激活脚本（MAS）">#</a>Microsoft 激活脚本（MAS）</h3>
+<h3 id="Windows-解决端口占用的方法"><a class="header-anchor" href="#Windows-解决端口占用的方法">#</a>Windows 解决端口占用的方法</h3>
 <ul>
 <li>
-<p>Microsoft 激活脚本（MAS）</p>
+<p><strong>终止占用进程</strong></p>
 <ul>
-<li>使用 HWID / Ohook / KMS38 / 在线 KMS 激活方法的 Windows 和 Office 激活器，侧重于开源代码和较少的防病毒检测。</li>
-<li>HWID激活方法的介绍: <a href="https://massgrave.dev/hwid" rel="external nofollow noreferrer">https://massgrave.dev/hwid</a><br>
+<li>使用命令查找占用端口的进程并终止它。<br>
 <br></li>
 </ul>
 </li>
 <li>
-<p><strong>使用方法</strong>：官方推荐使用PowerShell（输入下面代码就行）</p>
+<p><strong>更改端口号</strong></p>
 <ul>
-<li><code>irm https://get.activated.win | iex</code><br>
+<li>在应用程序或服务的配置文件中更改端口号，避免与其他进程冲突。<br>
 <br></li>
 </ul>
 </li>
 <li>
-<p>Office 和 Windows 镜像下载地址：</p>
+<p><strong>重新启动计算机</strong></p>
 <ul>
-<li><a href="https://gravesoft.dev/office_c2r_links#chinese-simplified-zh-cn" rel="external nofollow noreferrer">https://gravesoft.dev/office_c2r_links#chinese-simplified-zh-cn</a><br>
+<li>重启计算机可以清除端口占用情况，特别是当端口被僵尸进程占用时。<br>
 <br></li>
 </ul>
 </li>
 <li>
-<p>激活成功截图<br>
-<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/success.png" alt="success"></p>
+<p><strong>检查防火墙设置</strong></p>
+<ul>
+<li>确保防火墙设置允许使用该端口，或添加规则以开放端口。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>查看网络配置</strong></p>
+<ul>
+<li>在某些情况下，网络配置或代理设置可能影响端口使用，检查并调整相关设置。</li>
+</ul>
 </li>
 </ul>
 <hr>
-<h4 id="Thanks"><a class="header-anchor" href="#Thanks">#</a>Thanks</h4>
+<h4 id="终止占用进程"><a class="header-anchor" href="#终止占用进程">#</a>终止占用进程</h4>
 <ul>
 <li>
-<p><a href="https://github.com/massgravel/Microsoft-Activation-Scripts" rel="external nofollow noreferrer">Microsoft 激活脚本 Github 地址</a><br>
+<p><strong>查找占用端口的进程的PID</strong></p>
+<ul>
+<li>运行cmd/powershell, 查找5000端口的 PID， 下图箭头即为PID
+<ul>
+<li>执行<code>netstat -aon|findstr :5000|findstr LISTEN</code><br>
+<br></li>
+</ul>
+</li>
+</ul>
+<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/FindPort.png" alt="FindPort"><br>
 <br></p>
 </li>
 <li>
-<p><a href="https://massgrave.dev/" rel="external nofollow noreferrer">Microsoft 激活脚本 主页</a></p>
+<p><strong>根据PID查找进程</strong></p>
+<ul>
+<li>接下来打开任务管理器，查找PID为6916的应用程序<br>
+<br><br>
+<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/FindProcess.png" alt="FindProcess"><br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>重点：补充</strong></p>
+<ul>
+<li>
+<p><strong>当占用进程为系统进程（即PID 4）或者是无法结束的进程（即服务）</strong></p>
+<ul>
+<li>运行cmd/powershell, <code>tasklist /svc | findstr</code> + PID 或者 服务名称，得到服务名称和PID：<br>
+<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/FindService.png" alt="FindService"></li>
+<li>然后以管理员权限运行cmd/powershell, 输入<code>net stop 服务名称 /y</code>停掉对应服务<br>
+<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/StopService.png" alt="StopService"><br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>当占用进程为PID4且没有服务名称</strong></p>
+<ul>
+<li>运行命令<code>netsh http show servicestate</code>查看进程PID对应的服务</li>
+<li>然后运行<code>net stop 服务名称 /y</code>停掉对应服务即可<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>关于443端口若被vmware-hostd.exe占用</strong></p>
+<ul>
+<li>打开vmwre &gt; 首选项 &gt; 共享虚拟机 &gt; 禁用共享, 或者自行修改为其他端口</li>
+<li>针对VMWARE16/更新版本,可以编辑（C:\ProgramData\VMware\hostd\proxy.xml），将httpsPort改成非443/80就行<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>当查询不到端口被任何进程占用</strong></p>
+<ul>
+<li>即 <code>netstat -aon|findstr :端口号|findstr LISTEN</code> 查询不到端口被任何进程占用且无法监听,可能是LSP<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="LSP（Layered Service Provider）是 Windows 平台上的一种技术，允许开发人员在(应用层)网络协议栈中插入自定义的层来实现网络数据的处理和管理。这可以包括数据包过滤、监控、修改等功能。
+">[1]</span></a></sup>被劫持的原因。</li>
+<li>然后以管理员权限运行cmd/powershell, 输入<code>netsh winsock reset</code>, 重启电脑</li>
+</ul>
 </li>
 </ul>
-]]></content>
+</li>
+</ul>
+<hr>
+<h4 id="更改端口号"><a class="header-anchor" href="#更改端口号">#</a>更改端口号</h4>
+<ul>
+<li>
+<p>例如：Hexo可以通过更改本地服务器端口号解决端口占用</p>
+<ul>
+<li>bash 运行<code>hexo server -p 5000</code> 命令或者在 _config.yml中添加下面代码：<br>
+<br></li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">5000</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<hr>
+<h4 id="检查防火墙设置"><a class="header-anchor" href="#检查防火墙设置">#</a>检查防火墙设置</h4>
+<ul>
+<li>当端口被防火墙阻止时
+<ul>
+<li>可以选择“高级安全Windows防火墙”，新建“入站规则”，指定规则类型为端口并输入端口号配置即可解决端口问题。</li>
+</ul>
+</li>
+</ul>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">LSP（Layered Service Provider）是 Windows 平台上的一种技术，允许开发人员在(应用层)网络协议栈中插入自定义的层来实现网络数据的处理和管理。这可以包括数据包过滤、监控、修改等功能。<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
       <categories>
         <category>Tools</category>
       </categories>
       <tags>
-        <tag>Windows</tag>
+        <tag>Port</tag>
       </tags>
   </entry>
   <entry>
@@ -9736,6 +9681,62 @@ http://www.example.com
       </categories>
       <tags>
         <tag>Proxy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>微软激活脚本</title>
+    <url>/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li>Microsoft 激活脚本（MAS），官方文档：<a href="https://github.com/massgravel/Microsoft-Activation-Scripts" rel="external nofollow noreferrer">https://github.com/massgravel/Microsoft-Activation-Scripts</a></li>
+</ul>
+<span id="more"></span>
+<hr>
+<h3 id="Microsoft-激活脚本（MAS）"><a class="header-anchor" href="#Microsoft-激活脚本（MAS）">#</a>Microsoft 激活脚本（MAS）</h3>
+<ul>
+<li>
+<p>Microsoft 激活脚本（MAS）</p>
+<ul>
+<li>使用 HWID / Ohook / KMS38 / 在线 KMS 激活方法的 Windows 和 Office 激活器，侧重于开源代码和较少的防病毒检测。</li>
+<li>HWID激活方法的介绍: <a href="https://massgrave.dev/hwid" rel="external nofollow noreferrer">https://massgrave.dev/hwid</a><br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>使用方法</strong>：官方推荐使用PowerShell（输入下面代码就行）</p>
+<ul>
+<li><code>irm https://get.activated.win | iex</code><br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>Office 和 Windows 镜像下载地址：</p>
+<ul>
+<li><a href="https://gravesoft.dev/office_c2r_links#chinese-simplified-zh-cn" rel="external nofollow noreferrer">https://gravesoft.dev/office_c2r_links#chinese-simplified-zh-cn</a><br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>激活成功截图<br>
+<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/success.png" alt="success"></p>
+</li>
+</ul>
+<hr>
+<h4 id="Thanks"><a class="header-anchor" href="#Thanks">#</a>Thanks</h4>
+<ul>
+<li>
+<p><a href="https://github.com/massgravel/Microsoft-Activation-Scripts" rel="external nofollow noreferrer">Microsoft 激活脚本 Github 地址</a><br>
+<br></p>
+</li>
+<li>
+<p><a href="https://massgrave.dev/" rel="external nofollow noreferrer">Microsoft 激活脚本 主页</a></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Tools</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
       </tags>
   </entry>
 </search>

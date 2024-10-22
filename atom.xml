@@ -107,27 +107,6 @@
   </entry>
   
   <entry>
-    <title>微软激活脚本</title>
-    <link href="https://www.shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/"/>
-    <id>https://www.shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/</id>
-    <published>2024-09-02T05:31:58.000Z</published>
-    <updated>2024-10-11T01:18:57.411Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;Microsoft 激活脚本（MAS），官方文档：&lt;a href=&quot;https://github.com/massgravel/Microsoft-Activation-Scripts&quot;&gt;https://github.com/massgravel/Microsoft-Activation-Scripts&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Tools" scheme="https://www.shuguang2000.us.kg/categories/Tools/"/>
-    
-    
-    <category term="Windows" scheme="https://www.shuguang2000.us.kg/tags/Windows/"/>
-    
-  </entry>
-  
-  <entry>
     <title>正向代理和反向代理</title>
     <link href="https://www.shuguang2000.us.kg/Tools/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"/>
     <id>https://www.shuguang2000.us.kg/Tools/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</id>
@@ -146,6 +125,27 @@
     
     
     <category term="Proxy" scheme="https://www.shuguang2000.us.kg/tags/Proxy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微软激活脚本</title>
+    <link href="https://www.shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/"/>
+    <id>https://www.shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/</id>
+    <published>2024-09-02T05:31:58.000Z</published>
+    <updated>2024-10-11T01:18:57.411Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;Microsoft 激活脚本（MAS），官方文档：&lt;a href=&quot;https://github.com/massgravel/Microsoft-Activation-Scripts&quot;&gt;https://github.com/massgravel/Microsoft-Activation-Scripts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Tools" scheme="https://www.shuguang2000.us.kg/categories/Tools/"/>
+    
+    
+    <category term="Windows" scheme="https://www.shuguang2000.us.kg/tags/Windows/"/>
     
   </entry>
   
@@ -567,29 +567,6 @@
   </entry>
   
   <entry>
-    <title>自动化测试基础</title>
-    <link href="https://www.shuguang2000.us.kg/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
-    <id>https://www.shuguang2000.us.kg/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</id>
-    <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2024-08-10T12:22:29.776Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;本文主要介绍软件测试、软件自动化测试相关概念和工具。&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Software Testing" scheme="https://www.shuguang2000.us.kg/categories/Software-Testing/"/>
-    
-    
-    <category term="Automated Testing" scheme="https://www.shuguang2000.us.kg/tags/Automated-Testing/"/>
-    
-    <category term="Selenium" scheme="https://www.shuguang2000.us.kg/tags/Selenium/"/>
-    
-  </entry>
-  
-  <entry>
     <title>WebDriver API</title>
     <link href="https://www.shuguang2000.us.kg/Software-Testing/WebDriver%20API/"/>
     <id>https://www.shuguang2000.us.kg/Software-Testing/WebDriver%20API/</id>
@@ -628,6 +605,29 @@
     
     
     <category term="Python" scheme="https://www.shuguang2000.us.kg/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自动化测试基础</title>
+    <link href="https://www.shuguang2000.us.kg/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/"/>
+    <id>https://www.shuguang2000.us.kg/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</id>
+    <published>2022-11-19T05:31:58.000Z</published>
+    <updated>2024-08-10T12:22:29.776Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍软件测试、软件自动化测试相关概念和工具。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Software Testing" scheme="https://www.shuguang2000.us.kg/categories/Software-Testing/"/>
+    
+    
+    <category term="Automated Testing" scheme="https://www.shuguang2000.us.kg/tags/Automated-Testing/"/>
+    
+    <category term="Selenium" scheme="https://www.shuguang2000.us.kg/tags/Selenium/"/>
     
   </entry>
   
@@ -694,7 +694,7 @@
     <link href="https://www.shuguang2000.us.kg/Blog/GitHub%20Pages%20%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/"/>
     <id>https://www.shuguang2000.us.kg/Blog/GitHub%20Pages%20%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/</id>
     <published>2022-11-10T07:31:58.000Z</published>
-    <updated>2024-09-23T08:32:41.726Z</updated>
+    <updated>2024-10-22T10:58:00.541Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -743,7 +743,7 @@
     <link href="https://www.shuguang2000.us.kg/Blog/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/"/>
     <id>https://www.shuguang2000.us.kg/Blog/%E5%8D%9A%E5%AE%A2%E4%BC%98%E5%8C%96/</id>
     <published>2022-10-30T05:31:58.000Z</published>
-    <updated>2024-09-24T06:17:11.234Z</updated>
+    <updated>2024-10-22T11:04:58.322Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
