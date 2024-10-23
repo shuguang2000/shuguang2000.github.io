@@ -186,20 +186,16 @@
   </entry>
   
   <entry>
-    <title>狂人日记</title>
-    <link href="https://shuguang2000.us.kg/Books/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%AE%B0/"/>
-    <id>https://shuguang2000.us.kg/Books/%E7%8B%82%E4%BA%BA%E6%97%A5%E8%AE%B0/</id>
+    <title>工作、消费主义和新穷人</title>
+    <link href="https://shuguang2000.us.kg/Books/%E5%B7%A5%E4%BD%9C%E3%80%81%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA/"/>
+    <id>https://shuguang2000.us.kg/Books/%E5%B7%A5%E4%BD%9C%E3%80%81%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA/</id>
     <published>2023-04-19T14:43:59.000Z</published>
-    <updated>2024-10-22T19:25:28.561Z</updated>
+    <updated>2024-10-22T19:07:40.401Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;人类创造的环境是一种快速、脆弱并伴随&lt;strong&gt;周期性&lt;/strong&gt;的&lt;strong&gt;以多求少&lt;/strong&gt;的系统。&lt;/li&gt;
+&lt;/ul&gt;</summary>
     
     
     
@@ -572,27 +568,6 @@
   </entry>
   
   <entry>
-    <title>WebDriver API</title>
-    <link href="https://shuguang2000.us.kg/Software-Testing/WebDriver%20API/"/>
-    <id>https://shuguang2000.us.kg/Software-Testing/WebDriver%20API/</id>
-    <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2024-08-10T12:22:42.464Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;WebDriver是一个用于实现Web自动化的第三方库，本文主要介绍WebDriver的用法及原理。&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Software Testing" scheme="https://shuguang2000.us.kg/categories/Software-Testing/"/>
-    
-    
-    <category term="WebDriver" scheme="https://shuguang2000.us.kg/tags/WebDriver/"/>
-    
-  </entry>
-  
-  <entry>
     <title>环境搭建基础</title>
     <link href="https://shuguang2000.us.kg/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/"/>
     <id>https://shuguang2000.us.kg/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</id>
@@ -610,6 +585,27 @@
     
     
     <category term="Python" scheme="https://shuguang2000.us.kg/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WebDriver API</title>
+    <link href="https://shuguang2000.us.kg/Software-Testing/WebDriver%20API/"/>
+    <id>https://shuguang2000.us.kg/Software-Testing/WebDriver%20API/</id>
+    <published>2022-11-19T05:31:58.000Z</published>
+    <updated>2024-08-10T12:22:42.464Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;WebDriver是一个用于实现Web自动化的第三方库，本文主要介绍WebDriver的用法及原理。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Software Testing" scheme="https://shuguang2000.us.kg/categories/Software-Testing/"/>
+    
+    
+    <category term="WebDriver" scheme="https://shuguang2000.us.kg/tags/WebDriver/"/>
     
   </entry>
   
