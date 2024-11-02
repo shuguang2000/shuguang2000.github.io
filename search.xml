@@ -528,62 +528,6 @@
       </categories>
   </entry>
   <entry>
-    <title>微软激活脚本</title>
-    <url>/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>Microsoft 激活脚本（MAS），官方文档：<a href="https://github.com/massgravel/Microsoft-Activation-Scripts" rel="external nofollow noreferrer">https://github.com/massgravel/Microsoft-Activation-Scripts</a></li>
-</ul>
-<span id="more"></span>
-<hr>
-<h3 id="Microsoft-激活脚本（MAS）"><a class="header-anchor" href="#Microsoft-激活脚本（MAS）">#</a>Microsoft 激活脚本（MAS）</h3>
-<ul>
-<li>
-<p>Microsoft 激活脚本（MAS）</p>
-<ul>
-<li>使用 HWID / Ohook / KMS38 / 在线 KMS 激活方法的 Windows 和 Office 激活器，侧重于开源代码和较少的防病毒检测。</li>
-<li>HWID激活方法的介绍: <a href="https://massgrave.dev/hwid" rel="external nofollow noreferrer">https://massgrave.dev/hwid</a><br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><strong>使用方法</strong>：官方推荐使用PowerShell（输入下面代码就行）</p>
-<ul>
-<li><code>irm https://get.activated.win | iex</code><br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>Office 和 Windows 镜像下载地址：</p>
-<ul>
-<li><a href="https://gravesoft.dev/office_c2r_links#chinese-simplified-zh-cn" rel="external nofollow noreferrer">https://gravesoft.dev/office_c2r_links#chinese-simplified-zh-cn</a><br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>激活成功截图<br>
-<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/success.png" alt="success"></p>
-</li>
-</ul>
-<hr>
-<h4 id="Thanks"><a class="header-anchor" href="#Thanks">#</a>Thanks</h4>
-<ul>
-<li>
-<p><a href="https://github.com/massgravel/Microsoft-Activation-Scripts" rel="external nofollow noreferrer">Microsoft 激活脚本 Github 地址</a><br>
-<br></p>
-</li>
-<li>
-<p><a href="https://massgrave.dev/" rel="external nofollow noreferrer">Microsoft 激活脚本 主页</a></p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Tools</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>正向代理和反向代理</title>
     <url>/Tools/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
@@ -672,6 +616,62 @@
       </categories>
       <tags>
         <tag>Proxy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>微软激活脚本</title>
+    <url>/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li>Microsoft 激活脚本（MAS），官方文档：<a href="https://github.com/massgravel/Microsoft-Activation-Scripts" rel="external nofollow noreferrer">https://github.com/massgravel/Microsoft-Activation-Scripts</a></li>
+</ul>
+<span id="more"></span>
+<hr>
+<h3 id="Microsoft-激活脚本（MAS）"><a class="header-anchor" href="#Microsoft-激活脚本（MAS）">#</a>Microsoft 激活脚本（MAS）</h3>
+<ul>
+<li>
+<p>Microsoft 激活脚本（MAS）</p>
+<ul>
+<li>使用 HWID / Ohook / KMS38 / 在线 KMS 激活方法的 Windows 和 Office 激活器，侧重于开源代码和较少的防病毒检测。</li>
+<li>HWID激活方法的介绍: <a href="https://massgrave.dev/hwid" rel="external nofollow noreferrer">https://massgrave.dev/hwid</a><br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>使用方法</strong>：官方推荐使用PowerShell（输入下面代码就行）</p>
+<ul>
+<li><code>irm https://get.activated.win | iex</code><br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>Office 和 Windows 镜像下载地址：</p>
+<ul>
+<li><a href="https://gravesoft.dev/office_c2r_links#chinese-simplified-zh-cn" rel="external nofollow noreferrer">https://gravesoft.dev/office_c2r_links#chinese-simplified-zh-cn</a><br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>激活成功截图<br>
+<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/success.png" alt="success"></p>
+</li>
+</ul>
+<hr>
+<h4 id="Thanks"><a class="header-anchor" href="#Thanks">#</a>Thanks</h4>
+<ul>
+<li>
+<p><a href="https://github.com/massgravel/Microsoft-Activation-Scripts" rel="external nofollow noreferrer">Microsoft 激活脚本 Github 地址</a><br>
+<br></p>
+</li>
+<li>
+<p><a href="https://massgrave.dev/" rel="external nofollow noreferrer">Microsoft 激活脚本 主页</a></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Tools</category>
+      </categories>
+      <tags>
+        <tag>Windows</tag>
       </tags>
   </entry>
   <entry>
@@ -782,6 +782,15 @@
       <tags>
         <tag>study</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>乡土中国</title>
+    <url>/Books/%E4%B9%A1%E5%9C%9F%E4%B8%AD%E5%9B%BD/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><hr>
+]]></content>
+      <categories>
+        <category>Books</category>
+      </categories>
   </entry>
   <entry>
     <title>工作、消费主义和新穷人</title>
@@ -5864,205 +5873,298 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
       </tags>
   </entry>
   <entry>
-    <title>环境搭建基础</title>
-    <url>/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</url>
+    <title>自动化测试基础</title>
+    <url>/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>本文主要介绍自动化测试环境搭建、Python相关概念和pip包管理工具。</li>
+<li>本文主要介绍软件测试、软件自动化测试相关概念和工具。</li>
 </ul>
 <span id="more"></span>
-<h4 id="环境搭建"><a class="header-anchor" href="#环境搭建">#</a>环境搭建</h4>
+<hr>
+<h4 id="软件测试分类"><a class="header-anchor" href="#软件测试分类">#</a>软件测试分类</h4>
 <ul>
 <li>
-<p>安装<a href="https://www.python.org/" rel="external nofollow noreferrer">Python</a></p>
+<p>根据项目流程划分</p>
+<ul>
+<li>
+<p>单元测试（模块测试）</p>
+<ul>
+<li>子程序或具有独立功能代码块</li>
+</ul>
 </li>
 <li>
-<p>更换国内源镜像源</p>
+<p>集成测试</p>
 <ul>
-<li><code>pip install selenium==xx.xx -i http://pypi.douban.com/simple --trusted-host pypi.douban.com</code><br>
+<li>先组成系统或子系统再测试，重点检查模块间的接口</li>
+</ul>
+</li>
+<li>
+<p>系统测试</p>
+<ul>
+<li>整个产品系统（需求说明书）</li>
+</ul>
+</li>
+<li>
+<p>验收测试</p>
+<ul>
+<li>最终测试（完成系统和功能测试后，产品发布之前的测试）(验证功能和性能)<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>按照对代码可见度来划分</p>
+<ul>
+<li>白盒测试
+<ul>
+<li>关注内部动作</li>
+</ul>
+</li>
+<li>黑盒测试
+<ul>
+<li>关注外部输入输出</li>
+</ul>
+</li>
+<li>灰盒测试
+<ul>
+<li>既关注外部输入输出又关注内部动作。<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>软件的不同测试面来划分</p>
+<ul>
+<li>功能测试
+<ul>
+<li>逻辑功能测试，界面测试，易用性测试，安装测试，兼容性测试等。</li>
+</ul>
+</li>
+<li>性能测试
+<ul>
+<li>时间性能(具体环境)</li>
+</ul>
+</li>
+<li>空间性能（带宽，CPU）<br>
 <br></li>
 </ul>
 </li>
 <li>
-<p>安装Selenium包</p>
+<p>按照自动化程度划分</p>
 <ul>
-<li>运行命令 <code>pip install --user selenium</code><br>
+<li>手工测试</li>
+<li>自动化测试
+<ul>
+<li>功能自动化和性能自动化<br>
 <br></li>
 </ul>
 </li>
-<li>
-<p>pip国内软件源可供安装的地址：</p>
-<ul>
-<li><code>https://pypi.tuna.tsinghua.edu.cn/simple/</code></li>
-<li><code>https://pypi.doubanio.com/simple/</code><br>
-<br></li>
 </ul>
 </li>
 <li>
-<p>配置浏览器驱动</p>
+<p>测试周期中的一些方法</p>
 <ul>
-<li>
-<p>pip命令安装chromedriver（推荐）</p>
+<li>冒烟测试
 <ul>
-<li>安装
-<ul>
-<li><code>pip install chromedriver-py</code></li>
+<li>测试新版本之前，投入较少人力和时间验证软件主要功能。</li>
 </ul>
 </li>
-<li>使用</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> chromedriver_py <span class="keyword">import</span> binary_path</span><br><span class="line">driver = webdriver.Chrome(executable_path=binary_path) <span class="comment"># driver初始化的时候一定要指定executable_path参数为chromedriver_py模块的binary_path变量。</span></span><br></pre></td></tr></table></figure>
+<li>回归测试
 <ul>
-<li><a href="https://github.com/breuerfelix/chromedriver-py" rel="external nofollow noreferrer">chromedriver_py</a>的本地文件夹
-<ul>
-<li>由于使用的pip安装，所以<code>chromedriver</code>在Python环境下的<code>Lib\site-packages\chromedriver_py</code></li>
+<li>修改了旧代码后，重新进行测试以确定修改没有引入新错误或导致其他代码产生错误。（第二轮）</li>
 </ul>
 </li>
+<li>随机测试
+<ul>
+<li>测试输入数据随机生成，目的是模拟用户<strong>真实操作</strong>，发现<strong>边缘错误。</strong></li>
 </ul>
 </li>
-<li>
-<p>手动下载安装chromedriver</p>
+<li>探索性测试
 <ul>
-<li>下载<a href="http://www.seleniumhq.org/download/" rel="external nofollow noreferrer">浏览器驱动</a>放于Python安装目录下。</li>
-<li><a href="http://chromedriver.storage.googleapis.com/index.html" rel="external nofollow noreferrer">chrome浏览器驱动下载</a></li>
+<li>测试的思维技术，一种<strong>思维方式</strong>，强调测试人员<strong>主观能动性</strong>，遇到问题时<strong>改变测试策略</strong>。</li>
 </ul>
 </li>
-</ul>
-</li>
-<li>
-<p>pip的常用命令</p>
+<li>安全测试
 <ul>
-<li><code>pip freeze</code> 或<code>pip list</code> 列举已安装的包
-<ul>
-<li>导出requirements.txt(用于生成记录所有依赖包及其精确的版本号。以便新环境部署。)</li>
-</ul>
-</li>
-<li><code>pip freeze</code>  &lt;目录&gt;/requirements.txt</li>
-<li><code>pip install</code> &lt;目录&gt;/&lt;文件名&gt;</li>
-<li><code>pip intstall -upgrade</code> 或 <code>pip install -U</code> &lt;包名&gt;升级包</li>
-<li><code>pip pip install -U pip</code> 升级</li>
-<li><code>pip show</code> &lt;包名-现实指定包版本</li>
-<li><code>pip show -f</code> &lt;包名-显示包所在目录</li>
-<li><code>pip search</code> &lt;搜索关键字&gt;</li>
-<li><code>pip list -o</code> 查询可升级的包</li>
-<li><code>pip install</code> &lt;包名–d &lt;目录-或 <code>pip install -d</code> &lt;目录–r requirements.txt 下载包而不安装</li>
-<li><code>pip wheel</code> &lt;包名-打包</li>
-<li><code>pip install</code> 软件名称 == 很大的数字 查看全部可安装版本</li>
-<li><code>ctrl + c</code> 打断<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><code>Chrome Driver</code>下载</p>
-<ul>
-<li><code>chromedriver</code>的版本一定要与Chrome的版本一致，不然就不起作用。</li>
-<li>有两个下载地址：
-<ul>
-<li><code>http://chromedriver.storage.googleapis.com/index.html</code></li>
-<li><code>https://npm.taobao.org/mirrors/chromedriver</code></li>
-</ul>
-</li>
-<li><code>Firefox Driver</code> 下载
-<ul>
-<li><code>https://github.com/mozilla/geckodriver/releases</code></li>
+<li>生命周期中特别是<strong>开发基本完成到发布阶段</strong>，对产品验证符合产品<strong>安全需求定义</strong>和<strong>质量标准</strong>的过程</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 <hr>
-<h4 id="Python-基础"><a class="header-anchor" href="#Python-基础">#</a>Python 基础</h4>
+<h4 id="分层的自动化测试"><a class="header-anchor" href="#分层的自动化测试">#</a>分层的自动化测试</h4>
 <ul>
 <li>
-<p>print函数</p>
+<p>背景</p>
 <ul>
-<li>转换说明符</li>
-<li>%s  字符串，采用str()</li>
-<li>%r  采用repr()显示</li>
-<li>%c  Unicode 码点</li>
-<li>%d  十进制整数</li>
-<li>%i  十进制整数</li>
-<li>%o  八进制整数</li>
-<li>%x  十六进制整数</li>
-<li>%e  指数（基底为e）</li>
-<li>%E  指数（基底为E）</li>
-<li>%f  浮点数</li>
-<li>%F  浮点数</li>
-<li>%g  指数（e）或浮点数</li>
-<li>%G  指数（e）或浮点数</li>
-<li>格式化输出</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 格式化输出</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;&#125; &#123;&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;world&quot;</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;0&#125; &#123;1&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;world&quot;</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;1&#125; &#123;0&#125; &#123;1&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;world&quot;</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(<span class="number">3.1415926</span>))  <span class="comment"># 保留两位小数</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<br>
+<li>传统的自动化测试：
 <ul>
-<li>
-<p>引号与注释</p>
-<ul>
-<li>单行注释 #</li>
-<li>多行注释 ```注释内容```</li>
-<li>支持三引号（不论单双）</li>
+<li>基于产品的UI的自动化测试，将黑盒测试转化为通过程序或工具执行的一种自动化测试。</li>
 </ul>
 </li>
-<li>
-<p>引用模块import</p>
+<li>传统的自动化测试缺点（黑盒测试环节尽可能全面覆盖，自动化）
 <ul>
-<li>
-<p>如果确定不会从把不同模块导入同名函数</p>
-<ul>
-<li>from 模块名称 import -</li>
-</ul>
-</li>
-<li>
-<p>注意：自定函数名与导入函数同名会覆盖原函数。</p>
-</li>
-<li>
-<p>理解执行import，Python到底做了那些操作</p>
-<ul>
-<li>创建一个<code>module</code>（可能包含多个<code>module</code>）</li>
-<li>把这个<code>module</code>插入到<code>sys.module</code>中</li>
-<li>装载<code>module</code>的代码（如果需要，则必须先编译）</li>
-<li>创建对象，插入对象，装载要执行的代码，执行对应代码。</li>
-</ul>
-</li>
-<li>
-<p>装载代码过程：</p>
-<ul>
-<li>当前路径（以及从当前目录指定的<code>sys.path</code>）</li>
-<li>Python的PATH</li>
-<li>Python安装时的默认路径。</li>
-<li>执行新的module中对应的代码</li>
-</ul>
-</li>
-<li>
-<p>补充</p>
-<ul>
-<li>./ 代表当前目录</li>
-<li>…/ 代表上一级目录</li>
-<li>/是根目录<br>
+<li>测试规模增大</li>
+<li>全面UI自动化测试（由于UI易变，使得UI维护成本相对高昂）<br>
 <br></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>
-<p>异常</p>
+<p>分层自动化测试</p>
 <ul>
-<li>异常抛出机制
+<li>
+<p>强调从黑盒（UI）单层到黑白盒多层的自动化测试体系</p>
+</li>
+<li>
+<p>从全面黑盒自动化测试到对系统的不同层次进行自动化测试</p>
+</li>
+<li>
+<p>单元自动化测试（10%）</p>
 <ul>
-<li>程序运行时发生异常，解释器会查询相应处理语句（称为handler）</li>
-<li>如果再当前函数理没有找到就会将异常传递给上层调用函数</li>
-<li>如果再最外层（全局“main”）中还是未找到，解释器就会退出，同时打印Traceback，方便用户找到错误产生原因。</li>
-<li>所有异常都继承Exception，所以可以使用它来接受所有类型的异常。</li>
-<li>Python2.5后所有的异常类都继承与基类<code>BaseException</code>，Exception同样继承与<code>BaseException</code><br>
+<li>对软件中的最小可测试单元检查和验证。（类，函数，窗口）<br>
 <br></li>
 </ul>
 </li>
+<li>
+<p>接口自动化测试(20%)</p>
+<ul>
+<li>模块接口测试和Web接口测试
+<ul>
+<li>模块接口测试（单元测试基础 -&gt; 单元结果验证）
+<ul>
+<li>工具与单元自动化测试相同</li>
+</ul>
+</li>
+<li>Web接口测试
+<ul>
+<li><strong>服务器接口测试</strong>和<strong>外部接口测试</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>服务器接口测试
+<ul>
+<li>浏览器与服务器的接口（通过HTTP协议实现前后端数据传递）</li>
+</ul>
+</li>
+<li>外部接口测试(70%)
+<ul>
+<li>第三方系统提供的接口（第三方登录接口）</li>
+</ul>
+</li>
+<li>接口测试相应的类库和工具： HttpUnit 、Postman<br>
+<br></li>
 </ul>
 </li>
 <li>
-<p>Python运算符优先级表<br>
-<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20200325204946064.png" alt="Python运算符优先级"></p>
+<p>UI自动化测试</p>
+<ul>
+<li>由于所有功能的展示都在这一层，所以测试工作大多集中在这一层。</li>
+<li>因此建议提倡<strong>半自动化</strong>开展测试工作。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="自动化测试应用场景"><a class="header-anchor" href="#自动化测试应用场景">#</a>自动化测试应用场景</h4>
+<ul>
+<li>一般满足以下三个条件就可开展自动化测试
+<ul>
+<li>软件需求变动不频繁</li>
+<li>项目的周期长</li>
+<li>自动化测试脚本可重复利用</li>
+</ul>
+</li>
+<li>任务测试明确，不会频繁变动(<strong>重要</strong>)</li>
+<li>每日构建后的测试验证</li>
+<li>比较频繁的回归测试</li>
+<li>软件系统界面稳定，变动少</li>
+<li>需要在多个平台上运行相同的测试案例、组合遍历型的测试、大量重复的任务。</li>
+<li>软件维护的周期长（<strong>重要</strong>）</li>
+<li>项目的进度压力不大。</li>
+<li>被测软件系统开发较为规范，能够保证系统可测试性。</li>
+<li>具备大量自动化测试平台。</li>
+<li>测试人员具备较强的编程能力。</li>
+<li>自动化测试脚本可重复利用（<strong>重要</strong>）</li>
+</ul>
+<hr>
+<h4 id="自动化测试及其工具"><a class="header-anchor" href="#自动化测试及其工具">#</a>自动化测试及其工具</h4>
+<ul>
+<li>
+<p><strong>广义</strong>上的自动化测试：指的是借助工具来辅助进行软件测试的方式</p>
+</li>
+<li>
+<p><strong>狭义</strong>上的自动化测试：指的是基于UI的功能测试</p>
+</li>
+<li>
+<p>自动化测试工具</p>
+<ul>
+<li>UFT（QTP和ST合并）</li>
+<li>Robot FrameWork（基于python）</li>
+<li>Watir(基于ruby)</li>
+<li>selenium</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="Selenium工具介绍"><a class="header-anchor" href="#Selenium工具介绍">#</a>Selenium工具介绍</h4>
+<ul>
+<li>
+<p>Selenium工具介绍</p>
+<ul>
+<li>主要用于Web应用程序的自动化测试</li>
+</ul>
+</li>
+<li>
+<p>Selenium IDE</p>
+<ul>
+<li>火狐插件，方便开发脚本</li>
+</ul>
+</li>
+<li>
+<p>Selenium Grid</p>
+<ul>
+<li><strong>自动化测试辅助工具</strong>可加快Web-App功能测试，很方便在对台机器和异构环境执行测试用例（不同计算机和系统的网络环境）</li>
+</ul>
+</li>
+<li>
+<p>Selenium RC</p>
+<ul>
+<li>Selenium家族核心部分,支持多种语言编写的自动化测试脚本。</li>
+</ul>
+</li>
+<li>
+<p>Selenium2.0</p>
+<ul>
+<li>Selenium1.0 = Selenium IDE+Selenium Grid+Selenium RC</li>
+<li>Selenium2.0 = Selenium 1.0 +WebDirver</li>
+<li>Selenium3.0</li>
+<li>WebDriver是通过原生的浏览器支持或浏览器扩展来直接控制浏览器</li>
+<li>WebDriver能利用操作系统级别调用，能够更好模拟用户输入。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="前端基础（补充）"><a class="header-anchor" href="#前端基础（补充）">#</a>前端基础（补充）</h4>
+<ul>
+<li>基础知识
+<ul>
+<li>HTMl 超文本标记语言</li>
+<li>JavaScript 前端脚本语言（轻量级语言），是一种解释性的语言，不需要预编译</li>
+<li>XML 可扩展标记语言 通用标记语言的一个子集。作为传输工具和存储数据。（数据内容）</li>
+</ul>
+</li>
+<li>前端工具
+<ul>
+<li>Fire Bug  火狐开发类插件</li>
+<li>FirePath XPath(XML的路径语言,用来确定XML文档中的部分位置)</li>
+<li>Chrome开发人员工具</li>
+</ul>
 </li>
 </ul>
 ]]></content>
@@ -6070,7 +6172,8 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
         <category>Software Testing</category>
       </categories>
       <tags>
-        <tag>Python</tag>
+        <tag>Automated Testing</tag>
+        <tag>Selenium</tag>
       </tags>
   </entry>
   <entry>
@@ -6523,298 +6626,205 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
       </tags>
   </entry>
   <entry>
-    <title>自动化测试基础</title>
-    <url>/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</url>
+    <title>环境搭建基础</title>
+    <url>/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>本文主要介绍软件测试、软件自动化测试相关概念和工具。</li>
+<li>本文主要介绍自动化测试环境搭建、Python相关概念和pip包管理工具。</li>
 </ul>
 <span id="more"></span>
-<hr>
-<h4 id="软件测试分类"><a class="header-anchor" href="#软件测试分类">#</a>软件测试分类</h4>
+<h4 id="环境搭建"><a class="header-anchor" href="#环境搭建">#</a>环境搭建</h4>
 <ul>
 <li>
-<p>根据项目流程划分</p>
-<ul>
-<li>
-<p>单元测试（模块测试）</p>
-<ul>
-<li>子程序或具有独立功能代码块</li>
-</ul>
+<p>安装<a href="https://www.python.org/" rel="external nofollow noreferrer">Python</a></p>
 </li>
 <li>
-<p>集成测试</p>
+<p>更换国内源镜像源</p>
 <ul>
-<li>先组成系统或子系统再测试，重点检查模块间的接口</li>
-</ul>
-</li>
-<li>
-<p>系统测试</p>
-<ul>
-<li>整个产品系统（需求说明书）</li>
-</ul>
-</li>
-<li>
-<p>验收测试</p>
-<ul>
-<li>最终测试（完成系统和功能测试后，产品发布之前的测试）(验证功能和性能)<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>按照对代码可见度来划分</p>
-<ul>
-<li>白盒测试
-<ul>
-<li>关注内部动作</li>
-</ul>
-</li>
-<li>黑盒测试
-<ul>
-<li>关注外部输入输出</li>
-</ul>
-</li>
-<li>灰盒测试
-<ul>
-<li>既关注外部输入输出又关注内部动作。<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>软件的不同测试面来划分</p>
-<ul>
-<li>功能测试
-<ul>
-<li>逻辑功能测试，界面测试，易用性测试，安装测试，兼容性测试等。</li>
-</ul>
-</li>
-<li>性能测试
-<ul>
-<li>时间性能(具体环境)</li>
-</ul>
-</li>
-<li>空间性能（带宽，CPU）<br>
+<li><code>pip install selenium==xx.xx -i http://pypi.douban.com/simple --trusted-host pypi.douban.com</code><br>
 <br></li>
 </ul>
 </li>
 <li>
-<p>按照自动化程度划分</p>
+<p>安装Selenium包</p>
 <ul>
-<li>手工测试</li>
-<li>自动化测试
-<ul>
-<li>功能自动化和性能自动化<br>
+<li>运行命令 <code>pip install --user selenium</code><br>
 <br></li>
+</ul>
+</li>
+<li>
+<p>pip国内软件源可供安装的地址：</p>
+<ul>
+<li><code>https://pypi.tuna.tsinghua.edu.cn/simple/</code></li>
+<li><code>https://pypi.doubanio.com/simple/</code><br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>配置浏览器驱动</p>
+<ul>
+<li>
+<p>pip命令安装chromedriver（推荐）</p>
+<ul>
+<li>安装
+<ul>
+<li><code>pip install chromedriver-py</code></li>
+</ul>
+</li>
+<li>使用</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> chromedriver_py <span class="keyword">import</span> binary_path</span><br><span class="line">driver = webdriver.Chrome(executable_path=binary_path) <span class="comment"># driver初始化的时候一定要指定executable_path参数为chromedriver_py模块的binary_path变量。</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://github.com/breuerfelix/chromedriver-py" rel="external nofollow noreferrer">chromedriver_py</a>的本地文件夹
+<ul>
+<li>由于使用的pip安装，所以<code>chromedriver</code>在Python环境下的<code>Lib\site-packages\chromedriver_py</code></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>
-<p>测试周期中的一些方法</p>
+<p>手动下载安装chromedriver</p>
 <ul>
-<li>冒烟测试
-<ul>
-<li>测试新版本之前，投入较少人力和时间验证软件主要功能。</li>
+<li>下载<a href="http://www.seleniumhq.org/download/" rel="external nofollow noreferrer">浏览器驱动</a>放于Python安装目录下。</li>
+<li><a href="http://chromedriver.storage.googleapis.com/index.html" rel="external nofollow noreferrer">chrome浏览器驱动下载</a></li>
 </ul>
 </li>
-<li>回归测试
-<ul>
-<li>修改了旧代码后，重新进行测试以确定修改没有引入新错误或导致其他代码产生错误。（第二轮）</li>
 </ul>
 </li>
-<li>随机测试
+<li>
+<p>pip的常用命令</p>
 <ul>
-<li>测试输入数据随机生成，目的是模拟用户<strong>真实操作</strong>，发现<strong>边缘错误。</strong></li>
+<li><code>pip freeze</code> 或<code>pip list</code> 列举已安装的包
+<ul>
+<li>导出requirements.txt(用于生成记录所有依赖包及其精确的版本号。以便新环境部署。)</li>
 </ul>
 </li>
-<li>探索性测试
-<ul>
-<li>测试的思维技术，一种<strong>思维方式</strong>，强调测试人员<strong>主观能动性</strong>，遇到问题时<strong>改变测试策略</strong>。</li>
+<li><code>pip freeze</code>  &lt;目录&gt;/requirements.txt</li>
+<li><code>pip install</code> &lt;目录&gt;/&lt;文件名&gt;</li>
+<li><code>pip intstall -upgrade</code> 或 <code>pip install -U</code> &lt;包名&gt;升级包</li>
+<li><code>pip pip install -U pip</code> 升级</li>
+<li><code>pip show</code> &lt;包名-现实指定包版本</li>
+<li><code>pip show -f</code> &lt;包名-显示包所在目录</li>
+<li><code>pip search</code> &lt;搜索关键字&gt;</li>
+<li><code>pip list -o</code> 查询可升级的包</li>
+<li><code>pip install</code> &lt;包名–d &lt;目录-或 <code>pip install -d</code> &lt;目录–r requirements.txt 下载包而不安装</li>
+<li><code>pip wheel</code> &lt;包名-打包</li>
+<li><code>pip install</code> 软件名称 == 很大的数字 查看全部可安装版本</li>
+<li><code>ctrl + c</code> 打断<br>
+<br></li>
 </ul>
 </li>
-<li>安全测试
+<li>
+<p><code>Chrome Driver</code>下载</p>
 <ul>
-<li>生命周期中特别是<strong>开发基本完成到发布阶段</strong>，对产品验证符合产品<strong>安全需求定义</strong>和<strong>质量标准</strong>的过程</li>
+<li><code>chromedriver</code>的版本一定要与Chrome的版本一致，不然就不起作用。</li>
+<li>有两个下载地址：
+<ul>
+<li><code>http://chromedriver.storage.googleapis.com/index.html</code></li>
+<li><code>https://npm.taobao.org/mirrors/chromedriver</code></li>
+</ul>
+</li>
+<li><code>Firefox Driver</code> 下载
+<ul>
+<li><code>https://github.com/mozilla/geckodriver/releases</code></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 <hr>
-<h4 id="分层的自动化测试"><a class="header-anchor" href="#分层的自动化测试">#</a>分层的自动化测试</h4>
+<h4 id="Python-基础"><a class="header-anchor" href="#Python-基础">#</a>Python 基础</h4>
 <ul>
 <li>
-<p>背景</p>
+<p>print函数</p>
 <ul>
-<li>传统的自动化测试：
+<li>转换说明符</li>
+<li>%s  字符串，采用str()</li>
+<li>%r  采用repr()显示</li>
+<li>%c  Unicode 码点</li>
+<li>%d  十进制整数</li>
+<li>%i  十进制整数</li>
+<li>%o  八进制整数</li>
+<li>%x  十六进制整数</li>
+<li>%e  指数（基底为e）</li>
+<li>%E  指数（基底为E）</li>
+<li>%f  浮点数</li>
+<li>%F  浮点数</li>
+<li>%g  指数（e）或浮点数</li>
+<li>%G  指数（e）或浮点数</li>
+<li>格式化输出</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 格式化输出</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;&#125; &#123;&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;world&quot;</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;0&#125; &#123;1&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;world&quot;</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;1&#125; &#123;0&#125; &#123;1&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;world&quot;</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(<span class="number">3.1415926</span>))  <span class="comment"># 保留两位小数</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<br>
 <ul>
-<li>基于产品的UI的自动化测试，将黑盒测试转化为通过程序或工具执行的一种自动化测试。</li>
+<li>
+<p>引号与注释</p>
+<ul>
+<li>单行注释 #</li>
+<li>多行注释 ```注释内容```</li>
+<li>支持三引号（不论单双）</li>
 </ul>
 </li>
-<li>传统的自动化测试缺点（黑盒测试环节尽可能全面覆盖，自动化）
+<li>
+<p>引用模块import</p>
 <ul>
-<li>测试规模增大</li>
-<li>全面UI自动化测试（由于UI易变，使得UI维护成本相对高昂）<br>
+<li>
+<p>如果确定不会从把不同模块导入同名函数</p>
+<ul>
+<li>from 模块名称 import -</li>
+</ul>
+</li>
+<li>
+<p>注意：自定函数名与导入函数同名会覆盖原函数。</p>
+</li>
+<li>
+<p>理解执行import，Python到底做了那些操作</p>
+<ul>
+<li>创建一个<code>module</code>（可能包含多个<code>module</code>）</li>
+<li>把这个<code>module</code>插入到<code>sys.module</code>中</li>
+<li>装载<code>module</code>的代码（如果需要，则必须先编译）</li>
+<li>创建对象，插入对象，装载要执行的代码，执行对应代码。</li>
+</ul>
+</li>
+<li>
+<p>装载代码过程：</p>
+<ul>
+<li>当前路径（以及从当前目录指定的<code>sys.path</code>）</li>
+<li>Python的PATH</li>
+<li>Python安装时的默认路径。</li>
+<li>执行新的module中对应的代码</li>
+</ul>
+</li>
+<li>
+<p>补充</p>
+<ul>
+<li>./ 代表当前目录</li>
+<li>…/ 代表上一级目录</li>
+<li>/是根目录<br>
 <br></li>
 </ul>
 </li>
 </ul>
 </li>
 <li>
-<p>分层自动化测试</p>
+<p>异常</p>
 <ul>
-<li>
-<p>强调从黑盒（UI）单层到黑白盒多层的自动化测试体系</p>
-</li>
-<li>
-<p>从全面黑盒自动化测试到对系统的不同层次进行自动化测试</p>
-</li>
-<li>
-<p>单元自动化测试（10%）</p>
+<li>异常抛出机制
 <ul>
-<li>对软件中的最小可测试单元检查和验证。（类，函数，窗口）<br>
+<li>程序运行时发生异常，解释器会查询相应处理语句（称为handler）</li>
+<li>如果再当前函数理没有找到就会将异常传递给上层调用函数</li>
+<li>如果再最外层（全局“main”）中还是未找到，解释器就会退出，同时打印Traceback，方便用户找到错误产生原因。</li>
+<li>所有异常都继承Exception，所以可以使用它来接受所有类型的异常。</li>
+<li>Python2.5后所有的异常类都继承与基类<code>BaseException</code>，Exception同样继承与<code>BaseException</code><br>
 <br></li>
 </ul>
 </li>
-<li>
-<p>接口自动化测试(20%)</p>
-<ul>
-<li>模块接口测试和Web接口测试
-<ul>
-<li>模块接口测试（单元测试基础 -&gt; 单元结果验证）
-<ul>
-<li>工具与单元自动化测试相同</li>
-</ul>
-</li>
-<li>Web接口测试
-<ul>
-<li><strong>服务器接口测试</strong>和<strong>外部接口测试</strong></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>服务器接口测试
-<ul>
-<li>浏览器与服务器的接口（通过HTTP协议实现前后端数据传递）</li>
-</ul>
-</li>
-<li>外部接口测试(70%)
-<ul>
-<li>第三方系统提供的接口（第三方登录接口）</li>
-</ul>
-</li>
-<li>接口测试相应的类库和工具： HttpUnit 、Postman<br>
-<br></li>
 </ul>
 </li>
 <li>
-<p>UI自动化测试</p>
-<ul>
-<li>由于所有功能的展示都在这一层，所以测试工作大多集中在这一层。</li>
-<li>因此建议提倡<strong>半自动化</strong>开展测试工作。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="自动化测试应用场景"><a class="header-anchor" href="#自动化测试应用场景">#</a>自动化测试应用场景</h4>
-<ul>
-<li>一般满足以下三个条件就可开展自动化测试
-<ul>
-<li>软件需求变动不频繁</li>
-<li>项目的周期长</li>
-<li>自动化测试脚本可重复利用</li>
-</ul>
-</li>
-<li>任务测试明确，不会频繁变动(<strong>重要</strong>)</li>
-<li>每日构建后的测试验证</li>
-<li>比较频繁的回归测试</li>
-<li>软件系统界面稳定，变动少</li>
-<li>需要在多个平台上运行相同的测试案例、组合遍历型的测试、大量重复的任务。</li>
-<li>软件维护的周期长（<strong>重要</strong>）</li>
-<li>项目的进度压力不大。</li>
-<li>被测软件系统开发较为规范，能够保证系统可测试性。</li>
-<li>具备大量自动化测试平台。</li>
-<li>测试人员具备较强的编程能力。</li>
-<li>自动化测试脚本可重复利用（<strong>重要</strong>）</li>
-</ul>
-<hr>
-<h4 id="自动化测试及其工具"><a class="header-anchor" href="#自动化测试及其工具">#</a>自动化测试及其工具</h4>
-<ul>
-<li>
-<p><strong>广义</strong>上的自动化测试：指的是借助工具来辅助进行软件测试的方式</p>
-</li>
-<li>
-<p><strong>狭义</strong>上的自动化测试：指的是基于UI的功能测试</p>
-</li>
-<li>
-<p>自动化测试工具</p>
-<ul>
-<li>UFT（QTP和ST合并）</li>
-<li>Robot FrameWork（基于python）</li>
-<li>Watir(基于ruby)</li>
-<li>selenium</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="Selenium工具介绍"><a class="header-anchor" href="#Selenium工具介绍">#</a>Selenium工具介绍</h4>
-<ul>
-<li>
-<p>Selenium工具介绍</p>
-<ul>
-<li>主要用于Web应用程序的自动化测试</li>
-</ul>
-</li>
-<li>
-<p>Selenium IDE</p>
-<ul>
-<li>火狐插件，方便开发脚本</li>
-</ul>
-</li>
-<li>
-<p>Selenium Grid</p>
-<ul>
-<li><strong>自动化测试辅助工具</strong>可加快Web-App功能测试，很方便在对台机器和异构环境执行测试用例（不同计算机和系统的网络环境）</li>
-</ul>
-</li>
-<li>
-<p>Selenium RC</p>
-<ul>
-<li>Selenium家族核心部分,支持多种语言编写的自动化测试脚本。</li>
-</ul>
-</li>
-<li>
-<p>Selenium2.0</p>
-<ul>
-<li>Selenium1.0 = Selenium IDE+Selenium Grid+Selenium RC</li>
-<li>Selenium2.0 = Selenium 1.0 +WebDirver</li>
-<li>Selenium3.0</li>
-<li>WebDriver是通过原生的浏览器支持或浏览器扩展来直接控制浏览器</li>
-<li>WebDriver能利用操作系统级别调用，能够更好模拟用户输入。</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="前端基础（补充）"><a class="header-anchor" href="#前端基础（补充）">#</a>前端基础（补充）</h4>
-<ul>
-<li>基础知识
-<ul>
-<li>HTMl 超文本标记语言</li>
-<li>JavaScript 前端脚本语言（轻量级语言），是一种解释性的语言，不需要预编译</li>
-<li>XML 可扩展标记语言 通用标记语言的一个子集。作为传输工具和存储数据。（数据内容）</li>
-</ul>
-</li>
-<li>前端工具
-<ul>
-<li>Fire Bug  火狐开发类插件</li>
-<li>FirePath XPath(XML的路径语言,用来确定XML文档中的部分位置)</li>
-<li>Chrome开发人员工具</li>
-</ul>
+<p>Python运算符优先级表<br>
+<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20200325204946064.png" alt="Python运算符优先级"></p>
 </li>
 </ul>
 ]]></content>
@@ -6822,8 +6832,7 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
         <category>Software Testing</category>
       </categories>
       <tags>
-        <tag>Automated Testing</tag>
-        <tag>Selenium</tag>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
