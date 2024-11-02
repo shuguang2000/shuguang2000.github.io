@@ -190,7 +190,7 @@
     <link href="https://shuguang2000.us.kg/Books/%E5%B7%A5%E4%BD%9C%E3%80%81%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA/"/>
     <id>https://shuguang2000.us.kg/Books/%E5%B7%A5%E4%BD%9C%E3%80%81%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA/</id>
     <published>2023-04-20T14:43:59.000Z</published>
-    <updated>2024-11-02T04:10:41.541Z</updated>
+    <updated>2024-11-02T04:23:42.490Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -524,29 +524,6 @@
   </entry>
   
   <entry>
-    <title>网络协议 - 基本概念</title>
-    <link href="https://shuguang2000.us.kg/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
-    <id>https://shuguang2000.us.kg/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
-    <published>2022-11-21T02:21:12.000Z</published>
-    <updated>2024-08-10T12:21:37.072Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;本文主要介绍网络通信的基础协议、网络中的一些基础设备的优缺点。&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Network Protocols" scheme="https://shuguang2000.us.kg/categories/Network-Protocols/"/>
-    
-    
-    <category term="IP" scheme="https://shuguang2000.us.kg/tags/IP/"/>
-    
-    <category term="MAC" scheme="https://shuguang2000.us.kg/tags/MAC/"/>
-    
-  </entry>
-  
-  <entry>
     <title>网络协议 - MAC地址、IP地址和子网掩码</title>
     <link href="https://shuguang2000.us.kg/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20MAC%E5%9C%B0%E5%9D%80%E3%80%81IP%E5%9C%B0%E5%9D%80%E5%92%8C%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81/"/>
     <id>https://shuguang2000.us.kg/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20MAC%E5%9C%B0%E5%9D%80%E3%80%81IP%E5%9C%B0%E5%9D%80%E5%92%8C%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81/</id>
@@ -563,9 +540,32 @@
     <category term="Network Protocols" scheme="https://shuguang2000.us.kg/categories/Network-Protocols/"/>
     
     
+    <category term="MAC" scheme="https://shuguang2000.us.kg/tags/MAC/"/>
+    
     <category term="IP" scheme="https://shuguang2000.us.kg/tags/IP/"/>
     
+  </entry>
+  
+  <entry>
+    <title>网络协议 - 基本概念</title>
+    <link href="https://shuguang2000.us.kg/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/"/>
+    <id>https://shuguang2000.us.kg/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/</id>
+    <published>2022-11-21T02:21:12.000Z</published>
+    <updated>2024-08-10T12:21:37.072Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍网络通信的基础协议、网络中的一些基础设备的优缺点。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Network Protocols" scheme="https://shuguang2000.us.kg/categories/Network-Protocols/"/>
+    
+    
     <category term="MAC" scheme="https://shuguang2000.us.kg/tags/MAC/"/>
+    
+    <category term="IP" scheme="https://shuguang2000.us.kg/tags/IP/"/>
     
   </entry>
   
@@ -587,6 +587,27 @@
     
     
     <category term="Automated Testing" scheme="https://shuguang2000.us.kg/tags/Automated-Testing/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WebDriver API</title>
+    <link href="https://shuguang2000.us.kg/Software-Testing/WebDriver%20API/"/>
+    <id>https://shuguang2000.us.kg/Software-Testing/WebDriver%20API/</id>
+    <published>2022-11-19T05:31:58.000Z</published>
+    <updated>2024-08-10T12:22:42.464Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;WebDriver是一个用于实现Web自动化的第三方库，本文主要介绍WebDriver的用法及原理。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Software Testing" scheme="https://shuguang2000.us.kg/categories/Software-Testing/"/>
+    
+    
+    <category term="WebDriver" scheme="https://shuguang2000.us.kg/tags/WebDriver/"/>
     
   </entry>
   
@@ -631,27 +652,6 @@
     <category term="Automated Testing" scheme="https://shuguang2000.us.kg/tags/Automated-Testing/"/>
     
     <category term="Selenium" scheme="https://shuguang2000.us.kg/tags/Selenium/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>WebDriver API</title>
-    <link href="https://shuguang2000.us.kg/Software-Testing/WebDriver%20API/"/>
-    <id>https://shuguang2000.us.kg/Software-Testing/WebDriver%20API/</id>
-    <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2024-08-10T12:22:42.464Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;WebDriver是一个用于实现Web自动化的第三方库，本文主要介绍WebDriver的用法及原理。&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Software Testing" scheme="https://shuguang2000.us.kg/categories/Software-Testing/"/>
-    
-    
-    <category term="WebDriver" scheme="https://shuguang2000.us.kg/tags/WebDriver/"/>
     
   </entry>
   
