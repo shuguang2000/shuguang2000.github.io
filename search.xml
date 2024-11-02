@@ -6322,216 +6322,6 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
       </tags>
   </entry>
   <entry>
-    <title>环境搭建基础</title>
-    <url>/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>本文主要介绍自动化测试环境搭建、Python相关概念和pip包管理工具。</li>
-</ul>
-<span id="more"></span>
-<h4 id="环境搭建"><a class="header-anchor" href="#环境搭建">#</a>环境搭建</h4>
-<ul>
-<li>
-<p>安装<a href="https://www.python.org/" rel="external nofollow noreferrer">Python</a></p>
-</li>
-<li>
-<p>更换国内源镜像源</p>
-<ul>
-<li><code>pip install selenium==xx.xx -i http://pypi.douban.com/simple --trusted-host pypi.douban.com</code><br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>安装Selenium包</p>
-<ul>
-<li>运行命令 <code>pip install --user selenium</code><br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>pip国内软件源可供安装的地址：</p>
-<ul>
-<li><code>https://pypi.tuna.tsinghua.edu.cn/simple/</code></li>
-<li><code>https://pypi.doubanio.com/simple/</code><br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>配置浏览器驱动</p>
-<ul>
-<li>
-<p>pip命令安装chromedriver（推荐）</p>
-<ul>
-<li>安装
-<ul>
-<li><code>pip install chromedriver-py</code></li>
-</ul>
-</li>
-<li>使用</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> chromedriver_py <span class="keyword">import</span> binary_path</span><br><span class="line">driver = webdriver.Chrome(executable_path=binary_path) <span class="comment"># driver初始化的时候一定要指定executable_path参数为chromedriver_py模块的binary_path变量。</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li><a href="https://github.com/breuerfelix/chromedriver-py" rel="external nofollow noreferrer">chromedriver_py</a>的本地文件夹
-<ul>
-<li>由于使用的pip安装，所以<code>chromedriver</code>在Python环境下的<code>Lib\site-packages\chromedriver_py</code></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>手动下载安装chromedriver</p>
-<ul>
-<li>下载<a href="http://www.seleniumhq.org/download/" rel="external nofollow noreferrer">浏览器驱动</a>放于Python安装目录下。</li>
-<li><a href="http://chromedriver.storage.googleapis.com/index.html" rel="external nofollow noreferrer">chrome浏览器驱动下载</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>pip的常用命令</p>
-<ul>
-<li><code>pip freeze</code> 或<code>pip list</code> 列举已安装的包
-<ul>
-<li>导出requirements.txt(用于生成记录所有依赖包及其精确的版本号。以便新环境部署。)</li>
-</ul>
-</li>
-<li><code>pip freeze</code>  &lt;目录&gt;/requirements.txt</li>
-<li><code>pip install</code> &lt;目录&gt;/&lt;文件名&gt;</li>
-<li><code>pip intstall -upgrade</code> 或 <code>pip install -U</code> &lt;包名&gt;升级包</li>
-<li><code>pip pip install -U pip</code> 升级</li>
-<li><code>pip show</code> &lt;包名-现实指定包版本</li>
-<li><code>pip show -f</code> &lt;包名-显示包所在目录</li>
-<li><code>pip search</code> &lt;搜索关键字&gt;</li>
-<li><code>pip list -o</code> 查询可升级的包</li>
-<li><code>pip install</code> &lt;包名–d &lt;目录-或 <code>pip install -d</code> &lt;目录–r requirements.txt 下载包而不安装</li>
-<li><code>pip wheel</code> &lt;包名-打包</li>
-<li><code>pip install</code> 软件名称 == 很大的数字 查看全部可安装版本</li>
-<li><code>ctrl + c</code> 打断<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p><code>Chrome Driver</code>下载</p>
-<ul>
-<li><code>chromedriver</code>的版本一定要与Chrome的版本一致，不然就不起作用。</li>
-<li>有两个下载地址：
-<ul>
-<li><code>http://chromedriver.storage.googleapis.com/index.html</code></li>
-<li><code>https://npm.taobao.org/mirrors/chromedriver</code></li>
-</ul>
-</li>
-<li><code>Firefox Driver</code> 下载
-<ul>
-<li><code>https://github.com/mozilla/geckodriver/releases</code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="Python-基础"><a class="header-anchor" href="#Python-基础">#</a>Python 基础</h4>
-<ul>
-<li>
-<p>print函数</p>
-<ul>
-<li>转换说明符</li>
-<li>%s  字符串，采用str()</li>
-<li>%r  采用repr()显示</li>
-<li>%c  Unicode 码点</li>
-<li>%d  十进制整数</li>
-<li>%i  十进制整数</li>
-<li>%o  八进制整数</li>
-<li>%x  十六进制整数</li>
-<li>%e  指数（基底为e）</li>
-<li>%E  指数（基底为E）</li>
-<li>%f  浮点数</li>
-<li>%F  浮点数</li>
-<li>%g  指数（e）或浮点数</li>
-<li>%G  指数（e）或浮点数</li>
-<li>格式化输出</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 格式化输出</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;&#125; &#123;&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;world&quot;</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;0&#125; &#123;1&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;world&quot;</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;1&#125; &#123;0&#125; &#123;1&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;world&quot;</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(<span class="number">3.1415926</span>))  <span class="comment"># 保留两位小数</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<br>
-<ul>
-<li>
-<p>引号与注释</p>
-<ul>
-<li>单行注释 #</li>
-<li>多行注释 ```注释内容```</li>
-<li>支持三引号（不论单双）</li>
-</ul>
-</li>
-<li>
-<p>引用模块import</p>
-<ul>
-<li>
-<p>如果确定不会从把不同模块导入同名函数</p>
-<ul>
-<li>from 模块名称 import -</li>
-</ul>
-</li>
-<li>
-<p>注意：自定函数名与导入函数同名会覆盖原函数。</p>
-</li>
-<li>
-<p>理解执行import，Python到底做了那些操作</p>
-<ul>
-<li>创建一个<code>module</code>（可能包含多个<code>module</code>）</li>
-<li>把这个<code>module</code>插入到<code>sys.module</code>中</li>
-<li>装载<code>module</code>的代码（如果需要，则必须先编译）</li>
-<li>创建对象，插入对象，装载要执行的代码，执行对应代码。</li>
-</ul>
-</li>
-<li>
-<p>装载代码过程：</p>
-<ul>
-<li>当前路径（以及从当前目录指定的<code>sys.path</code>）</li>
-<li>Python的PATH</li>
-<li>Python安装时的默认路径。</li>
-<li>执行新的module中对应的代码</li>
-</ul>
-</li>
-<li>
-<p>补充</p>
-<ul>
-<li>./ 代表当前目录</li>
-<li>…/ 代表上一级目录</li>
-<li>/是根目录<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>异常</p>
-<ul>
-<li>异常抛出机制
-<ul>
-<li>程序运行时发生异常，解释器会查询相应处理语句（称为handler）</li>
-<li>如果再当前函数理没有找到就会将异常传递给上层调用函数</li>
-<li>如果再最外层（全局“main”）中还是未找到，解释器就会退出，同时打印Traceback，方便用户找到错误产生原因。</li>
-<li>所有异常都继承Exception，所以可以使用它来接受所有类型的异常。</li>
-<li>Python2.5后所有的异常类都继承与基类<code>BaseException</code>，Exception同样继承与<code>BaseException</code><br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Python运算符优先级表<br>
-<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20200325204946064.png" alt="Python运算符优先级"></p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Software Testing</category>
-      </categories>
-      <tags>
-        <tag>Python</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>自动化测试基础</title>
     <url>/Software-Testing/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%9F%BA%E7%A1%80/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
@@ -6833,6 +6623,216 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
       <tags>
         <tag>Automated Testing</tag>
         <tag>Selenium</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>环境搭建基础</title>
+    <url>/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li>本文主要介绍自动化测试环境搭建、Python相关概念和pip包管理工具。</li>
+</ul>
+<span id="more"></span>
+<h4 id="环境搭建"><a class="header-anchor" href="#环境搭建">#</a>环境搭建</h4>
+<ul>
+<li>
+<p>安装<a href="https://www.python.org/" rel="external nofollow noreferrer">Python</a></p>
+</li>
+<li>
+<p>更换国内源镜像源</p>
+<ul>
+<li><code>pip install selenium==xx.xx -i http://pypi.douban.com/simple --trusted-host pypi.douban.com</code><br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>安装Selenium包</p>
+<ul>
+<li>运行命令 <code>pip install --user selenium</code><br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>pip国内软件源可供安装的地址：</p>
+<ul>
+<li><code>https://pypi.tuna.tsinghua.edu.cn/simple/</code></li>
+<li><code>https://pypi.doubanio.com/simple/</code><br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>配置浏览器驱动</p>
+<ul>
+<li>
+<p>pip命令安装chromedriver（推荐）</p>
+<ul>
+<li>安装
+<ul>
+<li><code>pip install chromedriver-py</code></li>
+</ul>
+</li>
+<li>使用</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> chromedriver_py <span class="keyword">import</span> binary_path</span><br><span class="line">driver = webdriver.Chrome(executable_path=binary_path) <span class="comment"># driver初始化的时候一定要指定executable_path参数为chromedriver_py模块的binary_path变量。</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><a href="https://github.com/breuerfelix/chromedriver-py" rel="external nofollow noreferrer">chromedriver_py</a>的本地文件夹
+<ul>
+<li>由于使用的pip安装，所以<code>chromedriver</code>在Python环境下的<code>Lib\site-packages\chromedriver_py</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>手动下载安装chromedriver</p>
+<ul>
+<li>下载<a href="http://www.seleniumhq.org/download/" rel="external nofollow noreferrer">浏览器驱动</a>放于Python安装目录下。</li>
+<li><a href="http://chromedriver.storage.googleapis.com/index.html" rel="external nofollow noreferrer">chrome浏览器驱动下载</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>pip的常用命令</p>
+<ul>
+<li><code>pip freeze</code> 或<code>pip list</code> 列举已安装的包
+<ul>
+<li>导出requirements.txt(用于生成记录所有依赖包及其精确的版本号。以便新环境部署。)</li>
+</ul>
+</li>
+<li><code>pip freeze</code>  &lt;目录&gt;/requirements.txt</li>
+<li><code>pip install</code> &lt;目录&gt;/&lt;文件名&gt;</li>
+<li><code>pip intstall -upgrade</code> 或 <code>pip install -U</code> &lt;包名&gt;升级包</li>
+<li><code>pip pip install -U pip</code> 升级</li>
+<li><code>pip show</code> &lt;包名-现实指定包版本</li>
+<li><code>pip show -f</code> &lt;包名-显示包所在目录</li>
+<li><code>pip search</code> &lt;搜索关键字&gt;</li>
+<li><code>pip list -o</code> 查询可升级的包</li>
+<li><code>pip install</code> &lt;包名–d &lt;目录-或 <code>pip install -d</code> &lt;目录–r requirements.txt 下载包而不安装</li>
+<li><code>pip wheel</code> &lt;包名-打包</li>
+<li><code>pip install</code> 软件名称 == 很大的数字 查看全部可安装版本</li>
+<li><code>ctrl + c</code> 打断<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><code>Chrome Driver</code>下载</p>
+<ul>
+<li><code>chromedriver</code>的版本一定要与Chrome的版本一致，不然就不起作用。</li>
+<li>有两个下载地址：
+<ul>
+<li><code>http://chromedriver.storage.googleapis.com/index.html</code></li>
+<li><code>https://npm.taobao.org/mirrors/chromedriver</code></li>
+</ul>
+</li>
+<li><code>Firefox Driver</code> 下载
+<ul>
+<li><code>https://github.com/mozilla/geckodriver/releases</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="Python-基础"><a class="header-anchor" href="#Python-基础">#</a>Python 基础</h4>
+<ul>
+<li>
+<p>print函数</p>
+<ul>
+<li>转换说明符</li>
+<li>%s  字符串，采用str()</li>
+<li>%r  采用repr()显示</li>
+<li>%c  Unicode 码点</li>
+<li>%d  十进制整数</li>
+<li>%i  十进制整数</li>
+<li>%o  八进制整数</li>
+<li>%x  十六进制整数</li>
+<li>%e  指数（基底为e）</li>
+<li>%E  指数（基底为E）</li>
+<li>%f  浮点数</li>
+<li>%F  浮点数</li>
+<li>%g  指数（e）或浮点数</li>
+<li>%G  指数（e）或浮点数</li>
+<li>格式化输出</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 格式化输出</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;&#125; &#123;&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;world&quot;</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;0&#125; &#123;1&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;world&quot;</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;1&#125; &#123;0&#125; &#123;1&#125;&quot;</span>.<span class="built_in">format</span>(<span class="string">&quot;hello&quot;</span>, <span class="string">&quot;world&quot;</span>))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(<span class="number">3.1415926</span>))  <span class="comment"># 保留两位小数</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<br>
+<ul>
+<li>
+<p>引号与注释</p>
+<ul>
+<li>单行注释 #</li>
+<li>多行注释 ```注释内容```</li>
+<li>支持三引号（不论单双）</li>
+</ul>
+</li>
+<li>
+<p>引用模块import</p>
+<ul>
+<li>
+<p>如果确定不会从把不同模块导入同名函数</p>
+<ul>
+<li>from 模块名称 import -</li>
+</ul>
+</li>
+<li>
+<p>注意：自定函数名与导入函数同名会覆盖原函数。</p>
+</li>
+<li>
+<p>理解执行import，Python到底做了那些操作</p>
+<ul>
+<li>创建一个<code>module</code>（可能包含多个<code>module</code>）</li>
+<li>把这个<code>module</code>插入到<code>sys.module</code>中</li>
+<li>装载<code>module</code>的代码（如果需要，则必须先编译）</li>
+<li>创建对象，插入对象，装载要执行的代码，执行对应代码。</li>
+</ul>
+</li>
+<li>
+<p>装载代码过程：</p>
+<ul>
+<li>当前路径（以及从当前目录指定的<code>sys.path</code>）</li>
+<li>Python的PATH</li>
+<li>Python安装时的默认路径。</li>
+<li>执行新的module中对应的代码</li>
+</ul>
+</li>
+<li>
+<p>补充</p>
+<ul>
+<li>./ 代表当前目录</li>
+<li>…/ 代表上一级目录</li>
+<li>/是根目录<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>异常</p>
+<ul>
+<li>异常抛出机制
+<ul>
+<li>程序运行时发生异常，解释器会查询相应处理语句（称为handler）</li>
+<li>如果再当前函数理没有找到就会将异常传递给上层调用函数</li>
+<li>如果再最外层（全局“main”）中还是未找到，解释器就会退出，同时打印Traceback，方便用户找到错误产生原因。</li>
+<li>所有异常都继承Exception，所以可以使用它来接受所有类型的异常。</li>
+<li>Python2.5后所有的异常类都继承与基类<code>BaseException</code>，Exception同样继承与<code>BaseException</code><br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Python运算符优先级表<br>
+<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/image-20200325204946064.png" alt="Python运算符优先级"></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Software Testing</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
       </tags>
   </entry>
   <entry>
