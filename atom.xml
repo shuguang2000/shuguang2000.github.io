@@ -7,7 +7,7 @@
   <link href="https://shuguang2000.us.kg/atom.xml" rel="self"/>
   
   <link href="https://shuguang2000.us.kg/"/>
-  <updated>2024-10-22T13:13:43.491Z</updated>
+  <updated>2024-11-10T11:29:37.350Z</updated>
   <id>https://shuguang2000.us.kg/</id>
   
   <author>
@@ -16,6 +16,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>李光耀观天下</title>
+    <link href="https://shuguang2000.us.kg/Book/%E6%9D%8E%E5%85%89%E8%80%80%E8%A7%82%E5%A4%A9%E4%B8%8B/"/>
+    <id>https://shuguang2000.us.kg/Book/%E6%9D%8E%E5%85%89%E8%80%80%E8%A7%82%E5%A4%A9%E4%B8%8B/</id>
+    <published>2024-11-10T11:28:55.000Z</published>
+    <updated>2024-11-10T11:29:37.350Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;pass&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Book" scheme="https://shuguang2000.us.kg/categories/Book/"/>
+    
+    
+    <category term="tag1" scheme="https://shuguang2000.us.kg/tags/tag1/"/>
+    
+  </entry>
   
   <entry>
     <title>VSCode 快速切换工作区</title>
@@ -64,7 +85,7 @@
     <link href="https://shuguang2000.us.kg/Blog/VSCode%20%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%20Hexo%20%E6%96%87%E7%AB%A0/"/>
     <id>https://shuguang2000.us.kg/Blog/VSCode%20%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%20Hexo%20%E6%96%87%E7%AB%A0/</id>
     <published>2024-09-16T13:29:14.000Z</published>
-    <updated>2024-10-16T16:04:03.045Z</updated>
+    <updated>2024-11-08T08:47:48.942Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -85,11 +106,11 @@
     <link href="https://shuguang2000.us.kg/Study/%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%BF%83%E5%BE%97/"/>
     <id>https://shuguang2000.us.kg/Study/%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%BF%83%E5%BE%97/</id>
     <published>2024-09-15T05:31:58.000Z</published>
-    <updated>2024-09-20T07:30:45.969Z</updated>
+    <updated>2024-11-10T11:25:27.855Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
-&lt;li&gt;学习方法的总结和思路梳理。&lt;br&gt;
+&lt;li&gt;学习中的常见问题的总结和解决思路。&lt;br&gt;
 &lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;</summary>
     
@@ -97,6 +118,27 @@
     
     <category term="Study" scheme="https://shuguang2000.us.kg/categories/Study/"/>
     
+    
+  </entry>
+  
+  <entry>
+    <title>微软激活脚本</title>
+    <link href="https://shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/"/>
+    <id>https://shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/</id>
+    <published>2024-09-02T05:31:58.000Z</published>
+    <updated>2024-10-11T01:18:57.411Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;Microsoft 激活脚本（MAS），官方文档：&lt;a href=&quot;https://github.com/massgravel/Microsoft-Activation-Scripts&quot;&gt;https://github.com/massgravel/Microsoft-Activation-Scripts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Tools" scheme="https://shuguang2000.us.kg/categories/Tools/"/>
+    
+    
+    <category term="Windows" scheme="https://shuguang2000.us.kg/tags/Windows/"/>
     
   </entry>
   
@@ -119,27 +161,6 @@
     
     
     <category term="Proxy" scheme="https://shuguang2000.us.kg/tags/Proxy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微软激活脚本</title>
-    <link href="https://shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/"/>
-    <id>https://shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/</id>
-    <published>2024-09-02T05:31:58.000Z</published>
-    <updated>2024-10-11T01:18:57.411Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;Microsoft 激活脚本（MAS），官方文档：&lt;a href=&quot;https://github.com/massgravel/Microsoft-Activation-Scripts&quot;&gt;https://github.com/massgravel/Microsoft-Activation-Scripts&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Tools" scheme="https://shuguang2000.us.kg/categories/Tools/"/>
-    
-    
-    <category term="Windows" scheme="https://shuguang2000.us.kg/tags/Windows/"/>
     
   </entry>
   
@@ -169,11 +190,11 @@
     <link href="https://shuguang2000.us.kg/Study/%E8%87%AA%E5%8F%91%E5%AD%A6%E4%B9%A0/"/>
     <id>https://shuguang2000.us.kg/Study/%E8%87%AA%E5%8F%91%E5%AD%A6%E4%B9%A0/</id>
     <published>2023-11-11T05:31:58.000Z</published>
-    <updated>2024-09-25T05:49:39.789Z</updated>
+    <updated>2024-11-10T11:12:37.815Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
-&lt;li&gt;自发学习的核心是逐步加强的对自身的理解和控制能力。&lt;/li&gt;
+&lt;li&gt;自发学习的核心是逐步加强的对特定人或事物的理解和控制能力。&lt;/li&gt;
 &lt;/ul&gt;</summary>
     
     
@@ -181,7 +202,7 @@
     <category term="Study" scheme="https://shuguang2000.us.kg/categories/Study/"/>
     
     
-    <category term="study" scheme="https://shuguang2000.us.kg/tags/study/"/>
+    <category term="Study" scheme="https://shuguang2000.us.kg/tags/Study/"/>
     
   </entry>
   
@@ -190,35 +211,12 @@
     <link href="https://shuguang2000.us.kg/Book/%E5%B7%A5%E4%BD%9C%E3%80%81%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA/"/>
     <id>https://shuguang2000.us.kg/Book/%E5%B7%A5%E4%BD%9C%E3%80%81%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA/</id>
     <published>2023-04-20T14:43:59.000Z</published>
-    <updated>2024-11-02T05:13:18.096Z</updated>
+    <updated>2024-11-06T09:35:07.883Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
-&lt;li&gt;人类创造的环境是一种快速、脆弱并伴随&lt;strong&gt;周期性&lt;/strong&gt;的&lt;strong&gt;以多求少&lt;/strong&gt;的系统。&lt;/li&gt;
+&lt;li&gt;人类创造的环境是一种快速、脆弱并伴随&lt;strong&gt;周期性变化&lt;/strong&gt;的不稳定系统。&lt;/li&gt;
 &lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Book" scheme="https://shuguang2000.us.kg/categories/Book/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>乡土中国</title>
-    <link href="https://shuguang2000.us.kg/Book/%E4%B9%A1%E5%9C%9F%E4%B8%AD%E5%9B%BD/"/>
-    <id>https://shuguang2000.us.kg/Book/%E4%B9%A1%E5%9C%9F%E4%B8%AD%E5%9B%BD/</id>
-    <published>2023-04-19T14:43:59.000Z</published>
-    <updated>2024-11-02T05:13:22.430Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
     
     
     
@@ -591,27 +589,6 @@
   </entry>
   
   <entry>
-    <title>WebDriver API</title>
-    <link href="https://shuguang2000.us.kg/Software-Testing/WebDriver%20API/"/>
-    <id>https://shuguang2000.us.kg/Software-Testing/WebDriver%20API/</id>
-    <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2024-08-10T12:22:42.464Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;WebDriver是一个用于实现Web自动化的第三方库，本文主要介绍WebDriver的用法及原理。&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Software Testing" scheme="https://shuguang2000.us.kg/categories/Software-Testing/"/>
-    
-    
-    <category term="WebDriver" scheme="https://shuguang2000.us.kg/tags/WebDriver/"/>
-    
-  </entry>
-  
-  <entry>
     <title>环境搭建基础</title>
     <link href="https://shuguang2000.us.kg/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/"/>
     <id>https://shuguang2000.us.kg/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</id>
@@ -629,6 +606,27 @@
     
     
     <category term="Python" scheme="https://shuguang2000.us.kg/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WebDriver API</title>
+    <link href="https://shuguang2000.us.kg/Software-Testing/WebDriver%20API/"/>
+    <id>https://shuguang2000.us.kg/Software-Testing/WebDriver%20API/</id>
+    <published>2022-11-19T05:31:58.000Z</published>
+    <updated>2024-08-10T12:22:42.464Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;WebDriver是一个用于实现Web自动化的第三方库，本文主要介绍WebDriver的用法及原理。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Software Testing" scheme="https://shuguang2000.us.kg/categories/Software-Testing/"/>
+    
+    
+    <category term="WebDriver" scheme="https://shuguang2000.us.kg/tags/WebDriver/"/>
     
   </entry>
   
@@ -702,7 +700,7 @@
     <link href="https://shuguang2000.us.kg/Blog/GitHub%20Pages%20%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/"/>
     <id>https://shuguang2000.us.kg/Blog/GitHub%20Pages%20%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F/</id>
     <published>2022-11-10T07:31:58.000Z</published>
-    <updated>2024-10-22T13:00:55.001Z</updated>
+    <updated>2024-11-06T23:10:01.340Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -790,7 +788,7 @@
     <link href="https://shuguang2000.us.kg/Blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/"/>
     <id>https://shuguang2000.us.kg/Blog/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</id>
     <published>2022-10-29T04:31:58.000Z</published>
-    <updated>2024-10-22T10:31:23.270Z</updated>
+    <updated>2024-11-06T23:07:27.158Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
