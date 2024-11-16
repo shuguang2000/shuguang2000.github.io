@@ -185,6 +185,27 @@
   </entry>
   
   <entry>
+    <title>微软激活脚本</title>
+    <link href="https://shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/"/>
+    <id>https://shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/</id>
+    <published>2024-09-02T05:31:58.000Z</published>
+    <updated>2024-10-11T01:18:57.411Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;Microsoft 激活脚本（MAS），官方文档：&lt;a href=&quot;https://github.com/massgravel/Microsoft-Activation-Scripts&quot;&gt;https://github.com/massgravel/Microsoft-Activation-Scripts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Tools" scheme="https://shuguang2000.us.kg/categories/Tools/"/>
+    
+    
+    <category term="Windows" scheme="https://shuguang2000.us.kg/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
     <title>正向代理和反向代理</title>
     <link href="https://shuguang2000.us.kg/Tools/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"/>
     <id>https://shuguang2000.us.kg/Tools/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</id>
@@ -203,27 +224,6 @@
     
     
     <category term="Proxy" scheme="https://shuguang2000.us.kg/tags/Proxy/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微软激活脚本</title>
-    <link href="https://shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/"/>
-    <id>https://shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/</id>
-    <published>2024-09-02T05:31:58.000Z</published>
-    <updated>2024-10-11T01:18:57.411Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;Microsoft 激活脚本（MAS），官方文档：&lt;a href=&quot;https://github.com/massgravel/Microsoft-Activation-Scripts&quot;&gt;https://github.com/massgravel/Microsoft-Activation-Scripts&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Tools" scheme="https://shuguang2000.us.kg/categories/Tools/"/>
-    
-    
-    <category term="Windows" scheme="https://shuguang2000.us.kg/tags/Windows/"/>
     
   </entry>
   
@@ -652,27 +652,6 @@
   </entry>
   
   <entry>
-    <title>WebDriver API</title>
-    <link href="https://shuguang2000.us.kg/Software-Testing/WebDriver%20API/"/>
-    <id>https://shuguang2000.us.kg/Software-Testing/WebDriver%20API/</id>
-    <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2024-08-10T12:22:42.464Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;WebDriver是一个用于实现Web自动化的第三方库，本文主要介绍WebDriver的用法及原理。&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Software Testing" scheme="https://shuguang2000.us.kg/categories/Software-Testing/"/>
-    
-    
-    <category term="WebDriver" scheme="https://shuguang2000.us.kg/tags/WebDriver/"/>
-    
-  </entry>
-  
-  <entry>
     <title>环境搭建基础</title>
     <link href="https://shuguang2000.us.kg/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/"/>
     <id>https://shuguang2000.us.kg/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</id>
@@ -690,6 +669,27 @@
     
     
     <category term="Python" scheme="https://shuguang2000.us.kg/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WebDriver API</title>
+    <link href="https://shuguang2000.us.kg/Software-Testing/WebDriver%20API/"/>
+    <id>https://shuguang2000.us.kg/Software-Testing/WebDriver%20API/</id>
+    <published>2022-11-19T05:31:58.000Z</published>
+    <updated>2024-08-10T12:22:42.464Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;WebDriver是一个用于实现Web自动化的第三方库，本文主要介绍WebDriver的用法及原理。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Software Testing" scheme="https://shuguang2000.us.kg/categories/Software-Testing/"/>
+    
+    
+    <category term="WebDriver" scheme="https://shuguang2000.us.kg/tags/WebDriver/"/>
     
   </entry>
   
