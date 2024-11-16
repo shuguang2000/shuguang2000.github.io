@@ -7,7 +7,7 @@
   <link href="https://shuguang2000.us.kg/atom.xml" rel="self"/>
   
   <link href="https://shuguang2000.us.kg/"/>
-  <updated>2024-11-10T11:29:37.350Z</updated>
+  <updated>2024-11-16T12:57:18.506Z</updated>
   <id>https://shuguang2000.us.kg/</id>
   
   <author>
@@ -16,6 +16,69 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://shuguang2000.us.kg/uncategorized/%E5%B8%B8%E7%94%A8%E7%AB%AF%E5%8F%A3%E5%92%8C%E4%BD%9C%E7%94%A8/"/>
+    <id>https://shuguang2000.us.kg/uncategorized/%E5%B8%B8%E7%94%A8%E7%AB%AF%E5%8F%A3%E5%92%8C%E4%BD%9C%E7%94%A8/</id>
+    <published>2024-11-16T12:57:18.506Z</published>
+    <updated>2024-11-16T12:57:18.506Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>关于个人能力提升的心得</title>
+    <link href="https://shuguang2000.us.kg/Feelings/%E5%85%B3%E4%BA%8E%E4%B8%AA%E4%BA%BA%E8%83%BD%E5%8A%9B%E6%8F%90%E5%8D%87%E7%9A%84%E5%BF%83%E5%BE%97/"/>
+    <id>https://shuguang2000.us.kg/Feelings/%E5%85%B3%E4%BA%8E%E4%B8%AA%E4%BA%BA%E8%83%BD%E5%8A%9B%E6%8F%90%E5%8D%87%E7%9A%84%E5%BF%83%E5%BE%97/</id>
+    <published>2024-11-13T15:30:05.000Z</published>
+    <updated>2024-11-15T14:40:54.969Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;讲讲如何避免精神内耗，从而逐渐提升个人能力。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Feelings" scheme="https://shuguang2000.us.kg/categories/Feelings/"/>
+    
+    
+    <category term="Personal Abilities" scheme="https://shuguang2000.us.kg/tags/Personal-Abilities/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows 常用操作</title>
+    <link href="https://shuguang2000.us.kg/Tools/Windows%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"/>
+    <id>https://shuguang2000.us.kg/Tools/Windows%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</id>
+    <published>2024-11-13T14:55:24.000Z</published>
+    <updated>2024-11-13T15:13:53.188Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;简要总结 Windows 的常用操作。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Tools" scheme="https://shuguang2000.us.kg/categories/Tools/"/>
+    
+    
+    <category term="Windows" scheme="https://shuguang2000.us.kg/tags/Windows/"/>
+    
+  </entry>
   
   <entry>
     <title>李光耀观天下</title>
@@ -85,7 +148,7 @@
     <link href="https://shuguang2000.us.kg/Blog/VSCode%20%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%20Hexo%20%E6%96%87%E7%AB%A0/"/>
     <id>https://shuguang2000.us.kg/Blog/VSCode%20%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%20Hexo%20%E6%96%87%E7%AB%A0/</id>
     <published>2024-09-16T13:29:14.000Z</published>
-    <updated>2024-11-08T08:47:48.942Z</updated>
+    <updated>2024-11-16T09:07:21.886Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -106,7 +169,7 @@
     <link href="https://shuguang2000.us.kg/Study/%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%BF%83%E5%BE%97/"/>
     <id>https://shuguang2000.us.kg/Study/%E5%AD%A6%E4%B9%A0%E7%9A%84%E5%BF%83%E5%BE%97/</id>
     <published>2024-09-15T05:31:58.000Z</published>
-    <updated>2024-11-10T11:25:27.855Z</updated>
+    <updated>2024-11-16T13:30:49.163Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -118,27 +181,6 @@
     
     <category term="Study" scheme="https://shuguang2000.us.kg/categories/Study/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>微软激活脚本</title>
-    <link href="https://shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/"/>
-    <id>https://shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/</id>
-    <published>2024-09-02T05:31:58.000Z</published>
-    <updated>2024-10-11T01:18:57.411Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;Microsoft 激活脚本（MAS），官方文档：&lt;a href=&quot;https://github.com/massgravel/Microsoft-Activation-Scripts&quot;&gt;https://github.com/massgravel/Microsoft-Activation-Scripts&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Tools" scheme="https://shuguang2000.us.kg/categories/Tools/"/>
-    
-    
-    <category term="Windows" scheme="https://shuguang2000.us.kg/tags/Windows/"/>
     
   </entry>
   
@@ -161,6 +203,27 @@
     
     
     <category term="Proxy" scheme="https://shuguang2000.us.kg/tags/Proxy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微软激活脚本</title>
+    <link href="https://shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/"/>
+    <id>https://shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/</id>
+    <published>2024-09-02T05:31:58.000Z</published>
+    <updated>2024-10-11T01:18:57.411Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;Microsoft 激活脚本（MAS），官方文档：&lt;a href=&quot;https://github.com/massgravel/Microsoft-Activation-Scripts&quot;&gt;https://github.com/massgravel/Microsoft-Activation-Scripts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Tools" scheme="https://shuguang2000.us.kg/categories/Tools/"/>
+    
+    
+    <category term="Windows" scheme="https://shuguang2000.us.kg/tags/Windows/"/>
     
   </entry>
   
@@ -190,7 +253,7 @@
     <link href="https://shuguang2000.us.kg/Study/%E8%87%AA%E5%8F%91%E5%AD%A6%E4%B9%A0/"/>
     <id>https://shuguang2000.us.kg/Study/%E8%87%AA%E5%8F%91%E5%AD%A6%E4%B9%A0/</id>
     <published>2023-11-11T05:31:58.000Z</published>
-    <updated>2024-11-10T11:12:37.815Z</updated>
+    <updated>2024-11-13T15:31:56.282Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -463,7 +526,7 @@
     <link href="https://shuguang2000.us.kg/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%B1%82/"/>
     <id>https://shuguang2000.us.kg/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20%E7%BD%91%E7%BB%9C%E5%B1%82/</id>
     <published>2022-11-22T04:21:12.000Z</published>
-    <updated>2024-08-10T12:21:53.134Z</updated>
+    <updated>2024-11-13T14:27:26.086Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -526,7 +589,7 @@
     <link href="https://shuguang2000.us.kg/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20MAC%E5%9C%B0%E5%9D%80%E3%80%81IP%E5%9C%B0%E5%9D%80%E5%92%8C%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81/"/>
     <id>https://shuguang2000.us.kg/Network-Protocols/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%20-%20MAC%E5%9C%B0%E5%9D%80%E3%80%81IP%E5%9C%B0%E5%9D%80%E5%92%8C%E5%AD%90%E7%BD%91%E6%8E%A9%E7%A0%81/</id>
     <published>2022-11-21T02:21:12.000Z</published>
-    <updated>2024-08-10T12:22:20.057Z</updated>
+    <updated>2024-11-13T14:39:39.331Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -589,27 +652,6 @@
   </entry>
   
   <entry>
-    <title>环境搭建基础</title>
-    <link href="https://shuguang2000.us.kg/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/"/>
-    <id>https://shuguang2000.us.kg/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</id>
-    <published>2022-11-19T05:31:58.000Z</published>
-    <updated>2024-08-10T12:22:26.132Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;本文主要介绍自动化测试环境搭建、Python相关概念和pip包管理工具。&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Software Testing" scheme="https://shuguang2000.us.kg/categories/Software-Testing/"/>
-    
-    
-    <category term="Python" scheme="https://shuguang2000.us.kg/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
     <title>WebDriver API</title>
     <link href="https://shuguang2000.us.kg/Software-Testing/WebDriver%20API/"/>
     <id>https://shuguang2000.us.kg/Software-Testing/WebDriver%20API/</id>
@@ -627,6 +669,27 @@
     
     
     <category term="WebDriver" scheme="https://shuguang2000.us.kg/tags/WebDriver/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>环境搭建基础</title>
+    <link href="https://shuguang2000.us.kg/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/"/>
+    <id>https://shuguang2000.us.kg/Software-Testing/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E5%9F%BA%E7%A1%80/</id>
+    <published>2022-11-19T05:31:58.000Z</published>
+    <updated>2024-11-15T14:23:10.988Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;本文主要介绍自动化测试环境搭建、Python相关概念和pip包管理工具。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Software Testing" scheme="https://shuguang2000.us.kg/categories/Software-Testing/"/>
+    
+    
+    <category term="Python" scheme="https://shuguang2000.us.kg/tags/Python/"/>
     
   </entry>
   
@@ -765,7 +828,7 @@
     <link href="https://shuguang2000.us.kg/Blog/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     <id>https://shuguang2000.us.kg/Blog/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</id>
     <published>2022-10-30T03:31:58.000Z</published>
-    <updated>2024-09-24T06:14:58.004Z</updated>
+    <updated>2024-11-16T14:08:16.362Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
