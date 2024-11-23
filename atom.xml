@@ -7,7 +7,7 @@
   <link href="https://shuguang2000.us.kg/atom.xml" rel="self"/>
   
   <link href="https://shuguang2000.us.kg/"/>
-  <updated>2024-11-16T12:57:18.506Z</updated>
+  <updated>2024-11-17T13:17:32.445Z</updated>
   <id>https://shuguang2000.us.kg/</id>
   
   <author>
@@ -18,23 +18,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="https://shuguang2000.us.kg/uncategorized/%E5%B8%B8%E7%94%A8%E7%AB%AF%E5%8F%A3%E5%92%8C%E4%BD%9C%E7%94%A8/"/>
-    <id>https://shuguang2000.us.kg/uncategorized/%E5%B8%B8%E7%94%A8%E7%AB%AF%E5%8F%A3%E5%92%8C%E4%BD%9C%E7%94%A8/</id>
-    <published>2024-11-16T12:57:18.506Z</published>
-    <updated>2024-11-16T12:57:18.506Z</updated>
+    <title>解决使用代理后 Git 无法获取本地证书问题</title>
+    <link href="https://shuguang2000.us.kg/Tools/%E8%A7%A3%E5%86%B3%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86%E5%90%8E%20Git%20%E6%97%A0%E6%B3%95%E8%8E%B7%E5%8F%96%E6%9C%AC%E5%9C%B0%E8%AF%81%E4%B9%A6%E9%97%AE%E9%A2%98/"/>
+    <id>https://shuguang2000.us.kg/Tools/%E8%A7%A3%E5%86%B3%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86%E5%90%8E%20Git%20%E6%97%A0%E6%B3%95%E8%8E%B7%E5%8F%96%E6%9C%AC%E5%9C%B0%E8%AF%81%E4%B9%A6%E9%97%AE%E9%A2%98/</id>
+    <published>2024-11-16T15:02:47.000Z</published>
+    <updated>2024-11-17T13:17:32.445Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;解决使用代理后 Git 无法获取本地证书问题。&lt;/li&gt;
+&lt;/ul&gt;</summary>
     
     
     
+    <category term="Tools" scheme="https://shuguang2000.us.kg/categories/Tools/"/>
+    
+    
+    <category term="Git" scheme="https://shuguang2000.us.kg/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用端口及作用</title>
+    <link href="https://shuguang2000.us.kg/Tools/%E5%B8%B8%E7%94%A8%E7%AB%AF%E5%8F%A3%E5%8F%8A%E4%BD%9C%E7%94%A8/"/>
+    <id>https://shuguang2000.us.kg/Tools/%E5%B8%B8%E7%94%A8%E7%AB%AF%E5%8F%A3%E5%8F%8A%E4%BD%9C%E7%94%A8/</id>
+    <published>2024-11-16T14:53:12.000Z</published>
+    <updated>2024-11-17T13:44:42.899Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;整理一些常用的端口及其作用。&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Tools" scheme="https://shuguang2000.us.kg/categories/Tools/"/>
+    
+    
+    <category term="Port" scheme="https://shuguang2000.us.kg/tags/Port/"/>
     
   </entry>
   
@@ -43,7 +64,7 @@
     <link href="https://shuguang2000.us.kg/Feelings/%E5%85%B3%E4%BA%8E%E4%B8%AA%E4%BA%BA%E8%83%BD%E5%8A%9B%E6%8F%90%E5%8D%87%E7%9A%84%E5%BF%83%E5%BE%97/"/>
     <id>https://shuguang2000.us.kg/Feelings/%E5%85%B3%E4%BA%8E%E4%B8%AA%E4%BA%BA%E8%83%BD%E5%8A%9B%E6%8F%90%E5%8D%87%E7%9A%84%E5%BF%83%E5%BE%97/</id>
     <published>2024-11-13T15:30:05.000Z</published>
-    <updated>2024-11-15T14:40:54.969Z</updated>
+    <updated>2024-11-16T14:58:40.640Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -55,28 +76,7 @@
     <category term="Feelings" scheme="https://shuguang2000.us.kg/categories/Feelings/"/>
     
     
-    <category term="Personal Abilities" scheme="https://shuguang2000.us.kg/tags/Personal-Abilities/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows 常用操作</title>
-    <link href="https://shuguang2000.us.kg/Tools/Windows%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/"/>
-    <id>https://shuguang2000.us.kg/Tools/Windows%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</id>
-    <published>2024-11-13T14:55:24.000Z</published>
-    <updated>2024-11-13T15:13:53.188Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;简要总结 Windows 的常用操作。&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Tools" scheme="https://shuguang2000.us.kg/categories/Tools/"/>
-    
-    
-    <category term="Windows" scheme="https://shuguang2000.us.kg/tags/Windows/"/>
+    <category term="Capability" scheme="https://shuguang2000.us.kg/tags/Capability/"/>
     
   </entry>
   
@@ -185,32 +185,11 @@
   </entry>
   
   <entry>
-    <title>微软激活脚本</title>
-    <link href="https://shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/"/>
-    <id>https://shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/</id>
-    <published>2024-09-02T05:31:58.000Z</published>
-    <updated>2024-10-11T01:18:57.411Z</updated>
-    
-    
-    <summary type="html">&lt;ul&gt;
-&lt;li&gt;Microsoft 激活脚本（MAS），官方文档：&lt;a href=&quot;https://github.com/massgravel/Microsoft-Activation-Scripts&quot;&gt;https://github.com/massgravel/Microsoft-Activation-Scripts&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Tools" scheme="https://shuguang2000.us.kg/categories/Tools/"/>
-    
-    
-    <category term="Windows" scheme="https://shuguang2000.us.kg/tags/Windows/"/>
-    
-  </entry>
-  
-  <entry>
     <title>正向代理和反向代理</title>
     <link href="https://shuguang2000.us.kg/Tools/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/"/>
     <id>https://shuguang2000.us.kg/Tools/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</id>
     <published>2024-09-02T05:31:58.000Z</published>
-    <updated>2024-09-25T04:44:49.845Z</updated>
+    <updated>2024-11-23T10:18:58.592Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -224,6 +203,27 @@
     
     
     <category term="Proxy" scheme="https://shuguang2000.us.kg/tags/Proxy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微软激活脚本</title>
+    <link href="https://shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/"/>
+    <id>https://shuguang2000.us.kg/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/</id>
+    <published>2024-09-02T05:31:58.000Z</published>
+    <updated>2024-11-23T13:04:57.167Z</updated>
+    
+    
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;Microsoft 激活脚本（MAS），官方文档：&lt;a href=&quot;https://github.com/massgravel/Microsoft-Activation-Scripts&quot;&gt;https://github.com/massgravel/Microsoft-Activation-Scripts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Tools" scheme="https://shuguang2000.us.kg/categories/Tools/"/>
+    
+    
+    <category term="Windows" scheme="https://shuguang2000.us.kg/tags/Windows/"/>
     
   </entry>
   
@@ -274,7 +274,7 @@
     <link href="https://shuguang2000.us.kg/Book/%E5%B7%A5%E4%BD%9C%E3%80%81%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA/"/>
     <id>https://shuguang2000.us.kg/Book/%E5%B7%A5%E4%BD%9C%E3%80%81%E6%B6%88%E8%B4%B9%E4%B8%BB%E4%B9%89%E5%92%8C%E6%96%B0%E7%A9%B7%E4%BA%BA/</id>
     <published>2023-04-20T14:43:59.000Z</published>
-    <updated>2024-11-06T09:35:07.883Z</updated>
+    <updated>2024-11-23T13:11:54.069Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -721,7 +721,7 @@
     <link href="https://shuguang2000.us.kg/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
     <id>https://shuguang2000.us.kg/Blog/%E5%85%B3%E4%BA%8E%20Git%20%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
     <published>2022-11-15T16:25:16.341Z</published>
-    <updated>2024-10-22T12:54:16.380Z</updated>
+    <updated>2024-11-23T06:58:55.171Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -786,7 +786,7 @@
     <link href="https://shuguang2000.us.kg/Games/%E7%A4%BC%E5%93%81%E5%8D%A1/"/>
     <id>https://shuguang2000.us.kg/Games/%E7%A4%BC%E5%93%81%E5%8D%A1/</id>
     <published>2022-10-31T13:20:00.000Z</published>
-    <updated>2024-10-22T19:06:08.244Z</updated>
+    <updated>2024-11-16T14:57:10.797Z</updated>
     
     
     <summary type="html">&lt;ul&gt;
@@ -797,6 +797,8 @@
     
     <category term="Games" scheme="https://shuguang2000.us.kg/categories/Games/"/>
     
+    
+    <category term="gift cards" scheme="https://shuguang2000.us.kg/tags/gift-cards/"/>
     
   </entry>
   
@@ -828,7 +830,7 @@
     <link href="https://shuguang2000.us.kg/Blog/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     <id>https://shuguang2000.us.kg/Blog/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</id>
     <published>2022-10-30T03:31:58.000Z</published>
-    <updated>2024-11-16T14:08:16.362Z</updated>
+    <updated>2024-11-16T15:13:05.360Z</updated>
     
     
     <summary type="html">&lt;ul&gt;

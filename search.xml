@@ -1,9 +1,388 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
-    <url>/uncategorized/%E5%B8%B8%E7%94%A8%E7%AB%AF%E5%8F%A3%E5%92%8C%E4%BD%9C%E7%94%A8/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
+    <title>解决使用代理后 Git 无法获取本地证书问题</title>
+    <url>/Tools/%E8%A7%A3%E5%86%B3%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86%E5%90%8E%20Git%20%E6%97%A0%E6%B3%95%E8%8E%B7%E5%8F%96%E6%9C%AC%E5%9C%B0%E8%AF%81%E4%B9%A6%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li>解决使用代理后 Git 无法获取本地证书问题。</li>
+</ul>
+<span id="more"></span>
+<hr>
+<h3 id="解决使用代理后-Git-无法获取本地证书问题"><a class="header-anchor" href="#解决使用代理后-Git-无法获取本地证书问题">#</a>解决使用代理后 Git 无法获取本地证书问题</h3>
+<ul>
+<li>
+<p><strong>问题背景</strong></p>
+<ul>
+<li>使用代理访问 Github 后，出现<code>SSL certificate problem: unable to get local issuer certificate</code>的错误。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>原理解析</strong></p>
+<ul>
+<li>Git 配置的 http.sslBackend 默认使用 Openssl 会默认使用自己证书的信任链，如果代理的证书没有被客户端 Git 自带的证书库信任就会出现这个问题，使用 schannel 可以避免非透明代理出现这个的问题。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>解决方法</strong></p>
+<ul>
+<li>配置 Git 跳过 SSL 验证（不推荐）</li>
+<li>配置 Git 在使用代理时使用正确的证书链</li>
+<li>让 Git 使用 Windows 系统的证书存储来验证 SSL 连接</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="问题背景"><a class="header-anchor" href="#问题背景">#</a>问题背景</h4>
+<ul>
+<li>在使用<a href="https://www.dogfight360.com/blog/686/" rel="external nofollow noreferrer">steamcommunity 302</a>代理访问 Github 后，出现<code>SSL certificate problem: unable to get local issuer certificate</code>的错误，而且无法使用HTTPS上传项目到 Github 仓库了。</li>
+</ul>
+<hr>
+<h4 id="原理解析"><a class="header-anchor" href="#原理解析">#</a>原理解析</h4>
+<ul>
+<li>
+<p><strong>Git 使用 HTTPS 时验证 SSL 证书的基本流程</strong></p>
+<ul>
+<li>
+<p>建立 TCP 连接：</p>
+<ul>
+<li>Git 客户端首先通过网络建立与远程服务器的 TCP 连接。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>SSL/TLS 握手：</p>
+<ul>
+<li>客户端和服务器进行 SSL/TLS 握手，交换加密信息。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>服务器证书验证：</p>
+<ul>
+<li>服务器在握手过程中提供自己的 SSL 证书，Git 客户端需要验证这个证书是否是由受信任的证书颁发机构（CA）签发的，是否有效（未过期），以及是否与远程服务器的域名匹配。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>建立加密连接：</p>
+<ul>
+<li>验证通过后，双方使用共享的加密密钥进行加密通信，确保数据的安全性。<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>调试 SSL 证书问题</strong></p>
+<ul>
+<li>使用 GIT_CURL_VERBOSE 环境变量调试 Git 和服务器之间的 SSL/TLS 握手，能输出详细的 SSL 证书信息。
+<ul>
+<li><code>GIT_CURL_VERBOSE=1 git clone https://github.com/username/repo.git</code><br>
+<br></li>
+</ul>
+</li>
+</ul>
+<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/SSL%E8%AF%81%E4%B9%A6%E8%B0%83%E8%AF%95%E4%BF%A1%E6%81%AF.png" alt="SSL证书调试信息"><br>
+<br></p>
+<ul>
+<li>
+<p>通过上图使用代理前后 SSL 证书信息可以看出：</p>
+<ol>
+<li>服务器返回被 CA 签名过的证书给客户端后</li>
+<li>客户端验证该证书的然后强行中断了 TLS 连接</li>
+<li>然后客户端通过 TCP 连接发送 TLS 协议中的警告通知，告知对方无法识别证书的颁发机构（CA）<br>
+<br></li>
+</ol>
+</li>
+<li>
+<p><strong>总结</strong>：也就是说问题在 TLS 证书传给客户端处出现验证失败。<br>
+<br></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>梳理该过程的证书链验证流程</strong></p>
+<ul>
+<li>
+<p>正常情况下证书链（或者使用透明代理 -&gt; <strong>代理正常转发证书链不会影响客户端和Github证书验证</strong>）</p>
+<ul>
+<li>GitHub 的服务器证书：这是 GitHub 服务器返回的原始证书，颁发给 <a href="http://github.com" rel="external nofollow noreferrer">github.com</a>。</li>
+<li>GitHub 的中间证书：由受信任的 CA 机构签发，通常是 GitHub 使用的中间证书。</li>
+<li>CA 的根证书：根证书由一个公认的受信任的 CA（如 DigiCert、Let’s Encrypt 等）签发。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>使用代理后的证书链（非透明代理 -&gt; 常见的是<strong>使用 HTTPS 代理</strong>）</p>
+<ul>
+<li>代理服务器的伪造证书：证书颁发给 <a href="http://github.com" rel="external nofollow noreferrer">github.com</a>，但由代理服务器的中间证书签发。</li>
+<li>代理的中间证书：代理会附带由自己信任的中间证书，目的是为了使客户端能够验证伪造的证书。</li>
+<li>代理的根证书：如果代理是使用自签名的证书或由自己的私有 CA 颁发证书链，客户端必须信任这个根证书，否则会出现证书验证失败的错误。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p><strong>总结</strong>： 也就是说非透明代理修改了 Github 和客户端之间的 TLS 建立过程。<br>
+<br></p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>解决思路</strong></p>
+<ul>
+<li>
+<p>配置 Git 跳过 SSL 验证（不推荐）<br>
+<br></p>
+</li>
+<li>
+<p>配置 Git 在使用代理时使用正确的证书链<br>
+<br></p>
+</li>
+<li>
+<p>让 Git 使用 Windows 系统的证书存储来验证 SSL 连接</p>
+<ul>
+<li>Git 配置 http.sslBackend 使用 Schannel<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="Schannel 使用的是 Windows 操作系统的证书存储，它默认包含了很多受信任的根证书，因此如果代理的证书是由一个已知的受信 CA 签发的，客户端（Windows）会信任它。">[1]</span></a></sup> (Windows SSL/TLS 栈)
+<ul>
+<li>
+<p>客户端和代理建立连接时，会使用 Windows 操作系统的证书存储来验证 Github 服务器证书，不需要代理生成任何伪造的证书。<br>
+<br></p>
+</li>
+<li>
+<p>也就是说会直接使用 Windows 系统中已安装的证书（包括根证书和中间证书）来验证服务器证书。如果代理的证书是由一个已知的受信 CA 签发的，客户端（Windows）会信任它。</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h4 id="解决方法"><a class="header-anchor" href="#解决方法">#</a>解决方法</h4>
+<ul>
+<li>
+<p>配置 Git 跳过 SSL 验证（不推荐）</p>
+<ul>
+<li>暂时禁用 SSL 验证（不推荐长期使用）
+<ul>
+<li><code>git config --global http.sslVerify false</code><br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>配置 Git 在使用代理时使用正确的证书链</p>
+<ul>
+<li>这里由于代理相关信息不清楚，就暂时不考虑
+<ul>
+<li>确保代理配置正确，再考虑添加代理证书链
+<ul>
+<li><code>git config --global http.sslCAinfo /path/to/proxy/certificate.pem</code><br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>让 Git 使用 Windows 系统的证书存储来验证 SSL 连接</p>
+<ul>
+<li>http.sslBackend: 这个配置项控制 Git 使用哪种 SSL/TLS 库来进行 HTTPS 连接的证书验证。
+<ul>
+<li>
+<p>Schannel</p>
+</li>
+<li>
+<p>Openssl</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>相关补充</p>
+<ul>
+<li>
+<p>Git 测试 HTTPS 连接</p>
+<ul>
+<li><code>git ls-remote https://github.com/username/repo.git</code><br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>Git 测试 SSH 连接</p>
+<ul>
+<li><code>ssh -T git@github.com</code><br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>Git 测试详细的 SSL 证书信息</p>
+<ul>
+<li><code>GIT_CURL_VERBOSE=1 git clone https://github.com/username/repo.git</code><br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>设置 Git 使用 HTTP/HTTPS 代理：</p>
+<ul>
+<li>git config --global http.proxy http://&lt;代理地址&gt;:&lt;代理端口&gt;</li>
+<li>git config --global https.proxy http://&lt;代理地址&gt;:&lt;代理端口&gt;<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>查看 OpenSSL 使用的证书存储位置（默认是Git安装目录下/mingw64/ssl）</p>
+<ul>
+<li><code>openssl version -d</code><br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">会使用 Windows 操作系统的证书存储来验证 Github 服务器证书。
+- <code>git config --global http.sslBackend schannel</code>
+<br><a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">Schannel 使用的是 Windows 操作系统的证书存储，它默认包含了很多受信任的根证书，因此如果代理的证书是由一个已知的受信 CA 签发的，客户端（Windows）会信任它。<a href="#fnref:1" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">是一个独立的 SSL/TLS 实现，它不像 Schannel 那样直接使用操作系统的证书存储，而是依赖于自己的信任根证书库。默认情况下，OpenSSL 会检查客户端信任的根证书存储（如 ca-certificates）。
+- <code>git config --global http.sslBackend openssl</code>
+<br><a href="#fnref:2" rev="footnote"> ↩</a></span></li><li id="fn:2"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">2.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">OpenSSL 默认使用自己证书的信任链，需要确保代理使用的证书链能够被 OpenSSL 信任。若使用的是自签名证书或者未被信任的 CA，需要显式地将根证书或中间证书导入 OpenSSL 的信任列表。<a href="#fnref:2" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+      <categories>
+        <category>Tools</category>
+      </categories>
+      <tags>
+        <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用端口及作用</title>
+    <url>/Tools/%E5%B8%B8%E7%94%A8%E7%AB%AF%E5%8F%A3%E5%8F%8A%E4%BD%9C%E7%94%A8/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li>整理一些常用的端口及其作用。</li>
+</ul>
+<span id="more"></span>
+<hr>
+<h4 id="常用端口及作用"><a class="header-anchor" href="#常用端口及作用">#</a>常用端口及作用</h4>
+<ul>
+<li>
+<p>HTTP: 用于标准的Web流量。</p>
+<ul>
+<li>端口: 80</li>
+<li>备用端口: 8080
+<ul>
+<li>常用于Web服务器开发和测试环境中。<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>HTTPS: 用于加密的Web流量，通常使用SSL/TLS协议。</p>
+<ul>
+<li>端口: 443</li>
+<li>端口: 8443
+<ul>
+<li>HTTPS协议的备用端口，常用于Web应用程序。<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>FTP (File Transfer Protocol): 用于文件传输服务。</p>
+<ul>
+<li>端口: 21<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>SFTP (Secure FTP): 基于SSH的安全文件传输。</p>
+<ul>
+<li>端口: 22<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>SSH (Secure Shell): 用于远程管理和登录，支持加密连接。</p>
+<ul>
+<li>端口: 22<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>Telnet: 用于远程访问，但不加密，已经逐渐被SSH取代。</p>
+<ul>
+<li>端口: 23<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>SMTP (Simple Mail Transfer Protocol): 用于发送电子邮件。</p>
+<ul>
+<li>端口: 25<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>POP3 (Post Office Protocol 3): 用于从邮件服务器下载电子邮件。</p>
+<ul>
+<li>端口: 110<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>IMAP (Internet Message Access Protocol): 用于从邮件服务器管理和下载电子邮件。</p>
+<ul>
+<li>端口: 143<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>DNS (Domain Name System): 用于域名解析服务。</p>
+<ul>
+<li>端口: 53<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>MySQL: 用于MySQL数据库的客户端连接。</p>
+<ul>
+<li>端口: 3306<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>PostgreSQL: 用于PostgreSQL数据库的客户端连接。</p>
+<ul>
+<li>端口: 5432<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>RDP (Remote Desktop Protocol): 用于Windows的远程桌面连接。</p>
+<ul>
+<li>端口: 3389<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>LDAP (Lightweight Directory Access Protocol): 用于访问和管理目录服务。</p>
+<ul>
+<li>端口: 389<br>
+<br></li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>Tools</category>
+      </categories>
+      <tags>
+        <tag>Port</tag>
+      </tags>
   </entry>
   <entry>
     <title>关于个人能力提升的心得</title>
@@ -97,96 +476,7 @@
         <category>Feelings</category>
       </categories>
       <tags>
-        <tag>Personal Abilities</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Windows 常用操作</title>
-    <url>/Tools/Windows%20%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>简要总结 Windows 的常用操作。</li>
-</ul>
-<span id="more"></span>
-<hr>
-<h3 id="Windows-常用操作"><a class="header-anchor" href="#Windows-常用操作">#</a>Windows 常用操作</h3>
-<ol>
-<li>
-<p>设置代理</p>
-<ul>
-<li>自动设置代理</li>
-<li>手动设置代理</li>
-<li>通过命令行设置代理</li>
-<li>浏览器设置代理<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>资源管理器快速操作</p>
-<ul>
-<li>快捷键快速创建<br>
-<br></li>
-</ul>
-</li>
-</ol>
-<hr>
-<h4 id="设置代理"><a class="header-anchor" href="#设置代理">#</a>设置代理</h4>
-<ul>
-<li>
-<p>自动设置代理</p>
-<ul>
-<li>填写代理脚本地址就行<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>手动设置代理</p>
-<ul>
-<li>pass<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>命令行设置代理</p>
-<ul>
-<li><code>netsh winhttp set proxy proxy-server=&quot;http=proxyserver:port&quot; bypass-list=&quot;*.example.com&quot;</code></li>
-<li>proxyserver 替换为代理服务器的地址，port 替换为代理服务器的端口，*.example.com 是你想绕过代理的地址（可选）。</li>
-</ul>
-</li>
-</ul>
-<hr>
-<h4 id="资源管理器快速操作"><a class="header-anchor" href="#资源管理器快速操作">#</a>资源管理器快速操作</h4>
-<ul>
-<li>快速创建文件夹
-<ul>
-<li>打开文件资源管理器：<code>Win + E</code>
-<ul>
-<li><code>Ctrl + Shift + N</code></li>
-<li><code>Shift + F10</code>出现右键菜单后再创建文件夹<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<br>
-<hr>
-<h4 id="Thanks"><a class="header-anchor" href="#Thanks">#</a>Thanks</h4>
-<ul>
-<li>
-<p>pass<br>
-<br></p>
-</li>
-<li>
-<p>pass<br>
-<br></p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>Tools</category>
-      </categories>
-      <tags>
-        <tag>Windows</tag>
+        <tag>Capability</tag>
       </tags>
   </entry>
   <entry>
@@ -815,6 +1105,98 @@
       </categories>
   </entry>
   <entry>
+    <title>正向代理和反向代理</title>
+    <url>/Tools/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
+<li>正向代理和反向代理的应用和作用。<br>
+<br></li>
+</ul>
+<span id="more"></span>
+<hr>
+<h3 id="正向代理和反向代理"><a class="header-anchor" href="#正向代理和反向代理">#</a>正向代理和反向代理</h3>
+<ol>
+<li>
+<p><strong>正向代理</strong></p>
+<ul>
+<li>类似一个跳板机，代理用户发送请求来访问外部资源。<br>
+<br></li>
+<li>要使用正向代理，客户端必须设置正向代理服务器。
+<ul>
+<li>设置正向的前提是：知道正向代理<strong>服务器的IP地址</strong>，还有<strong>代理程序的端口</strong>。<br>
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>反向代理</strong></p>
+<ul>
+<li>
+<p>不同地区的客户端并不知道自己访问的是不同的代理服务器，客户端是无感知代理的存在的。<br>
+<br></p>
+</li>
+<li>
+<p>客户端不需要任何配置就可以获取资源。</p>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h4 id="正向代理和反向代理的作用"><a class="header-anchor" href="#正向代理和反向代理的作用">#</a>正向代理和反向代理的作用</h4>
+<ul>
+<li>
+<p>正向代理</p>
+<ul>
+<li>一般是通过客户端软件连接到代理服务器获取和返回资源。<br>
+<br></li>
+</ul>
+<p><img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E6%B5%81%E7%A8%8B.png" alt="正向代理流程"></p>
+<br>
+</li>
+<li>
+<p>反向代理</p>
+<ul>
+<li>保证内网的安全，可以使用反向代理提供防火墙功能，阻止web攻击穿透内网。</li>
+<li>通过代理服务器优化网站的负载，减少单一服务器压力。<br>
+<br><br>
+<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E6%B5%81%E7%A8%8B.png" alt="反向代理流程"></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h5 id="正向代理和反向代理的区别"><a class="header-anchor" href="#正向代理和反向代理的区别">#</a>正向代理和反向代理的区别</h5>
+<ul>
+<li>
+<p>正向代理</p>
+<ul>
+<li>可以看作是用户（client）和代理（proxy）处在一个局域网（LAN），代理（proxy）服务器对于Web服务器（server）是透明的。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>反向代理</p>
+<ul>
+<li>可以看作是服务器（server）和代理（proxy）处在一个局域网（LAN），Web服务器（server）对于代理（proxy）服务器是透明。<br>
+<br></li>
+</ul>
+</li>
+<li>
+<p>总结</p>
+<ul>
+<li>实际使用的正向和反向代理中，代理服务器做的都是代收发请求，类似于现实中的中介。</li>
+</ul>
+</li>
+</ul>
+<hr>
+]]></content>
+      <categories>
+        <category>Tools</category>
+      </categories>
+      <tags>
+        <tag>Proxy</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>微软激活脚本</title>
     <url>/Tools/%E5%BE%AE%E8%BD%AF%E6%BF%80%E6%B4%BB%E8%84%9A%E6%9C%AC/</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
@@ -868,97 +1250,6 @@
       </categories>
       <tags>
         <tag>Windows</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>正向代理和反向代理</title>
-    <url>/Tools/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><ul>
-<li>正向代理和反向代理的应用和作用。<br>
-<br></li>
-</ul>
-<span id="more"></span>
-<hr>
-<h3 id="正向代理和反向代理"><a class="header-anchor" href="#正向代理和反向代理">#</a>正向代理和反向代理</h3>
-<ol>
-<li>
-<p><strong>正向代理</strong></p>
-<ul>
-<li>类似一个跳板机，代理用户发送请求来访问外部资源。<br>
-<br></li>
-<li>要使用正向代理，客户端必须设置正向代理服务器。
-<ul>
-<li>设置正向的前提是：知道正向代理<strong>服务器的IP地址</strong>，还有<strong>代理程序的端口</strong>。<br>
-<br></li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>反向代理</strong></p>
-<ul>
-<li>
-<p>不同地区的客户端并不知道自己访问的是不同的代理服务器，客户端是无感知代理的存在的。<br>
-<br></p>
-</li>
-<li>
-<p>客户端不需要任何配置就可以获取资源。</p>
-</li>
-</ul>
-</li>
-</ol>
-<hr>
-<h4 id="正向代理和反向代理的作用"><a class="header-anchor" href="#正向代理和反向代理的作用">#</a>正向代理和反向代理的作用</h4>
-<ul>
-<li>
-<p>正向代理</p>
-<ul>
-<li>一般是通过客户端软件连接到代理服务器获取和返回资源。<br>
-<br><br>
-<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/%E6%AD%A3%E5%90%91%E4%BB%A3%E7%90%86%E6%B5%81%E7%A8%8B.png" alt="正向代理流程"><br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>反向代理</p>
-<ul>
-<li>保证内网的安全，可以使用反向代理提供防火墙功能，阻止web攻击穿透内网。</li>
-<li>通过代理服务器优化网站的负载，减少单一服务器压力。<br>
-<br><br>
-<img data-src="https://cdn.jsdelivr.net/gh/shuguang2000/cdn/images/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E6%B5%81%E7%A8%8B.png" alt="反向代理流程"></li>
-</ul>
-</li>
-</ul>
-<hr>
-<h5 id="正向代理和反向代理的区别"><a class="header-anchor" href="#正向代理和反向代理的区别">#</a>正向代理和反向代理的区别</h5>
-<ul>
-<li>
-<p>正向代理</p>
-<ul>
-<li>可以看作是用户（client）和代理（proxy）处在一个局域网（LAN），代理（proxy）服务器对于Web服务器（server）是透明的。<br>
-<br></li>
-</ul>
-</li>
-<li>
-<p>反向代理</p>
-<ul>
-<li>可以看作是服务器（server）和代理（proxy）处在一个局域网（LAN），Web服务器（server）对于代理（proxy）服务器是透明。</li>
-</ul>
-</li>
-<li>
-<p>总结</p>
-<ul>
-<li>实际使用的正向和反向代理中，代理服务器做的都是代收发请求，类似于现实中的中介。</li>
-</ul>
-</li>
-</ul>
-<hr>
-]]></content>
-      <categories>
-        <category>Tools</category>
-      </categories>
-      <tags>
-        <tag>Proxy</tag>
       </tags>
   </entry>
   <entry>
@@ -1078,18 +1369,17 @@
 </ul>
 <span id="more"></span>
 <hr>
-<h3 id="Topic-Introduction"><a class="header-anchor" href="#Topic-Introduction">#</a>Topic Introduction</h3>
+<h3 id="工作、消费主义和新穷人"><a class="header-anchor" href="#工作、消费主义和新穷人">#</a>工作、消费主义和新穷人</h3>
 <ol>
 <li>
 <p>创造工作伦理</p>
 <ul>
-<li>pass</li>
 <li>pass<br>
 <br></li>
 </ul>
 </li>
 <li>
-<p>Two</p>
+<p>从工作伦理到消费美学</p>
 <ul>
 <li>pass</li>
 <li>pass<br>
@@ -7400,8 +7690,17 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
 <li>注释：<code>#</code>用于注释。</li>
 <li>通配符：<code>*</code>代表任意多个；<code>？</code>代表一个字符；<code>！</code>表示不被忽略。</li>
 <li><code>folder/</code>: 该目录下的所有文件，不包括该目录下的子目录。</li>
-<li><code>/folder</code>: 该目录下面的所有文件，默认文件和目录都忽略。<br>
+<li><code>/folder</code>: 该目录下面的所有文件，默认文件和目录都忽略。</li>
+<li><strong>注意</strong>：gitignore文件只影响新的且未被跟踪的文件
+<ul>
+<li>也即是说：原来被跟踪的文件，添加到gitignore文件中后，远程仓库不会删除。
+<ul>
+<li>解决办法： <code>git rm -r --cached &lt;folder&gt;</code> + <code>git commit</code> + <code>git push</code><br>
 <br></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
@@ -8102,6 +8401,9 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
       <categories>
         <category>Games</category>
       </categories>
+      <tags>
+        <tag>gift cards</tag>
+      </tags>
   </entry>
   <entry>
     <title>博客优化</title>
@@ -8754,9 +9056,9 @@ GET、HEAD、POST、PUT、DELETE、CONNECT、OPTIONS、TRACE</p>
 </ul>
 </li>
 <li>
-<p>关于使用443端口代替22端口进行ssh连接github</p>
+<p>关于使用代理无法连接github客户端22端口</p>
 <ul>
-<li>解决使用代理无法连接github客户端22端口</li>
+<li>参考自：<a href="https://docs.github.com/zh/authentication/troubleshooting-ssh/using-ssh-over-the-https-port" rel="external nofollow noreferrer">在 HTTPS 端口使用 SSH</a></li>
 <li><code>C:\Users\Your_user_name\.ssh</code>创建Config文件, 内容如下：</li>
 </ul>
  <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="string">Host</span> <span class="string">github.com</span></span><br><span class="line"><span class="string">User</span> <span class="string">you_github_email@xxx.com</span></span><br><span class="line"><span class="string">Hostname</span> <span class="string">ssh.github.com</span></span><br><span class="line"><span class="string">PreferredAuthentications</span> <span class="string">publickey</span></span><br><span class="line"><span class="string">IdentityFile</span> <span class="string">~/.ssh/id_rsa</span></span><br><span class="line"><span class="string">Port</span> <span class="number">443</span></span><br></pre></td></tr></table></figure>
